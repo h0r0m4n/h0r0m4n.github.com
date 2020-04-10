@@ -12,8 +12,13 @@ title: h0r0m4n
         {% for work in site.data.works %}
             <li>
                 <h2>{{ work.title }}</h2>
-                <img src="/assets/{{ work.image }}" alt="{{ work.description }}">
-                <p>{{ work.year }}</p>
+                <img src="/assets/{{ work.image }}" alt="{{ work.description }} + {{ work.year }}">
+                <p>Skills:</p>
+                <ul>
+                    {% for skill in work.skills %}
+                        <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
             </li>
         {% endfor %}
     </ol>
