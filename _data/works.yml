@@ -1,0 +1,19 @@
+- title: Work 1
+  description: This is an example description of work 1
+  image: roman1.jpg
+  year: 2020
+  skill:
+    - User Interface
+    - Interaction Design
+- title: Work 2
+  description: This is an example description of work 2
+  year: 2019
+  image: roman2.jpg
+  skill:
+    - Interaction Design
+- title: Work 3
+  description: This is an example description of work 3
+  image: roman3.jpg
+  year: 2018
+  skill:
+    - User Experience
