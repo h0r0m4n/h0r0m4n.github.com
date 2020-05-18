@@ -7,8 +7,12 @@ title: Just for example
 body
     font-family: 'Roboto', sans-serif
     line-height: 1.5
-    background-color: $primary
-    color: $secondary
+    @media (prefers-color-scheme: dark)
+        background-color: #000
+        color: #fff
+    @media (prefers-color-scheme: light)
+        background-color: #fff
+        color: #000
 
 a
     color: $links
