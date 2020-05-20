@@ -8,11 +8,37 @@ body
     font-family: 'Roboto', sans-serif
     line-height: 1.5
     @media (prefers-color-scheme: dark)
+        background-image: url(../static/bg-dark.svg)
         background-color: #000
         color: #fff
     @media (prefers-color-scheme: light)
+        background-image: url(../static/bg-light.svg)
         background-color: #fff
         color: #000
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
 
 a
     color: $links
+
+svg
+    @media (prefers-color-scheme: dark)
+        fill: #fff
+    @media (prefers-color-scheme: light)
+        fill: #b62020
+
+// Tools
+
+.vh
+    border: 0
+    clip: rect(0 0 0 0)
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px)
+    height: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+    width: 1px
+    white-space: nowrap
