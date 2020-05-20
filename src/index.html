@@ -3,22 +3,30 @@ layout: default
 title: h0r0m4n
 ---
 
-<h1>Hi, I’m {{ page.title }} nice to meet you!</h1>
+<h1>Nice to meet you I’m Roman Horokhovatskyy an Interaction Designer based in Milan, Italy. Currently, I work at <a href="https://spindox.it" rel="noopener noreferrer nofollow" target="_blank">Spindox</a> as senior interaction design consultant. My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</h1>
 
-<p>Here’s my latest works:</p>
+<h2>Here’s my latest works:</h2>
 
 {% if site.data.works %}
     <ol>
         {% for work in site.data.works %}
             <li>
-                <h2>{{ work.title }}</h2>
+                <h3 class="vh">{{ work.title }}</h3>
                 <img src="/static/{{ work.image }}" alt="{{ work.description }} + {{ work.year }}">
-                <p>Skills:</p>
-                <ul>
-                    {% for skill in work.skills %}
-                        <li>{{ skill }}</li>
-                    {% endfor %}
-                </ul>
+            </li>
+        {% endfor %}
+    </ol>
+{% else %}
+    <p>No data</p>
+{% endif %}
+
+<h2>I had the privilege of improving products used and loved by many users for over 11 years. These are some:</h2>
+
+{% if site.data.clients %}
+    <ol>
+        {% for client in site.data.clients %}
+            <li>
+                <img src="/static/{{ client.image }}" alt="{{ client.title }}">
             </li>
         {% endfor %}
     </ol>
