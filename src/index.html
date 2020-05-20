@@ -33,3 +33,13 @@ title: h0r0m4n
 {% else %}
     <p>No data</p>
 {% endif %}
+
+<h2>Second loop test:</h2>
+
+<ol>
+    {% for client in site.data.clients %}
+        <li>
+            {% svg "/static/{{ client.image }}" %}
+        </li>
+    {% endfor %}
+</ol>
