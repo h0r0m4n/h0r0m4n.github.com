@@ -1,0 +1,16 @@
+<section class="clients">
+    <div class="t-container">
+        <h2>I had the privilege of improving products used and loved by many users for over {{ 'now' | date: "%Y" | minus: site.starting }} years. These are some:</h2>
+    </div>
+    {% if site.data.clients %}
+        <ol class="clients__loop">
+            {% for client in site.data.clients %}
+                <li class="clients__loop__item">
+                    {% svg "/static/{{ client.image }}" %}
+                </li>
+            {% endfor %}
+        </ol>
+    {% else %}
+        <p>No data</p>
+    {% endif %}
+</section>

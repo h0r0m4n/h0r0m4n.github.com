@@ -1,5 +1,22 @@
 <footer>
-    <p>
-        <small>© {{ page.title }} {{ 'now' | date: "%Y" }}. All rights reserved. Typeface <a href="https://processtypefoundry.com/fonts/colfax/" rel="noopener noreferrer nofollow" target="_blank">Colfax</a> by Process Type Foundry</small>
-    </p>
+    <div class="t-container">
+        <h2>Find me on the internet</h2>
+        {% if site.data.social %}
+            <ul>
+                {% for link in site.data.social %}
+                    <li>
+                        <a href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
+                            <span class="t-vh">{{ link.name }}</span>
+                            {% svg "/static/{{ link.name }}.svg" %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No social data</p>
+        {% endif %}
+        <p>
+            <small>© {{ page.title }} {{ 'now' | date: "%Y" }}. All rights reserved. Typeface <a href="https://processtypefoundry.com/fonts/colfax/" rel="noopener noreferrer nofollow" target="_blank">Colfax</a> by Process Type Foundry</small>
+        </p>
+    </div>
 </footer>

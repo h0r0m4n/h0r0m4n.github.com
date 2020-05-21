@@ -4,9 +4,17 @@ title: Just for example
 
 @import "_vars"
 
+@font-face
+    font-family: 'ColfaxWebRegular'
+    src: url('../static/colfax-web-regular.eot')
+    src: url('../static/colfax-web-regular.woff2') format('woff2'), url('ColfaxWebRegular.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
 body
-    font-family: 'Roboto', sans-serif
+    font-family: 'ColfaxWebRegular', sans-serif
     line-height: 1.5
+    margin: 0
     @media (prefers-color-scheme: dark)
         background-image: url(../static/bg-dark.svg)
         background-color: #000
@@ -19,6 +27,12 @@ body
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+
+h1, h2, h3, h4, h5, h6
+    font-weight: normal
+
+h1, h2
+    font-size: 18px
 
 a
     color: $links
@@ -55,7 +69,8 @@ img
     max-width: 100%
 .works
     &__loop
-        overflow: auto
+        overflow-x: scroll
+        overflow-y: hidden
         white-space: nowrap
         animation: slide 10s linear infinite
         margin: 0
@@ -86,8 +101,13 @@ img
             // //scroll-snap-align: start
             // list-style: none
             // box-sizing: border-box
-
-
+            margin-right: 16px
+            @media (min-width: 800px)
+                margin-right: 24px
+            @media (min-width: 1024px)
+                margin-right: 32px
+            @media (prefers-color-scheme: light)
+                box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.25)
 
             img
                 // max-width: 50%

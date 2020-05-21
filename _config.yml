@@ -1,6 +1,23 @@
+# Site settings
+title: "h0r0m4n’s"
+description: "Personal homepage of Roman Horokhovatskyy an Interaction Designer based in Milan, Italy."
+author: "Roman Horokhovatskyy"
+role: "Interaction Designer"
+location: "Milan, Italy"
+company: "Spindox"
+company-url: "https://spindox.it"
+company-role: "senior interaction design consultant"
+nickname: "h0r0m4n"
+mail: "roman.horokhovatskyy@gmail.com"
+starting: "2008"
+
+# Plugins
+plugins:
+  - jekyll-inline-svg
+
+# Jekyll settings
 source: ./src
 sass:
   sass_dir: css
-
-gems:
-  - jekyll-inline-svg
+svg:
+  optimize: true
