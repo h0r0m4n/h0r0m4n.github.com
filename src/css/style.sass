@@ -42,3 +42,56 @@ svg
     position: absolute
     width: 1px
     white-space: nowrap
+
+// Animations
+@keyframes slide
+    0%
+        transform: translate3d(0 0 0)
+    100%
+        transform: translate3d(-100% 0 0)
+
+// Page
+img
+    max-width: 100%
+.works
+    &__loop
+        overflow: auto
+        white-space: nowrap
+        animation: slide 10s linear infinite
+        margin: 0
+        padding-left: 0
+        list-style: none
+        line-height: 0
+        &__group
+            // animation: slide 10s linear infinite
+        // display: flex
+        // flex-wrap: nowrap
+        // width: 5000px
+        // overflow: hidden
+        // overflow-x: scroll
+        // overflow-y: hidden
+        // //scroll-snap-type: x mandatory
+        // scroll-snap-type: mandatory
+        // scroll-behavior: smooth
+        // white-space: nowrap
+        // line-height: 0
+        // list-style: none
+        &__item
+            display: inline-block
+            list-style: none
+            vertical-align: middle
+            white-space: normal
+            // list-style: none
+            // display: inline-block
+            // //scroll-snap-align: start
+            // list-style: none
+            // box-sizing: border-box
+
+
+
+            img
+                // max-width: 50%
+
+.clients
+    &__loop
+        &__item

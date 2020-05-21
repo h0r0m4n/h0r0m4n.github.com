@@ -1,19 +1,42 @@
-- title: Work 1
-  description: This is an example description of work 1
-  image: roman1.jpg
-  year: 2020
-  skills:
-    - User Interface
-    - Interaction Design
-- title: Work 2
-  description: This is an example description of work 2
+- title: Aeon typeface
+  description: 
+  year: 2016
+- title: Antechamber
+  description: 
+  year: 2016
+- title: Cefla
+  description: 
   year: 2019
-  image: roman2.jpg
-  skills:
-    - Interaction Design
-- title: Work 3
-  description: This is an example description of work 3
-  image: roman3.jpg
+- title: Ferrari
+  description: 
   year: 2018
-  skills:
-    - User Experience
+- title: Filament
+  description: 
+  year: 2016
+- title: Francesca Moschino
+  description: 
+  year: 2015
+- title: Land Ho Coworking
+  description: 
+  year: 2017
+- title: September
+  description: 
+  year: 2012
+- title: Skins
+  description: 
+  year: 2013
+- title: Sound Art
+  description: 
+  year: 2017
+- title: TIM
+  description: 
+  year: 2018
+- title: UBI Banca intranet
+  description: 
+  year: 2018
+- title: UBI Banca
+  description: 
+  year: 2018
+- title: Yearth
+  description: 
+  year: 2015

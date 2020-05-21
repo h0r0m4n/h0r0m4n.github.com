@@ -1,6 +1,8 @@
-<nav role="navigation">
-    <a href="/">
-        <span class="vh">{{ page.title }}</span>
+<header itemscope itemtype="http://schema.org/Organization">
+    <a itemprop="url" href="/">
+        <span class="vh">
+            <strong itemprop="name">{{ page.title }}</strong>
+        </span>
         {% svg /static/logo.svg %}
     </a>
-</nav>
+</header>
