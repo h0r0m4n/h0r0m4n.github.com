@@ -6,5 +6,6 @@ Yes this site has been created during a COVID-19 isolation period 😷.
 
 # Jekyll
 
-1. To build site and outputs use: `jekyll build`
-2. To run local web server use: `jekyll serve`, then open: <http://localhost:4000/>
+0. To install shit: `bundle install`
+1. To build site and outputs use: `bundle exec jekyll build`
+2. To run local web server use: `bundle exec jekyll serve`, then open: <http://localhost:4000/>
