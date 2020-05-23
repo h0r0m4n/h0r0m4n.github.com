@@ -1,0 +1,65 @@
+.h-visually-hidden
+    block-size: 1px
+    border: 0
+    clip: rect(0 0 0 0)
+    inline-size: 1px
+    margin: -1px
+    overflow: hidden
+    padding: 0
+    position: absolute
+
+.h-hover
+    transition: filter 150ms ease-in
+    &:hover
+        filter: brightness(130%)
+        @media (prefers-color-scheme: dark)
+            filter: contrast(130%)
+
+.h-container
+    max-width: $container-size
+    margin-left: auto
+    margin-right: auto
+    padding-left: $size-s
+    padding-right: $size-s
+    @media #{$media-query-medium}
+        padding-left: $size-m
+        padding-right: $size-m
+    @media #{$media-query-large}
+        padding-left: $size-l
+        padding-right: $size-l
+
+.h-list-scroll
+    overflow-x: scroll
+    overflow-y: hidden
+    white-space: nowrap
+    list-style: none
+    margin: 0
+    
+    padding: 1em 0 1em $size-s
+    @media #{$media-query-medium}
+        padding-left: $size-m
+    @media #{$media-query-large}
+        padding-left: $size-l
+    &--item
+        display: inline-block
+        list-style: none
+        vertical-align: middle
+        white-space: normal
+        margin-right: $size-s
+        @media #{$media-query-medium}
+            margin-right: $size-m
+        @media #{$media-query-large}
+            margin-right: $size-l
+
+.h-list-horizontal
+    list-style: none
+    margin: 0
+    padding: 1em 0
+    &--item
+        display: inline-block
+        list-style: none
+        margin-right: $size-s
+        @media #{$media-query-medium}
+            margin-right: $size-m
+        @media #{$media-query-large}
+            margin-right: $size-l

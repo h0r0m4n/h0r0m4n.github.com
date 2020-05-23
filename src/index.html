@@ -1,9 +1,49 @@
 ---
 layout: default
 ---
-
 <main>
-    {% include sections/works.html %}
-    {% include sections/clients.html %}
-    {% include sections/contact.html %}
+    <section id="about">
+        <div class="h-container">
+            <picture class="avatar">
+                <source srcset="static/avatar-dark.png 1x, static/avatar-dark@1.5x.png 1.5x, static/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
+                <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+                <img src="static/avatar-light.png" width="154" height="230" loading="lazy">
+            </picture>
+            <p>Nice to meet you I’m {{ site.author }} an {{ site.role }} based in {{ site.location }}. Currently, I work at <a href="{{ site.company-url }}" rel="noopener noreferrer nofollow" target="_blank">{{ site.company }}</a> as {{ site.company-role }}. My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
+        </div>
+    </section>
+    <section id="works">
+        <div class="h-container">
+            <h2 class="h6">Here’s my latest works</h2>
+        </div>
+        {% if site.data.works %}
+        <ol class="h-list-scroll">
+            {% for work in site.data.works %}
+                <li class="h-list-scroll--item">
+                    <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.description }} - {{ work.year }}" loading="lazy">
+                </li>
+            {% endfor %}
+        </ol>
+        {% endif %}
+    </section>
+    <section id="clients">
+        <div class="h-container">
+            <p>I had the privilege of improving products used and loved by many users for over {{ 'now' | date: "%Y" | minus: site.starting }} years. These are some:</p>
+            {% if site.data.clients %}
+            <ol class="h-list-horizontal">
+                {% for client in site.data.clients %}
+                    <li class="h-list-horizontal--item">
+                        {% svg "/static/{{ client.image }}" %}
+                    </li>
+                {% endfor %}
+            </ol>
+            {% endif %}
+        </div>
+    </section>
+    <section id="contact">
+        <div class="h-container">
+            <p>Does your organisation need an {{ site.role }} in your team? Maybe you'd just like to say ‘hello’, or just have a question. That’s all fine.</p>
+            <a class="button h-hover" href="mailto:{{ site.mail }}">Contact</a>
+        </div>
+    </section>
 </main>

@@ -1,0 +1,162 @@
+// Base -----------------------------------------------------------------------
+
+// $size-s: 1rem
+// $size-m: 1.5rem
+// $size-l: 3rem
+// $size-xl: 4rem
+// $size-xxl: 6rem
+
+// Embedded
+
+svg
+    fill: $color-secondary-light
+    @media (prefers-color-scheme: dark)
+        fill: $color-secondary-dark
+
+img
+    block-size: auto
+    display: block
+    max-inline-size: 100%
+    page-break-inside: avoid
+
+// Sections
+
+html
+    block-size: 100vh
+    scroll-behavior: smooth
+    text-size-adjust: 100%
+
+body
+    margin: 0
+    min-block-size: 100vh
+    overflow-x: hidden
+    font-family: $type-family
+    line-height: $type-height
+    font-size: 1em
+    background-image: url(../static/bg-light.svg)
+    background-attachment: fixed
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    background-color: $color-background-light
+    color: $color-primary-light
+    @media (prefers-color-scheme: dark)
+        background-image: url(../static/bg-dark.svg)
+        background-color: $color-background-dark
+        color: $color-primary-dark
+    @media #{$media-query-medium}
+        font-size: 1.25em
+    @media #{$media-query-large}
+        font-size: 1.5em
+
+section
+    + section
+        clear: both
+        margin-top: $size-l
+        @media #{$media-query-medium}
+            margin-top: $size-xl
+        @media #{$media-query-large}
+            margin-top: $size-xxl
+footer
+    clear: both
+    margin-top: $size-l
+    padding-bottom: $size-s
+    @media #{$media-query-medium}
+        margin-top: $size-xl
+        padding-bottom: $size-m
+    @media #{$media-query-large}
+        margin-top: $size-xxl
+        padding-bottom: $size-l
+
+// Text-level semantics
+
+a
+    color: $color-secondary-light
+    @media (prefers-color-scheme: dark)
+        color: $color-secondary-dark
+    text-decoration: underline
+    text-decoration-color: rgba($color-secondary-light, 50%)
+    @media (prefers-color-scheme: dark)
+        text-decoration-color: rgba($color-secondary-dark, 50%)
+    &:hover
+        text-decoration-color: $color-secondary-light
+        @media (prefers-color-scheme: dark)
+            text-decoration-color: $color-secondary-dark
+
+// Headings
+
+h1, h2, h3, h4, h5, h6
+    font-weight: normal
+    text-transform: uppercase
+    margin-top: 0
+    margin-bottom: 0
+
+h1, .h1
+    font-size: 2.25em
+h2, .h2
+    font-size: 2em
+h3, .h3
+    font-size: 1.75em
+h4, .h4
+    font-size: 1.5em
+h5, .h5
+    font-size: 1.25em
+h6, .h6
+    font-size: 1em
+
+// Components
+
+#header
+    margin-top: $size-s
+    @media #{$media-query-medium}
+        margin-top: $size-l
+    @media #{$media-query-large}
+        margin-top: $size-xxl
+    .logo
+        font-size: 1em
+        line-height: 0
+        margin: 0
+        svg
+            height: 2em
+
+#about
+    .avatar
+        position: relative
+        top: - $size-s
+        float: right
+        margin-left: $size-m
+        @media #{$media-query-medium}
+            top: - $size-m
+            margin-left: $size-l
+        @media #{$media-query-large}
+            top: - $size-l
+            margin-left: $size-xxl
+
+#works
+    img
+        border-radius: 4px
+        @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25)
+
+#clients
+    svg
+        height: $size-m
+        @media #{$media-query-medium}
+            height: $size-l
+#contact
+    .button
+        display: inline-block
+        color: #FFF
+        background-color: $color-secondary-light
+        border-radius: 4px
+        padding: $size-s $size-m
+        margin-top: $size-s
+        @media (prefers-color-scheme: dark)
+            background-color: $color-secondary-dark
+
+
+#footer
+    svg
+        height: $size-m
+        @media #{$media-query-medium}
+            height: $size-l
