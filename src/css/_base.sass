@@ -33,7 +33,7 @@ body
     overflow-x: hidden
     font-family: $type-family
     line-height: $type-height
-    font-feature-settings: "kern" on,"liga" on
+    font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
     background-image: url(../static/bg-light.svg)
     background-attachment: fixed
@@ -109,9 +109,7 @@ h6, .h6
 // Components
 
 #header
-    margin-top: $size-l
-    @media #{$media-query-medium}
-        margin-top: $size-xl
+    margin-top: $size-xl
     @media #{$media-query-large}
         margin-top: $size-xxl
     .logo
