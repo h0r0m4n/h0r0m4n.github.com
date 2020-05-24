@@ -60,6 +60,11 @@
     &--item
         display: inline-block
         list-style: none
-        margin-right: $size-s
-        @media #{$media-query-medium}
-            margin-right: $size-m
+        &--distance-1
+            margin-right: $size-l
+            @media #{$media-query-medium}
+                margin-right: $size-xl
+        &--distance-2
+            margin-right: $size-s
+            @media #{$media-query-medium}
+                margin-right: $size-m

@@ -34,7 +34,7 @@ body
     font-family: $type-family
     line-height: $type-height
     font-feature-settings: "kern" on,"liga" on
-    font-size: 1em
+    font-size: 1.125em
     background-image: url(../static/bg-light.svg)
     background-attachment: fixed
     background-position: center
@@ -47,9 +47,9 @@ body
         background-color: $color-background-dark
         color: $color-primary-dark
     @media #{$media-query-medium}
-        font-size: 1.125em
+        font-size: 1.25em
     @media #{$media-query-large}
-        font-size: 1.255em
+        font-size: 1.5em
 
 section
     + section
@@ -146,9 +146,12 @@ h6, .h6
 
 #clients
     svg
-        height: $size-l
+        height: $size-xl
+        height: 3rem
         @media #{$media-query-medium}
-            height: $size-xl
+            height: 4rem
+        @media #{$media-query-large}
+            height: 5rem
 #contact
     .button
         display: inline-block
