@@ -1,8 +1,12 @@
 - name: LinkedIn
   link: https://linkedin.com/in/horoman/
+  image: linkedin.svg
 - name: Dribbble
   link: https://dribbble.com/horoman/
+  image: dribbble.svg
 - name: Twitter
   link: https://twitter.com/h0r0m4n/
+  image: twitter.svg
 - name: GitHub
   link: https://github.com/h0r0m4n/
+  image: github.svg
