@@ -12,6 +12,9 @@ mail: "roman.horokhovatskyy@gmail.com"
 starting: "2008"
 
 # Jekyll settings
-source: ./src
+# source: ./src
 sass:
   sass_dir: css
+  style: expanded
+  deploy_style: compressed
+  sourcemap: development
