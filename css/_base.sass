@@ -19,13 +19,15 @@ html
     block-size: 100vh
     scroll-behavior: smooth
     text-size-adjust: 100%
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
     text-rendering: optimizeLegibility
 
 body
     margin: 0
     min-block-size: 100vh
     overflow-x: hidden
-    font-family: $type-family
+    font-family: $type-family-1
     line-height: $type-height
     font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
@@ -48,20 +50,20 @@ body
 section
     + section
         clear: both
-        margin-top: $size-l
+        margin-top: $size-m
         @media #{$media-query-medium}
-            margin-top: $size-xl
+            margin-top: $size-l
         @media #{$media-query-large}
-            margin-top: $size-xxl
+            margin-top: $size-xl
 footer
     clear: both
     margin-top: $size-l
-    padding-bottom: $size-s
+    padding-bottom: $size-m
     @media #{$media-query-medium}
-        margin-top: $size-xl
+        margin-top: $size-l
         padding-bottom: $size-m
     @media #{$media-query-large}
-        margin-top: $size-xxl
+        margin-top: $size-xl
         padding-bottom: $size-l
 
 // Text-level semantics
@@ -82,8 +84,8 @@ a
 // Headings
 
 h1, h2, h3, h4, h5, h6
+    font-family: $type-family-2
     font-weight: normal
-    text-transform: uppercase
     margin-top: 0
     margin-bottom: 0
 
@@ -132,12 +134,15 @@ h6, .h6
 
 #works
     img
-        border-radius: 4px
+        //border-radius: 4px
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
-            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25)
+            //box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25)
 
 #clients
     svg
+        fill: rgba($color-primary-light, 50%)
+        @media (prefers-color-scheme: dark)
+            fill: rgba($color-primary-dark, 50%)
         height: 3rem
         @media #{$media-query-medium}
             height: 4rem
