@@ -11,13 +11,7 @@ nickname: "h0r0m4n"
 mail: "roman.horokhovatskyy@gmail.com"
 starting: "2008"
 
-# Plugins
-plugins:
-  - jekyll-inline-svg
-
 # Jekyll settings
 source: ./src
 sass:
   sass_dir: css
-svg:
-  optimize: true
