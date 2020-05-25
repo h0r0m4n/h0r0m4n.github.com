@@ -30,7 +30,7 @@ body
     font-family: $type-family-1
     line-height: $type-height
     font-feature-settings: "kern" on, "liga" on
-    font-size: 1.125em
+    font-size: 1.25em
     background-image: url(../static/bg-light.svg)
     background-attachment: fixed
     background-position: center
@@ -42,8 +42,6 @@ body
         background-image: url(../static/bg-dark.svg)
         background-color: $color-background-dark
         color: $color-primary-dark
-    @media #{$media-query-medium}
-        font-size: 1.25em
     @media #{$media-query-large}
         font-size: 1.5em
 
@@ -134,9 +132,9 @@ h6, .h6
 
 #works
     img
-        //border-radius: 4px
+        border-radius: 4px
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
-            //box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25)
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25)
 
 #clients
     svg
