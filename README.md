@@ -1,10 +1,6 @@
 # A h0r0m4n’s 2020' website
 
-Yes this site has been created during a COVID-19 isolation period 😷.
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/72e3058d-9b09-47a3-8074-fe5b6ea2b8a9/deploy-status)](https://app.netlify.com/sites/h0r0m4n/deploys)
-
-# Jekyll
+## Jekyll
 
 0. To install shit: `bundle install`
 1. To build site and outputs use: `bundle exec jekyll build`
