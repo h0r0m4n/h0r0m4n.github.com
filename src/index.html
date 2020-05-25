@@ -33,7 +33,7 @@ layout: default
             <ol class="h-list-horizontal">
                 {% for client in site.data.clients %}
                     <li class="h-list-horizontal--item h-list-horizontal--item--distance-1">
-                        {% svg "/static/{{ client.image }}" %}
+                        {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
                     </li>
                 {% endfor %}
             </ol>
