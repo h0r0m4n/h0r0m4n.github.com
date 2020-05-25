@@ -20,7 +20,7 @@ layout: default
         <ol class="h-list-scroll">
             {% for work in site.data.works %}
                 <li class="h-list-scroll--item">
-                    <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.description }} - {{ work.year }}" loading="lazy">
+                    <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
                 </li>
             {% endfor %}
         </ol>
