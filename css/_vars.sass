@@ -2,10 +2,15 @@
 
 @font-face
     font-family: 'ColfaxWebRegular'
-    src: url('../static/colfax-web-regular.eot')
-    src: url('../static/colfax-web-regular.woff2') format('woff2'), url('ColfaxWebRegular.woff') format('woff')
-    font-weight: normal
     font-style: normal
+    font-weight: normal
+    src: url('../static/colfax-web-regular.woff2') format('woff2'), url('ColfaxWebRegular.woff') format('woff')
+
+@font-face
+    font-family: 'Reenie Beanie'
+    font-style: normal
+    font-weight: 400
+    src: local('Reenie Beanie'), local('ReenieBeanie'), url('../static/reenie-beanie-v10-latin-regular.woff2') format('woff2'), url('../static/reenie-beanie-v10-latin-regular.woff') format('woff')
 
 // Custom properties ----------------------------------------------------------
 
@@ -20,7 +25,8 @@ $color-secondary-dark: #8E2CF9
 $color-background-dark: #0e0e0e
 
 // Typography
-$type-family: 'ColfaxWebRegular', sans-serif
+$type-family-1: 'ColfaxWebRegular', sans-serif
+$type-family-2: 'Reenie Beanie', sans-serif
 $type-height: 1.5
 
 // Sizing
