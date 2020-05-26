@@ -66,6 +66,21 @@
 
 
 #footer
+    .h-list-horizontal
+        a
+            display: block
+            background-color: $color-secondary-light
+            line-height: 0
+            border-radius: 50%
+            padding: 0.5em
+            @media (prefers-color-scheme: dark)
+                background-color: $color-secondary-dark
     svg
-        height: $size-l
-        width: $size-l
+        fill: $color-primary-light
+        height: $size-s
+        width: $size-s
+        @media (prefers-color-scheme: dark)
+            fill: $color-primary-dark
+        @media #{$media-query-large}
+            height: $size-m
+            width: $size-m
