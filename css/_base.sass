@@ -71,7 +71,7 @@ footer
 a
     color: $color-secondary-light
     @media (prefers-color-scheme: dark)
-        color: $color-secondary-dark
+        color: lighten($color-secondary-dark, 20%)
     text-decoration: underline
     text-decoration-color: rgba($color-secondary-light, 50%)
     @media (prefers-color-scheme: dark)
@@ -79,7 +79,7 @@ a
     &:hover
         text-decoration-color: $color-secondary-light
         @media (prefers-color-scheme: dark)
-            text-decoration-color: $color-secondary-dark
+            text-decoration-color: lighten($color-secondary-dark, 20%)
 
 mark 
     color: currentColor
@@ -94,6 +94,7 @@ h1, h2, h3, h4, h5, h6
     margin-top: 0
     margin-bottom: 0
     text-transform: uppercase
+    letter-spacing:  0.075rem
 
 h1, .h1
     font-size: 2.25em
