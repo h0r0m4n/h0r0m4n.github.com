@@ -4,29 +4,38 @@
         margin-top: $size-xxl
     .logo
         font-size: 1em
-        line-height: 0
+        font-family: $type-family-3
+        line-height: 0.5
         margin: 0
+        color: $color-tertiary-light
+        text-transform: none
+        @media (prefers-color-scheme: dark)
+            color: $color-tertiary-dark
         svg
-            height: 2em
+            @media #{$media-query-small-only}
+                height: 2.25rem
+                width: 17.6875rem
+            @media #{$media-query-medium}
+                height: 2em
 
 #about
     .avatar
-        position: relative
-        top: - $size-s
         float: right
-        margin-left: $size-m
         height: 50%
         @media #{$media-query-medium}
-            top: - $size-m
+            position: relative
+            top: - $size-l
             margin-left: $size-l
         @media #{$media-query-large}
-            top: - $size-l
+            top: - $size-xl
             margin-left: $size-xxl
         img
             @media #{$media-query-small-only}
                 width: $size-xxl
 
 #works
+    @media #{$media-query-small-only}
+        margin-top: $size-l
     img
         border-radius: 4px
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)

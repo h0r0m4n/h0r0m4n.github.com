@@ -30,7 +30,7 @@ body
     font-family: $type-family-1
     line-height: $type-height
     font-feature-settings: "kern" on, "liga" on
-    font-size: 1.25em
+    font-size: 1.125em
     background-image: url(../static/bg-light.svg)
     background-attachment: fixed
     background-position: center
@@ -42,26 +42,28 @@ body
         background-image: url(../static/bg-dark.svg)
         background-color: $color-background-dark
         color: $color-primary-dark
+    @media #{$media-query-medium}
+        font-size: 1.25em
     @media #{$media-query-large}
         font-size: 1.5em
 
 section
     + section
         clear: both
-        margin-top: $size-m
-        @media #{$media-query-medium}
-            margin-top: $size-l
-        @media #{$media-query-large}
-            margin-top: $size-xl
+        // margin-top: $size-m
+        // @media #{$media-query-medium}
+        //     margin-top: $size-l
+        // @media #{$media-query-large}
+        //     margin-top: $size-xl
 footer
     clear: both
     margin-top: $size-l
     padding-bottom: $size-m
     @media #{$media-query-medium}
-        margin-top: $size-l
+        margin-top: $size-xl
         padding-bottom: $size-m
     @media #{$media-query-large}
-        margin-top: $size-xl
+        margin-top: $size-xxl
         padding-bottom: $size-l
 
 // Text-level semantics
@@ -79,13 +81,19 @@ a
         @media (prefers-color-scheme: dark)
             text-decoration-color: $color-secondary-dark
 
+mark 
+    color: currentColor
+    background-color: transparent
+
 // Headings
 
 h1, h2, h3, h4, h5, h6
     font-family: $type-family-2
     font-weight: normal
+    line-height: 1.2
     margin-top: 0
     margin-bottom: 0
+    text-transform: uppercase
 
 h1, .h1
     font-size: 2.25em

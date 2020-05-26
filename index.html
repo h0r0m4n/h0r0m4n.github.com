@@ -9,12 +9,12 @@ layout: default
                 <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
                 <img src="static/avatar-light.png" width="154" height="230" loading="lazy">
             </picture>
-            <p>Nice to meet you I’m {{ site.author }} an {{ site.role }} based in {{ site.location }}. Currently, I work at <a href="{{ site.company-url }}" rel="noopener noreferrer nofollow" target="_blank">{{ site.company }}</a> as {{ site.company-role }}. My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
+            <p>Nice to meet you I’m a <mark>{{ site.role }}</mark> at <a href="{{ site.company-url }}" rel="noopener noreferrer nofollow" target="_blank">{{ site.company }}</a> in {{ site.location }}. My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
         </div>
     </section>
     <section id="works">
         <div class="h-container">
-            <h2 class="h3">Here’s my latest works</h2>
+            <h2 class="h5">Here’s my latest works</h2>
         </div>
         {% if site.data.works %}
         <ol class="h-list-scroll">
