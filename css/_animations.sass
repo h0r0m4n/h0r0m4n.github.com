@@ -1,3 +1,9 @@
+@-webkit-keyframes fadeIn
+    from
+        opacity: 0
+    to
+        opacity: 1
+
 @keyframes fadeIn
     from
         opacity: 0
@@ -10,9 +16,13 @@ $fadeInParts: 19
 
 .a-fadeIn
     opacity: 0
+    -webkit-animation-name: fadeIn
     animation-name: fadeIn
+    -webkit-animation-duration: #{$fadeInDuration}
     animation-duration: #{$fadeInDuration}
+    -webkit-animation-iteration-count: 1
     animation-iteration-count: 1
+    -webkit-animation-fill-mode: forwards
     animation-fill-mode: forwards
     @for $i from 1 through $fadeInParts
         &--delay-#{$i}        

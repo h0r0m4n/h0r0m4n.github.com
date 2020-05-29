@@ -11,8 +11,10 @@
 .h-hover
     transition: filter 150ms ease-in
     &:hover
+        -webkit-filter: brightness(130%)
         filter: brightness(130%)
         @media (prefers-color-scheme: dark)
+            -webkit-filter: contrast(130%)
             filter: contrast(130%)
 
 .h-container
