@@ -4,20 +4,20 @@ layout: default
 <article>
     <section id="about">
         <div class="h-container">
-            <picture class="avatar">
+            <picture class="avatar a-fadeIn a-fadeIn--delay-10">
                 <source srcset="static/avatar-dark.png 1x, static/avatar-dark@1.5x.png 1.5x, static/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
                 <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
                 <img src="static/avatar-light.png" width="96" height="143" loading="lazy">
             </picture>
-            <p>Nice to meet you I’m {{ site.author }} a <mark>{{ site.role }}</mark> at <a href="{{ site.company-url }}" rel="noopener noreferrer nofollow" target="_blank">{{ site.company }}</a> in {{ site.location }}. My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
+            <p class="a-fadeIn a-fadeIn--delay-9">Nice to meet you I’m {{ site.author }} a <mark>{{ site.role }}</mark> at <a href="{{ site.company-url }}" rel="noopener noreferrer nofollow" target="_blank">{{ site.company }}</a> in {{ site.location }}. My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
         </div>
     </section>
     <section id="works">
         <div class="h-container">
-            <h2 class="h5">Here’s my latest works</h2>
+            <h2 class="h5 a-fadeIn a-fadeIn--delay-11">Here’s my latest works</h2>
         </div>
         {% if site.data.works %}
-        <ol class="h-list-scroll">
+        <ol class="h-list-scroll a-fadeIn a-fadeIn--delay-12">
             {% for work in site.data.works %}
                 <li class="h-list-scroll--item">
                     <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
@@ -28,9 +28,9 @@ layout: default
     </section>
     <section id="clients">
         <div class="h-container">
-            <p>I had the privilege of improving products used and loved by many users for over {{ 'now' | date: "%Y" | minus: site.starting }} years. These are some:</p>
+            <p class="a-fadeIn a-fadeIn--delay-13">I had the privilege of improving products used and loved by many users for over {{ 'now' | date: "%Y" | minus: site.starting }} years. These are some:</p>
             {% if site.data.clients %}
-            <ol class="h-list-horizontal">
+            <ol class="h-list-horizontal a-fadeIn a-fadeIn--delay-14">
                 {% for client in site.data.clients %}
                     <li class="h-list-horizontal--item h-list-horizontal--item--distance-1">
                         {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
@@ -42,8 +42,8 @@ layout: default
     </section>
     <section id="contact">
         <div class="h-container">
-            <p>Does your organisation need an {{ site.role }} in your team? Maybe you'd just like to say ‘hello’, or just have a question. That’s all fine.</p>
-            <a class="button h-hover" href="mailto:{{ site.mail }}">Contact</a>
+            <p class="a-fadeIn a-fadeIn--delay-15">Does your organisation need an {{ site.role }} in your team? Maybe you'd just like to say ‘hello’, or just have a question. That’s all fine.</p>
+            <a class="button h-hover a-fadeIn a-fadeIn--delay-16" href="mailto:{{ site.mail }}">Contact</a>
         </div>
     </section>
 </article>
