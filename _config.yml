@@ -15,6 +15,4 @@ starting: "2008"
 # source: ./src
 sass:
   sass_dir: css
-  style: expanded
-  deploy_style: compressed
-  sourcemap: development
+  style: compressed
