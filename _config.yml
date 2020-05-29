@@ -20,4 +20,8 @@ sass:
   sourcemap: development
 
 plugins:
-  - octopress-autoprefixer
+  - jekyll-autoprefixer
+
+autoprefixer:
+  browsers:
+    - last 4 versions
