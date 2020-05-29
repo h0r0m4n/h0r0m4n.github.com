@@ -1,0 +1,19 @@
+@keyframes fadeIn
+    from
+        opacity: 0
+    to
+        opacity: 1
+
+$fadeInDuration: 300ms
+$fadeInDelay: 100ms
+$fadeInParts: 19
+
+.a-fadeIn
+    opacity: 0
+    animation-name: fadeIn
+    animation-duration: #{$fadeInDuration}
+    animation-iteration-count: 1
+    animation-fill-mode: forwards
+    @for $i from 1 through $fadeInParts
+        &--delay-#{$i}        
+            animation-delay: #{$fadeInDelay * $i}
