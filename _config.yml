@@ -18,10 +18,3 @@ sass:
   style: expanded
   deploy_style: compressed
   sourcemap: development
-
-plugins:
-  - jekyll-autoprefixer
-
-autoprefixer:
-  browsers:
-    - last 4 versions
