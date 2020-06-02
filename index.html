@@ -28,7 +28,7 @@ layout: default
     </section>
     <section id="clients">
         <div class="h-container">
-            <p class="a-fadeIn a-fadeIn--delay-13">I had the privilege of improving products used and loved by many users for over {{ 'now' | date: "%Y" | minus: site.starting }} years. These are some:</p>
+            <p class="a-fadeIn a-fadeIn--delay-13">I had the privilege of improving products used and loved by many users for over <time>{{ 'now' | date: "%Y" | minus: site.starting }} years</time>. These are some:</p>
             {% if site.data.clients %}
             <ol class="h-list-horizontal a-fadeIn a-fadeIn--delay-14">
                 {% for client in site.data.clients %}
