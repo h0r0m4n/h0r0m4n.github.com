@@ -25,6 +25,9 @@ html
     -moz-osx-font-smoothing: grayscale
     text-rendering: optimizeLegibility
     scroll-behavior: smooth
+    background-color: $color-background-light
+    @media (prefers-color-scheme: dark)
+        background-color: $color-background-dark
 
 body
     margin: 0
@@ -34,10 +37,8 @@ body
     line-height: $type-height
     font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
-    background-color: $color-background-light
     color: $color-primary-light
     @media (prefers-color-scheme: dark)
-        background-color: $color-background-dark
         color: $color-primary-dark
     @media #{$media-query-medium}
         font-size: 1.25em
