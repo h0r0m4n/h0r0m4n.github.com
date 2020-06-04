@@ -58,14 +58,17 @@ body
         @media (prefers-color-scheme: dark)
             background-image: url(../static/bg-dark.svg)
 
-section
-    + section
+section,
+.section
+    + section,
+    + .section
         clear: both
-        // margin-top: $size-m
-        // @media #{$media-query-medium}
-        //     margin-top: $size-l
-        // @media #{$media-query-large}
-        //     margin-top: $size-xl
+        margin-top: $size-m
+        @media #{$media-query-medium}
+            margin-top: $size-l
+        @media #{$media-query-large}
+            margin-top: $size-xl
+
 footer
     clear: both
     margin-top: $size-l
