@@ -12,6 +12,7 @@
         letter-spacing: 0
         @media (prefers-color-scheme: dark)
             color: $color-tertiary-dark
+            text-shadow: 0 0 0.5em currentcolor
         svg
             position: relative
             z-index: -1
@@ -33,6 +34,9 @@
             top: - $size-xl
             margin-left: $size-xxl
         img
+            padding: 0.5em
+            @media (prefers-color-scheme: dark)
+                filter: drop-shadow(0 0 0.5rem $color-secondary-dark)
             @media #{$media-query-medium}
                 width: 154px
                 height: 230px
@@ -43,7 +47,7 @@
     img
         border-radius: 8px
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
-            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.12)
+            box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
 
 #clients
     svg
@@ -66,6 +70,8 @@
         text-decoration: none
         @media (prefers-color-scheme: dark)
             background-color: $color-secondary-dark
+            box-shadow: 0 0 0.5em $color-secondary-dark
+            
 
 
 #footer
@@ -78,6 +84,7 @@
             padding: 0.5em
             @media (prefers-color-scheme: dark)
                 background-color: $color-secondary-dark
+                box-shadow: 0 0 0.5em $color-secondary-dark
     svg
         fill: $color-background-light
         height: $size-s
