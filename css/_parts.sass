@@ -49,8 +49,9 @@
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
 
-#clients
+#brands
     svg
+        transition: fill 150ms ease-in
         fill: rgba($color-primary-light, 50%)
         @media (prefers-color-scheme: dark)
             fill: rgba($color-primary-dark, 50%)
@@ -59,6 +60,13 @@
             height: 4rem
         @media #{$media-query-large}
             height: 5rem
+    a
+        &:hover
+            svg
+                fill: rgba($color-primary-light, 75%)
+                @media (prefers-color-scheme: dark)
+                    fill: rgba($color-primary-dark, 75%)
+
 #contact
     .button
         display: inline-block

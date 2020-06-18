@@ -26,14 +26,20 @@ layout: default
         </ol>
         {% endif %}
     </div>
-    <div id="clients" class="section">
+    <div id="brands" class="section">
         <div class="h-container">
-            <p class="a-fadeIn a-fadeIn--delay-13">I had the privilege of improving products used and loved by many users for over {{ 'now' | date: "%Y" | minus: site.starting }} years. These are some:</p>
+            <p class="a-fadeIn a-fadeIn--delay-13">For over {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege of improving products used and loved by many users, these are some:</p>
             {% if site.data.clients %}
             <ol class="h-list-horizontal a-fadeIn a-fadeIn--delay-14">
                 {% for client in site.data.clients %}
                     <li class="h-list-horizontal--item h-list-horizontal--item--distance-1">
-                        {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                        {% if client.url %}
+                            <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank">
+                                {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                            </a>
+                        {% else %}
+                            {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                        {% endif %}
                     </li>
                 {% endfor %}
             </ol>
