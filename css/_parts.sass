@@ -48,6 +48,8 @@
         border-radius: 8px
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+        @media #{$media-query-small-only}
+            width: 100%
 
 #brands
     svg
