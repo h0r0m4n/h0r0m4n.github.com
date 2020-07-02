@@ -12,3 +12,5 @@
 | ------------ | --------------- |
 | development  | limited         |
 | horoman.com  | horoman.limited |
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/247d4d07-0340-411f-be0c-e8bc4e2f3621/deploy-status)](https://app.netlify.com/sites/horoman/deploys)
