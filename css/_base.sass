@@ -113,8 +113,12 @@ a
             text-decoration-color: lighten($color-secondary-dark, 20%)
 
 mark 
-    color: currentColor
-    background-color: transparent
+    background-color: $color-tertiary-light
+    padding-left: 0.25em
+    padding-right: 0.25em
+    border-radius: 2px 
+    @media (prefers-color-scheme: dark)
+        background-color: $color-tertiary-dark
 
 // Headings
 

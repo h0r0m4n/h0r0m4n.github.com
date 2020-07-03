@@ -1,10 +1,14 @@
-- title: Aeon typeface
-  year: 2016
 - title: Ferrari
   year: 2018
 - title: HUD
   year: 2015
 - title: Monitor
+  year: 2015
+- title: Poly Characters
+  year: 2016
+- title: Aeon typeface
+  year: 2016
+- title: Paradox
   year: 2015
 - title: Cefla
   year: 2019
@@ -24,8 +28,6 @@
   year: 2018
 - title: Le Paradox v1
   year: 2013
-# - title: Paradox
-#   year: 2015
 - title: Le Paradox v3
   year: 2014
 # - title: September
@@ -36,8 +38,6 @@
   year: 2017
 # - title: SPE
 #   year: 2015
-# - title: Poly Characters
-#   year: 2016
 # - title: Yearth
 #   year: 2015
 # - title: Fonmoon v1
