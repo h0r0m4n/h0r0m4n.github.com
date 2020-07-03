@@ -35,6 +35,8 @@
         list-style: none
         margin: 0
         background-color: rgba($color-primary-light, 4%)
+        @media (prefers-color-scheme: dark)
+            background-color: rgba($color-primary-dark, 1%)
         @media #{$media-query-small-only}
             padding: 1em
         @media #{$media-query-medium}
