@@ -14,55 +14,51 @@ layout: default
         </div>
     </div>
     {% if site.data.works %}
-    <div id="works" class="section">
-        <div class="h-container">
-            <h2 class="h5">Here’s my latest works</h2>
-        </div>
-        <ol class="h-list-scroll">
-            {% for work in site.data.works %}
-            <li class="h-list-scroll--item">
-                <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
-            </li>
-            {% endfor %}
-        </ol>
-    </div>
-    {% endif %}
-    {% if site.data.clients %}
-    <div id="brands" class="section">
-        <div class="h-container">
-            <p>For over {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege of improving products used and loved by many users, these are some:</p>
-            <ol class="h-list-horizontal">
-                {% for client in site.data.clients %}
-                    <li class="h-list-horizontal--item h-list-horizontal--item--distance-1">
-                        {% if client.url %}
-                            <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank">
-                                {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
-                            </a>
-                        {% else %}
-                            {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
-                        {% endif %}
-                    </li>
+        <div id="works" class="section">
+            <div class="h-container">
+                <h2 class="h5">Here’s my latest works</h2>
+            </div>
+            <ol class="h-list-scroll">
+                {% for work in site.data.works %}
+                <li class="h-list-scroll--item">
+                    <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
+                </li>
                 {% endfor %}
             </ol>
         </div>
-    </div>
     {% endif %}
-    <div id="contact" class="section">
+    <div id="experience" class="section">
         <div class="h-container">
+            <p>For over {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege of improving products used and loved by many users, these are some:</p>
+            {% if site.data.clients %}
+                <ol class="h-list-horizontal">
+                    {% for client in site.data.clients %}
+                        <li class="h-list-horizontal--item h-list-horizontal--item--distance-1">
+                            {% if client.url %}
+                                <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank">
+                                    {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                                </a>
+                            {% else %}
+                                {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ol>
+            {% endif %}
             <p>The complete portfolio is available upon request. Maybe you'd just like to say hello, or just have a question. That’s all fine.</p>
             <a class="button h-hover" href="mailto:{{ site.mail }}">Contact</a>
         </div>
     </div>
     {% if site.data.skills %}
-    <div id="skills" class="section">
-        <div class="h-container">
-            <h2 class="h5">Skills</h2>
-            <ul class="h-list-horizontal">
-                {% for skill in site.data.skills %}
-                    <li class="h-list-horizontal--item">{{ skill }}</li>
-                {% endfor %}
-            </ul>
+        <div id="skills" class="section">
+            <div class="h-container">
+                <h2 class="h5">Skills</h2>
+                <ul class="h-list-horizontal">
+                    {% for skill in site.data.skills %}
+                        <li class="h-list-horizontal--item">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
     {% endif %}
 </article>
