@@ -1,5 +1,5 @@
 # Site settings
-title: "Horoman – Roman Horokhovatskyy"
+title: "Roman Horokhovatskyy"
 description: "Personal homepage of Roman Horokhovatskyy a multi-disciplinary designer based in Milan, Italy."
 keywords: "Roman, Horokhovatskyy, @horoman, @h0r0m4n, Interaction Design, User Interface Design, User Experience Design"
 author: "Roman Horokhovatskyy"
@@ -9,7 +9,20 @@ mail: "roman.horokhovatskyy@gmail.com"
 starting: "2008"
 
 # Jekyll settings
-# source: ./src
 sass:
   sass_dir: css
   style: compressed
+permalink: /:title
+
+# Default YAML values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude these files from production site
+exclude:
+  - LICENSE
+  - README.md

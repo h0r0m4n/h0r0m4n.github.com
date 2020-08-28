@@ -6,7 +6,7 @@
             {% for link in site.data.social %}
                 <li class="h-list-horizontal--item h-list-horizontal--item--distance-2">
                     <a class="h-hover" href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
-                        {% include_relative static/{{ link.title | replace: " ", "-" | downcase }}.svg %}
+                        {% include {{ link.title | replace: " ", "-" | downcase }}.svg %}
                     </a>
                 </li>
             {% endfor %}

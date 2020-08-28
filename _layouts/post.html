@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article>
+    <header id="post-header">
+        <div class="h-container">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+                <p class="h5">{{ page.description }}</p>
+            {% endif %}
+            <button onclick="back()">Back</button>
+        </div>
+    </header>
+    <div id="post-content">
+        <div class="h-container">
+            {{ content }}
+        </div>
+    </div>
+</article>

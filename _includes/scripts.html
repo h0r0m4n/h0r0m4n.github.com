@@ -1,0 +1,16 @@
+{% if jekyll.environment == "production" %}
+    <script src="https://getinsights.io/static/js/insights.js"></script>
+    <script>
+        insights.init('HugAu_grV5lB5OQI');
+        insights.trackPages();
+    </script>
+{% endif %}
+<script async>
+    function back() {
+        if (document.referrer.indexOf("{{ site.url }}") === 0) {
+            window.history.back();
+        } else {
+            window.location.href = "{{ site.url }}";
+        }
+    }
+</script>

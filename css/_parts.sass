@@ -7,12 +7,15 @@
         font-family: $type-family-3
         line-height: 0.5
         margin: 0
-        color: $color-tertiary-light
         text-transform: none
         letter-spacing: 0
-        @media (prefers-color-scheme: dark)
-            color: $color-tertiary-dark
-            text-shadow: 0 0 0.5em currentcolor
+        a
+            display: inline-block
+            text-decoration: none
+            color: $color-tertiary-light
+            @media (prefers-color-scheme: dark)
+                color: $color-tertiary-dark
+                text-shadow: 0 0 0.5em currentcolor
         svg
             position: relative
             z-index: -1
@@ -112,3 +115,12 @@
         @media #{$media-query-large}
             height: $size-m
             width: $size-m
+
+#post
+    &-header
+        h1
+            margin-bottom: 0
+            text-transform: none
+        p
+            margin-top: 0
+    &-content

@@ -1,0 +1,14 @@
+{% if page.year or page.role %}
+    <aside class="h-meta" role="complementary">
+        <dl>
+            {% if page.year %}
+                <dt>Project year</dt>
+                <dd>{{ page.year }}</dd>
+            {% endif %}
+            {% if page.role %}
+                <dt>Involved roles</dt>
+                <dd>{{ page.role }}</dd>
+            {% endif %}
+        </dl>
+    </aside>
+{% endif %}

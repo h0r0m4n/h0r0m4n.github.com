@@ -75,9 +75,44 @@
                 margin-right: $size-s
                 @media #{$media-query-medium}
                     margin-right: $size-m
+            &:last-child
+                margin-right: 0
 
     &-mt-0
         margin-top: 0
 
     &-mb-0
         margin-bottom: 0
+    
+    &-meta
+        float: right
+        width: 33%
+        font-size: 0.875em
+        margin-left: $size-m
+        margin-bottom: $size-m
+        @media #{$media-query-medium}
+            margin-left: $size-l
+            margin-bottom: $size-l
+        dt
+            font-family: $type-family-2
+            text-transform: uppercase
+        dd + dt
+            margin-top: $size-m
+    
+    &-stats
+        font-family: $type-family-2
+        font-size: 2.5em
+        line-height: 1
+        margin-bottom: 0
+        li
+            margin-bottom: $size-s
+            @media #{$media-query-medium}
+                margin-bottom: $size-l
+        p
+            margin: 0
+        strong
+            display: block
+            font-family: $type-family-3
+            font-size: 0.75em
+            font-weight: normal
+            opacity: 0.5
