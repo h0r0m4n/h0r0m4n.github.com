@@ -4,7 +4,7 @@
 
 0. To install shit: `bundle install`
 1. To build site and outputs use: `bundle exec jekyll build`
-2. To run local web server use: `bundle exec jekyll serve`, then open: <http://localhost:4000/>
+2. To run local web server use: `bundle exec jekyll serve --livereload`, then open: <http://localhost:4000/>
 
 ## Release deployment
 
