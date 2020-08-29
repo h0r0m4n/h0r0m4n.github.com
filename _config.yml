@@ -13,6 +13,9 @@ sass:
   sass_dir: css
   style: compressed
 permalink: /:title
+collections:
+    reels:
+        output: false
 
 # Default YAML values
 defaults:
@@ -21,6 +24,13 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      master: true
+  - scope:
+      path: ""
+      type: "reels"
+    values:
+      layout: "post"
+      master: true
 
 # Exclude these files from production site
 exclude:

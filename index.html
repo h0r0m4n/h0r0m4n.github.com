@@ -14,19 +14,18 @@ layout: default
             <h2 class="h3">Here’s my latest works</h2>
         </div>
         <ol class="h-list-scroll">
-            {% assign posts = site.posts | sort: 'order' %}
-            {% for post in posts %}
-            <li class="h-list-scroll--item">
-                {% assign content = post.content | strip_newlines %}
-                {% if content == "" %}
-                    <img src="static/{{ post.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ post.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ post.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ post.title }} - {{ post.year }}" loading="lazy">
-                {% else %}
-                    <a class="h-hover--2 featured" href="{{ post.url }}" rel="bookmark" target="_parent">
-                        <span class="featured-label">Case study</span>
-                        <img src="static/{{ post.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ post.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ post.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ post.title }} - {{ post.year }}" loading="lazy">
-                    </a>
-                {% endif %}
-            </li>
+            {% assign works = site.documents | where: 'master', true | sort: 'date' | reverse %}
+            {% for work in works %}
+                <li class="h-list-scroll--item">
+                    {% if work.collection != 'reels' %}
+                        <a class="h-hover--2 featured" href="{{ work.url }}" rel="bookmark" target="_parent">
+                            <span class="featured-label">Case study</span>
+                            <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
+                        </a>
+                    {% else %}
+                        <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
+                    {% endif %}
+                </li>
             {% endfor %}
         </ol>
     </div>

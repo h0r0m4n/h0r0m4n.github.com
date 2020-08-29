@@ -1,0 +1,28 @@
+{% if page.previous.url or page.next.url %}
+    <nav>
+        <ul>
+            {% if page.previous.url %}
+                <li>
+                    Prev:
+                    <br>
+                    <a href="{{ page.previous.url }}">
+                        {{ page.previous.title }}
+                        <br>
+                        {{ page.previous.year }}
+                    </a>
+                </li>
+            {% endif %}
+            {% if page.next.url %}
+                <li>
+                    Next:
+                    <br>
+                    <a href="{{ page.next.url }}">
+                        {{ page.next.title }}
+                        <br>
+                        {{ page.next.year }}
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}
