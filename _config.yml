@@ -13,7 +13,6 @@ sass:
   sass_dir: css
   style: compressed
 permalink: /:title
-markdown: kramdown
 
 # Default YAML values
 defaults:
