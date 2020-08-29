@@ -1,11 +1,21 @@
-<header id="header">
-    <div class="h-container">
-        <h1 class="logo">
-            <a class="h-hover" href="/">
+{% if page.layout == "post" %}
+    <header id="back">
+        <div class="h-container">
+            <button class="back h-hover" onclick="back()">
+                <span class="h-visually-hidden">Back</span>
+                {% include back.svg %}
+            </button>
+            {% include avatar.html func=true %}
+        </div>
+    </header>
+{% else %}
+    <header id="header">
+        <div class="h-container">
+            <h1 class="logo">
                 <span class="h3">{{ site.author }}</span>
                 <br>
                 {% include logo.svg %}
-            </a>
-        </h1>
-    </div>
-</header>
+            </h1>
+        </div>
+    </header>
+{% endif %}

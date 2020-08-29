@@ -4,22 +4,18 @@ layout: default
 <article>
     <div id="about" class="section">
         <div class="h-container">
-            <picture class="avatar">
-                <source srcset="static/avatar-dark.png 1x, static/avatar-dark@1.5x.png 1.5x, static/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
-                <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-                <img src="static/avatar-light.png" width="96" height="143" loading="lazy" alt="{{ site.author }}">
-            </picture>
+            {% include avatar.html %}
             <p>Nice to meet you. I’m {{ site.author }}, a <mark title="Interaction Design, User Experience and User Interface Design">multi-disciplinary designer</mark> currenlty based in {{ site.location }}.</p>
             <p>My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
         </div>
     </div>
-    <!-- NEW -->
     <div id="works" class="section">
         <div class="h-container">
-            <h2 class="h5">Here’s my latest works</h2>
+            <h2 class="h3">Here’s my latest works</h2>
         </div>
         <ol class="h-list-scroll">
-            {% for post in site.posts %}
+            {% assign posts = site.posts | sort: 'order' %}
+            {% for post in posts %}
             <li class="h-list-scroll--item">
                 {% assign content = post.content | strip_newlines %}
                 {% if content == "" %}
@@ -33,21 +29,6 @@ layout: default
             {% endfor %}
         </ol>
     </div>
-    <!-- END NEW -->
-    {% if site.data.works %}
-        <div id="works" class="section">
-            <div class="h-container">
-                <h2 class="h5">Here’s my latest works</h2>
-            </div>
-            <ol class="h-list-scroll">
-                {% for work in site.data.works %}
-                <li class="h-list-scroll--item">
-                    <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
-                </li>
-                {% endfor %}
-            </ol>
-        </div>
-    {% endif %}
     <div id="experience" class="section">
         <div class="h-container">
             <p>For over {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege of improving products used and loved by many users, these are some:</p>
@@ -73,7 +54,7 @@ layout: default
     {% if site.data.skills %}
         <div id="skills" class="section">
             <div class="h-container">
-                <h2 class="h5">Skills</h2>
+                <h2 class="h3">Skills</h2>
                 <ul class="h-list-horizontal">
                     {% for skill in site.data.skills %}
                         <li class="h-list-horizontal--item">{{ skill }}</li>

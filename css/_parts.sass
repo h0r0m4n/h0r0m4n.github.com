@@ -3,28 +3,21 @@
     @media #{$media-query-large}
         margin-top: $size-xxl
     .logo
-        font-size: 1em
+        font-size: 0.75em
         font-family: $type-family-3
         line-height: 0.5
         margin: 0
         text-transform: none
         letter-spacing: 0
-        a
-            display: inline-block
-            text-decoration: none
-            color: $color-tertiary-light
-            @media (prefers-color-scheme: dark)
-                color: $color-tertiary-dark
-                text-shadow: 0 0 0.5em currentcolor
+        color: $color-tertiary-light
+        @media (prefers-color-scheme: dark)
+            color: $color-tertiary-dark
+            text-shadow: 0 0 0.5em currentcolor
         svg
             position: relative
             z-index: -1
-            @media #{$media-query-small-only}
-                height: 2.25rem
-                width: 17.6875rem
-            @media #{$media-query-medium}
-                height: 2.25em
-                width: 17.6875em
+            height: 2.25em
+            width: 17.6875em
 
 #about
     .avatar
@@ -38,8 +31,6 @@
             margin-left: $size-xxl
         img
             padding: 0.5em
-            @media (prefers-color-scheme: dark)
-                filter: drop-shadow(0 0 0.5rem $color-secondary-dark)
             @media #{$media-query-medium}
                 width: 154px
                 height: 230px
@@ -116,11 +107,67 @@
             height: $size-m
             width: $size-m
 
+#back
+    .back, .avatar
+        position: fixed
+        z-index: 1
+    
+    .back
+        border: none
+        background-color: $color-secondary-light
+        margin: 0
+        padding: $size-s
+        box-sizing: border-box
+        cursor: pointer
+        border-radius: 50%
+        -webkit-appearance: none
+        -webkit-border-radius: none
+        left: $size-s
+        @media (prefers-color-scheme: dark)
+            background-color: $color-secondary-dark
+        @media #{$media-query-small-only}
+            bottom: $size-s
+        @media #{$media-query-medium}
+            bottom: $size-m
+            left: $size-m
+        @media #{$media-query-large}
+            bottom: inherit
+            top: $size-l
+            left: $size-l
+        @media #{$media-query-huge}
+            top: $size-xl
+            left: $size-xl
+        &:focus
+            outline: none
+        svg
+            fill: #FFF
+            @media #{$media-query-large}
+                width: $size-xl
+                height: $size-xl
+
+    .avatar
+        top: $size-s
+        right: $size-s
+        @media #{$media-query-medium}
+            top: $size-m
+            right: $size-m
+        @media #{$media-query-large}
+            top: $size-l
+            right: $size-l
+        @media #{$media-query-huge}
+            top: $size-xl
+            right: $size-xl
+        &:hover
+            cursor: pointer
+        img
+            @media #{$media-query-small-only}
+                width: 64px
+                height: 96px
+
 #post
     &-header
         h1
             margin-bottom: 0
             text-transform: none
         p
-            margin-top: 0
-    &-content
+            // margin-top: 0

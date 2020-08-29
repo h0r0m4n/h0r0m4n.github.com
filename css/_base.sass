@@ -43,6 +43,8 @@ body
     font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
     color: $color-primary-light
+    word-wrap: break-word
+    overflow-wrap: break-word
     @media (prefers-color-scheme: dark)
         color: $color-primary-dark
     @media #{$media-query-medium}
@@ -87,7 +89,8 @@ body
 footer
     clear: both
     margin-top: $size-l
-    padding-bottom: $size-m
+    @media #{$media-query-small-only}
+        padding-bottom: $size-xxl
     @media #{$media-query-medium}
         margin-top: $size-xl
         padding-bottom: $size-m
@@ -129,7 +132,7 @@ dd
 h1, h2, h3, h4, h5, h6
     font-family: $type-family-2
     font-weight: normal
-    line-height: 1.2
+    line-height: 1
     text-transform: uppercase
     letter-spacing:  0.075rem
     margin-bottom: 0
@@ -184,3 +187,8 @@ figure
         font-family: $type-family-3
         font-size: 1.25em
         margin-top: $size-s
+
+.avatar
+    img
+        @media (prefers-color-scheme: dark)
+            filter: drop-shadow(0 0 0.5rem $color-secondary-dark)
