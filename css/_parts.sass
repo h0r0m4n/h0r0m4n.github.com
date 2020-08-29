@@ -38,9 +38,35 @@
 #works
     @media #{$media-query-small-only}
         margin-top: $size-l
+    .featured
+        display: block
+        position: relative
+        text-decoration: none
+        &:hover
+            img
+                @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5)
+        &-label
+            position: absolute
+            top: 0
+            right: 0
+            font-family: $type-family-2
+            font-size: 0.625em
+            color: $color-primary-light
+            background-color: $color-tertiary-light
+            padding: 0.25em 0.5em
+            text-transform: uppercase
+            letter-spacing: 2px
+            border-top-right-radius: 8px
+            border-bottom-left-radius: 8px
+            @media (prefers-color-scheme: dark)
+                color: $color-background-dark
+                background-color: $color-tertiary-dark
+            
     img
         border-radius: 8px
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+            transition: box-shadow 150ms ease-in
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
         @media #{$media-query-small-only}
             width: 100%

@@ -10,13 +10,18 @@
         position: absolute
 
     &-hover
-        transition: filter 150ms ease-in
-        &:hover
-            -webkit-filter: brightness(130%)
-            filter: brightness(130%)
-            @media (prefers-color-scheme: dark)
-                -webkit-filter: contrast(130%)
-                filter: contrast(130%)
+        &--1
+            transition: filter 150ms ease-in
+            &:hover
+                -webkit-filter: brightness(130%)
+                filter: brightness(130%)
+                @media (prefers-color-scheme: dark)
+                    -webkit-filter: contrast(130%)
+                    filter: contrast(130%)
+        &--2
+            transition: transform 150ms ease-in
+            &:hover
+                transform: scale(1.1)
 
     &-container
         max-width: $container-size

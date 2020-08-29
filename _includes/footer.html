@@ -5,7 +5,7 @@
         <ul class="h-list-horizontal h-list-horizontal--space h-mt-0">
             {% for link in site.data.social %}
                 <li class="h-list-horizontal--item h-list-horizontal--item--distance-2">
-                    <a class="h-hover" href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
+                    <a class="h-hover--1" href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
                         {% include {{ link.title | replace: " ", "-" | downcase }}.svg %}
                     </a>
                 </li>
