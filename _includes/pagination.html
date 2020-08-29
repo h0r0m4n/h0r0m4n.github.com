@@ -1,28 +1,27 @@
 {% if page.previous.url or page.next.url %}
-    <nav>
-        <ul>
-            {% if page.previous.url %}
-                <li>
-                    Prev:
-                    <br>
-                    <a href="{{ page.previous.url }}">
-                        {{ page.previous.title }}
+    <nav id="pagination">
+        <div class="h-container">
+            <h2>See also</h2>
+            <ul class="h-list-horizontal">
+                {% if page.previous.url %}
+                    <li id="pagination-previous" class="h-list-horizontal--item">
+                        Previous:
                         <br>
-                        {{ page.previous.year }}
-                    </a>
-                </li>
-            {% endif %}
-            {% if page.next.url %}
-                <li>
-                    Next:
-                    <br>
-                    <a href="{{ page.next.url }}">
-                        {{ page.next.title }}
+                        <a class="h-hover--2" href="{{ page.previous.url }}" rel="bookmark" target="_parent">
+                            <img src="static/{{ page.previous.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ page.previous.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ page.previous.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ page.previous.title }} - {{ page.previous.year }}" loading="lazy">
+                        </a>
+                    </li>
+                {% endif %}
+                {% if page.next.url %}
+                    <li id="pagination-next" class="h-list-horizontal--item">
+                        Next:
                         <br>
-                        {{ page.next.year }}
-                    </a>
-                </li>
-            {% endif %}
-        </ul>
+                        <a class="h-hover--2" href="{{ page.next.url }}" rel="bookmark" target="_parent">
+                            <img src="static/{{ page.next.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ page.next.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ page.next.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ page.next.title }} - {{ page.next.year }}" loading="lazy">
+                        </a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
     </nav>
 {% endif %}

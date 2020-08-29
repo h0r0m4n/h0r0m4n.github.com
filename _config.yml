@@ -36,3 +36,4 @@ defaults:
 exclude:
   - LICENSE
   - README.md
+  - TODO.md
