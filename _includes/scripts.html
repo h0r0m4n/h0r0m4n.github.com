@@ -5,12 +5,3 @@
         insights.trackPages();
     </script>
 {% endif %}
-<script async>
-    function back() {
-        if (document.referrer.indexOf("{{ site.url }}") === 0) {
-            window.history.back();
-        } else {
-            window.location.href = "{{ site.url }}";
-        }
-    }
-</script>

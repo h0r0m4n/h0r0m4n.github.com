@@ -1,11 +1,11 @@
 {% if page.layout == "post" %}
     <header id="back">
         <div class="h-container">
-            <button class="back h-hover--1" onclick="back()">
+            <a class="back h-hover--1" href="/" rel="home">
                 <span class="h-visually-hidden">Back</span>
-                {% include back.svg %}
-            </button>
-            {% include avatar.html func=true %}
+                {% include close.svg %}
+            </a>
+            {% include avatar.html %}
         </div>
     </header>
 {% else %}

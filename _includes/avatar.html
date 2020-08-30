@@ -1,5 +1,15 @@
-<picture class="avatar{% if page.layout == 'post' %} h-hover--2{% endif %}" {% if include.func %}onclick="back()"{% endif %}>
-    <source srcset="static/avatar-dark.png 1x, static/avatar-dark@1.5x.png 1.5x, static/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
-    <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-    <img src="static/avatar-light.png" width="96" height="143" loading="lazy" alt="{{ site.author }}">
-</picture>
+{% if page.layout == 'post' %}
+    <a class="avatar h-hover--2" href="/" rel="home">
+        <picture>
+            <source srcset="static/avatar-dark.png 1x, static/avatar-dark@1.5x.png 1.5x, static/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
+            <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <img src="static/avatar-light.png" width="96" height="143" loading="lazy" alt="{{ site.author }}">
+        </picture>
+    </a>
+{% else %}
+    <picture class="avatar">
+        <source srcset="static/avatar-dark.png 1x, static/avatar-dark@1.5x.png 1.5x, static/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
+        <source srcset="static/avatar-light.png 1x, static/avatar-light@1.5x.png 1.5x, static/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <img src="static/avatar-light.png" width="96" height="143" loading="lazy" alt="{{ site.author }}">
+    </picture>
+{% endif %}

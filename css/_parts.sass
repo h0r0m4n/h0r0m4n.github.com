@@ -162,15 +162,14 @@
         -webkit-appearance: none
         -webkit-border-radius: none
         left: $size-s
+        top: $size-s
+        line-height: 0
         @media (prefers-color-scheme: dark)
             background-color: $color-secondary-dark
-        @media #{$media-query-small-only}
-            bottom: $size-s
         @media #{$media-query-medium}
-            bottom: $size-m
+            top: $size-m
             left: $size-m
         @media #{$media-query-large}
-            bottom: inherit
             top: $size-l
             left: $size-l
         @media #{$media-query-huge}
