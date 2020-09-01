@@ -248,3 +248,69 @@
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             transition: box-shadow 150ms ease-in
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+
+#modal
+    display: none
+    &.open
+        display: flex
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 9
+        align-items: center
+        justify-content: center
+        background-color: rgba($color-background-light, 0.95)
+        @media (prefers-color-scheme: dark)
+            background-color: rgba($color-background-dark, 0.95)
+    &-container
+        position: relative
+        max-width: 280px
+        padding: $size-m $size-s
+        background-color: $color-tertiary-light
+        border-radius: $size-s
+        box-sizing: border-box
+        @media (prefers-color-scheme: dark)
+            background-color: $color-tertiary-dark
+            color: $color-background-dark
+    &-close
+        border: none
+        background: transparent
+        margin: 0
+        float: right
+        padding: 0
+        box-sizing: border-box
+        cursor: pointer
+        border-radius: 0
+        -webkit-appearance: none
+        -webkit-border-radius: none
+        left: $size-s
+        top: $size-s
+        line-height: 0
+        svg
+            fill: $color-primary-light
+            @media (prefers-color-scheme: dark)
+                color: $color-background-dark
+    &-password
+        width: 100%
+        margin-top: $size-s
+        box-sizing: border-box
+        height: $size-xl
+        padding: $size-s
+    &-enter
+        display: block
+        border: none
+        width: 100%
+        color: #FFF
+        background-color: $color-secondary-light
+        border-radius: 4px
+        padding: $size-s $size-m
+        margin-top: $size-s
+        text-decoration: none
+        @media (prefers-color-scheme: dark)
+            background-color: $color-secondary-dark
+            box-shadow: 0 0 0.5em $color-secondary-dark
+    h6
+        margin-top: 0
+        text-transform: none

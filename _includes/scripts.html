@@ -5,3 +5,49 @@
         insights.trackPages();
     </script>
 {% endif %}
+<script>
+    // ------------------------------------------------------------------------------
+    // CHECK FOR PASSWORD
+    // ------------------------------------------------------------------------------
+    // If user click featuredLink:
+    // Check for localStorage
+    //   a. If there’s no password then display a <Modal>
+    //      1. User insert a correct password then localStorage is === to true
+    //      2. User insert wrong password > Warning
+    //   b. If there’s a password then procede to url
+    // ------------------------------------------------------------------------------
+    var featuredLink = document.querySelectorAll('.featured');
+    var featuredWork = 'FeaturedWork';
+    var featuredModal = document.getElementById("modal");
+    var featuredClose = document.getElementById("modal-close");
+    var featuredPassword = document.getElementById("modal-password");
+    var featuredEnter = document.getElementById("modal-enter");
+
+    //localStorage.setItem(featuredWork, true);
+
+    featuredClose.onclick = function() {
+        featuredModal.classList.toggle('open');
+    }
+
+    document.addEventListener('click', function (event) {
+        // Only for links with featured class
+        if (!event.target.matches('.featured')) return;
+
+        if (localStorage.hasOwnProperty(featuredWork)) {
+            // Proceed to URL
+            console.log('Local storage is ON!');
+        } else {
+            // Show the <Modal>
+            featuredModal.classList.toggle('open');
+
+            featuredEnter.addEventListener("click", function (event) {
+                console.log('Submit!');
+            });
+
+            event.preventDefault();
+            console.log('Local storage is OFF!');
+        }
+
+        //console.log(event.target);
+    }, false);
+</script>
