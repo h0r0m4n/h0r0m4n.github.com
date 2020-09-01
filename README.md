@@ -9,6 +9,11 @@
 0. To install initial shit: `bundle install`
 1. To run local web server use: `bundle exec jekyll serve --livereload`, then open: <http://localhost:4000/>
 
+## For Massimo:
+
+0. The main layout is here `/_layouts/default.html`
+1. For scripts you can use `/_includes/scripts.html`
+
 ## Automatic branch deployment
 
 | GitHub Pages | Netlify         |
