@@ -313,6 +313,8 @@
                 border-color: $color-tertiary-dark
         &.error
             border-color: red
+            @media (prefers-color-scheme: dark)
+                box-shadow: 0 0 2em red
             &--play
                 animation: wiggle 500ms
     &-enter
