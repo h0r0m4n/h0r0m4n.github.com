@@ -249,6 +249,18 @@
             transition: box-shadow 150ms ease-in
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
 
+@keyframes wiggle
+    0%
+        transform: translateX(-$size-s)
+    25%
+        transform: translateX($size-s)
+    50%
+        transform: translateX(-$size-s)
+    75%
+        transform: translateX($size-s)
+    100%
+        transform: translateX(-$size-s)
+
 #modal
     display: none
     &.open
@@ -299,6 +311,10 @@
             border-color: $color-tertiary-light
             @media (prefers-color-scheme: dark)
                 border-color: $color-tertiary-dark
+        &.error
+            border-color: red
+            &--play
+                animation: wiggle 500ms
     &-enter
         display: inline-block
         border: none

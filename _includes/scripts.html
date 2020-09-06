@@ -7,16 +7,6 @@
 {% endif %}
 
 <script>
-    // ------------------------------------------------------------------------------
-    // CHECK FOR PASSWORD
-    // ------------------------------------------------------------------------------
-    // If user click featuredLink:
-    // Check for localStorage
-    //   a. If there’s no password then display a <Modal>
-    //      1. User insert a correct password then localStorage is === to true
-    //      2. User insert wrong password > Warning
-    //   b. If there’s a password then procede to url
-    // ------------------------------------------------------------------------------
     var featuredLink = document.querySelectorAll('.featured');
     var featuredWork = 'FeaturedWork';
     var featuredModal = document.getElementById("modal");
@@ -36,14 +26,15 @@
     function checkPassword(parentLink) {
         if (featuredPassword.value === featuredValue) {
             localStorage.setItem(featuredWork, true);
-
             location.href = parentLink;
-            console.log('TEST:', parentLink);
-
-            console.log('Submit (You can enter)!', event.target);
+            featuredPassword.classList.remove('error error--play');
             return true;
         } else {
-            console.log('Submit (wront password, show error)!');
+            featuredPassword.classList.add('error');
+            featuredPassword.classList.add('error--play');
+            setTimeout(function(){
+                featuredPassword.classList.remove('error--play');
+            }, 500);
         }
     };
 
@@ -61,7 +52,6 @@
             
             // Prevent enter the URL
             event.preventDefault();
-            console.log('Local storage is OFF! You can’t enter');
 
             // Save the URL
             featuredUrl = event.target.href;
@@ -69,7 +59,6 @@
             // Submit on button
             featuredEnter.addEventListener("click", function (event) {
                 checkPassword(featuredUrl);
-                console.log('Submit (from button)!');
             });
 
             // Submit on keyboard enter button
@@ -77,7 +66,6 @@
                 if (event.keyCode === 13) {
                     featuredEnter.click();
                     checkPassword(featuredUrl);
-                    console.log('Submit (from enter)!');
                 };
             });
         };
