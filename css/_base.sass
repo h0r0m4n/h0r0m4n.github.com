@@ -72,6 +72,10 @@ hr
     box-sizing: content-box
     height: 0
     overflow: visible
+    margin: $size-m 0
+    border-color: rgba($color-primary-light, 25%)
+    @media (prefers-color-scheme: dark)
+        border-color: rgba($color-primary-dark, 25%)
 
 .section
     + .section

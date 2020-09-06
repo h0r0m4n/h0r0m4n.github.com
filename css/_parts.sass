@@ -282,24 +282,29 @@
     &-close
         border: none
         background: transparent
-        margin: 0
+        margin: - $size-s #{- $size-s} 0 0
         float: right
-        padding: 0
+        padding: $size-s
         box-sizing: border-box
         cursor: pointer
-        border-radius: 0
+        border-radius: 50%
         -webkit-appearance: none
         -webkit-border-radius: none
         left: $size-s
         top: $size-s
         line-height: 0
+        transition: background 150ms ease-out
+        &:hover
+            background-color: rgba($color-primary-light, 6%)
+            @media (prefers-color-scheme: dark)
+                background-color: rgba($color-primary-dark, 6%)
         svg
             fill: $color-primary-light
             @media (prefers-color-scheme: dark)
                 fill: $color-primary-dark
     &-password
         width: 100%
-        margin-top: $size-s
+        margin-top: $size-m
         box-sizing: border-box
         padding: $size-s
         border-radius: 4px
@@ -320,7 +325,7 @@
     &-enter
         display: inline-block
         border: none
-        //width: 100%
+        width: 100%
         color: #FFF
         background-color: $color-secondary-light
         border-radius: 4px
@@ -333,3 +338,8 @@
     h5
         margin-top: 0
         text-transform: none
+    p
+        font-size: 1rem
+        line-height: 1.2
+        margin: 0
+    hr
