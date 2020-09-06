@@ -77,6 +77,13 @@ hr
     @media (prefers-color-scheme: dark)
         border-color: rgba($color-primary-dark, 25%)
 
+abbr
+    border-bottom: 1px dotted rgba($color-secondary-light, 50%)
+    @media (prefers-color-scheme: dark)
+        border-color: rgba($color-secondary-dark, 50%)
+    &:hover
+        cursor: help
+
 .section
     + .section
         clear: both
