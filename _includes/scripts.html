@@ -24,52 +24,55 @@
     var featuredEnter = document.getElementById("modal-enter");
     var featuredValue = '123456';
 
+    // Close modal
     featuredClose.onclick = function() {
         featuredModal.classList.toggle('open');
         featuredPassword.focus();
     }
 
+    // Check password
+    function checkPassword() {
+        if (featuredPassword.value === featuredValue) {
+            localStorage.setItem(featuredWork, true);
+            console.log('Submit (You can enter)!', event);
+            return true;
+        } else {
+            console.log('Submit (wront password, show error)!');
+        }
+    };
+
     document.addEventListener('click', function (event) {
+        
         // Only for links with featured class
         if (!event.target.matches('.featured')) return;
 
-        if (localStorage.hasOwnProperty(featuredWork)) {
-            // Proceed to URL
-            console.log('Local storage is ON!');
-        } else {
+        // If has no localstorage
+        if (!localStorage.hasOwnProperty(featuredWork)) {
+
             // Show the <Modal>
             featuredModal.classList.toggle('open');
             featuredPassword.focus();
+            
+            // Prevent enter the URL
+            event.preventDefault();
+            console.log('Local storage is OFF! You can’t enter');
 
-            // Check password
-            function checkPassword() {
-                if (featuredPassword.value === featuredValue) {
-                    console.log('Submit (You can enter)!');
-                    localStorage.setItem(featuredWork, true);
-                } else {
-                    console.log('Submit (wront password, show error)!');
-                }
-            };
+            // Submit on button
+            featuredEnter.addEventListener("click", function (event) {
+                checkPassword();
+                console.log('Submit (from button)!');
+            });
 
-            // Submit on enter
+            // Submit on keyboard enter button
             featuredPassword.addEventListener("keyup", function(event) {
                 if (event.keyCode === 13) {
-                    event.preventDefault();
                     featuredEnter.click();
                     checkPassword();
                     console.log('Submit (from enter)!');
                 }
             });
-
-            featuredEnter.addEventListener("click", function (event) {
-                console.log('Submit (from button)!');
-                checkPassword();
-            });
-
-            event.preventDefault();
-            console.log('Local storage is OFF!');
         }
 
-        //console.log(event.target);
+        // console.log(event.target);
     }, false);
 </script>
