@@ -21,8 +21,16 @@
         featuredModal.classList.toggle('open');
         featuredPassword.classList.remove('error');
         featuredPassword.value = '';
-        featuredPassword.focus();
     };
+
+    // Close modal on esc button
+    document.addEventListener("keyup", function(event) {
+        if (event.keyCode === 27) {
+            featuredModal.classList.toggle('open');
+            featuredPassword.classList.remove('error');
+            featuredPassword.value = '';
+        };
+    });
 
     // Check password
     function checkPassword(parentLink) {
