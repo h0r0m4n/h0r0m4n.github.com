@@ -22,11 +22,11 @@
     var featuredClose = document.getElementById("modal-close");
     var featuredPassword = document.getElementById("modal-password");
     var featuredEnter = document.getElementById("modal-enter");
-
-    //localStorage.setItem(featuredWork, true);
+    var featuredValue = '123456';
 
     featuredClose.onclick = function() {
         featuredModal.classList.toggle('open');
+        featuredPassword.focus();
     }
 
     document.addEventListener('click', function (event) {
@@ -39,9 +39,31 @@
         } else {
             // Show the <Modal>
             featuredModal.classList.toggle('open');
+            featuredPassword.focus();
+
+            // Check password
+            function checkPassword() {
+                if (featuredPassword.value === featuredValue) {
+                    console.log('Submit (You can enter)!');
+                    localStorage.setItem(featuredWork, true);
+                } else {
+                    console.log('Submit (wront password, show error)!');
+                }
+            };
+
+            // Submit on enter
+            featuredPassword.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                    event.preventDefault();
+                    featuredEnter.click();
+                    checkPassword();
+                    console.log('Submit (from enter)!');
+                }
+            });
 
             featuredEnter.addEventListener("click", function (event) {
-                console.log('Submit!');
+                console.log('Submit (from button)!');
+                checkPassword();
             });
 
             event.preventDefault();

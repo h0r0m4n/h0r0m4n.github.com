@@ -261,19 +261,12 @@
         z-index: 9
         align-items: center
         justify-content: center
-        background-color: rgba($color-background-light, 0.95)
+        background-color: rgba($color-background-light, 0.98)
         @media (prefers-color-scheme: dark)
-            background-color: rgba($color-background-dark, 0.95)
+            background-color: rgba($color-background-dark, 0.98)
     &-container
         position: relative
-        max-width: 280px
-        padding: $size-m $size-s
-        background-color: $color-tertiary-light
-        border-radius: $size-s
-        box-sizing: border-box
-        @media (prefers-color-scheme: dark)
-            background-color: $color-tertiary-dark
-            color: $color-background-dark
+        max-width: 288px
     &-close
         border: none
         background: transparent
@@ -291,17 +284,25 @@
         svg
             fill: $color-primary-light
             @media (prefers-color-scheme: dark)
-                color: $color-background-dark
+                fill: $color-primary-dark
     &-password
         width: 100%
         margin-top: $size-s
         box-sizing: border-box
-        height: $size-xl
         padding: $size-s
+        border-radius: 4px
+        border: 2px solid rgba($color-primary-light, 25%)
+        @media (prefers-color-scheme: dark)
+            border-color: rgba($color-primary-dark, 25%)
+        &:focus
+            outline: none
+            border-color: $color-tertiary-light
+            @media (prefers-color-scheme: dark)
+                border-color: $color-tertiary-dark
     &-enter
-        display: block
+        display: inline-block
         border: none
-        width: 100%
+        //width: 100%
         color: #FFF
         background-color: $color-secondary-light
         border-radius: 4px
@@ -311,6 +312,6 @@
         @media (prefers-color-scheme: dark)
             background-color: $color-secondary-dark
             box-shadow: 0 0 0.5em $color-secondary-dark
-    h6
+    h5
         margin-top: 0
         text-transform: none
