@@ -1,0 +1,8 @@
+<figure {% if include.full %}class="full"{% endif %}>
+    <video width="960" height="540" autoplay loop muted playsinline disablePictureInPicture>
+        <source src="static/{{ include.video }}.mp4" type="video/mp4">
+    </video>
+    {% if include.caption %}
+        <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+</figure>
