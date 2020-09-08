@@ -18,9 +18,6 @@
             &:hover
                 -webkit-filter: brightness(130%)
                 filter: brightness(130%)
-                @media (prefers-color-scheme: dark)
-                    -webkit-filter: brightness(130%)
-                    filter: brightness(130%)
         &--2
             transition: transform 150ms ease-out
             &:hover
@@ -30,62 +27,62 @@
 
 
     &-container
-        max-width: $container-size
+        max-width: var(--container-size)
         margin-left: auto
         margin-right: auto
-        padding-left: $size-s
-        padding-right: $size-s
+        padding-left: var(--size-s)
+        padding-right: var(--size-s)
         @media #{$media-query-medium}
-            padding-left: $size-m
-            padding-right: $size-m
+            padding-left: var(--size-m)
+            padding-right: var(--size-m)
         @media #{$media-query-large}
-            padding-left: $size-l
-            padding-right: $size-l
+            padding-left: var(--size-l)
+            padding-right: var(--size-l)
 
     &-list-scroll
         list-style: none
         margin: 0
-        background-color: rgba($color-primary-light, 4%)
+        background-color: var(--color-neutral-light)
         @media (prefers-color-scheme: dark)
-            background-color: rgba($color-primary-dark, 1%)
+            background-color: var(--color-neutral-dark)
         @media #{$media-query-small-only}
             padding: 1em
         @media #{$media-query-medium}
-            padding: 1em 0 1em $size-m
+            padding: 1em 0 1em var(--size-m)
             overflow-x: scroll
             overflow-y: hidden
             -webkit-overflow-scrolling: touch
             white-space: nowrap
         @media #{$media-query-large}
-            padding-left: $size-l
+            padding-left: var(--size-l)
         &--item
             @media #{$media-query-small-only}
-                margin-bottom: $size-s
+                margin-bottom: var(--size-s)
             @media #{$media-query-medium}
-                margin-right: $size-m
+                margin-right: var(--size-m)
                 display: inline-block
                 list-style: none
                 vertical-align: middle
                 white-space: normal
             @media #{$media-query-large}
-                margin-right: $size-l
+                margin-right: var(--size-l)
 
     &-list-horizontal
         list-style: none
         padding: 0
         &--space
-            padding: $size-s 0
+            padding: var(--size-s) 0
         &--item
             display: inline-block
             list-style: none
             &--distance-1
-                margin-right: $size-l
+                margin-right: var(--size-l)
                 @media #{$media-query-medium}
-                    margin-right: $size-xl
+                    margin-right: var(--size-xl)
             &--distance-2
-                margin-right: $size-s
+                margin-right: var(--size-s)
                 @media #{$media-query-medium}
-                    margin-right: $size-m
+                    margin-right: var(--size-m)
             &:last-child
                 margin-right: 0
 
@@ -99,31 +96,31 @@
         float: right
         width: 33%
         font-size: 0.875em
-        margin-left: $size-m
-        margin-bottom: $size-m
+        margin-left: var(--size-m)
+        margin-bottom: var(--size-m)
         @media #{$media-query-medium}
-            margin-left: $size-l
-            margin-bottom: $size-l
+            margin-left: var(--size-l)
+            margin-bottom: var(--size-l)
         dt
-            font-family: $type-family-2
+            font-family: var(--type-family-2)
             text-transform: uppercase
         dd + dt
-            margin-top: $size-m
+            margin-top: var(--size-m)
     
     &-stats
-        font-family: $type-family-2
+        font-family: var(--type-family-2)
         font-size: 2.5em
         line-height: 1
         margin-bottom: 0
         li
-            margin-bottom: $size-s
+            margin-bottom: var(--size-s)
             @media #{$media-query-medium}
-                margin-bottom: $size-l
+                margin-bottom: var(--size-l)
         p
             margin: 0
         strong
             display: block
-            font-family: $type-family-3
+            font-family: var(--type-family-3)
             font-size: 0.625em
             font-weight: normal
             opacity: 0.5

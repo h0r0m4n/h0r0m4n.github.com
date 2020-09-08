@@ -1,17 +1,17 @@
 #header
-    margin-top: $size-xl
+    margin-top: var(--size-xl)
     @media #{$media-query-large}
-        margin-top: $size-xxl
+        margin-top: var(--size-xxl)
     .logo
         font-size: 0.75em
-        font-family: $type-family-3
+        font-family: var(--type-family-3)
         line-height: 0.5
         margin: 0
         text-transform: none
         letter-spacing: 0
-        color: $color-tertiary-light
+        color: var(--color-tertiary-light)
         @media (prefers-color-scheme: dark)
-            color: $color-tertiary-dark
+            color: var(--color-tertiary-dark)
             text-shadow: 0 0 0.5em currentcolor
         svg
             position: relative
@@ -24,11 +24,11 @@
         float: right
         @media #{$media-query-medium}
             position: relative
-            top: - $size-l
-            margin-left: $size-l
+            top: - var(--size-l)
+            margin-left: var(--size-l)
         @media #{$media-query-large}
-            top: - $size-xl
-            margin-left: $size-xxl
+            top: - var(--size-xl)
+            margin-left: var(--size-xxl)
         img
             padding: 0.5em
             @media #{$media-query-medium}
@@ -37,7 +37,7 @@
 
 #works
     @media #{$media-query-small-only}
-        margin-top: $size-l
+        margin-top: var(--size-l)
     .featured
         display: block
         position: relative
@@ -52,7 +52,7 @@
                 height: 100%
                 background: linear-gradient(45deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0.25) 43%, rgba(255,255,255,0.25) 63%, rgba(255,255,255,0) 100%)
                 z-index: 2
-                border-radius: $size-s
+                border-radius: var(--size-s)
             img
                 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
                     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5)
@@ -61,23 +61,23 @@
             position: absolute
             top: 0
             right: 0
-            font-family: $type-family-2
+            font-family: var(--type-family-2)
             font-size: 0.625em
-            color: $color-primary-light
-            background-color: $color-tertiary-light
+            color: var(--color-primary-light)
+            background-color: var(--color-tertiary-light)
             padding: 0.25em 0.5em
             text-transform: uppercase
             letter-spacing: 2px
-            border-top-right-radius: $size-s
-            border-bottom-left-radius: $size-s
+            border-top-right-radius: var(--size-s)
+            border-bottom-left-radius: var(--size-s)
             z-index: 1
             @media (prefers-color-scheme: dark)
-                color: $color-background-dark
-                background-color: $color-tertiary-dark
+                color: var(--color-background-dark)
+                background-color: var(--color-tertiary-dark)
             
     img
         position: relative
-        border-radius: $size-s
+        border-radius: var(--size-s)
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             transition: box-shadow 150ms ease-in
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
@@ -87,10 +87,10 @@
 #experience
     svg
         transition: fill 150ms ease-in
-        fill: rgba($color-primary-light, 50%)
-        @media (prefers-color-scheme: dark)
-            fill: rgba($color-primary-dark, 50%)
+        fill: var(--color-neutral-1-light)
         height: 3rem
+        @media (prefers-color-scheme: dark)
+            fill: var(--color-neutral-1-dark)
         @media #{$media-query-medium}
             height: 4rem
         @media #{$media-query-large}
@@ -98,53 +98,53 @@
     a
         &:hover
             svg
-                fill: rgba($color-primary-light, 75%)
+                fill: var(--color-primary-light)
                 @media (prefers-color-scheme: dark)
-                    fill: rgba($color-primary-dark, 75%)
+                    fill: var(--color-primary-dark)
 
     .button
         display: inline-block
         color: #FFF
-        background-color: $color-secondary-light
+        background-color: var(--color-secondary-light)
         border-radius: 4px
-        padding: $size-s $size-m
-        margin-top: $size-s
+        padding: var(--size-s) var(--size-m)
+        margin-top: var(--size-s)
         text-decoration: none
         @media (prefers-color-scheme: dark)
-            background-color: $color-secondary-dark
-            box-shadow: 0 0 0.5em $color-secondary-dark
-            
+            background-color: var(--color-secondary-dark)
+            box-shadow: 0 0 0.5em var(--color-secondary-dark)
+
 #skills
     li
         font-size: 0.875em
         padding: 0.25em 0.5em
-        border: 2px dotted $color-tertiary-light
+        border: 2px dotted var(--color-tertiary-light)
         border-radius: 0.5em
-        margin-right: $size-s
-        margin-bottom: $size-s
+        margin-right: var(--size-s)
+        margin-bottom: var(--size-s)
         @media (prefers-color-scheme: dark)
-            border-color: rgba($color-tertiary-dark, 25%)
+            border-color: var(--color-tertiary-dark)
 
 #footer
     .h-list-horizontal
         a
             display: block
-            background-color: $color-secondary-light
+            background-color: var(--color-secondary-light)
             line-height: 0
             border-radius: 50%
             padding: 0.5em
             @media (prefers-color-scheme: dark)
-                background-color: $color-secondary-dark
-                box-shadow: 0 0 0.5em $color-secondary-dark
+                background-color: var(--color-secondary-dark)
+                box-shadow: 0 0 0.5em var(--color-secondary-dark)
     svg
-        fill: $color-background-light
-        height: $size-s
-        width: $size-s
+        fill: var(--color-background-light)
+        height: var(--size-s)
+        width: var(--size-s)
         @media (prefers-color-scheme: dark)
-            fill: $color-primary-dark
+            fill: var(--color-primary-dark)
         @media #{$media-query-large}
-            height: $size-m
-            width: $size-m
+            height: var(--size-m)
+            width: var(--size-m)
 
 #back
     .back, .avatar
@@ -153,48 +153,48 @@
     
     .back
         border: none
-        background-color: $color-secondary-light
+        background-color: var(--color-secondary-light)
         margin: 0
-        padding: $size-s
+        padding: var(--size-s)
         box-sizing: border-box
         cursor: pointer
         border-radius: 50%
         -webkit-appearance: none
         -webkit-border-radius: none
-        left: $size-s
-        top: $size-s
+        left: var(--size-s)
+        top: var(--size-s)
         line-height: 0
         @media (prefers-color-scheme: dark)
-            background-color: $color-secondary-dark
+            background-color: var(--color-secondary-dark)
         @media #{$media-query-medium}
-            top: $size-m
-            left: $size-m
+            top: var(--size-m)
+            left: var(--size-m)
         @media #{$media-query-large}
-            top: $size-l
-            left: $size-l
+            top: var(--size-l)
+            left: var(--size-l)
         @media #{$media-query-huge}
-            top: $size-xl
-            left: $size-xl
+            top: var(--size-xl)
+            left: var(--size-xl)
         &:focus
             outline: none
         svg
             fill: #FFF
             @media #{$media-query-large}
-                width: $size-xl
-                height: $size-xl
+                width: var(--size-xl)
+                height: var(--size-xl)
 
     .avatar
-        top: $size-s
-        right: $size-s
+        top: var(--size-s)
+        right: var(--size-s)
         @media #{$media-query-medium}
-            top: $size-m
-            right: $size-m
+            top: var(--size-m)
+            right: var(--size-m)
         @media #{$media-query-large}
-            top: $size-l
-            right: $size-l
+            top: var(--size-l)
+            right: var(--size-l)
         @media #{$media-query-huge}
-            top: $size-xl
-            right: $size-xl
+            top: var(--size-xl)
+            right: var(--size-xl)
         &:hover
             cursor: pointer
         img
@@ -212,10 +212,10 @@
             text-transform: none
 
 .footnotes
-    margin-top: $size-xl
-    border-top: 2px solid rgba($color-primary-light, 25%)
+    margin-top: var(--size-xl)
+    border-top: 2px solid var(--color-neutral-3-light)
     @media (prefers-color-scheme: dark)
-        border-top: 2px solid rgba($color-primary-dark, 25%)
+        border-color: var(--color-neutral-3-dark)
     p
         margin: 0
 
@@ -228,11 +228,11 @@
     li
         width: 45%
     span
-        font-family: $type-family-3
+        font-family: var(--type-family-3)
         font-size: 1.625em
     a
         display: block
-        color: $color-primary-light
+        color: var(--color-primary-light)
         line-height: 1
         &:hover
             &::after
@@ -244,14 +244,14 @@
                 height: 100%
                 background: linear-gradient(45deg, rgba(255,255,255,0.125) 0%, rgba(255,255,255,0.25) 43%, rgba(255,255,255,0.25) 63%, rgba(255,255,255,0) 100%)
                 z-index: 2
-                border-radius: $size-s
+                border-radius: var(--size-s)
             img
                 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
                     box-shadow: 0 0 2em rgba(0, 0, 0, 0.5)
     img
         height: auto
         width: 100%
-        border-radius: $size-s
+        border-radius: var(--size-s)
         transition: all 150 ease-out
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             transition: box-shadow 150ms ease-in
@@ -259,15 +259,15 @@
 
 @keyframes wiggle
     0%
-        transform: translateX(-$size-s)
+        transform: translateX(-1em)
     25%
-        transform: translateX($size-s)
+        transform: translateX(1em)
     50%
-        transform: translateX(-$size-s)
+        transform: translateX(-1em)
     75%
-        transform: translateX($size-s)
+        transform: translateX(1em)
     100%
-        transform: translateX(-$size-s)
+        transform: translateX(-1em)
 
 #modal
     display: none
@@ -281,49 +281,49 @@
         z-index: 9
         align-items: center
         justify-content: center
-        background-color: rgba($color-background-light, 0.98)
+        background-color: var(--color-overlay-light)
         @media (prefers-color-scheme: dark)
-            background-color: rgba($color-background-dark, 0.98)
+            background-color: var(--color-overlay-dark)
     &-container
         position: relative
         max-width: 288px
     &-close
         border: none
         background: transparent
-        margin: - $size-s #{- $size-s} 0 0
+        margin: - var(--size-s) - var(--size-s) 0 0
         float: right
-        padding: $size-s
+        padding: var(--size-s)
         box-sizing: border-box
         cursor: pointer
         border-radius: 50%
         -webkit-appearance: none
         -webkit-border-radius: none
-        left: $size-s
-        top: $size-s
+        left: var(--size-s)
+        top: var(--size-s)
         line-height: 0
         transition: background 150ms ease-out
         &:hover
-            background-color: rgba($color-primary-light, 6%)
+            background-color: var(--color-neutral-4-light)
             @media (prefers-color-scheme: dark)
-                background-color: rgba($color-primary-dark, 6%)
+                background-color: var(--color-neutral-4-dark)
         svg
-            fill: $color-primary-light
+            fill: var(--color-primary-light)
             @media (prefers-color-scheme: dark)
-                fill: $color-primary-dark
+                fill: var(--color-primary-dark)
     &-password
         width: 100%
-        margin-top: $size-m
+        margin-top: var(--size-m)
         box-sizing: border-box
-        padding: $size-s
+        padding: var(--size-s)
         border-radius: 4px
-        border: 2px solid rgba($color-primary-light, 25%)
+        border: 2px solid var(--color-neutral-1-light)
         @media (prefers-color-scheme: dark)
-            border-color: rgba($color-primary-dark, 25%)
+            border-color: var(--color-neutral-1-dark)
         &:focus
             outline: none
-            border-color: $color-tertiary-light
+            border-color: var(--color-tertiary-light)
             @media (prefers-color-scheme: dark)
-                border-color: $color-tertiary-dark
+                border-color: var(--color-tertiary-dark)
         &.error
             border-color: red
             @media (prefers-color-scheme: dark)
@@ -335,14 +335,14 @@
         border: none
         width: 100%
         color: #FFF
-        background-color: $color-secondary-light
+        background-color: var(--color-secondary-light)
         border-radius: 4px
-        padding: $size-s $size-m
-        margin-top: $size-s
+        padding: var(--size-s) var(--size-m)
+        margin-top: var(--size-s)
         text-decoration: none
         @media (prefers-color-scheme: dark)
-            background-color: $color-secondary-dark
-            box-shadow: 0 0 0.5em $color-secondary-dark
+            background-color: var(--color-secondary-dark)
+            box-shadow: 0 0 0.5em var(--color-secondary-dark)
     h5
         margin-top: 0
         text-transform: none
@@ -350,4 +350,3 @@
         font-size: 1rem
         line-height: 1.2
         margin: 0
-    hr

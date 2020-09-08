@@ -1,22 +1,5 @@
 // Base -----------------------------------------------------------------------
 
-// Embedded
-
-svg
-    fill: $color-secondary-light
-    @media (prefers-color-scheme: dark)
-        fill: $color-secondary-dark
-
-img
-    block-size: auto
-    display: block
-    page-break-inside: avoid
-    border-style: none
-
-video
-    display: block
-    height: auto
-
 // Sections
 
 html,
@@ -32,24 +15,23 @@ html
     -moz-osx-font-smoothing: grayscale
     text-rendering: optimizeLegibility
     scroll-behavior: smooth
-    background-color: $color-background-light
+    background-color: var(--color-background-light)
     @media (prefers-color-scheme: dark)
-        background-color: $color-background-dark
+        background-color: var(--color-background-dark)
 
 body
     margin: 0
     min-block-size: 100vh
     overflow-x: hidden
-    font-family: $type-family-1
-    line-height: $type-height
+    font-family: var(--type-family-1)
+    line-height: var(--type-height)
     font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
-    line-height: 1.5
-    color: $color-primary-light
+    color: var(--color-primary-light)
     word-wrap: break-word
     overflow-wrap: break-word
     @media (prefers-color-scheme: dark)
-        color: $color-primary-dark
+        color: var(--color-primary-dark)
     @media #{$media-query-medium}
         font-size: 1.25em
     @media #{$media-query-large}
@@ -76,55 +58,49 @@ hr
     box-sizing: content-box
     height: 0
     overflow: visible
-    margin: $size-m 0
-    border-color: rgba($color-primary-light, 25%)
+    margin: var(--size-m) 0
+    opacity: 0.25
+    border-color: var(--color-neutral-1-light)
     @media (prefers-color-scheme: dark)
-        border-color: rgba($color-primary-dark, 25%)
+        border-color: var(--color-neutral-1-dark)
 
 abbr
-    border-bottom: 1px dotted rgba($color-secondary-light, 50%)
-    @media (prefers-color-scheme: dark)
-        border-color: rgba($color-secondary-dark, 50%)
+    border-bottom: 1px dotted
     &:hover
         cursor: help
 
 .section
     + .section
         clear: both
-        margin-top: $size-l
+        margin-top: var(--size-l)
         @media #{$media-query-medium}
-            margin-top: $size-xl
+            margin-top: var(--size-xl)
         @media #{$media-query-large}
-            margin-top: $size-xxl
+            margin-top: var(--size-xxl)
 
 footer
     clear: both
-    padding-top: $size-m
-    padding-bottom: $size-m
+    padding-top: var(--size-m)
+    padding-bottom: var(--size-m)
 
 // Text-level semantics
 
 a
-    color: $color-secondary-light
+    color: var(--color-secondary-light)
     background-color: transparent
+    text-decoration: none
     @media (prefers-color-scheme: dark)
-        color: lighten($color-secondary-dark, 20%)
-    text-decoration: underline
-    text-decoration-color: rgba($color-secondary-light, 50%)
-    @media (prefers-color-scheme: dark)
-        text-decoration-color: rgba($color-secondary-dark, 50%)
+        color: var(--color-secondary-dark)
     &:hover
-        text-decoration-color: $color-secondary-light
-        @media (prefers-color-scheme: dark)
-            text-decoration-color: lighten($color-secondary-dark, 20%)
+        text-decoration: underline
 
 mark 
-    background-color: $color-tertiary-light
     padding-left: 0.25em
     padding-right: 0.25em
-    border-radius: 2px 
+    border-radius: 2px
+    background-color: var(--color-tertiary-light)
     @media (prefers-color-scheme: dark)
-        background-color: $color-tertiary-dark
+        background-color: var(--color-tertiary-dark)
 
 small
     font-size: 80%
@@ -138,7 +114,7 @@ dd
 // Headings
 
 h1, h2, h3, h4, h5, h6
-    font-family: $type-family-2
+    font-family: var(--type-family-2)
     font-weight: normal
     line-height: 1
     text-transform: uppercase
@@ -159,47 +135,64 @@ h5, .h5
 h6, .h6
     font-size: 1em
 
+// Embedded
+
+svg
+    fill: var(--color-secondary-light)
+    @media (prefers-color-scheme: dark)
+        fill: var(--color-secondary-dark)
+
+img
+    block-size: auto
+    display: block
+    page-break-inside: avoid
+    border-style: none
+
+video
+    display: block
+    height: auto
+
 // Media
 
 figure
     margin-left: 0
     margin-right: 0
     &.full
-        margin-left: -$size-s
-        margin-right: -$size-s
+        margin-left: - var(--size-s)
+        margin-right: - var(--size-s)
         @media #{$media-query-medium}
-            margin-left: -$size-m
-            margin-right: -$size-m
+            margin-left: - var(--size-m)
+            margin-right: - var(--size-m)
         @media #{$media-query-large}
-            margin-left: -$size-l
-            margin-right: -$size-l
+            margin-left: - var(--size-l)
+            margin-right: - var(--size-l)
         @media #{$media-query-huge}
-            margin-left: -$size-xxxl
-            margin-right: -$size-xxxl
+            margin-left: - var(--size-xxxl)
+            margin-right: - var(--size-xxxl)
         figcaption
-            margin-left: $size-s
-            margin-right: $size-s
+            margin-left: var(--size-s)
+            margin-right: var(--size-s)
             @media #{$media-query-medium}
-                margin-left: $size-m
-                margin-right: $size-m
+                margin-left: var(--size-m)
+                margin-right: var(--size-m)
             @media #{$media-query-large}
-                margin-left: $size-l
-                margin-right: $size-l
+                margin-left: var(--size-l)
+                margin-right: var(--size-l)
             @media #{$media-query-huge}
-                margin-left: $size-xxxl
-                margin-right: $size-xxxl
+                margin-left: var(--size-xxxl)
+                margin-right: var(--size-xxxl)
     img, video
         width: 100%
 
     figcaption
-        font-family: $type-family-3
+        font-family: var(--type-family-3)
         font-size: 1.25em
-        margin-top: $size-s
+        margin-top: var(--size-s)
 
 .avatar
     img
         @media (prefers-color-scheme: dark)
-            filter: drop-shadow(0 0 0.5rem $color-secondary-dark)
+            filter: drop-shadow(0 0 0.5rem var(--color-secondary-dark))
 
 // Forms
 
