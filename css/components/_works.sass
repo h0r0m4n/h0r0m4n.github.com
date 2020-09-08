@@ -1,0 +1,29 @@
+#works
+    @media #{$media-query-small-only}
+        margin-top: var(--size-l)
+
+    ol
+        list-style: none
+        margin: 0
+        background-color: var(--color-neutral-4)
+        @media #{$media-query-small-only}
+            padding: 1em
+        @media #{$media-query-medium}
+            padding: 1em 0 1em var(--size-m)
+            overflow-x: scroll
+            overflow-y: hidden
+            -webkit-overflow-scrolling: touch
+            white-space: nowrap
+        @media #{$media-query-large}
+            padding-left: var(--size-l)
+        li
+            @media #{$media-query-small-only}
+                margin-bottom: var(--size-s)
+            @media #{$media-query-medium}
+                margin-right: var(--size-m)
+                display: inline-block
+                list-style: none
+                vertical-align: middle
+                white-space: normal
+            @media #{$media-query-large}
+                margin-right: var(--size-l)

@@ -1,0 +1,94 @@
+@keyframes wiggle
+    0%
+        transform: translateX(-1em)
+    25%
+        transform: translateX(1em)
+    50%
+        transform: translateX(-1em)
+    75%
+        transform: translateX(1em)
+    100%
+        transform: translateX(-1em)
+
+#modal
+    display: none
+
+    &.open
+        display: flex
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        z-index: 9
+        align-items: center
+        justify-content: center
+        background-color: var(--color-overlay)
+
+    &-container
+        position: relative
+        max-width: 288px
+
+    &-close
+        border: none
+        background: transparent
+        margin: calc(var(--size-s) * -1) calc(var(--size-s) * -1) 0 0
+        float: right
+        padding: var(--size-s)
+        box-sizing: border-box
+        cursor: pointer
+        border-radius: 50%
+        -webkit-appearance: none
+        -webkit-border-radius: none
+        left: var(--size-s)
+        top: var(--size-s)
+        line-height: 0
+        transition: background 150ms ease-out
+
+        &:hover
+            background-color: var(--color-neutral-4)
+
+        svg
+            fill: var(--color-primary)
+
+    &-password
+        width: 100%
+        margin-top: var(--size-m)
+        box-sizing: border-box
+        padding: var(--size-s)
+        border-radius: 4px
+        border: 2px solid var(--color-neutral-1)
+
+        &:focus
+            outline: none
+            border-color: var(--color-tertiary)
+
+        &.error
+            border-color: red
+            @media (prefers-color-scheme: dark)
+                box-shadow: 0 0 2em red
+
+            &--play
+                animation: wiggle 500ms
+
+    &-enter
+        display: inline-block
+        border: none
+        width: 100%
+        color: #FFF
+        background-color: var(--color-secondary)
+        border-radius: 4px
+        padding: var(--size-s) var(--size-m)
+        margin-top: var(--size-s)
+        text-decoration: none
+        @media (prefers-color-scheme: dark)
+            box-shadow: 0 0 0.5em var(--color-secondary)
+
+    h5
+        margin-top: 0
+        text-transform: none
+
+    p
+        font-size: 1rem
+        line-height: 1.2
+        margin: 0

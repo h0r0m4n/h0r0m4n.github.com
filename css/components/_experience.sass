@@ -1,0 +1,28 @@
+#experience
+    svg
+        transition: fill 150ms ease-in
+        fill: var(--color-neutral-1)
+        height: 3rem
+        @media #{$media-query-medium}
+            height: 4rem
+        @media #{$media-query-large}
+            height: 5rem
+
+    li
+        margin-bottom: 0
+
+    a
+        &:hover
+            svg
+                fill: var(--color-primary)
+
+    .button
+        display: inline-block
+        color: #FFF
+        background-color: var(--color-secondary)
+        border-radius: 4px
+        padding: var(--size-s) var(--size-m)
+        margin-top: var(--size-s)
+        text-decoration: none
+        @media (prefers-color-scheme: dark)
+            box-shadow: 0 0 0.5em var(--color-secondary)

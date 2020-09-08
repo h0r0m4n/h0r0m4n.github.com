@@ -3,23 +3,23 @@ layout: default
 ---
 <article>
     <div id="about" class="section">
-        <div class="h-container">
+        <div class="t-container">
             {% include avatar.html %}
             <p>Nice to meet you. I’m {{ site.author }}, a <mark title="Interaction Design, User Experience and User Interface Design">multi-disciplinary designer</mark> currenlty based in {{ site.location }}.</p>
             <p>My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
         </div>
     </div>
     <div id="works" class="section">
-        <div class="h-container">
+        <div class="t-container">
             <h2 class="h3">Here’s my latest works</h2>
         </div>
-        <ol class="h-list-scroll">
+        <ol>
             {% assign works = site.documents | where: 'master', true | sort: 'date' | reverse %}
             {% for work in works %}
-                <li class="h-list-scroll--item">
+                <li class="work">
                     {% if work.collection != 'reels' %}
-                        <a class="h-hover--2 featured" href="{{ work.url }}" rel="bookmark" target="_parent">
-                            <span class="featured-label">Case study</span>
+                        <a class="work-link t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent">
+                            <span class="link-label">Case study</span>
                             <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
                         </a>
                     {% else %}
@@ -30,13 +30,13 @@ layout: default
         </ol>
     </div>
     <div id="experience" class="section">
-        <div class="h-container">
+        <div class="t-container">
             <h2 class="h3">Experience</h2>
             <p>For over {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege of improving products used and loved by many users, these are some:</p>
             {% if site.data.clients %}
-                <ol class="h-list-horizontal">
+                <ol class="t-list-horizontal">
                     {% for client in site.data.clients %}
-                        <li class="h-list-horizontal--item h-list-horizontal--item--distance-1">
+                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
                             {% if client.url %}
                                 <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank">
                                     {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
@@ -49,16 +49,16 @@ layout: default
                 </ol>
             {% endif %}
             <p>The complete portfolio is available upon request. Maybe you'd just like to say hello, or just have a question. That’s all fine.</p>
-            <a class="button h-hover--1" href="mailto:{{ site.mail }}">Contact</a>
+            <a class="button t-hover--1" href="mailto:{{ site.mail }}">Contact</a>
         </div>
     </div>
     {% if site.data.skills %}
         <div id="skills" class="section">
-            <div class="h-container">
+            <div class="t-container">
                 <h2 class="h3">Skills</h2>
-                <ul class="h-list-horizontal">
+                <ul class="t-list-horizontal">
                     {% for skill in site.data.skills %}
-                        <li class="h-list-horizontal--item">{{ skill }}</li>
+                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
                     {% endfor %}
                 </ul>
             </div>

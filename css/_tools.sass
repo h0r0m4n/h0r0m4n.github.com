@@ -1,0 +1,59 @@
+.t
+
+    &-visually-hidden
+        block-size: 1px
+        border: 0
+        clip: rect(0 0 0 0)
+        inline-size: 1px
+        margin: -1px
+        overflow: hidden
+        padding: 0
+        position: absolute
+
+    &-uppercase
+        text-transform: uppercase
+
+    &-hover
+        &--1
+            transition: filter 150ms ease-out
+            &:hover
+                -webkit-filter: brightness(130%)
+                filter: brightness(130%)
+        &--2
+            transition: transform 150ms ease-out
+            &:hover
+                transform: scale(1.05)
+                @media #{$media-query-large}
+                    transform: scale(1.1)
+
+    &-container
+        max-width: var(--container-size)
+        margin-left: auto
+        margin-right: auto
+        padding-left: var(--size-s)
+        padding-right: var(--size-s)
+        @media #{$media-query-medium}
+            padding-left: var(--size-m)
+            padding-right: var(--size-m)
+        @media #{$media-query-large}
+            padding-left: var(--size-l)
+            padding-right: var(--size-l)
+
+    &-list-horizontal
+        list-style: none
+        padding: 0
+
+        &--item
+            display: inline-block
+            list-style: none
+            &--distance-1
+                margin-right: var(--size-s)
+                margin-bottom: var(--size-s)
+            &--distance-2
+                margin-right: var(--size-m)
+                margin-bottom: var(--size-m)
+                @media #{$media-query-medium}
+                    margin-right: var(--size-l)
+                    margin-bottom: var(--size-l)
+            &:last-child
+                margin-right: 0

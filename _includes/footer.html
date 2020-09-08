@@ -1,11 +1,11 @@
 <footer id="footer">
-    <div class="h-container">
-        <h2 class="h5 h-mb-0">Find me on the internet</h2>
+    <div class="t-container">
+        <h2 class="h5">Find me on the internet</h2>
         {% if site.data.social %}
-        <ul class="h-list-horizontal h-list-horizontal--space h-mt-0">
+        <ul class="t-list-horizontal">
             {% for link in site.data.social %}
-                <li class="h-list-horizontal--item h-list-horizontal--item--distance-2">
-                    <a class="h-hover--1" href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
+                <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
+                    <a class="t-hover--1" href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
                         {% include {{ link.title | replace: " ", "-" | downcase }}.svg %}
                     </a>
                 </li>

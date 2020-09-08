@@ -1,8 +1,8 @@
 {% if page.layout == "post" %}
-    <header id="back">
-        <div class="h-container">
-            <a class="back h-hover--1" href="/" rel="home">
-                <span class="h-visually-hidden">Back</span>
+    <header id="post-header">
+        <div class="t-container">
+            <a id="back" class="t-hover--1" href="/" rel="home">
+                <span class="t-visually-hidden">Back</span>
                 {% include close.svg %}
             </a>
             {% include avatar.html %}
@@ -10,8 +10,8 @@
     </header>
 {% else %}
     <header id="header">
-        <div class="h-container">
-            <h1 class="logo">
+        <div class="t-container">
+            <h1>
                 <span class="h3">{{ site.author }}</span>
                 <br>
                 {% include logo.svg %}
