@@ -15,9 +15,7 @@ html
     -moz-osx-font-smoothing: grayscale
     text-rendering: optimizeLegibility
     scroll-behavior: smooth
-    background-color: var(--color-background-light)
-    @media (prefers-color-scheme: dark)
-        background-color: var(--color-background-dark)
+    background-color: var(--color-background)
 
 body
     margin: 0
@@ -27,11 +25,9 @@ body
     line-height: var(--type-height)
     font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
-    color: var(--color-primary-light)
+    color: var(--color-primary)
     word-wrap: break-word
     overflow-wrap: break-word
-    @media (prefers-color-scheme: dark)
-        color: var(--color-primary-dark)
     @media #{$media-query-medium}
         font-size: 1.25em
     @media #{$media-query-large}
@@ -44,12 +40,10 @@ body
         left: 0
         width: 100%
         height: 100%
-        background-image: url(../static/bg-light.svg)
+        background-image: var(--background)
         background-position: center
         background-repeat: no-repeat
         background-size: cover
-        @media (prefers-color-scheme: dark)
-            background-image: url(../static/bg-dark.svg)
 
 main
     display: block
@@ -60,9 +54,7 @@ hr
     overflow: visible
     margin: var(--size-m) 0
     opacity: 0.25
-    border-color: var(--color-neutral-1-light)
-    @media (prefers-color-scheme: dark)
-        border-color: var(--color-neutral-1-dark)
+    border-color: var(--color-neutral-1)
 
 abbr
     border-bottom: 1px dotted
@@ -86,11 +78,9 @@ footer
 // Text-level semantics
 
 a
-    color: var(--color-secondary-light)
+    color: var(--color-secondary)
     background-color: transparent
     text-decoration: none
-    @media (prefers-color-scheme: dark)
-        color: var(--color-secondary-dark)
     &:hover
         text-decoration: underline
 
@@ -98,9 +88,7 @@ mark
     padding-left: 0.25em
     padding-right: 0.25em
     border-radius: 2px
-    background-color: var(--color-tertiary-light)
-    @media (prefers-color-scheme: dark)
-        background-color: var(--color-tertiary-dark)
+    background-color: var(--color-tertiary)
 
 small
     font-size: 80%
@@ -138,9 +126,7 @@ h6, .h6
 // Embedded
 
 svg
-    fill: var(--color-secondary-light)
-    @media (prefers-color-scheme: dark)
-        fill: var(--color-secondary-dark)
+    fill: var(--color-secondary)
 
 img
     block-size: auto
@@ -192,7 +178,7 @@ figure
 .avatar
     img
         @media (prefers-color-scheme: dark)
-            filter: drop-shadow(0 0 0.5rem var(--color-secondary-dark))
+            filter: drop-shadow(0 0 0.5rem var(--color-secondary))
 
 // Forms
 

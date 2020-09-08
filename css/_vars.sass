@@ -2,27 +2,17 @@
 
 \:root
 
-    // Color: light theme
-    --color-primary-light: hsl(0, 0%, 5%)
-    --color-secondary-light: hsl(243, 63%, 45%)
-    --color-tertiary-light: hsl(50, 100%, 43%)
-    --color-neutral-1-light: hsla(0, 0%, 5%, 50%)
-    --color-neutral-2-light: hsla(0, 0%, 5%, 25%)
-    --color-neutral-3-light: hsla(0, 0%, 5%, 12%)
-    --color-neutral-4-light: hsla(0, 0%, 5%, 6%)
-    --color-overlay-light: hsla(0, 0%, 100%, 98%)
-    --color-background-light: hsl(0, 0%, 100%)
-
-    // Color: dark theme
-    --color-primary-dark: hsl(0, 0%, 100%)
-    --color-secondary-dark: hsl(269, 94%, 57%)
-    --color-tertiary-dark: hsl(166, 71%, 60%)
-    --color-neutral-1-dark: hsla(0, 0%, 100%, 50%)
-    --color-neutral-2-dark: hsla(0, 0%, 100%, 25%)
-    --color-neutral-3-dark: hsla(0, 0%, 100%, 12%)
-    --color-neutral-4-dark: hsla(0, 0%, 100%, 6%)
-    --color-overlay-dark: hsla(0, 0%, 5%, 98%)
-    --color-background-dark: hsl(0, 0%, 5%)
+    // Light Theme
+    --color-primary: hsl(0, 0%, 5%)
+    --color-secondary: hsl(243, 63%, 45%)
+    --color-tertiary: hsl(50, 100%, 43%)
+    --color-neutral-1: hsla(0, 0%, 5%, 50%)
+    --color-neutral-2: hsla(0, 0%, 5%, 25%)
+    --color-neutral-3: hsla(0, 0%, 5%, 12%)
+    --color-neutral-4: hsla(0, 0%, 5%, 6%)
+    --color-overlay: hsla(0, 0%, 100%, 98%)
+    --color-background: hsl(0, 0%, 100%)
+    --background: url(../static/bg-light.svg)
 
     // Typography
     --type-family-1: 'ColfaxWebRegular', sans-serif
@@ -40,6 +30,19 @@
 
     // Container
     --container-size: 60rem
+
+@media (prefers-color-scheme: dark)
+    \:root
+        --color-primary: hsl(0, 0%, 100%)
+        --color-secondary: hsl(269, 94%, 57%)
+        --color-tertiary: hsl(166, 71%, 60%)
+        --color-neutral-1: hsla(0, 0%, 100%, 50%)
+        --color-neutral-2: hsla(0, 0%, 100%, 25%)
+        --color-neutral-3: hsla(0, 0%, 100%, 12%)
+        --color-neutral-4: hsla(0, 0%, 100%, 6%)
+        --color-overlay: hsla(0, 0%, 5%, 98%)
+        --color-background: hsl(0, 0%, 5%)
+        --background: url(../static/bg-dark.svg)
 
 // SASS ----------------------------------------------------------------
 

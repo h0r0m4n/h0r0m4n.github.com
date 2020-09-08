@@ -9,9 +9,8 @@
         margin: 0
         text-transform: none
         letter-spacing: 0
-        color: var(--color-tertiary-light)
+        color: var(--color-tertiary)
         @media (prefers-color-scheme: dark)
-            color: var(--color-tertiary-dark)
             text-shadow: 0 0 0.5em currentcolor
         svg
             position: relative
@@ -63,34 +62,29 @@
             right: 0
             font-family: var(--type-family-2)
             font-size: 0.625em
-            color: var(--color-primary-light)
-            background-color: var(--color-tertiary-light)
+            color: hsl(0, 0%, 5%)
+            background-color: var(--color-tertiary)
             padding: 0.25em 0.5em
             text-transform: uppercase
             letter-spacing: 2px
             border-top-right-radius: var(--size-s)
             border-bottom-left-radius: var(--size-s)
             z-index: 1
-            @media (prefers-color-scheme: dark)
-                color: var(--color-background-dark)
-                background-color: var(--color-tertiary-dark)
             
     img
         position: relative
         border-radius: var(--size-s)
+        @media #{$media-query-small-only}
+            width: 100%
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             transition: box-shadow 150ms ease-in
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
-        @media #{$media-query-small-only}
-            width: 100%
 
 #experience
     svg
         transition: fill 150ms ease-in
-        fill: var(--color-neutral-1-light)
+        fill: var(--color-neutral-1)
         height: 3rem
-        @media (prefers-color-scheme: dark)
-            fill: var(--color-neutral-1-dark)
         @media #{$media-query-medium}
             height: 4rem
         @media #{$media-query-large}
@@ -98,53 +92,45 @@
     a
         &:hover
             svg
-                fill: var(--color-primary-light)
-                @media (prefers-color-scheme: dark)
-                    fill: var(--color-primary-dark)
+                fill: var(--color-primary)
 
     .button
         display: inline-block
         color: #FFF
-        background-color: var(--color-secondary-light)
+        background-color: var(--color-secondary)
         border-radius: 4px
         padding: var(--size-s) var(--size-m)
         margin-top: var(--size-s)
         text-decoration: none
         @media (prefers-color-scheme: dark)
-            background-color: var(--color-secondary-dark)
-            box-shadow: 0 0 0.5em var(--color-secondary-dark)
+            box-shadow: 0 0 0.5em var(--color-secondary)
 
 #skills
     li
         font-size: 0.875em
         padding: 0.25em 0.5em
-        border: 2px dotted var(--color-tertiary-light)
+        border: 2px dotted var(--color-tertiary)
         border-radius: 0.5em
         margin-right: var(--size-s)
         margin-bottom: var(--size-s)
-        @media (prefers-color-scheme: dark)
-            border-color: var(--color-tertiary-dark)
 
 #footer
     .h-list-horizontal
         a
             display: block
-            background-color: var(--color-secondary-light)
+            background-color: var(--color-secondary)
             line-height: 0
             border-radius: 50%
             padding: 0.5em
             @media (prefers-color-scheme: dark)
-                background-color: var(--color-secondary-dark)
-                box-shadow: 0 0 0.5em var(--color-secondary-dark)
-    svg
-        fill: var(--color-background-light)
-        height: var(--size-s)
-        width: var(--size-s)
-        @media (prefers-color-scheme: dark)
-            fill: var(--color-primary-dark)
-        @media #{$media-query-large}
-            height: var(--size-m)
-            width: var(--size-m)
+                box-shadow: 0 0 0.5em var(--color-secondary)
+        svg
+            fill: #fff
+            height: var(--size-s)
+            width: var(--size-s)
+            @media #{$media-query-large}
+                height: var(--size-m)
+                width: var(--size-m)
 
 #back
     .back, .avatar
@@ -153,7 +139,7 @@
     
     .back
         border: none
-        background-color: var(--color-secondary-light)
+        background-color: var(--color-secondary)
         margin: 0
         padding: var(--size-s)
         box-sizing: border-box
@@ -164,8 +150,6 @@
         left: var(--size-s)
         top: var(--size-s)
         line-height: 0
-        @media (prefers-color-scheme: dark)
-            background-color: var(--color-secondary-dark)
         @media #{$media-query-medium}
             top: var(--size-m)
             left: var(--size-m)
@@ -213,9 +197,7 @@
 
 .footnotes
     margin-top: var(--size-xl)
-    border-top: 2px solid var(--color-neutral-3-light)
-    @media (prefers-color-scheme: dark)
-        border-color: var(--color-neutral-3-dark)
+    border-top: 2px solid var(--color-neutral-3)
     p
         margin: 0
 
@@ -232,7 +214,7 @@
         font-size: 1.625em
     a
         display: block
-        color: var(--color-primary-light)
+        color: var(--color-primary)
         line-height: 1
         &:hover
             &::after
@@ -281,9 +263,7 @@
         z-index: 9
         align-items: center
         justify-content: center
-        background-color: var(--color-overlay-light)
-        @media (prefers-color-scheme: dark)
-            background-color: var(--color-overlay-dark)
+        background-color: var(--color-overlay)
     &-container
         position: relative
         max-width: 288px
@@ -303,27 +283,20 @@
         line-height: 0
         transition: background 150ms ease-out
         &:hover
-            background-color: var(--color-neutral-4-light)
-            @media (prefers-color-scheme: dark)
-                background-color: var(--color-neutral-4-dark)
+            background-color: var(--color-neutral-4)
         svg
-            fill: var(--color-primary-light)
-            @media (prefers-color-scheme: dark)
-                fill: var(--color-primary-dark)
+            fill: var(--color-primary)
+
     &-password
         width: 100%
         margin-top: var(--size-m)
         box-sizing: border-box
         padding: var(--size-s)
         border-radius: 4px
-        border: 2px solid var(--color-neutral-1-light)
-        @media (prefers-color-scheme: dark)
-            border-color: var(--color-neutral-1-dark)
+        border: 2px solid var(--color-neutral-1)
         &:focus
             outline: none
-            border-color: var(--color-tertiary-light)
-            @media (prefers-color-scheme: dark)
-                border-color: var(--color-tertiary-dark)
+            border-color: var(--color-tertiary)
         &.error
             border-color: red
             @media (prefers-color-scheme: dark)
@@ -335,14 +308,13 @@
         border: none
         width: 100%
         color: #FFF
-        background-color: var(--color-secondary-light)
+        background-color: var(--color-secondary)
         border-radius: 4px
         padding: var(--size-s) var(--size-m)
         margin-top: var(--size-s)
         text-decoration: none
         @media (prefers-color-scheme: dark)
-            background-color: var(--color-secondary-dark)
-            box-shadow: 0 0 0.5em var(--color-secondary-dark)
+            box-shadow: 0 0 0.5em var(--color-secondary)
     h5
         margin-top: 0
         text-transform: none
