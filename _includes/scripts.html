@@ -13,7 +13,7 @@
     var featuredClose = document.getElementById("modal-close");
     var featuredPassword = document.getElementById("modal-password");
     var featuredEnter = document.getElementById("modal-enter");
-    var featuredValue = '376300';
+    var featuredValue = '{{ site.password }}';
     var featuredUrl = '';
 
     // Close modal
@@ -35,7 +35,7 @@
     // Check password
     function checkPassword(parentLink) {
         if (featuredPassword.value === featuredValue) {
-            localStorage.setItem(featuredWork, true);
+            localStorage.setItem(featuredWork, featuredValue);
             location.href = parentLink;
             featuredPassword.classList.remove('error');
             return true;
@@ -54,7 +54,7 @@
         if (!event.target.matches('.work-link')) return;
 
         // If has no localstorage
-        if (!localStorage.hasOwnProperty(featuredWork)) {
+        if (localStorage.getItem(featuredWork) !== featuredValue) {
 
             // Show the <Modal>
             featuredModal.classList.toggle('open');
