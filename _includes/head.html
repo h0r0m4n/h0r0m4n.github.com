@@ -5,14 +5,14 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta name="keywords" content="{{ site.keywords }}">
 <meta name="author" content="{{ site.author }}">
-<meta name="robots" content="{% if page.layout == "post" %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
+<meta name="robots" content="{% if page.layout == "post" or page.layout == 404 %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
 <meta name="pinterest-rich-pin" content="false">
-{% if page.layout != "post" %}
+{% if page.layout == "default" %}
     {% include head-twitter.html %}
     {% include head-facebook.html %}
 {% endif %}
 <title>{% if page.title%}{{ site.title }} — {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-{% if page.layout != "post" %}
+{% if page.layout == "default" %}
     <link rel="canonical" href="{{ page.url | absolute_url | strip_index }}">
 {% endif %}
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absolute_url }}">
