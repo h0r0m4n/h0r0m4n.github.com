@@ -168,7 +168,8 @@ figure
 
     img, video
         width: 100%
-        border-radius: var(--size-s)
+        @media #{$media-query-large}
+            border-radius: var(--size-s)
 
     figcaption
         font-family: var(--type-family-3)
