@@ -1,11 +1,3 @@
-{% if jekyll.environment == "production" %}
-    <script src="https://getinsights.io/static/js/insights.js"></script>
-    <script>
-        insights.init('HugAu_grV5lB5OQI');
-        insights.trackPages();
-    </script>
-{% endif %}
-
 <script>
     var featuredLink = document.querySelectorAll('.work-link');
     var featuredWork = 'FeaturedWork';
@@ -87,3 +79,11 @@
         }
     {% endif %}
 </script>
+
+{% if jekyll.environment == "production" %}
+    <script src="https://getinsights.io/static/js/insights.js"></script>
+    <script>
+        insights.init('HugAu_grV5lB5OQI');
+        insights.trackPages();
+    </script>
+{% endif %}
