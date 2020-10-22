@@ -16,6 +16,8 @@
         left: var(--size-s)
         top: var(--size-s)
         line-height: 0
+        @media (prefers-color-scheme: dark)
+            box-shadow: 0 0 0.5em var(--color-secondary)
         @media #{$media-query-medium}
             top: var(--size-m)
             left: var(--size-m)
