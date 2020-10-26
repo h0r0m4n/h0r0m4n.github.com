@@ -12,6 +12,8 @@
         display: block
         position: relative
         text-decoration: none
+        @media #{$media-query-medium}
+            display: inline-block
         &:hover
             &::after
                 content: ''
