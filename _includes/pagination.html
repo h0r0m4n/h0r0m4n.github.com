@@ -1,23 +1,22 @@
 {% if page.previous.url or page.next.url %}
     <nav id="post-pagination">
         <div class="t-container">
-            <h2>See also</h2>
+            <h2>See next</h2>
             <ol>
-                {% if page.next.url %}
-                    <li class="work">
-                        <span>Next</span>
-                        <a class="t-hover--2" href="{{ page.next.url }}" rel="bookmark" target="_parent">
-                            <img src="static/{{ page.next.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ page.next.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ page.next.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ page.next.title }} - {{ page.next.year }}" loading="lazy">
-                        </a>
-                    </li>
-                {% endif %}
                 {% if page.previous.url %}
                     <li class="work">
-                        <span>Previous</span>
                         <a class="t-hover--2" href="{{ page.previous.url }}" rel="bookmark" target="_parent">
                             <img src="static/{{ page.previous.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ page.previous.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ page.previous.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ page.previous.title }} - {{ page.previous.year }}" loading="lazy">
                         </a>
                     </li>
+                {% elsif page.next.url %}
+                    {% for post in site.posts limit:1 %}
+                        <li class="work">
+                            <a class="t-hover--2" href="{{ post.url }}" rel="bookmark" target="_parent">
+                                <img src="static/{{ post.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ post.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ post.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ post.title }} - {{ post.year }}" loading="lazy">
+                            </a>
+                        </li>
+                    {% endfor %}
                 {% endif %}
             </ol>
         </div>
