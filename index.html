@@ -5,8 +5,8 @@ layout: default
     <div id="about" class="section">
         <div class="t-container">
             {% include avatar.html %}
-            <p>Nice to meet you. I’m {{ site.author }}, a <mark title="Interaction Design, User Experience and User Interface Design">multi-disciplinary designer</mark> currently based in {{ site.location }}.</p>
-            <p>My work focuses on building thoughtful, intuitive, and delightful digital products, with a devotion to quality, process, transparency, and sharing what I learn.</p>
+            <p>Nice to meet you. I’m a <mark title="Product Design, Interaction Design, User Experience & User Interface Design">multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
+            <p>My work focuses on building thoughtful, intuitive and delightful digital products with a devotion to quality, design process, transparency; and sharing what I learn.</p>
         </div>
     </div>
     <div id="works" class="section">
@@ -32,7 +32,7 @@ layout: default
     <div id="contact" class="section">
         <div class="t-container">
             <h2 class="h3">Experience</h2>
-            <p>For over {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege of improving products used and loved by many users, these are some:</p>
+            <p>Over the last {{ 'now' | date: "%Y" | minus: site.starting }} years, I had the privilege to improve products used and loved by many users, these are some of the clients:</p>
             {% if site.data.clients %}
                 <ol class="t-list-horizontal">
                     {% for client in site.data.clients %}
@@ -48,7 +48,7 @@ layout: default
                     {% endfor %}
                 </ol>
             {% endif %}
-            <p>The complete portfolio is available upon request. Maybe you'd just like to say hello, or just have a question. That’s all fine.</p>
+            <p>The complete portfolio is available upon request.<br>Maybe you’d like to just say hello or ask a question, that’s fine, too.</p>
             <a class="button t-hover--1" href="mailto:{{ site.mail }}">Contact</a>
         </div>
     </div>
