@@ -21,6 +21,19 @@
             white-space: nowrap
         @media #{$media-query-large}
             padding-left: var(--size-l)
+
+        &::-webkit-scrollbar
+            @media #{$media-query-medium}
+                height: 16px
+
+        &::-webkit-scrollbar-thumb
+            @media #{$media-query-medium}
+                background: var(--color-neutral-2)
+
+        &::-webkit-scrollbar-track
+            @media #{$media-query-medium}
+                background: var(--color-neutral-4)
+
         li
             @media #{$media-query-small-only}
                 margin-bottom: var(--size-s)
