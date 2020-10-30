@@ -3,7 +3,7 @@
     @media #{$media-query-large}
         margin-top: var(--size-xxl)
     h1
-        font-size: 0.75em
+        font-size: 0.825em
         font-family: var(--type-family-3)
         line-height: 0.5
         margin: 0
@@ -12,6 +12,8 @@
         color: var(--color-tertiary)
         @media (prefers-color-scheme: dark)
             text-shadow: 0 0 0.5em currentcolor
+        @media #{$media-query-medium}
+            font-size: 1em
         svg
             position: relative
             z-index: -1
