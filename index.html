@@ -39,10 +39,10 @@ layout: default
                         <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
                             {% if client.url %}
                                 <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank">
-                                    {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                                    {% include {{ client.title | replace: " ", "-" | downcase }}.svg %}
                                 </a>
                             {% else %}
-                                {% include_relative static/{{ client.title | replace: " ", "-" | downcase }}.svg %}
+                                {% include {{ client.title | replace: " ", "-" | downcase }}.svg %}
                             {% endif %}
                         </li>
                     {% endfor %}
