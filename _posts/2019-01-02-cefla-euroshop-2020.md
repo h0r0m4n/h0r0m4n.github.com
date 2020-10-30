@@ -1,6 +1,7 @@
 ---
 title: Cefla Euroshop 2020
 description: Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop 2020 on the features of the innovative experience of simplified shopping, which will be released in 2022.
+client: Cefla
 skills:
   - Product Design
   - User Experience

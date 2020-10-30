@@ -1,6 +1,7 @@
 ---
-title: Ferrari
+title: Ferrari Media Center
 description: This is some amazing description about ferrari’s project
+client: Ferrari
 skills:
   - Brand identity
   - User experience design
