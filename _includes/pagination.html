@@ -4,14 +4,14 @@
             <h2>See next</h2>
             <ol>
                 {% if page.previous.url %}
-                    <li class="work">
+                    <li class="work work--reels">
                         <a class="t-hover--2" href="{{ page.previous.url }}" rel="bookmark" target="_parent">
                             <img src="static/{{ page.previous.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ page.previous.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ page.previous.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ page.previous.title }} - {{ page.previous.year }}" loading="lazy">
                         </a>
                     </li>
                 {% elsif page.next.url %}
                     {% for post in site.posts limit:1 %}
-                        <li class="work">
+                        <li class="work work--reels">
                             <a class="t-hover--2" href="{{ post.url }}" rel="bookmark" target="_parent">
                                 <img src="static/{{ post.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ post.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ post.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ post.title }} - {{ post.year }}" loading="lazy">
                             </a>

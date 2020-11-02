@@ -16,7 +16,7 @@ layout: default
         <ol>
             {% assign works = site.documents | where: 'master', true | sort: 'date' | reverse %}
             {% for work in works %}
-                <li class="work">
+                <li class="work{% if work.collection != 'reels' %} work--reels{% endif %}">
                     {% if work.collection != 'reels' %}
                         <a class="work-link t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent">
                             <span class="link-label">Case study</span>
