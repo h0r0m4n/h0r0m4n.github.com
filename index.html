@@ -6,7 +6,7 @@ layout: default
         <div class="t-container">
             {% include avatar.html %}
             <p>Nice to meet you. I’m a <mark title="Product Design, Interaction Design, User Experience & User Interface Design">multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
-            <p>My work focuses on building thoughtful, intuitive and delightful digital products with a devotion to quality, design process, transparency; and sharing what I learn.</p>
+            <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process, transparency, and sharing what I learn.</p>
         </div>
     </div>
     <div id="works" class="section">
@@ -29,6 +29,18 @@ layout: default
             {% endfor %}
         </ol>
     </div>
+    {% if site.data.skills %}
+        <div id="skills" class="section">
+            <div class="t-container">
+                <h2 class="h3">Skills</h2>
+                <ul class="t-list-horizontal">
+                    {% for skill in site.data.skills %}
+                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
     <div id="contact" class="section">
         <div class="t-container">
             <h2 class="h3">Experience</h2>
@@ -48,20 +60,8 @@ layout: default
                     {% endfor %}
                 </ol>
             {% endif %}
-            <p>The complete portfolio is available upon request.<br>Maybe you’d like to just say hello or ask a question, that’s fine, too.</p>
+            <p>If you’d like me to work on your product/service or just say hello, please feel free to reach me via email.</p>
             <a class="button t-hover--1" href="mailto:{{ site.mail }}">Contact</a>
         </div>
     </div>
-    {% if site.data.skills %}
-        <div id="skills" class="section">
-            <div class="t-container">
-                <h2 class="h3">Skills</h2>
-                <ul class="t-list-horizontal">
-                    {% for skill in site.data.skills %}
-                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    {% endif %}
 </article>
