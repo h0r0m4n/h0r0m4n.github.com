@@ -1,0 +1,59 @@
+#post-header
+    #back, #avatar
+        position: fixed
+        z-index: 1
+
+    #back
+        border: none
+        background-color: var(--color-secondary)
+        margin: 0
+        padding: var(--size-s)
+        box-sizing: border-box
+        cursor: pointer
+        border-radius: 50%
+        -webkit-appearance: none
+        -webkit-border-radius: none
+        left: var(--size-s)
+        top: var(--size-s)
+        line-height: 0
+        @media (prefers-color-scheme: dark)
+            box-shadow: 0 0 0.5em var(--color-secondary)
+        @media #{$media-query-medium}
+            top: var(--size-m)
+            left: var(--size-m)
+        @media #{$media-query-large}
+            top: var(--size-l)
+            left: var(--size-l)
+        @media #{$media-query-huge}
+            top: var(--size-xl)
+            left: var(--size-xl)
+
+        &:focus
+            outline: none
+
+        svg
+            fill: #FFF
+            @media #{$media-query-large}
+                width: var(--size-xl)
+                height: var(--size-xl)
+
+    #avatar
+        top: var(--size-s)
+        right: var(--size-s)
+        @media #{$media-query-medium}
+            top: var(--size-m)
+            right: var(--size-m)
+        @media #{$media-query-large}
+            top: var(--size-l)
+            right: var(--size-l)
+        @media #{$media-query-huge}
+            top: var(--size-xl)
+            right: var(--size-xl)
+
+        &:hover
+            cursor: pointer
+
+        img
+            @media #{$media-query-small-only}
+                width: 64px
+                height: 96px
