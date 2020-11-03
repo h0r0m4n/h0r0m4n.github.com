@@ -4,4 +4,4 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:url" content="{{ page.url | absolute_url | strip_index }}">
 <meta property="og:site_name" content="{{ site.author }}">
-<meta property="og:image" content="{{ "/static/preview.jpg" | absolute_url }}">
+<meta property="og:image" content="{{ "/static/preview.jpg" | absolute_url }}?v={{ site.version }}">
