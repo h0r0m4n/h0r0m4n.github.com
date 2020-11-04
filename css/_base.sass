@@ -16,7 +16,7 @@ body
     margin: 0
     min-block-size: 100vh
     overflow-x: hidden
-    font-family: var(--type-family-1)
+    font-family: var(--type-family-1a)
     line-height: var(--type-height-1)
     font-feature-settings: "kern" on, "liga" on
     font-size: 1.125em
@@ -71,11 +71,26 @@ footer
 // Text-level semantics
 
 a
-    color: var(--color-secondary)
+    color: var(--color-primary)
     background-color: transparent
     text-decoration: none
+
+p a
+    position: relative
+    &::before
+        height: 0.175em
+        position: absolute
+        background-color: var(--color-tertiary)
+        content: ''
+        width: 100%
+        bottom: 0
+        z-index: -1
+        transition: all 150ms ease-in-out
+        transform: skew(-25deg) rotate(0.25deg) scaleX(1)
     &:hover
-        text-decoration: underline
+        &::before
+            height: 0.125em
+            transform: skew(25deg) scaleX(1.02)
 
 mark 
     padding-left: 0.25em
@@ -83,8 +98,15 @@ mark
     border-radius: 2px
     background-color: var(--color-tertiary)
 
+b, strong
+    font-family: var(--type-family-1b)
+    font-weight: normal
+
 small
     font-size: 80%
+
+ul
+    list-style: square
 
 dl
     margin: 0
