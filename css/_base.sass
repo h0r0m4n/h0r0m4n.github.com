@@ -71,11 +71,26 @@ footer
 // Text-level semantics
 
 a
-    color: var(--color-secondary)
+    color: var(--color-primary)
     background-color: transparent
     text-decoration: none
+
+p a
+    position: relative
+    &::before
+        height: 0.175em
+        position: absolute
+        background-color: var(--color-tertiary)
+        content: ''
+        width: 100%
+        bottom: 0
+        z-index: -1
+        transition: all 150ms ease-in-out
+        transform: skew(-25deg) rotate(0.25deg) scaleX(1)
     &:hover
-        text-decoration: underline
+        &::before
+            height: 0.125em
+            transform: skew(25deg) scaleX(1.02)
 
 mark 
     padding-left: 0.25em
