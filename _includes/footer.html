@@ -5,7 +5,7 @@
         <ul class="t-list-horizontal">
             {% for link in site.data.social %}
                 <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
-                    <a class="t-hover--1" href="{{ link.link }}" rel="noopener noreferrer nofollow" target="_blank">
+                    <a class="t-hover--1" href="{{ link.link }}" rel="me noopener noreferrer nofollow" target="_blank" title="{{ link.title }}">
                         {% include {{ link.title | replace: " ", "-" | downcase }}.svg %}
                     </a>
                 </li>

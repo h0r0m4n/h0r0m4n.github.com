@@ -18,7 +18,7 @@ layout: default
             {% for work in works %}
                 <li class="work{% if work.collection != 'reels' %} work--reels{% endif %}">
                     {% if work.collection != 'reels' %}
-                        <a class="work-link t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent">
+                        <a class="work-link t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent" title="{{ work.title }}">
                             <span class="link-label">Case study</span>
                             <img src="static/{{ work.title | replace: " ", "-" | downcase }}.jpg" srcset="static/{{ work.title | replace: " ", "-" | downcase }}@1.5x.jpg 1.5x, static/{{ work.title | replace: " ", "-" | downcase | replace: " ", "-" | downcase }}@2x.jpg 2x" alt="{{ work.title }} - {{ work.year }}" loading="lazy">
                         </a>
@@ -50,7 +50,7 @@ layout: default
                     {% for client in site.data.clients %}
                         <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
                             {% if client.url %}
-                                <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank">
+                                <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ client.title }}">
                                     {% include {{ client.title | replace: " ", "-" | downcase }}.svg %}
                                 </a>
                             {% else %}
@@ -61,7 +61,7 @@ layout: default
                 </ol>
             {% endif %}
             <p>If you’d like me to work on your product/service or just say hello, please feel free to reach me via email.</p>
-            <a class="button t-hover--1" href="mailto:{{ site.mail }}">Contact</a>
+            <a class="button t-hover--1" href="mailto:{{ site.mail }}" title="Contact">Contact</a>
         </div>
     </div>
 </article>
