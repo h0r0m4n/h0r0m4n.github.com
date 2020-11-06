@@ -20,7 +20,7 @@ Unlike traditional stores, Cefla can help customers save time in its target mark
 
 To understand better user's needs and motivations we used user personas that help us to translate to online use and consumption and, ultimately, purchasing decisions.
 
-{% include stats.html label-1="Approach" value-1="Design Thinking & Agile" label-2="Duration" value-2="4 months" %}
+{% include stats.html label-1="Approach" value-1="Design Thinking & Agile" label-2="Duration" value-2="6 months" %}
 
 Starting with Francesco's characteristics, we have developed the three potential personas:
 

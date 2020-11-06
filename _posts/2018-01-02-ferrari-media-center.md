@@ -4,6 +4,7 @@ description: Ferrari is an Italian supercar manufacturer. Ferrari’s Media Cent
 client: Ferrari
 skills:
   - Product Design
+  - Design System
   - User Experience
   - User Interface
   - Interaction Design
