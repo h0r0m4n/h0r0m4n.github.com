@@ -1,0 +1,25 @@
+{
+  "name": "h0r0m4n.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h0r0m4n/h0r0m4n.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/h0r0m4n/h0r0m4n.github.io/issues"
+  },
+  "homepage": "https://github.com/h0r0m4n/h0r0m4n.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
