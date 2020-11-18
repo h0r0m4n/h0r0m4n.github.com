@@ -6,5 +6,8 @@ module.exports = {
     location: 'Dublin, Ireland',
     nickname: 'h0r0m4n',
     mail: 'roman.horokhovatskyy@gmail.com',
-    starting: 2008
+    starting: 2008,
+    password: 376301,
+    version: 2.2,
+    insights: 'HugAu_grV5lB5OQI'
 };
