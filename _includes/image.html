@@ -1,6 +1,0 @@
-<figure {% if include.full %}class="full"{% endif %}>
-    <img src="static/{{ include.image }}.jpg" srcset="static/{{ include.image }}@1.5x.jpg 1.5x, static/{{ include.image }}@2x.jpg 2x" alt="{{ include.alt }}" loading="lazy">
-    {% if include.caption %}
-        <figcaption>{{ include.caption }}</figcaption>
-    {% endif %}
-</figure>
