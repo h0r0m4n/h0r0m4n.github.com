@@ -1,7 +1,9 @@
 ---
-layout: post
 title: Work 1
 description: The description of work 1…
+date: 2020-11-17
+tags: work
+layout: post
 ---
 
 ## This is a subtitle of work 1

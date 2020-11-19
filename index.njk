@@ -1,18 +1,63 @@
 ---
 layout: default
 ---
-<h1>Test variable: {{ site.title }}</h1>
-
-{% if site.title %}
-    <p>Title exists!</p>
-{% else %}
-    <p>No title…</p>
-{% endif %}
-
-{% if clients %}
-    <ul>
-        {% for client in clients %}
-            <li>{{ client.title }} - {{ client.url }}</li>
-        {% endfor %}
-    </ul>
-{% endif %}
+<article>
+    <div id="about" class="section">
+        <div class="t-container">
+            {% include 'avatar.njk' %}
+            <p>Nice to meet you 👋. I’m a <mark title="Product Design, Interaction Design, User Experience & User Interface Design">multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
+            <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process, transparency, and sharing what I learn.</p>
+        </div>
+    </div>
+    <div id="works" class="section">
+        <div class="t-container">
+            <h2 class="h3">Here’s my latest works</h2>
+        </div>
+        <ol>
+            {% for work in collections.work | reverse %}
+                <li class="work">
+                    {% if work.data.permalink == false %}
+                        {{ work.data.title }}
+                    {% else %}
+                        <a href="{{ work.url }}">{{ work.data.title }}</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+    {% if skills %}
+        <div id="skills" class="section">
+            <div class="t-container">
+                <h2 class="h3">Skills</h2>
+                <ul class="t-list-horizontal">
+                    {% for skill in skills %}
+                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
+    <div id="contact" class="section">
+        <div class="t-container">
+            <h2 class="h3">Experience</h2>
+            <p>Over the last 12 years, I had the privilege to improve products used and loved by many users, these are some of the clients:</p>
+            {% if clients %}
+                <ol class="t-list-horizontal">
+                    {% for client in clients %}
+                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
+                            {% if client.url %}
+                                <a href="{{ client.url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ client.title }}">
+                                    {% include client.title | slug + '.svg' %}
+                                </a>
+                            {% else %}
+                                {% include client.title | slug + '.svg' %}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ol>
+            {% endif %}
+            <p>If you’d like me to work on your product/service or just say hello, please feel free to reach me via email.</p>
+            <a class="button t-hover--1" href="mailto:{{ site.mail }}" title="Contact">Contact</a>
+        </div>
+    </div>
+</article>
