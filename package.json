@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve",
-    "debug": "DEBUG=* npx @11ty/eleventy"
+    "build": "ELEVENTY_ENV=production npx @11ty/eleventy",
+    "start": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "debug": "ELEVENTY_ENV=development DEBUG=* npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",

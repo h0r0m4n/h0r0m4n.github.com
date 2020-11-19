@@ -5,23 +5,23 @@
 <meta name="description" content="{% if description %}{{ description }}{% else %}{{ global.description }}{% endif %}">
 <meta name="keywords" content="{{ global.keywords }}">
 <meta name="author" content="{{ global.author }}">
-<meta name="robots" content="{% if layout == "post" or layout == 404 %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
+<meta name="robots" content="{% if layout == 'post' or layout == '404' %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
 <meta name="pinterest-rich-pin" content="false">
 
-{% if layout == "default" %}
-    {% include "head-twitter.njk" %}
-    {% include "head-facebook.njk" %}
+{% if layout == 'default' %}
+    {% include 'head-twitter.njk' %}
+    {% include 'head-facebook.njk' %}
 {% endif %}
 
-<title>{% if title%}{{ global.title }} — {{ title }}{% else %}{{ global.title }}{% endif %}</title>
+<title>{% if title%}{{ site.title }} — {{ title }}{% else %}{{ site.title }}{% endif %}</title>
 
-{% if layout == "default" %}
-    <link rel="canonical" href="#">
+{% if layout == 'default' %}
+    <link rel="canonical" href="{{ site.url }}">
 {% endif %}
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | url }}?v={{ global.version }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | url }}?v={{ global.version }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | url }}?v={{ global.version }}">
-<link rel="manifest" href="{{ "/site.webmanifest" | url }}?v={{ global.version }}">
-<link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | url }}?v={{ global.version }}" color="#666666">
-<link rel="stylesheet" href="{{ "/css/style.css" | url }}?v={{ global.version }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url + '/apple-touch-icon.png' | url }}?v={{ site.version }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url + '/favicon-32x32.png' | url }}?v={{ site.version }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url + '/favicon-16x16.png' | url }}?v={{ site.version }}">
+<link rel="manifest" href="{{ site.url + '/site.webmanifest' | url }}?v={{ site.version }}">
+<link rel="mask-icon" href="{{ site.url + '/safari-pinned-tab.svg' | url }}?v={{ site.version }}" color="#666666">
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}?v={{ site.version }}">

@@ -1,4 +1,4 @@
-const global = require('./_data/global');
+const global = require('./_data/site');
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('static');

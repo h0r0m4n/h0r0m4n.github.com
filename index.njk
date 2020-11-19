@@ -1,10 +1,18 @@
 ---
 layout: default
 ---
-<h1>Test variable: {{ global.title }}</h1>
+<h1>Test variable: {{ site.title }}</h1>
 
-{% if global.title %}
+{% if site.title %}
     <p>Title exists!</p>
 {% else %}
     <p>No title…</p>
+{% endif %}
+
+{% if clients %}
+    <ul>
+        {% for client in clients %}
+            <li>{{ client.title }} - {{ client.url }}</li>
+        {% endfor %}
+    </ul>
 {% endif %}
