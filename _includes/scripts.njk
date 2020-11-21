@@ -16,7 +16,7 @@
     };
 
     // Close modal on esc button
-    {% if layout != 'post' %}
+    {% if layout != 'work' %}
         document.addEventListener("keyup", function(event) {
             if (event.keyCode === 27) {
                 featuredModal.classList.toggle('open');
@@ -75,7 +75,7 @@
         };
     }, false);
 
-    {% if layout == 'post' %}
+    {% if layout == 'work' %}
         if (!localStorage.hasOwnProperty(featuredWork)) {
             location.href = '{{ site.url }}';
         }

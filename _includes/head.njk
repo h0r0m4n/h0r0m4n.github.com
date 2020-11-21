@@ -5,7 +5,7 @@
 <meta name="description" content="{% if description %}{{ description }}{% else %}{{ global.description }}{% endif %}">
 <meta name="keywords" content="{{ global.keywords }}">
 <meta name="author" content="{{ global.author }}">
-<meta name="robots" content="{% if layout == 'post' or layout == '404' %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
+<meta name="robots" content="{% if layout == 'work' or layout == 'not-found' %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
 <meta name="pinterest-rich-pin" content="false">
 
 {% if layout == 'default' %}

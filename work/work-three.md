@@ -2,8 +2,7 @@
 title: Work 3
 description: The description of work 3…
 date: 2020-11-19
-tags: work
-layout: post
+layout: work
 ---
 
 ## This is a subtitle of work 3

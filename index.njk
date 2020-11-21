@@ -14,7 +14,7 @@ layout: default
             <h2 class="h3">Here’s my latest works</h2>
         </div>
         <ol>
-            {% for work in collections.work | reverse %}
+            {% for work in collections.work %}
                 <li class="work">
                     {% if work.data.permalink == false %}
                         {{ work.data.title }}

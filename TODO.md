@@ -7,6 +7,8 @@
 4. Loop posts/works or more: https://www.11ty.dev/docs/collections/
 5. Urls: https://www.11ty.dev/docs/permalinks/
 6. Collections: https://github.com/11ty/eleventy/issues/927#issuecomment-589947635
+7. Custom collections: https://www.raresportan.com/eleventy-part-two/
+8. Custom filders: https://www.raresportan.com/eleventy-part-three/
 
 **Design:**
 1. Timeline of projects?

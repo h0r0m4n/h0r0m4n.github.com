@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-</head>
-<body>
-    <article>
-        <div id="page404">
-            <div class="t-container">
-                {% include 'avatar.njk' %}
-                <h2>{{ title }}</h2>
-                {{ content | safe }}
+    <head>
+        {% include 'head.njk' %}
+    </head>
+    <body>
+        <article>
+            <div id="page404">
+                <div class="t-container">
+                    {% include 'avatar.njk' %}
+                    <h2>{{ title }}</h2>
+                    {{ content | safe }}
+                </div>
             </div>
-        </div>
-    </article>
-</body>
+        </article>
+        {% include 'scripts.njk' %}
+    </body>
 </html>
