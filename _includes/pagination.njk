@@ -1,23 +1,18 @@
 <h2>Pagination:</h2>
 
-<ul>
-    {% set previousPost = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
-    {% if previousPost %}
-        <li>
-            Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
-            {% if previousPost.url == false %}
-                <span>❌</span>
-            {% endif %}
-        </li>
-    {% endif %}
-
+<ul>    
     {% set nextPost = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
+    {% set previousPost = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
+
     {% if nextPost %}
         <li>
-            Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-            {% if nextPost.url == false %}
-                <span>❌</span>
-            {% endif %}
+            <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
         </li>
+    {% elif previousPost %}
+        {% for work in collections.work | reverse | permalinkNotFalse | head(-1) %}
+            <li>
+                <a href="{{ work.url }}">{{ work.data.title }}</a>
+            </li>
+        {% endfor %}
     {% endif %}
 </ul>

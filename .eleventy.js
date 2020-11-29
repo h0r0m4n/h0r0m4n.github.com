@@ -13,6 +13,15 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByGlob('work/*.md').reverse();
     });
 
+    // Get the first `n` elements of a collection
+    eleventyConfig.addFilter('head', (array, n) => {
+        if (n < 0) {
+            return array.slice(n);
+        }
+    
+        return array.slice(0, n);
+    });
+
     // Exclude items with permalink set to false
     eleventyConfig.addFilter('permalinkNotFalse', (items) => {
         return items.filter(item => {
