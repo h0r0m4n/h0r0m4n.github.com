@@ -1,0 +1,55 @@
+// NATIVE --------------------------------------------------------------
+
+\:root
+
+    // Light Theme
+    --color-primary: hsl(0, 0%, 5%)
+    --color-secondary: hsl(243, 63%, 45%)
+    --color-tertiary: hsl(50, 100%, 43%)
+    --color-neutral-1: hsla(0, 0%, 5%, 50%)
+    --color-neutral-2: hsla(0, 0%, 5%, 25%)
+    --color-neutral-3: hsla(0, 0%, 5%, 12%)
+    --color-neutral-4: hsla(0, 0%, 5%, 6%)
+    --color-overlay: hsla(0, 0%, 100%, 98%)
+    --color-background: hsl(0, 0%, 100%)
+    --background: url(../static/bg-light.svg)
+
+    // Typography
+    --type-family-1a: 'ColfaxWebRegular', sans-serif
+    --type-family-1b: 'ColfaxWebBold', sans-serif
+    --type-family-2: 'KlavikaWebDisplayBlack', sans-serif
+    --type-family-3: 'Reenie Beanie', sans-serif
+    --type-height-1: 1.5
+    --type-height-2: 1
+
+    // Sizing
+    --size-s: 1rem
+    --size-m: 1.5rem
+    --size-l: 2rem
+    --size-xl: 3rem
+    --size-xxl: 6rem
+    --size-xxxl: 10rem
+
+    // Container
+    --container-size: 50rem
+
+@media (prefers-color-scheme: dark)
+    \:root
+        --color-primary: hsl(0, 0%, 100%)
+        --color-secondary: hsl(269, 94%, 57%)
+        --color-tertiary: hsl(166, 71%, 60%)
+        --color-neutral-1: hsla(0, 0%, 100%, 50%)
+        --color-neutral-2: hsla(0, 0%, 100%, 25%)
+        --color-neutral-3: hsla(0, 0%, 100%, 12%)
+        --color-neutral-4: hsla(0, 0%, 100%, 6%)
+        --color-overlay: hsla(0, 0%, 5%, 98%)
+        --color-background: hsl(0, 0%, 5%)
+        --background: url(../static/bg-dark.svg)
+
+// SASS ----------------------------------------------------------------
+
+// Media queries
+$media-query-small-only: "only screen and (max-width: 39.9375rem)"
+$media-query-medium: "only screen and (min-width: 40rem)"
+$media-query-large: "only screen and (min-width: 64rem)"
+$media-query-huge: "only screen and (min-width: 80rem)"
