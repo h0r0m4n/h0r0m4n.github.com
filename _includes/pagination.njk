@@ -1,0 +1,24 @@
+<nav id="post-pagination">
+    <div class="t-container">
+        <h2>See next</h2>
+        <ul>    
+            {% set nextPost = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
+            {% set previousPost = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
+            {% if nextPost %}
+                <li class="work work--reels">
+                    <a class="t-hover--2" href="{{ nextPost.url }}" rel="bookmark" target="_parent" title="{{ nextPost.data.title }}{% if nextPost.data.client %} – {{ nextPost.data.client }}{% endif %}">
+                        <img src="{{ '/static/' + nextPost.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + nextPost.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + nextPost.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ nextPost.data.title }}{% if nextPost.data.client %} – {{ nextPost.data.client }}{% endif %}" loading="lazy">
+                    </a>
+                </li>
+            {% elif previousPost %}
+                {% for work in collections.work | reverse | permalinkNotFalse | head(-1) %}
+                    <li class="work work--reels">
+                        <a class="t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
+                            <img src="{{ '/static/' + work.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + work.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + work.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}" loading="lazy">
+                        </a>
+                    </li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </div>
+</nav>
