@@ -1,5 +1,5 @@
 ---
-title: Media Center
+title: Ferrari Media Center
 description: Ferrari is an Italian supercar manufacturer. Ferrari’s Media Center is a globally distributed website which focuses on the distribution of media content for journalists, writers, publishers and editors. Offers exclusive content that speaks to the Ferrari brand philosophy of originality, aspiration and inspiration. I had the honor of being able to collaborate in the restyling of the Media Center website.
 client: Ferrari
 skills:

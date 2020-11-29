@@ -15,11 +15,14 @@ layout: default
         </div>
         <ol>
             {% for work in collections.work %}
-                <li class="work">
+                <li class="work{% if work.url != false %} work--reels{% endif %}">
                     {% if work.url == false %}
-                        {{ work.data.title }}
+                        <img src="/static/{{ work.data.title | slug }}.jpg" srcset="/static/{{ work.data.title | slug }}@1.5x.jpg 1.5x, /static/{{ work.data.title | slug }}@2x.jpg 2x" alt="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}" loading="lazy">
                     {% else %}
-                        <a href="{{ work.url }}">{{ work.data.title }}</a>
+                        <a class="work-link t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
+                            <span class="link-label">Case study</span>
+                            <img src="/static/{{ work.data.title | slug }}.jpg" srcset="/static/{{ work.data.title | slug }}@1.5x.jpg 1.5x, /static/{{ work.data.title | slug }}@2x.jpg 2x" alt="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}" loading="lazy">
+                        </a>
                     {% endif %}
                 </li>
             {% endfor %}
