@@ -14,10 +14,9 @@ module.exports = function (eleventyConfig) {
     });
 
     // Exclude items with permalink set to false
-    function permalinkNotFalse(items) {
+    eleventyConfig.addFilter('permalinkNotFalse', (items) => {
         return items.filter(item => {
             return (item.data.permalink !== false)
         })
-    }
-    eleventyConfig.addFilter('permalinkNotFalse', permalinkNotFalse);
+    });
 }
