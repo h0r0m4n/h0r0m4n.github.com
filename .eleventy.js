@@ -30,8 +30,8 @@ module.exports = function (eleventyConfig) {
         })
     });
 
-    // Image short-code https://www.11ty.dev/docs/languages/nunjucks/#optional%3A-use-your-nunjucks-environment
-    // Usage: {% image "//placehold.it/300" "full" "My alt…" "My caption…" %}
+    // Image short-code
+    // Usage: {% image "my-image.jpg" "full" "My alt…" "My caption…" %}
     eleventyConfig.addShortcode('image', function(src, full, alt, caption) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
@@ -42,6 +42,28 @@ module.exports = function (eleventyConfig) {
     });
 
     // Video short-code
+    // Usage: {% video "my-video.mp4" "full" "My caption…" %}
+    eleventyConfig.addShortcode('video', function(src, full, caption) {
+        return outdent`
+            <figure ${full ? `class="full"` : ``}>
+                <video width="960" height="540" autoplay loop muted playsinline disablePictureInPicture>
+                    <source src="${src}" type="video/mp4">
+                </video>
+                ${caption ? `<figcaption>${caption}</figcaption>` : ``}
+            </figure>
+        `;
+    });
 
     // Stats short-code
+    // Usage: {% stats "Label 1" "Value 1" "Label 2" "Value 2" "Label 3" "Value 3" "Label 4" "Value 4" %}
+    eleventyConfig.addShortcode('stats', function(label1, value1, label2, value2, label3, value3, label4, value4) {
+        return outdent`
+            <ul class="t-list-horizontal stats">
+                ${label1 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label1}</strong>${value1}</p></li>` : ``}
+                ${label2 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label2}</strong>${value2}</p></li>` : ``}
+                ${label3 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label3}</strong>${value3}</p></li>` : ``}
+                ${label4 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label4}</strong>${value4}</p></li>` : ``}
+            </ul>
+        `;
+    });
 }

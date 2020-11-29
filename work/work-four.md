@@ -17,3 +17,9 @@ Test 2 (Image with src and alt):
 
 Test 3 (Image with only src):
 {% image "//placehold.it/300" "" "" "" %}
+
+Stats (with everything):
+{% stats "Label 1" "Value 1" "Label 2" "Value 2" "Label 3" "Value 3" "Label 4" "Value 4" %}
+
+Stats (with label/value 1):
+{% stats "Label 1" "Value 1" "" "" "" "" "" "" %}
