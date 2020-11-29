@@ -16,7 +16,7 @@
 <title>{% if title%}{{ site.title }} — {{ title }}{% else %}{{ site.title }}{% endif %}</title>
 
 {% if layout == 'default' %}
-    <link rel="canonical" href="{{ site.url }}">
+    <link rel="canonical" href="{{ site.url | url }}">
 {% endif %}
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url + '/apple-touch-icon.png' | url }}?v={{ site.version }}">
