@@ -31,23 +31,23 @@ module.exports = function (eleventyConfig) {
     });
 
     // Image short-code
-    // Usage: {% image "my-image.jpg" "full" "My alt…" "My caption…" %}
+    // Usage: {% image "my-image" "full" "My alt…" "My caption…" %}
     eleventyConfig.addShortcode('image', function(src, full, alt, caption) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
-                <img src="${src}" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+                <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
                 ${caption ? `<figcaption>${caption}</figcaption>` : ``}
             </figure>
         `;
     });
 
     // Video short-code
-    // Usage: {% video "my-video.mp4" "full" "My caption…" %}
+    // Usage: {% video "my-video" "full" "My caption…" %}
     eleventyConfig.addShortcode('video', function(src, full, caption) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
                 <video width="960" height="540" autoplay loop muted playsinline disablePictureInPicture>
-                    <source src="${src}" type="video/mp4">
+                    <source src="/static/${src}.mp4" type="video/mp4">
                 </video>
                 ${caption ? `<figcaption>${caption}</figcaption>` : ``}
             </figure>
