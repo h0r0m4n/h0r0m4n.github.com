@@ -17,5 +17,6 @@ permalink: "/{{ title | slug }}/index.html"
             {{ content | safe }}
         </div>
     </div>
+    {% include 'pagination.njk' %}
     {% include 'contact.njk' %}
 </article>

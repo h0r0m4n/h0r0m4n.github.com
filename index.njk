@@ -16,7 +16,7 @@ layout: default
         <ol>
             {% for work in collections.work %}
                 <li class="work">
-                    {% if work.data.permalink == false %}
+                    {% if work.url == false %}
                         {{ work.data.title }}
                     {% else %}
                         <a href="{{ work.url }}">{{ work.data.title }}</a>
