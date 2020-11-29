@@ -10,4 +10,5 @@ skills:
 date: 2019-07-15
 layout: work
 permalink: false
+eleventyExcludeFromCollections: true
 ---

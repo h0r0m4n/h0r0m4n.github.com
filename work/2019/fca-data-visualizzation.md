@@ -8,4 +8,5 @@ skills:
 date: 2019-10-07
 layout: work
 permalink: false
+eleventyExcludeFromCollections: true
 ---

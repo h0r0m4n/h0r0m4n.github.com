@@ -9,4 +9,5 @@ skills:
 date: 2020-11-20
 layout: work
 permalink: false
+eleventyExcludeFromCollections: true
 ---
