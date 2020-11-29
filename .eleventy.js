@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
 
     // Collections
     eleventyConfig.addCollection('work', function(collectionApi) {
-        return collectionApi.getFilteredByGlob('work/*.md').reverse();
+        return collectionApi.getFilteredByGlob('work/**/*.md').reverse();
     });
 
     // Get the first `n` elements of a collection
