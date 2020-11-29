@@ -30,12 +30,13 @@ module.exports = function (eleventyConfig) {
         })
     });
 
-    // Image short-code
-    eleventyConfig.addShortcode('image', function(src, alt, caption) {
+    // Image short-code https://www.11ty.dev/docs/languages/nunjucks/#optional%3A-use-your-nunjucks-environment
+    // Usage: {% image "//placehold.it/300" "full" "My alt…" "My caption…" %}
+    eleventyConfig.addShortcode('image', function(src, full, alt, caption) {
         return outdent`
-            <figure>
-                <img src="${src}" alt="${alt}" loading="lazy">
-                <figcaption>${caption}</figcaption>
+            <figure ${full ? `class="full"` : ``}>
+                <img src="${src}" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+                ${caption ? `<figcaption>${caption}</figcaption>` : ``}
             </figure>
         `;
     });
