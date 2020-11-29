@@ -1,4 +1,5 @@
 const global = require('./_data/site');
+const outdent = require('outdent');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -28,4 +29,18 @@ module.exports = function (eleventyConfig) {
             return (item.data.permalink !== false)
         })
     });
+
+    // Image short-code
+    eleventyConfig.addShortcode('image', function(src, alt, caption) {
+        return outdent`
+            <figure>
+                <img src="${src}" alt="${alt}" loading="lazy">
+                <figcaption>${caption}</figcaption>
+            </figure>
+        `;
+    });
+
+    // Video short-code
+
+    // Stats short-code
 }
