@@ -66,4 +66,12 @@ module.exports = function (eleventyConfig) {
             </ul>
         `;
     });
+
+    // Year short-code
+    eleventyConfig.addShortcode('year', function() {
+        return `
+            ${new Date().getFullYear()}
+        `;
+    });
+
 }
