@@ -1,5 +1,5 @@
-const global = require('./_data/site');
-const outdent = require('outdent');
+const global = require('./_data/site'),
+      outdent = require('outdent');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -64,6 +64,23 @@ module.exports = function (eleventyConfig) {
                 ${label3 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label3}</strong>${value3}</p></li>` : ``}
                 ${label4 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label4}</strong>${value4}</p></li>` : ``}
             </ul>
+        `;
+    });
+
+    // Year short-code
+    eleventyConfig.addShortcode('year', function() {
+        return `
+            ${new Date().getFullYear()}
+        `;
+    });
+
+    // Experience short-code
+    eleventyConfig.addShortcode('experience', function() {
+        let currentYear = new Date().getFullYear();
+        let startingYear = global.starting;
+        let experienceYear = currentYear - startingYear;
+        return `
+            ${experienceYear}
         `;
     });
 }
