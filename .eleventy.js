@@ -1,5 +1,5 @@
-const global = require('./_data/site');
-const outdent = require('outdent');
+const global = require('./_data/site'),
+      outdent = require('outdent');
 
 module.exports = function (eleventyConfig) {
     // Copy
