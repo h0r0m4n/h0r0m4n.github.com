@@ -74,4 +74,13 @@ module.exports = function (eleventyConfig) {
         `;
     });
 
+    // Experience short-code
+    eleventyConfig.addShortcode('experience', function() {
+        let currentYear = new Date().getFullYear();
+        let startingYear = global.starting;
+        let experienceYear = currentYear - startingYear;
+        return `
+            ${experienceYear}
+        `;
+    });
 }
