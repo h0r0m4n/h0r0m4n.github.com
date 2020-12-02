@@ -69,9 +69,7 @@ module.exports = function (eleventyConfig) {
 
     // Year short-code
     eleventyConfig.addShortcode('year', function() {
-        return `
-            ${new Date().getFullYear()}
-        `;
+        return `${new Date().getFullYear()}`;
     });
 
     // Experience short-code
@@ -79,8 +77,7 @@ module.exports = function (eleventyConfig) {
         let currentYear = new Date().getFullYear();
         let startingYear = global.starting;
         let experienceYear = currentYear - startingYear;
-        return `
-            ${experienceYear}
-        `;
+
+        return `${experienceYear}`;
     });
 }
