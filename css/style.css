@@ -471,6 +471,23 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
   }
 }
 
+@keyframes hi {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 #about #avatar {
   float: right;
 }
@@ -495,6 +512,10 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
     width: 154px;
     height: 230px;
   }
+}
+#about .emoji {
+  display: inline-block;
+  animation: hi 1s 1200ms;
 }
 
 @media only screen and (max-width: 39.9375rem) {
