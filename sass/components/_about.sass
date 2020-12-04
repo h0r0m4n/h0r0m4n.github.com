@@ -1,3 +1,15 @@
+@keyframes hi
+    0%
+        transform: rotate(0deg)
+    25%
+        transform: rotate(-15deg)
+    50%
+        transform: rotate(15deg)
+    75%
+        transform: rotate(-15deg)
+    100%
+        transform: rotate(0deg)
+
 #about
     #avatar
         float: right
@@ -13,3 +25,6 @@
             @media #{$media-query-medium}
                 width: 154px
                 height: 230px
+    .emoji
+        display: inline-block
+        animation: hi 1s 1200ms
