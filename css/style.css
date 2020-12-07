@@ -156,6 +156,11 @@ a {
   text-decoration: none;
 }
 
+:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125em var(--color-tertiary);
+}
+
 p a {
   position: relative;
 }
@@ -465,12 +470,6 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
   width: 17.6875em;
 }
 
-@media (prefers-color-scheme: dark) {
-  #avatar img {
-    filter: drop-shadow(0 0 0.5rem var(--color-secondary));
-  }
-}
-
 @keyframes hi {
   0% {
     transform: rotate(0deg);
@@ -683,6 +682,10 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
 #contact li {
   margin-bottom: 0;
 }
+#contact li a {
+  display: inline-block;
+  line-height: 0;
+}
 #contact a:hover svg {
   fill: var(--color-primary);
 }
@@ -694,11 +697,6 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
   padding: var(--size-s) var(--size-m);
   margin-top: var(--size-s);
   text-decoration: none;
-}
-@media (prefers-color-scheme: dark) {
-  #contact .button {
-    box-shadow: 0 0 0.5em var(--color-secondary);
-  }
 }
 
 #skills li {
@@ -714,11 +712,6 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
   line-height: 0;
   border-radius: 50%;
   padding: 0.5em;
-}
-@media (prefers-color-scheme: dark) {
-  #footer li a {
-    box-shadow: 0 0 0.5em var(--color-secondary);
-  }
 }
 #footer li svg {
   fill: #fff;
@@ -851,11 +844,6 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
   left: var(--size-s);
   top: var(--size-s);
   line-height: 0;
-}
-@media (prefers-color-scheme: dark) {
-  #post-header #back {
-    box-shadow: 0 0 0.5em var(--color-secondary);
-  }
 }
 @media only screen and (min-width: 40rem) {
   #post-header #back {
