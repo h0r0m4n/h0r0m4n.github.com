@@ -28,7 +28,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "44000b0769527e777f6bd722fa796a97"
+    "revision": "7524822168a2137e22a8b397caf35d56"
   },
   {
     "url": "android-chrome-192x192.png",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
   },
   {
     "url": "cefla-euroshop-2020/index.html",
-    "revision": "fc21c4e65b8abe9de0b464eb8bd2d4f0"
+    "revision": "1d88d9208258d4a7e08c0cd0bbdc61a5"
   },
   {
     "url": "css/style.css",
@@ -68,11 +68,11 @@ self.__precacheManifest = [
   },
   {
     "url": "ferrari-media-center/index.html",
-    "revision": "cef80701ee7023950cac26cc6a6cd1ae"
+    "revision": "e21643d9b68a00e3a61475bfd04ee688"
   },
   {
     "url": "index.html",
-    "revision": "290bf1dd2497367f71f32030157cb368"
+    "revision": "5a0a4cc5589aa48096b4da47f96f6465"
   },
   {
     "url": "mstile-150x150.png",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
   },
   {
     "url": "siae-plus/index.html",
-    "revision": "ab8062bab5de6e57916f60843a7f69e7"
+    "revision": "25f83d7b3fddd36aef9ab9dcdcc0a088"
   },
   {
     "url": "static/3d-rainbow.jpg",
