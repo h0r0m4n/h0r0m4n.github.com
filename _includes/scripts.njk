@@ -1,4 +1,10 @@
 <script>
+    {# {% if site.environment == "production" %} #}
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    {# {% endif %} #}
+
     var featuredLink = document.querySelectorAll('.work-link');
     var featuredWork = 'FeaturedWork';
     var featuredModal = document.getElementById("modal");
