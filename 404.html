@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
+<meta name="description" content="Personal homepage of Roman Horokhovatskyy a multi-disciplinary designer based in Milan, Italy.">
+<meta name="keywords" content="Roman, Horokhovatskyy, @horoman, @h0r0m4n, Product Design, Interaction Design, User Interface Design, User Experience Design">
+<meta name="author" content="Roman Horokhovatskyy">
 <meta name="robots" content="noindex, nofollow, noarchive, notranslate, noimageindex">
 <meta name="pinterest-rich-pin" content="false">
 
@@ -17,12 +17,12 @@
 
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="https://horoman.com/apple-touch-icon.png?v=2.3">
-<link rel="icon" type="image/png" sizes="32x32" href="https://horoman.com/favicon-32x32.png?v=2.3">
-<link rel="icon" type="image/png" sizes="16x16" href="https://horoman.com/favicon-16x16.png?v=2.3">
-<link rel="manifest" href="https://horoman.com/site.webmanifest?v=2.3">
-<link rel="mask-icon" href="https://horoman.com/safari-pinned-tab.svg?v=2.3" color="#666666">
-<link rel="stylesheet" href="/css/style.css?v=2.3">
+<link rel="apple-touch-icon" sizes="180x180" href="https://horoman.com/apple-touch-icon.png?v=2.4">
+<link rel="icon" type="image/png" sizes="32x32" href="https://horoman.com/favicon-32x32.png?v=2.4">
+<link rel="icon" type="image/png" sizes="16x16" href="https://horoman.com/favicon-16x16.png?v=2.4">
+<link rel="manifest" href="https://horoman.com/site.webmanifest?v=2.4">
+<link rel="mask-icon" href="https://horoman.com/safari-pinned-tab.svg?v=2.4" color="#666666">
+<link rel="stylesheet" href="/css/style.css?v=2.4">
     </head>
     <body>
         <article>
@@ -44,6 +44,12 @@
             </div>
         </article>
         <script>
+    
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    
+
     var featuredLink = document.querySelectorAll('.work-link');
     var featuredWork = 'FeaturedWork';
     var featuredModal = document.getElementById("modal");
