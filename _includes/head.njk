@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#ffffff">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="description" content="{% if description %}{{ description }}{% else %}{{ global.description }}{% endif %}">
-<meta name="keywords" content="{{ global.keywords }}">
-<meta name="author" content="{{ global.author }}">
+<meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="keywords" content="{{ site.keywords }}">
+<meta name="author" content="{{ site.author }}">
 <meta name="robots" content="{% if layout == 'work' or layout == 'not-found' %}noindex, nofollow, noarchive, notranslate, noimageindex{% else %}nofollow, noarchive, notranslate, noimageindex{% endif %}">
 <meta name="pinterest-rich-pin" content="false">
 

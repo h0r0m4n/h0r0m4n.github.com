@@ -1,5 +1,6 @@
 const global = require('./_data/site'),
-      outdent = require('outdent');
+      outdent = require('outdent'),
+      pluginPWA = require('eleventy-plugin-pwa');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -80,4 +81,7 @@ module.exports = function (eleventyConfig) {
 
         return `${experienceYear}`;
     });
+
+    // PWA plug-in
+    eleventyConfig.addPlugin(pluginPWA);
 }
