@@ -1,9 +1,9 @@
 <script>
-    {# {% if site.environment == "production" %} #}
-        if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
             navigator.serviceWorker.register('/service-worker.js');
-        }
-    {# {% endif %} #}
+        });
+    }
 
     var featuredLink = document.querySelectorAll('.work-link');
     var featuredWork = 'FeaturedWork';
