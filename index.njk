@@ -11,7 +11,7 @@ layout: default
     </div>
     <div id="works" class="section">
         <div class="t-container">
-            <h2 class="h3">Here are my latest works</h2>
+            <h2>Latest works</h2>
         </div>
         <ol>
             {% for work in collections.work %}
@@ -31,7 +31,7 @@ layout: default
     {% if skills %}
         <div id="skills" class="section">
             <div class="t-container">
-                <h2 class="h3">Skills</h2>
+                <h2>Skills</h2>
                 <ul class="t-list-horizontal">
                     {% for skill in skills %}
                         <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
@@ -42,7 +42,7 @@ layout: default
     {% endif %}
     <div id="contact" class="section">
         <div class="t-container">
-            <h2 class="h3">Experience</h2>
+            <h2>Experience</h2>
             <p>Over the last {% experience %} years, I had the privilege to improve products used and loved by many users, these are some of the clients:</p>
             {% if clients %}
                 <ol class="t-list-horizontal">
