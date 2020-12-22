@@ -22,6 +22,7 @@
   --size-xxl: 6rem;
   --size-xxxl: 10rem;
   --container-size: 50rem;
+  --skew: rotate(-1.5deg) skewX(-1.5deg);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -216,11 +217,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.075rem;
   margin-bottom: 0;
   margin-top: 1.5em;
-}
-@media (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6 {
-    text-shadow: 0 0 0.25em var(--color-neutral-1);
-  }
 }
 
 h1, .h1 {
@@ -543,6 +539,7 @@ button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring
 @media only screen and (min-width: 40rem) {
   #works ol {
     padding: 1em 0 1em var(--size-m);
+    transform: var(--skew);
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
