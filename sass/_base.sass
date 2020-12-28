@@ -97,10 +97,24 @@ p a
             transform: skew(25deg) scaleX(1.02)
 
 mark 
+    position: relative
     padding-left: 0.25em
     padding-right: 0.25em
-    border-radius: 2px
-    background-color: var(--color-tertiary)
+    margin-left: 0.125em
+    margin-right: 0.125em
+    background-color: transparent
+
+    &::before
+        position: absolute
+        top: - 0.125em
+        left: - 0.125em
+        bottom: - 0.125em
+        width: calc(100% + 0.25em)
+        background-color: var(--color-tertiary)
+        content: ''
+        z-index: -1
+        transform: skew(-10deg) rotate(-0.5deg)
+        border-radius: var(--radius)
 
 b, strong
     font-family: var(--type-family-1b)
@@ -193,7 +207,7 @@ figure
     img, video
         width: 100%
         @media #{$media-query-large}
-            border-radius: var(--size-s)
+            border-radius: var(--radius)
 
     figcaption
         font-family: var(--type-family-3)
