@@ -97,10 +97,10 @@ p a
             transform: skew(25deg) scaleX(1.02)
 
 mark 
-    padding-left: 0.25em
-    padding-right: 0.25em
-    border-radius: 2px
+    position: relative
+    padding: 0.0625em 0.25em
     background-color: var(--color-tertiary)
+    border-radius: var(--radius)
 
 b, strong
     font-family: var(--type-family-1b)
@@ -193,7 +193,7 @@ figure
     img, video
         width: 100%
         @media #{$media-query-large}
-            border-radius: var(--size-s)
+            border-radius: var(--radius)
 
     figcaption
         font-family: var(--type-family-3)

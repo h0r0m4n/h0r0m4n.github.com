@@ -21,9 +21,15 @@
 {% endif %}
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url + '/apple-touch-icon.png' | url }}?v={{ site.version }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url + '/favicon-32x32.png' | url }}?v={{ site.version }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url + '/favicon-16x16.png' | url }}?v={{ site.version }}">
-<link rel="manifest" href="{{ site.url + '/site.webmanifest' | url }}?v={{ site.version }}">
-<link rel="stylesheet" href="{{ '/css/style.css' | url }}?v={{ site.version }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ site.url + '/apple-touch-icon.png' | url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ site.url + '/favicon-32x32.png' | url }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ site.url + '/favicon-16x16.png' | url }}">
+<link rel="manifest" href="{{ site.url + '/site.webmanifest' | url }}">
 <link rel="mask-icon" href="{{ site.url + '/safari-pinned-tab.svg' | url }}" color="#322abb">
+
+{% set css %}
+    {% include 'style.css' %}
+{% endset %}
+<style>
+    {{ css | cssmin | safe }}
+</style>
