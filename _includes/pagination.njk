@@ -1,16 +1,16 @@
-<nav id="post-pagination">
+<nav id="work-pagination">
     <div class="t-container">
         <h2>See next</h2>
         <ul>    
-            {% set nextPost = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
-            {% set previousPost = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
-            {% if nextPost %}
+            {% set nextWork = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
+            {% set previousWork = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
+            {% if nextWork %}
                 <li class="work work--reels">
-                    <a class="t-hover--2" href="{{ nextPost.url }}" rel="bookmark" target="_parent" title="{{ nextPost.data.title }}{% if nextPost.data.client %} – {{ nextPost.data.client }}{% endif %}">
-                        <img src="{{ '/static/' + nextPost.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + nextPost.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + nextPost.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ nextPost.data.title }}{% if nextPost.data.client %} – {{ nextPost.data.client }}{% endif %}" loading="lazy">
+                    <a class="t-hover--2" href="{{ nextWork.url }}" rel="bookmark" target="_parent" title="{{ nextWork.data.title }}{% if nextWork.data.client %} – {{ nextWork.data.client }}{% endif %}">
+                        <img src="{{ '/static/' + nextWork.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + nextWork.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + nextWork.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ nextWork.data.title }}{% if nextWork.data.client %} – {{ nextWork.data.client }}{% endif %}" loading="lazy">
                     </a>
                 </li>
-            {% elif previousPost %}
+            {% elif previousWork %}
                 {% for work in collections.work | reverse | permalinkNotFalse | head(-1) %}
                     <li class="work work--reels">
                         <a class="t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
