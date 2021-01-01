@@ -44,7 +44,7 @@ self.__precacheManifest = [
   },
   {
     "url": "cefla-euroshop-2020/index.html",
-    "revision": "5b5d6912758ada06862aa32fd2529ca8"
+    "revision": "65d1f5f5de2baec3391c06679805b58b"
   },
   {
     "url": "favicon-16x16.png",
@@ -60,11 +60,11 @@ self.__precacheManifest = [
   },
   {
     "url": "ferrari-media-center/index.html",
-    "revision": "e10abe7704c9a7546e5730bd5d0e769b"
+    "revision": "2257eff773408c9f10a2987456891551"
   },
   {
     "url": "index.html",
-    "revision": "a83ea33ba49150166b6feb1aa2b63892"
+    "revision": "ca2f6d709aec6aec50d1a5868bbb82c5"
   },
   {
     "url": "mstile-150x150.png",
@@ -76,7 +76,7 @@ self.__precacheManifest = [
   },
   {
     "url": "siae-plus/index.html",
-    "revision": "c58dbb3c39d84dbf49585f2c07eed026"
+    "revision": "6d986a975f05a43b5251679561575cc6"
   },
   {
     "url": "static/3d-rainbow.jpg",
