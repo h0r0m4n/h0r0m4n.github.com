@@ -1,7 +1,5 @@
 const global = require('./_data/site'),
-      outdent = require('outdent'),
-      CleanCSS = require('clean-css'),
-      pluginPWA = require('eleventy-plugin-pwa');
+      outdent = require('outdent');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -82,12 +80,4 @@ module.exports = function (eleventyConfig) {
 
         return `${experienceYear}`;
     });
-
-    // Inline CSS
-    eleventyConfig.addFilter("cssmin", function(code) {
-        return new CleanCSS({}).minify(code).styles;
-    });
-
-    // PWA plug-in
-    eleventyConfig.addPlugin(pluginPWA);
 }
