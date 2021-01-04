@@ -1,9 +1,7 @@
 #work-header
-    #back, #avatar
+    #back
         position: fixed
         z-index: 1
-
-    #back
         border: none
         background-color: var(--color-secondary)
         margin: 0
@@ -34,24 +32,3 @@
             @media #{$media-query-large}
                 width: var(--size-xl)
                 height: var(--size-xl)
-
-    #avatar
-        top: var(--size-s)
-        right: var(--size-s)
-        @media #{$media-query-medium}
-            top: var(--size-m)
-            right: var(--size-m)
-        @media #{$media-query-large}
-            top: var(--size-l)
-            right: var(--size-l)
-        @media #{$media-query-huge}
-            top: var(--size-xl)
-            right: var(--size-xl)
-
-        &:hover
-            cursor: pointer
-
-        img
-            @media #{$media-query-small-only}
-                width: 64px
-                height: 96px
