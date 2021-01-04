@@ -27,9 +27,4 @@
 <link rel="manifest" href="{{ site.url + '/site.webmanifest' | url }}">
 <link rel="mask-icon" href="{{ site.url + '/safari-pinned-tab.svg' | url }}" color="#322abb">
 
-{% set css %}
-    {% include 'style.css' %}
-{% endset %}
-<style>
-    {{ css | cssmin | safe }}
-</style>
+<link rel="stylesheet" href="{{ '/css/style.css' | url }}?v={{ site.version }}">
