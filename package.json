@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "sass --watch sass:_site/css/",
     "watch:eleventy": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
-    "build:sass": "sass sass:_site/css/",
+    "build:sass": "sass --style=compressed --no-source-map sass:_site/css/",
     "build:eleventy": "ELEVENTY_ENV=production npx @11ty/eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:* --sequential"
