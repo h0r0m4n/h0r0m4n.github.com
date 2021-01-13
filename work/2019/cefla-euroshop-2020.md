@@ -19,15 +19,21 @@ Unlike traditional stores, Cefla can help customers save time in its target mark
 
 ## Design process
 
+After collecting the business requirements, we prioritized the most important features for the final product starting with the first release.
+
+Then we started making low fidelity prototypes and test them with users and stakeholders. This allowed us to do user-testing already in the early stages. And after we start creating medium fidelity prototypes with less probability of rework.
+
+{% image "cefla-euroshop-2020-6" "full" "" "" %}
+
 To understand better user's needs and motivations we used user personas that help us to translate to online use and consumption and, ultimately, purchasing decisions.
 
 {% stats "Approach" "Design Thinking & Agile" "Duration" "6 months" "" "" "" "" %}
 
-Starting with Francesco's characteristics, we have developed the three potential personas:
-
 {% image "cefla-euroshop-2020-5" "full" "" "External promps/solutions" %}
 
-{% image "cefla-euroshop-2020-2" "full" "" "Overview of three personas to simulate design-driven experiences" %}
+Based on the business requirements we have designed the three potential personas to simulate design-driven experience:
+
+{% image "cefla-euroshop-2020-2" "full" "" "Overview of three personas" %}
 
 ### Data and metrics
 
