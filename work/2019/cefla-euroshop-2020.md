@@ -23,7 +23,7 @@ After collecting the business requirements, we prioritized the most important fe
 
 Then we started making low fidelity prototypes and test them with users and stakeholders. This allowed us to do user-testing already in the early stages. And after we start creating medium fidelity prototypes with less probability of rework.
 
-{% image "cefla-euroshop-2020-6" "full" "" "" %}
+{% image "cefla-euroshop-2020-6" "" "" "" %}
 
 To understand better user's needs and motivations we used user personas that help us to translate to online use and consumption and, ultimately, purchasing decisions.
 
