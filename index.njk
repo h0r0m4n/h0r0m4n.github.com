@@ -7,6 +7,16 @@ layout: default
             {% include 'avatar.njk' %}
             <p>Nice to meet you <span class="emoji" aria-hidden="true">👋</span>. I’m a <mark title="Product Design, Interaction Design, User Experience & User Interface Design">multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
             <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process, transparency, and sharing what I learn.</p>
+            {% if skills %}
+                <ul class="t-list-horizontal">
+                    {% for expertise in skills %}
+                        <li class="expertise t-list-horizontal--item t-list-horizontal--item--distance-1">
+                            {% include expertise | slug + '.svg' %}
+                            <small>{{ expertise }}</small>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
         </div>
     </div>
     <div id="works" class="section">
@@ -28,18 +38,6 @@ layout: default
             {% endfor %}
         </ol>
     </div>
-    {% if skills %}
-        <div id="skills" class="section">
-            <div class="t-container">
-                <h2>Skills</h2>
-                <ul class="t-list-horizontal">
-                    {% for skill in skills %}
-                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-    {% endif %}
     <div id="contact" class="section">
         <div class="t-container">
             <h2>Experience</h2>

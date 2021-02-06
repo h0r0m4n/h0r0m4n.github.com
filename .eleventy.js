@@ -59,10 +59,10 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode('stats', function(label1, value1, label2, value2, label3, value3, label4, value4) {
         return outdent`
             <ul class="t-list-horizontal stats">
-                ${label1 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label1}</strong>${value1}</p></li>` : ``}
-                ${label2 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label2}</strong>${value2}</p></li>` : ``}
-                ${label3 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label3}</strong>${value3}</p></li>` : ``}
-                ${label4 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label4}</strong>${value4}</p></li>` : ``}
+                ${label1 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label1}</strong><span>${value1}</span></p></li>` : ``}
+                ${label2 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label2}</strong><span>${value2}</span></p></li>` : ``}
+                ${label3 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label3}</strong><span>${value3}</span></p></li>` : ``}
+                ${label4 ? `<li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>${label4}</strong><span>${value4}</span></p></li>` : ``}
             </ul>
         `;
     });
