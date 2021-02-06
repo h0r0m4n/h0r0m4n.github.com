@@ -29,12 +29,15 @@ layout: default
         </ol>
     </div>
     {% if skills %}
-        <div id="skills" class="section">
+        <div id="expertises" class="section">
             <div class="t-container">
-                <h2>Skills</h2>
+                <h2>Expertises</h2>
                 <ul class="t-list-horizontal">
-                    {% for skill in skills %}
-                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
+                    {% for expertise in skills %}
+                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
+                            {{ expertise }}
+                            <img src="{{ '/static/' + expertise | normalize + '.svg' }}" alt="{{ expertise }}" loading="lazy">
+                        </li>
                     {% endfor %}
                 </ul>
             </div>
