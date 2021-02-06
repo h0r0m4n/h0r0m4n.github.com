@@ -30,11 +30,6 @@ module.exports = function (eleventyConfig) {
         })
     });
 
-    eleventyConfig.addNunjucksFilter('normalize', str => {
-		//return str.replace(/<[^>]*>/g, "");
-        return str.replace(/ /g, "-").toLowerCase();
-	});
-
     // Image short-code
     // Usage: {% image "my-image" "full" "My alt…" "My caption…" %}
     eleventyConfig.addShortcode('image', function(src, full, alt, caption) {

@@ -1,0 +1,17 @@
+<svg id="epma3re5m491" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+  <style>
+    @keyframes epma3re5m492_ts__ts{0%,10%,18%,to{transform:translate(24px,24px) scale(1,1)}14%{transform:translate(24px,24px) scale(.75,.75)}}@keyframes epma3re5m496_to__to{0%,28%,4%,to{transform:translate(33px,35.21px)}10%,22%{transform:translate(30px,32px)}}@keyframes epma3re5m496_ts__ts{0%,10%,18%,to{transform:scale(1,1)}14%{transform:scale(1.1,1.1)}}
+  </style>
+  <g transform="translate(24 24)" style="animation:epma3re5m492_ts__ts 5000ms linear infinite normal backwards">
+    <g id="epma3re5m492" fill="none" stroke="currentColor" stroke-width="1">
+      <circle id="epma3re5m493" r="15.5" opacity=".12"/>
+      <circle id="epma3re5m494" r="12.5" opacity=".25"/>
+      <circle id="epma3re5m495" r="9.5" opacity=".5"/>
+    </g>
+  </g>
+  <g style="animation:epma3re5m496_to__to 5000ms linear infinite normal backwards">
+    <g transform="translate(33 35.21)" style="animation:epma3re5m496_ts__ts 5000ms linear infinite normal backwards">
+      <path id="epma3re5m496" d="M22 22a2 2 0 114 0v3a3 3 0 003 3h6a3 3 0 013 3v7a6 6 0 01-6 6h-4a6 6 0 01-6-6V22z" transform="translate(-30 -32)" fill="currentColor" stroke="none" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
