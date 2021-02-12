@@ -34,7 +34,7 @@ The two most complex features of the SIAE+ is the registration and the possibili
 
 During the first year, we received a lot of positive feedback on the first versions of the app, here’s a medium rating of Apple’s and Google’s stores:
 
-{% stats "App Store" "4.7+" "Google Play" "4.3+" "" "" "" "" %}
+{% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
 
 {% image "siae-plus-3" "full" "" "Data visualization and manipulation by user" %}
 
