@@ -1,6 +1,6 @@
 ---
-title: IED
-description: 
+title: Main website
+description: Restyling of the main IED website, which includes landing pages, search and support.
 client: IED
 skills:
   - Product Design
