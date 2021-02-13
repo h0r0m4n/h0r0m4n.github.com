@@ -2,6 +2,7 @@
   <style>
     @keyframes epma3re5m492_ts__ts{0%,10%,18%,to{transform:translate(24px,24px) scale(1,1)}14%{transform:translate(24px,24px) scale(.75,.75)}}@keyframes epma3re5m496_to__to{0%,28%,4%,to{transform:translate(33px,35.21px)}10%,22%{transform:translate(30px,32px)}}@keyframes epma3re5m496_ts__ts{0%,10%,18%,to{transform:scale(1,1)}14%{transform:scale(1.1,1.1)}}
   </style>
+  <rect width="48" height="48" rx="24" fill="currentColor" opacity=".0625"/>
   <g transform="translate(24 24)" style="animation:epma3re5m492_ts__ts 5000ms linear infinite normal backwards">
     <g id="epma3re5m492" fill="none" stroke="currentColor" stroke-width="1">
       <circle id="epma3re5m493" r="15.5" opacity=".12"/>
