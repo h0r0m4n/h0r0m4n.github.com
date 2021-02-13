@@ -2,6 +2,7 @@
   <style>
     @keyframes e0iboc9jt2ir2_c_o{0%,20%,4%,to{opacity:.25}16%,8%{opacity:.04}}@keyframes e0iboc9jt2ir6_to__to{0%,20%,4%,to{transform:translate(24px,35px)}8%{transform:translate(21px,35px)}12%{transform:translate(25px,35px)}}@keyframes e0iboc9jt2ir7_to__to{0%,20%,4%,to{transform:translate(35px,24px)}8%{transform:translate(35px,23px)}12%{transform:translate(35px,19px)}}@keyframes e0iboc9jt2ir11_to__to{0%,16%,4%,to{transform:translate(33.406331px,33.663571px)}8%{transform:translate(29.592531px,30.752198px)}12%{transform:translate(31.592531px,27.752198px)}}@keyframes e0iboc9jt2ir11_ts__ts{0%,20%,4%,to{transform:scale(1,1)}12%{transform:scale(.75,.75)}}
   </style>
+  <rect width="48" height="48" rx="24" fill="currentColor" opacity=".0625"/>
   <path d="M12.5 12.5h23V24h-1V13.5h-21v21H24v1H12.5v-23z" opacity=".25" clip-rule="evenodd" fill="currentColor" fill-rule="evenodd" style="animation:e0iboc9jt2ir2_c_o 5000ms linear infinite normal forwards"/>
   <rect id="e0iboc9jt2ir3" width="6" height="6" rx="2" ry="2" transform="translate(10 10)" fill="currentColor" stroke="none" stroke-width="1"/>
   <rect id="e0iboc9jt2ir4" width="4" height="4" rx="1" ry="1" transform="translate(22 11)" fill="currentColor" stroke="none" stroke-width="1"/>
