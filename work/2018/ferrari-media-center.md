@@ -16,7 +16,7 @@ layout: work
 
 We kick off our engagements by interviewing stakeholders across Ferrari’s organization. We’ll line up mostly one-on-one interviews, and conduct a slew of 30-45 minute interview sessions over a week or three.
 
-{% stats "Approach" "Design Thinking" "Duration" "3 months" "" "" "" "" %}
+{% stats "Design approach" "Design Thinking" "Project approach" "Agile" "" "" "" "" %}
 
 The interviews are about discovering what you don’t know—and often that means uncovering the real questions as you go. So we created more specific questions receiving great results for proceeding to the first exploration and prototypes:
 
