@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy('site.webmanifest')
         .addPassthroughCopy('CNAME');
 
+    // Watch
+    eleventyConfig.addWatchTarget('./sass/');
+
     // Collections
     eleventyConfig.addCollection('work', function(collectionApi) {
         return collectionApi.getFilteredByGlob('work/**/*.md').reverse();
