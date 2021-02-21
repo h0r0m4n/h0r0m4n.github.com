@@ -27,11 +27,11 @@ layout: default
             {% for work in collections.work %}
                 <li class="work{% if work.url != false %} work--reels{% endif %}">
                     {% if work.url == false %}
-                        <img src="{{ '/static/' + work.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + work.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + work.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}" loading="lazy">
+                        {% thumbnail work.fileSlug, work.data.title %}
                     {% else %}
                         <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
                             <span class="link-label">Case study</span>
-                            <img src="{{ '/static/' + work.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + work.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + work.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}" loading="lazy">
+                            {% thumbnail work.fileSlug, work.data.title %}
                         </a>
                     {% endif %}
                 </li>

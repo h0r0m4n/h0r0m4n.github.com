@@ -9,6 +9,9 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy('site.webmanifest')
         .addPassthroughCopy('CNAME');
 
+    // Watch
+    eleventyConfig.addWatchTarget('./sass/');
+
     // Collections
     eleventyConfig.addCollection('work', function(collectionApi) {
         return collectionApi.getFilteredByGlob('work/**/*.md').reverse();
@@ -38,6 +41,14 @@ module.exports = function (eleventyConfig) {
                 <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
                 ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
             </figure>
+        `;
+    });
+
+    // Thumbnail short-code
+    // Usage: {% thumbnail "my-image", "My alt…" %}
+    eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
+        return outdent`
+            <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
         `;
     });
 

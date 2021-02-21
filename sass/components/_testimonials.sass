@@ -1,14 +1,29 @@
 #testimonials
     ul
+        display: grid
         list-style: none
         margin: 0
         padding-left: 0
-    li
-        margin-bottom: var(--size-l)
+        grid-gap: var(--size-x)
+        grid-template-columns: repeat(1, 1fr)
+        @media #{$media-query-medium}
+            font-size: 0.75em
+            grid-gap: var(--size-l)
+            grid-template-columns: repeat(2, 1fr)
+        @media #{$media-query-large}
+            grid-template-columns: repeat(3, 1fr)
     blockquote
-        margin: 0
-    .comment
-        font-size: 1.25em
+        position: relative
+        margin: var(--size-m) 0 0
+        padding-top: 1em
+        &::before
+            content: "“"
+            position: absolute
+            top: -0.375em
+            font-family: Georgia, serif
+            font-size: 4em
+            font-weight: bold
+            opacity: 0.125
     .testimonial
         display: flex
         align-items: center
