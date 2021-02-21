@@ -44,6 +44,14 @@ module.exports = function (eleventyConfig) {
         `;
     });
 
+    // Thumbnail short-code
+    // Usage: {% thumbnail "my-image", "My alt…" %}
+    eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
+        return outdent`
+            <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+        `;
+    });
+
     // Video short-code
     // Usage: {% video "my-video" "full" "My caption…" %}
     eleventyConfig.addShortcode('video', function(src, full, caption) {

@@ -7,14 +7,14 @@
             {% if nextWork %}
                 <li class="work work--reels">
                     <a class="t-hover--2" href="{{ nextWork.url }}" rel="bookmark" target="_parent" title="{{ nextWork.data.title }}{% if nextWork.data.client %} – {{ nextWork.data.client }}{% endif %}">
-                        <img src="{{ '/static/' + nextWork.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + nextWork.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + nextWork.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ nextWork.data.title }}{% if nextWork.data.client %} – {{ nextWork.data.client }}{% endif %}" loading="lazy">
+                        {% thumbnail nextWork.fileSlug, nextWork.data.title %}
                     </a>
                 </li>
             {% elif previousWork %}
                 {% for work in collections.work | reverse | permalinkNotFalse | head(-1) %}
                     <li class="work work--reels">
                         <a class="t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
-                            <img src="{{ '/static/' + work.fileSlug + '.jpg' | url }}" srcset="{{ '/static/' + work.fileSlug + '@1.5x.jpg' | url }} 1.5x, {{ '/static/' + work.fileSlug + '@2x.jpg' | url }} 2x" alt="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}" loading="lazy">
+                            {% thumbnail work.fileSlug, work.data.title %}
                         </a>
                     </li>
                 {% endfor %}
