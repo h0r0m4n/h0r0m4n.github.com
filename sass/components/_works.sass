@@ -17,6 +17,8 @@
             padding: 1em 0 1em var(--size-m)
             overflow-x: scroll
             overflow-y: hidden
+            scroll-snap-type: x mandatory
+            scroll-padding: 0 0 0 var(--size-m)
             -webkit-overflow-scrolling: touch
             white-space: nowrap
         @media #{$media-query-large}
@@ -43,5 +45,6 @@
                 list-style: none
                 vertical-align: middle
                 white-space: normal
+                scroll-snap-align: start
             @media #{$media-query-large}
                 margin-right: var(--size-l)
