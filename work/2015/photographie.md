@@ -1,5 +1,5 @@
 ---
-title: photographie
+title: Photographie
 description: 
 client: 
 skills:
