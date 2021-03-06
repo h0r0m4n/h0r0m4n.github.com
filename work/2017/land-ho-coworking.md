@@ -1,7 +1,7 @@
 ---
-title: Land Ho Coworking
-description: Ho Coworking provides top tier spaces in two parts in the Rome city to accommodate between 50-200 professionals on any given day. I collaborated with them in the creation of the main website with booking feature as well.
-client: Land Ho Studio
+title: Coworking
+description: Coworking provides top tier space in two parts in Rome city to accommodate between 50-200 professionals on any given day. I led the entire end-to-end process in the design and implementation, featuring main website, locations and a booking system.
+client: LAND HO
 skills:
   - Product Design
   - User Experience

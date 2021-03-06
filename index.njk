@@ -27,11 +27,14 @@ layout: default
             {% for work in collections.work %}
                 <li class="work{% if work.url != false %} work--reels{% endif %}">
                     {% if work.url == false %}
+                        <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
                         {% thumbnail work.fileSlug, work.data.title %}
+                        <p>{{ work.data.description }}</p>
                     {% else %}
                         <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
-                            <span class="link-label">Case study</span>
+                            <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }} <span class="link-label">Case study</span></h3>
                             {% thumbnail work.fileSlug, work.data.title %}
+                            <p>{{ work.data.description }}</p>
                         </a>
                     {% endif %}
                 </li>

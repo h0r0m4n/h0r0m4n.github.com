@@ -1,7 +1,7 @@
 ---
 title: Francesca Moschino
 description: 
-client: Francesca Moschino
+client: 
 skills:
   - Web Design
   - User Interface

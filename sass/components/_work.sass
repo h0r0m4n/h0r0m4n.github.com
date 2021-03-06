@@ -4,9 +4,34 @@
         border-radius: var(--radius)
         @media #{$media-query-small-only}
             width: 100%
+        @media #{$media-query-medium}
+            // 640
+            //width: 40vw
+        @media #{$media-query-large}
+            // 1024
+            //width: 40vw
+        @media #{$media-query-huge}
+            // 1280
+            width: inherit
+            //width: 30vw
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             transition: box-shadow 150ms ease-in
             box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+    h3
+        position: relative
+        z-index: 3
+        font-family: var(--type-family-1b)
+        text-transform: none
+        font-size: 1em
+        margin-top: 0
+        margin-bottom: 0.5em
+        letter-spacing: 0
+        span
+            color: var(--color-tertiary)
+            text-transform: uppercase
+            font-size: 0.675em
+    p
+        font-size: 0.75em
     &--reels
         a
             display: block
@@ -28,18 +53,3 @@
                 img
                     @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
                         box-shadow: 0 0 2em rgba(0, 0, 0, 0.5)
-
-            span
-                position: absolute
-                top: 0
-                left: 0
-                font-family: var(--type-family-1b)
-                font-size: 0.75em
-                color: var(--color-primary)
-                background-color: var(--color-tertiary)
-                padding: 0.25em 0.75em
-                border-top-left-radius: var(--radius)
-                border-bottom-right-radius: var(--radius)
-                z-index: 3
-                @media (prefers-color-scheme: dark)
-                    color: var(--color-background)

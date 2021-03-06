@@ -1,7 +1,7 @@
 ---
 title: Le Paradox v2
 description: 
-client: Le Paradox
+client:
 skills:
   - Product Design
   - User Experience
