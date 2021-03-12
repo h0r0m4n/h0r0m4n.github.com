@@ -8,6 +8,7 @@ skills:
   - Web Development
 date: 2016-06-30
 layout: work
+permalink: false
 ---
 
 ## Development

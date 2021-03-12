@@ -1,6 +1,6 @@
 ---
 title: 3D Sphere
-description: 
+description: A Visual Design 3D pink sphere.
 client:
 skills:
   - Visual Design
