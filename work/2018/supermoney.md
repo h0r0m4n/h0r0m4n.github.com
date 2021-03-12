@@ -1,6 +1,6 @@
 ---
 title: Supermoney
-description: Restyling of the page blog page of Italian most used price comparison website.
+description: Restyling of the page blog page of the Italian most used price comparison website.
 client: Supermoney
 skills:
   - Product Design

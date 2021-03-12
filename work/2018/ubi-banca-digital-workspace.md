@@ -1,6 +1,6 @@
 ---
 title: Digital Workspace
-description: UBI Banca is an Italian banking group, the fifth largest in Italy by number of branches. I leaded the creation of the new portal and Design System used by more than 20.000 employees.
+description: UBI Banca is an Italian banking group, the fifth largest in Italy by a number of branches. I led the creation of the new portal and Design System used by more than 20.000 employees.
 client: UBI Banca
 skills:
   - Design System
