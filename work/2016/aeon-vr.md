@@ -8,7 +8,6 @@ skills:
   - Web Development
 date: 2016-06-30
 layout: work
-permalink: false
 ---
 
 ## Development
@@ -19,15 +18,15 @@ It was possible to further extend the automation of the workflow of Gulp thanks 
 
 {% image "aeon-vr-4" "full" "" "" %}
 
-The complex development of [Aeon](http://aeon.horoman.com) had the need to use a versioning system such as Git through the GitHub service which made it possible to store all the changes made to one or more files in order to be able to return to a previous state at any time. The GitHub service has permission to conduct multiple experiments and yet keep a "clean" version of the project, modify changes as needed, and in some circumstances it was possible to rewrite the project's history in release form. In this way, every step of the design process was documented.
+The complex development of [Aeon](http://aeon.horoman.com) had the need to use a versioning system such as Git through the GitHub service which made it possible to store all the changes made to one or more files in order to be able to return to a previous state at any time. The GitHub service has permission to conduct multiple experiments and yet keep a "clean" version of the project, modify changes as needed, and in some circumstances, it was possible to rewrite the project's history in a release form. In this way, every step of the design process was documented.
 
-Text data had a size saving advantage over 75%, thanks to HTML compression in conjunction with GZIP. The application interface uses the vector format to ensure sharpness regardless of the pixel density of the devices. SVG symbols were used to reduce HTTP requests and uploads.
+Text data had a size saving advantage of over 75%, thanks to HTML compression in conjunction with GZIP. The application interface uses the vector format to ensure sharpness regardless of the pixel density of the devices. SVG symbols were used to reduce HTTP requests and uploads.
 
-Real-time 3D rendering was possible using WebGL technology along with three. Js which natively allowed the creation of scenes - where all objects, cameras and lights are placed, objects - geometries and materials rooms - single and multiple rooms necessary for virtual reality by simulating stereoscopic vision and lights. The three.js library has the permission to have an excellent consistency by speeding up the working process in the interactions.
+Real-time 3D rendering was possible using WebGL technology along with three. Js which natively allowed the creation of scenes - where all objects, cameras and lights are placed, objects - geometries and materials rooms - single and multiple rooms necessary for virtual reality by simulating stereoscopic vision and lights. The three.js library has permission to have excellent consistency by speeding up the working process in the interactions.
 
 ## 3D models and rendering
 
-The project is limited to the WYSIWYG-style level editor instead of the programming environment that deals with the need to be simulated and its appearance of the final object, with the ultimate aim of providing direct graphic commands to manipulate. This means that any level design data has been entered and manipulated manually and procedural forms.
+The project is limited to the WYSIWYG-style level editor instead of the programming environment that deals with the need to be simulated and its appearance of the final object, with the ultimate aim of providing direct graphic commands to manipulate. This means that any level of design data has been entered and manipulated manually and procedural forms.
 
 {% stats "Objects handcrafted" "10+" "Procedural generated" "100+" "" "" "" %}
 
@@ -35,7 +34,7 @@ The project is limited to the WYSIWYG-style level editor instead of the programm
 
 ## Visual Concept
 
-Visual parameters such as colors and lights with low gamut sections are followed by the bright parts and the sections with cold colors are followed by warm colors. This allows you to establish a feeling of rhythm and create visual delineation of scenes:
+Visual parameters such as colours and lights with low gamut sections are followed by the bright parts and the sections with cold colours are followed by warm colours. This allows you to establish a feeling of rhythm and create visual delineation of scenes:
 
 {% image "aeon-vr-1" "full" "" "An overview of color patterns of each area" %}
 {% image "aeon-vr-2" "full" "" "3D color applied" %}
@@ -48,14 +47,14 @@ Typographic realization of the font that conveys authenticity with a fairly open
 
 ## Summary and finished product
 
-The goal of this project was to works on every modern browser. Eventually [Aeon](http://aeon.horoman.com) works on specific types of browsers such as Chromium, Chrome Canary, Firefox Nightly, Safari (iOS), Chrome Dev (Android). Such browsers offer better WebGL support, making the best use of GPU’s.
+The goal of this project was to works on every modern browser. Eventually, [Aeon](http://aeon.horoman.com) works on specific types of browsers such as Chromium, Chrome Canary, Firefox Nightly, Safari (iOS), Chrome Dev (Android). Such browsers offer better WebGL support, making the best use of GPU’s.
 
 {% stats "Pageviews (30 days)" "10.000+" "" "" "" "" "" %}
 
 {% image "aeon-vr-6" "full" "" "" %}
 {% image "aeon-vr-7" "full" "" "" %}
 
-Thanks to the set of technologies such as WebVR API and three.js and the automated workflow it was possible to create a virtual reality experience not only working on computers but also on tablet and mobile devices with a medium-high power graphics chips.
+Thanks to the set of technologies such as WebVR API and three.js and the automated workflow it was possible to create a virtual reality experience not only working on computers but also on tablet and mobile devices with medium-high power graphics chips.
 
 {% stats "Total polygons" "60.000+" "Medium frame rate" "30FPS" "" "" "" %}
 
