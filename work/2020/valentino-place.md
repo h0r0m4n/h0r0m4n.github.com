@@ -1,6 +1,6 @@
 ---
 title: Place
-description: Restyling of the intranet portal used by Valentino employees. With the main functionalities such as calendar, company news, social stream, magazine stream and online courses.
+description: Valentino is an Italian luxury fashion brand. I led the restyling of the intranet portal used by Valentino employees. Main functionalities include calendar, company news, social stream, magazine stream and online courses.
 client: Valentino
 skills:
   - Product Design

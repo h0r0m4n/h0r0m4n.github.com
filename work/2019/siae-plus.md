@@ -1,5 +1,5 @@
 ---
-title: SIAE+
+title: App SIAE+
 description: SIAE is the first collective management company of copyright in Italy. I collaborated with them in the creation of the first app SIAE+ that supports all the major services of the company.
 client: SIAE
 skills:
@@ -14,7 +14,7 @@ layout: work
 
 ## Design process
 
-In this project, we used [Enterprise Design Thinking](https://www.ibm.com/design/thinking/) and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
+In this project, we used Enterprise Design Thinking and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
 
 {% stats "Approach" "Design Thinking & Agile" "Duration" "8 months" "" "" "" "" %}
 

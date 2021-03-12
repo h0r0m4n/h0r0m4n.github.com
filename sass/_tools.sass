@@ -16,6 +16,8 @@
     &-hover
         &--1
             transition: all 150ms ease-out
+            backface-visibility: hidden
+            -webkit-font-smoothing: subpixel-antialiased
             &:hover
                 -webkit-filter: brightness(130%)
                 filter: brightness(130%)
@@ -26,8 +28,6 @@
             transition: transform 150ms ease-out
             &:hover
                 transform: scale(1.05)
-                @media #{$media-query-large}
-                    transform: scale(1.1)
 
     &-container
         max-width: var(--container-size)

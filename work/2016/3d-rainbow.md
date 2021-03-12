@@ -1,6 +1,6 @@
 ---
 title: 3D Rainbow
-description: 
+description: A Visual Design 3D rainbow sphere.
 client:
 skills:
   - Visual Design

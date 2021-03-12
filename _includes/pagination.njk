@@ -8,6 +8,9 @@
                 <li class="work work--reels">
                     <a class="t-hover--2" href="{{ nextWork.url }}" rel="bookmark" target="_parent" title="{{ nextWork.data.title }}{% if nextWork.data.client %} – {{ nextWork.data.client }}{% endif %}">
                         {% thumbnail nextWork.fileSlug, nextWork.data.title %}
+                        <div class="content">
+                            <h3>{% if nextWork.data.client %}{{ nextWork.data.client }}: {% endif %}{{ nextWork.data.title }}</h3>
+                        </div>
                     </a>
                 </li>
             {% elif previousWork %}
@@ -15,6 +18,9 @@
                     <li class="work work--reels">
                         <a class="t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent" title="{{ work.data.title }}{% if work.data.client %} – {{ work.data.client }}{% endif %}">
                             {% thumbnail work.fileSlug, work.data.title %}
+                            <div class="content">
+                                <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
+                            </div>
                         </a>
                     </li>
                 {% endfor %}

@@ -1,6 +1,6 @@
 ---
 title: Antechamber
-description: A short-video inspired by Person of Interest tv-series.
+description: A short video inspired by Person of Interest tv-series.
 client:
 skills:
   - User Interface
