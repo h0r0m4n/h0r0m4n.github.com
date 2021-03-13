@@ -1,5 +1,6 @@
 const global = require('./_data/site'),
-      outdent = require('outdent');
+      outdent = require('outdent'),
+      { DateTime } = require('luxon');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -33,12 +34,16 @@ module.exports = function (eleventyConfig) {
         })
     });
 
+    eleventyConfig.addFilter('year', dateObj => {
+        return DateTime.fromJSDate(dateObj, {zone: 'utc'}).get('year');
+    });
+
     // Image short-code
     // Usage: {% image "my-image" "full" "My alt…" "My caption…" %}
-    eleventyConfig.addShortcode('image', function(src, full, alt, caption) {
+    eleventyConfig.addShortcode('image', function(src, ext, full, alt, caption) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
-                <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+                <img src="/static/${src}.${ext}" srcset="/static/${src}@1.5x.${ext} 1.5x, /static/${src}@2x.${ext} 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
                 ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
             </figure>
         `;
@@ -48,7 +53,7 @@ module.exports = function (eleventyConfig) {
     // Usage: {% thumbnail "my-image", "My alt…" %}
     eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
         return outdent`
-            <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+            <div class="image-container"><img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy"></div>
         `;
     });
 

@@ -5,6 +5,7 @@ client:
 skills:
   - Graphic Design
 date: 2016-01-05
+finished: true
 layout: work
 permalink: false
 ---

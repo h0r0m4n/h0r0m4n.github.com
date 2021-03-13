@@ -17,16 +17,17 @@
             overflow-y: hidden
             -webkit-overflow-scrolling: touch
             white-space: nowrap
+            background: linear-gradient(-90deg, var(--color-neutral-4), transparent)
         @media #{$media-query-large}
             padding-left: var(--size-l)
 
         &::-webkit-scrollbar
             @media #{$media-query-medium}
-                height: var(--size-s)
+                height: 8px
 
         &::-webkit-scrollbar-thumb
             @media #{$media-query-medium}
-                background: var(--color-neutral-2)
+                background: var(--color-secondary)
 
         &::-webkit-scrollbar-track
             @media #{$media-query-medium}

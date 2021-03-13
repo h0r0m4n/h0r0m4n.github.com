@@ -6,6 +6,7 @@ skills:
   - User Experience
   - User Interface
 date: 2014-09-23
+finished: true
 layout: work
 permalink: false
 eleventyExcludeFromCollections: true

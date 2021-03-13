@@ -6,6 +6,7 @@ skills:
   - User Interface
   - Motion Design
 date: 2015-07-02
+finished: true
 layout: work
 permalink: false
 ---

@@ -6,6 +6,7 @@ skills:
   - Web Design
   - User Interface
 date: 2015-03-17
+finished: true
 layout: work
 permalink: false
 ---

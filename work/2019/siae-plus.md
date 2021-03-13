@@ -2,6 +2,13 @@
 title: App SIAE+
 description: SIAE is the first collective management company of copyright in Italy. I collaborated with them in the creation of the first app SIAE+ that supports all the major services of the company.
 client: SIAE
+css:
+  primary: '#fff'
+  secondary: '#00B4F9'
+  tertiary: '#00B4F9'
+  neutral4: 'rgba(255, 255, 255, 0.06);'
+  thumbnailHover: 'rgba(255, 255, 255, 0.12)'
+  colorBackground: '#465888'
 skills:
   - Product Design
   - Design System
@@ -9,6 +16,7 @@ skills:
   - User Interface
   - Interaction Design
 date: 2019-03-11
+finished: false
 layout: work
 ---
 
@@ -18,7 +26,7 @@ In this project, we used Enterprise Design Thinking and Agile mindset approaches
 
 {% stats "Approach" "Design Thinking & Agile" "Duration" "8 months" "" "" "" "" %}
 
-{% image "siae-plus-0" "full" "" "An overview of User Flows, User Testing and more" %}
+{% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
 
 ## Features
 
@@ -26,9 +34,9 @@ By installing it on your mobile device, the app offers you features like consult
 
 The two most complex features of the SIAE+ is the registration and the possibility of making a new deposit.
 
-{% image "siae-plus-1" "full" "" "" %}
+{% image "siae-plus-1" "jpg" "full" "" "" %}
 
-{% image "siae-plus-2" "full" "" "" %}
+{% image "siae-plus-2" "jpg" "full" "" "" %}
 
 ## Custumer reaction
 
@@ -36,9 +44,9 @@ During the first year, we received a lot of positive feedback on the first versi
 
 {% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
 
-{% image "siae-plus-3" "full" "" "Data visualization and manipulation by user" %}
+{% image "siae-plus-3" "jpg" "full" "" "Data visualization and manipulation by user" %}
 
-{% image "siae-plus-4" "full" "" "New deposit feature that guides the user using a wizard design pattern" %}
+{% image "siae-plus-4" "jpg" "full" "" "New deposit feature that guides the user using a wizard design pattern" %}
 
 ## Software and tools
 

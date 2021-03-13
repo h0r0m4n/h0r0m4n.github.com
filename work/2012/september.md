@@ -6,6 +6,7 @@ skills: September Magazine
   - Web Design
   - User Interface
 date: 2012-08-23
+finished: true
 layout: work
 permalink: false
 ---

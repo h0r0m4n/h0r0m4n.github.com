@@ -5,6 +5,7 @@ client:
 skills:
   - Visual Design
 date: 2016-02-28
+finished: true
 layout: work
 permalink: false
 ---

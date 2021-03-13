@@ -9,6 +9,7 @@ skills:
   - User Interface
   - Interaction Design
 date: 2019-01-07
+finished: true
 layout: work
 permalink: false
 eleventyExcludeFromCollections: true
