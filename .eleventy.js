@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig) {
     // Usage: {% thumbnail "my-image", "My alt…" %}
     eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
         return outdent`
-            <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+            <div class="image-container"><img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy"></div>
         `;
     });
 
