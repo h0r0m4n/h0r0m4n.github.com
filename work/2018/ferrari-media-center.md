@@ -21,7 +21,7 @@ We kick off our engagements by interviewing stakeholders across Ferrari’s orga
 
 The interviews are about discovering what you don’t know—and often that means uncovering the real questions as you go. So we created more specific questions receiving great results for proceeding to the first exploration and prototypes:
 
-{% image "ferrari-media-center-0" "full" %}
+{% image "ferrari-media-center-0" "jpg" "full" %}
 
 ## Features
 
@@ -31,10 +31,10 @@ Since Ferrari’s Media Center offers a wide range of media content such as imag
 
 The product was designed in responsive design and mobile-first approaches.
 
-{% image "ferrari-media-center-1" "full" "" "General overview of the final product" %}
-{% image "ferrari-media-center-2" "full" "" "Overview of search section and article" %}
-{% image "ferrari-media-center-3" "full" "" "Overview of download section" %}
-{% image "ferrari-media-center-4" "full" "" "Two pages on large screens" %}
+{% image "ferrari-media-center-1" "jpg" "full" "" "General overview of the final product" %}
+{% image "ferrari-media-center-2" "jpg" "full" "" "Overview of search section and article" %}
+{% image "ferrari-media-center-3" "jpg" "full" "" "Overview of download section" %}
+{% image "ferrari-media-center-4" "jpg" "full" "" "Two pages on large screens" %}
 
 ## Software and tools
 

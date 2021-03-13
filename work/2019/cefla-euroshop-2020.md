@@ -16,7 +16,7 @@ layout: work
 
 Unlike traditional stores, Cefla can help customers save time in its target market, which includes dense downtown settings, where register lines get long during peak hours. And also reduce the operating cost, human staff.
 
-{% image "cefla-euroshop-2020-1" "full" "" "" %}
+{% image "cefla-euroshop-2020-1" "jpg" "full" "" "" %}
 
 ## Design process
 
@@ -24,17 +24,17 @@ After collecting the business requirements, we prioritized the most important fe
 
 Then we started making low fidelity prototypes and test them with users and stakeholders. This allowed us to do user-testing already in the early stages. And after we start creating medium fidelity prototypes with less probability of rework.
 
-{% image "cefla-euroshop-2020-6" "" "" "" %}
+{% image "cefla-euroshop-2020-6" "jpg" "" "" "" %}
 
 To understand better user's needs and motivations we used user personas that help us to translate to online use and consumption and, ultimately, purchasing decisions.
 
 {% stats "Approach" "Design Thinking & Agile" "Duration" "6 months" "" "" "" "" %}
 
-{% image "cefla-euroshop-2020-5" "full" "" "External promps/solutions" %}
+{% image "cefla-euroshop-2020-5" "jpg" "full" "" "External promps/solutions" %}
 
 Based on the business requirements we have designed the three potential personas to simulate design-driven experience:
 
-{% image "cefla-euroshop-2020-2" "full" "" "Overview of three personas" %}
+{% image "cefla-euroshop-2020-2" "jpg" "full" "" "Overview of three personas" %}
 
 ### Data and metrics
 
@@ -68,7 +68,7 @@ Since the project had a small deadline we had to do two major releases. The firs
 
 The second release offered a complete shopping experience:
 
-{% image "cefla-euroshop-2020-3" "full" "" "" %}
+{% image "cefla-euroshop-2020-3" "jpg" "full" "" "" %}
 
 {% video "cefla-euroshop-2020-2" "full" "An overview of final prototype" %}
 
@@ -76,7 +76,7 @@ The second release offered a complete shopping experience:
 
 Support area for app provides the “admin-level” to support teams with allows to view and edit subscribed users to the product. One of the main features in-app was to be able to filter people labeled as "VIP":
 
-{% image "cefla-euroshop-2020-4" "full" "" "" %}
+{% image "cefla-euroshop-2020-4" "jpg" "full" "" "" %}
 
 {% video "cefla-euroshop-2020-3" "full" "Prototype of schedule and appointments" %}
 
