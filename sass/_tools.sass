@@ -19,11 +19,15 @@
             backface-visibility: hidden
             -webkit-font-smoothing: subpixel-antialiased
             &:hover
-                -webkit-filter: brightness(130%)
-                filter: brightness(130%)
+                -webkit-filter: brightness(120%)
+                filter: brightness(120%)
                 transform: scale(1.05)
                 @media #{$media-query-large}
                     transform: scale(1.1)
+                @media (prefers-color-scheme: dark)
+                    -webkit-filter: brightness(112%)
+                    filter: brightness(112%)
+
         &--2
             transition: transform 150ms ease-out
             &:hover
