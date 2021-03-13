@@ -7,6 +7,7 @@ skills:
   - Interaction Design
   - Web Development
 date: 2016-06-30
+finished: true
 layout: work
 ---
 

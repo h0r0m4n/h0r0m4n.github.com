@@ -7,6 +7,7 @@ skills:
   - User Experience
   - User Interface
 date: 2018-12-10
+finished: true
 layout: work
 permalink: false
 ---
