@@ -8,3 +8,11 @@
         margin-top: var(--size-l)
         @media #{$media-query-medium}
             margin-top: var(--size-xl)
+    
+    a
+        img
+            filter: grayscale(1)
+            transition: filter 1000ms ease-in-out
+        &:hover
+            img
+                filter: grayscale(0)
