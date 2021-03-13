@@ -1,5 +1,6 @@
 const global = require('./_data/site'),
-      outdent = require('outdent');
+      outdent = require('outdent'),
+      { DateTime } = require('luxon');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -31,6 +32,10 @@ module.exports = function (eleventyConfig) {
         return items.filter(item => {
             return (item.data.permalink !== false)
         })
+    });
+
+    eleventyConfig.addFilter('year', dateObj => {
+        return DateTime.fromJSDate(dateObj, {zone: 'utc'}).get('year');
     });
 
     // Image short-code
