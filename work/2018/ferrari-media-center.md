@@ -2,6 +2,13 @@
 title: Media Center
 description: Ferrari is an Italian supercar manufacturer. Ferrari’s Media Center is a globally distributed website that focuses on the distribution of media content for journalists, writers, publishers and editors. Offers exclusive content that speaks to the Ferrari brand philosophy of originality, aspiration and inspiration. I had the honour of being able to collaborate in the restyling of the Media Center website.
 client: Ferrari
+css:
+  primary: '#fff'
+  secondary: '#D93830'
+  tertiary: '#D93830'
+  neutral4: 'rgba(255, 255, 255, 0.06);'
+  thumbnailHover: 'rgba(255, 255, 255, 0.12)'
+  colorBackground: '#222222'
 skills:
   - Product Design
   - Design System

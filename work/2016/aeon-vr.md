@@ -1,7 +1,14 @@
 ---
 title: Aeon Virtual Reality
-description: Aeon is a 3D Virtual Reality experience working in the browser.
+description: Aeon is a Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift.
 client: 
+css:
+  primary: '#fff'
+  secondary: '#EB18D6'
+  tertiary: '#FFE800'
+  neutral4: 'rgba(255, 255, 255, 0.06);'
+  thumbnailHover: 'rgba(255, 255, 255, 0.12)'
+  colorBackground: '#262326'
 skills:
   - User Interface
   - Interaction Design
@@ -52,15 +59,13 @@ The goal of this project was to works on every modern browser. Eventually, [Aeon
 
 {% stats "Pageviews (30 days)" "10.000+" "" "" "" "" "" %}
 
-{% image "aeon-vr-6" "jpg" "full" "" "" %}
-{% image "aeon-vr-7" "jpg" "full" "" "" %}
+{% image "aeon-vr-6" "png" "full" "" "" %}
 
 Thanks to the set of technologies such as WebVR API and three.js and the automated workflow it was possible to create a virtual reality experience not only working on computers but also on tablet and mobile devices with medium-high power graphics chips.
 
 {% stats "Total polygons" "60.000+" "Medium frame rate" "30FPS" "" "" "" %}
 
-{% image "aeon-vr-8" "jpg" "full" "" "" %}
-{% image "aeon-vr-9" "jpg" "full" "" "" %}
+{% image "aeon-vr-7" "png" "full" "" "" %}
 
 This concept can be applied to education, entertainment, social media, interactive infographics and more.
 

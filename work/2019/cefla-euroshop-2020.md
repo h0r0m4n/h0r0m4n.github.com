@@ -2,6 +2,13 @@
 title: Euroshop 2020
 description: Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop 2020 on the features of the innovative experience of simplified shopping, which will be released in 2022.
 client: Cefla
+css:
+  primary: '#fff'
+  secondary: '#EA7D77'
+  tertiary: '#EA7D77'
+  neutral4: 'rgba(255, 255, 255, 0.06);'
+  thumbnailHover: 'rgba(255, 255, 255, 0.12)'
+  colorBackground: '#565D9F'
 skills:
   - Product Design
   - User Experience
@@ -24,7 +31,7 @@ After collecting the business requirements, we prioritized the most important fe
 
 Then we started making low fidelity prototypes and test them with users and stakeholders. This allowed us to do user-testing already in the early stages. And after we start creating medium fidelity prototypes with less probability of rework.
 
-{% image "cefla-euroshop-2020-6" "jpg" "" "" "" %}
+{% image "cefla-euroshop-2020-6" "jpg" "full" "" "" %}
 
 To understand better user's needs and motivations we used user personas that help us to translate to online use and consumption and, ultimately, purchasing decisions.
 

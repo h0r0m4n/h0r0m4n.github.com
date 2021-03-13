@@ -2,6 +2,13 @@
 title: App SIAE+
 description: SIAE is the first collective management company of copyright in Italy. I collaborated with them in the creation of the first app SIAE+ that supports all the major services of the company.
 client: SIAE
+css:
+  primary: '#fff'
+  secondary: '#00B4F9'
+  tertiary: '#00B4F9'
+  neutral4: 'rgba(255, 255, 255, 0.06);'
+  thumbnailHover: 'rgba(255, 255, 255, 0.12)'
+  colorBackground: '#465888'
 skills:
   - Product Design
   - Design System
