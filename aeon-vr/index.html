@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Aeon is a 3D Virtual Reality experience working in the browser.">
+<meta name="description" content="Aeon is a Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift.">
 <meta name="keywords" content="Roman, Horokhovatskyy, @horoman, @h0r0m4n, Product Design, Interaction Design, User Interface Design, User Experience Design">
 <meta name="author" content="Roman Horokhovatskyy">
 <meta name="robots" content="noindex, nofollow, noarchive, notranslate, noimageindex">
@@ -25,6 +25,47 @@
 <link rel="manifest" href="https://horoman.com/site.webmanifest">
 <link rel="mask-icon" href="https://horoman.com/safari-pinned-tab.svg" color="#322abb">
 
+<style>
+    :root {
+        
+        --color-primary: #fff;
+        --color-secondary: #EB18D6;
+        --color-tertiary: #FFE800;
+        --color-neutral-1: rgba(13, 13, 13, 0.5);
+        --color-neutral-2: rgba(13, 13, 13, 0.25);
+        --color-neutral-3: rgba(13, 13, 13, 0.12);
+        --color-neutral-4: rgba(255, 255, 255, 0.06);;
+        --color-thumbnail-hover: rgba(255, 255, 255, 0.12);
+        --color-overlay: rgba(255, 255, 255, 0.98);
+        --color-background: #262326;
+        
+
+        
+        --type-family-1a: 'ColfaxWebRegular', sans-serif;
+        --type-family-1b: 'ColfaxWebBold', sans-serif;
+        --type-family-2: 'KlavikaWebDisplayBlack', sans-serif;
+        --type-family-3: 'Reenie Beanie', sans-serif;
+        --type-height-1: 1.5;
+        --type-height-2: 1;
+
+        
+        --size-s: 1rem;
+        --size-m: 1.5rem;
+        --size-l: 2rem;
+        --size-xl: 3rem;
+        --size-xxl: 6rem;
+        --size-xxxl: 10rem;
+
+        
+        --container-size: 50rem;
+
+        
+        --radius: 0.25em;
+    }
+    
+    
+    
+</style>
 <link rel="stylesheet" href="/css/style.css?v=4.1">
     </head>
     <body>
@@ -47,7 +88,7 @@
             
             <h1>Aeon Virtual Reality</h1>
             
-                <p class="h5">Aeon is a 3D Virtual Reality experience working in the browser.</p>
+                <p class="h5">Aeon is a Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift.</p>
             
             
     <div id="work-skills" class="section">
@@ -63,20 +104,13 @@
         </ul>
     </div>
 
+            <h6>Year</h2>
+            <time>2016</time>
         </div>
     </header>
     <div id="work-content">
         <div class="t-container">
-            <h2>Development</h2>
-<p><a href="http://aeon.horoman.com">Aeon</a> was developed using methods and work processes, automating the workflow. The web app was built in the efficient world using Gulp.js which acted as executor of the pre-established commands necessary for development. The configuration of Gulp was customized ad-hoc and the use of the JavaScript language together with the logic of Node.js which is equipped with a tool called NPM that allowed to load, modify and modify the packages necessary for development by generating the file package.json containing information on each package used, in this way it was possible to make the development environment versatile. The use of Gulp.js allowed the use of commands from the terminal thanks to which he began to listen and execute tasks such as compiling CSS files using SASS, concatenating and compressing JavaScript files, Jade compilation which spared not the writing the HTML code.</p>
-<p>It was possible to further extend the automation of the workflow of Gulp thanks to some plugins such as BrowserSync which allowed the simultaneous development in various browsers on the desktop, tablet and smartphone; Webpack has permission to manage JavaScript modules. The program approach started with planning, writing the code and finally testing. Most of the prototyping was done by writing code based on the modulation and arrangement of objects for easy identification.</p>
-<figure class="full">
-    <img src="/static/aeon-vr-4.jpg" srcset="/static/aeon-vr-4@1.5x.jpg 1.5x, /static/aeon-vr-4@2x.jpg 2x"  loading="lazy">
-</figure>
-<p>The complex development of <a href="http://aeon.horoman.com">Aeon</a> had the need to use a versioning system such as Git through the GitHub service which made it possible to store all the changes made to one or more files in order to be able to return to a previous state at any time. The GitHub service has permission to conduct multiple experiments and yet keep a &quot;clean&quot; version of the project, modify changes as needed, and in some circumstances, it was possible to rewrite the project's history in a release form. In this way, every step of the design process was documented.</p>
-<p>Text data had a size saving advantage of over 75%, thanks to HTML compression in conjunction with GZIP. The application interface uses the vector format to ensure sharpness regardless of the pixel density of the devices. SVG symbols were used to reduce HTTP requests and uploads.</p>
-<p>Real-time 3D rendering was possible using WebGL technology along with three. Js which natively allowed the creation of scenes - where all objects, cameras and lights are placed, objects - geometries and materials rooms - single and multiple rooms necessary for virtual reality by simulating stereoscopic vision and lights. The three.js library has permission to have excellent consistency by speeding up the working process in the interactions.</p>
-<h2>3D models and rendering</h2>
+            <h2>3D models and rendering</h2>
 <p>The project is limited to the WYSIWYG-style level editor instead of the programming environment that deals with the need to be simulated and its appearance of the final object, with the ultimate aim of providing direct graphic commands to manipulate. This means that any level of design data has been entered and manipulated manually and procedural forms.</p>
 <ul class="t-list-horizontal stats">
     <li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>Objects handcrafted</strong><span>10+</span></p></li>
@@ -89,11 +123,11 @@
 <h2>Visual Concept</h2>
 <p>Visual parameters such as colours and lights with low gamut sections are followed by the bright parts and the sections with cold colours are followed by warm colours. This allows you to establish a feeling of rhythm and create visual delineation of scenes:</p>
 <figure class="full">
-    <img src="/static/aeon-vr-1.jpg" srcset="/static/aeon-vr-1@1.5x.jpg 1.5x, /static/aeon-vr-1@2x.jpg 2x"  loading="lazy">
+    <img src="/static/aeon-vr-1.png" srcset="/static/aeon-vr-1@1.5x.png 1.5x, /static/aeon-vr-1@2x.png 2x"  loading="lazy">
     <figcaption class="t-container">An overview of color patterns of each area</figcaption>
 </figure>
 <figure class="full">
-    <img src="/static/aeon-vr-2.jpg" srcset="/static/aeon-vr-2@1.5x.jpg 1.5x, /static/aeon-vr-2@2x.jpg 2x"  loading="lazy">
+    <img src="/static/aeon-vr-2.png" srcset="/static/aeon-vr-2@1.5x.png 1.5x, /static/aeon-vr-2@2x.png 2x"  loading="lazy">
     <figcaption class="t-container">3D color applied</figcaption>
 </figure>
 <h2>Typography</h2>
@@ -101,16 +135,22 @@
 <figure class="full">
     <img src="/static/aeon-vr-5.jpg" srcset="/static/aeon-vr-5@1.5x.jpg 1.5x, /static/aeon-vr-5@2x.jpg 2x"  loading="lazy">
 </figure>
+<h2>Development</h2>
+<p><a href="http://aeon.horoman.com">Aeon</a> was developed using methods and work processes, automating the workflow. The web app was built in the efficient world using Gulp.js which acted as executor of the pre-established commands necessary for development. The configuration of Gulp was customized ad-hoc and the use of the JavaScript language together with the logic of Node.js which is equipped with a tool called NPM that allowed to load, modify and modify the packages necessary for development by generating the file package.json containing information on each package used, in this way it was possible to make the development environment versatile. The use of Gulp.js allowed the use of commands from the terminal thanks to which he began to listen and execute tasks such as compiling CSS files using SASS, concatenating and compressing JavaScript files, Jade compilation which spared not the writing the HTML code.</p>
+<p>It was possible to further extend the automation of the workflow of Gulp thanks to some plugins such as BrowserSync which allowed the simultaneous development in various browsers on the desktop, tablet and smartphone; Webpack has permission to manage JavaScript modules. The program approach started with planning, writing the code and finally testing. Most of the prototyping was done by writing code based on the modulation and arrangement of objects for easy identification.</p>
+<figure class="full">
+    <img src="/static/aeon-vr-4.jpg" srcset="/static/aeon-vr-4@1.5x.jpg 1.5x, /static/aeon-vr-4@2x.jpg 2x"  loading="lazy">
+</figure>
+<p>The complex development of <a href="http://aeon.horoman.com">Aeon</a> had the need to use a versioning system such as Git through the GitHub service which made it possible to store all the changes made to one or more files in order to be able to return to a previous state at any time. The GitHub service has permission to conduct multiple experiments and yet keep a &quot;clean&quot; version of the project, modify changes as needed, and in some circumstances, it was possible to rewrite the project's history in a release form. In this way, every step of the design process was documented.</p>
+<p>Text data had a size saving advantage of over 75%, thanks to HTML compression in conjunction with GZIP. The application interface uses the vector format to ensure sharpness regardless of the pixel density of the devices. SVG symbols were used to reduce HTTP requests and uploads.</p>
+<p>Real-time 3D rendering was possible using WebGL technology along with three. Js which natively allowed the creation of scenes - where all objects, cameras and lights are placed, objects - geometries and materials rooms - single and multiple rooms necessary for virtual reality by simulating stereoscopic vision and lights. The three.js library has permission to have excellent consistency by speeding up the working process in the interactions.</p>
 <h2>Summary and finished product</h2>
 <p>The goal of this project was to works on every modern browser. Eventually, <a href="http://aeon.horoman.com">Aeon</a> works on specific types of browsers such as Chromium, Chrome Canary, Firefox Nightly, Safari (iOS), Chrome Dev (Android). Such browsers offer better WebGL support, making the best use of GPU’s.</p>
 <ul class="t-list-horizontal stats">
     <li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>Pageviews (30 days)</strong><span>10.000+</span></p></li>
 </ul>
 <figure class="full">
-    <img src="/static/aeon-vr-6.jpg" srcset="/static/aeon-vr-6@1.5x.jpg 1.5x, /static/aeon-vr-6@2x.jpg 2x"  loading="lazy">
-</figure>
-<figure class="full">
-    <img src="/static/aeon-vr-7.jpg" srcset="/static/aeon-vr-7@1.5x.jpg 1.5x, /static/aeon-vr-7@2x.jpg 2x"  loading="lazy">
+    <img src="/static/aeon-vr-6.png" srcset="/static/aeon-vr-6@1.5x.png 1.5x, /static/aeon-vr-6@2x.png 2x"  loading="lazy">
 </figure>
 <p>Thanks to the set of technologies such as WebVR API and three.js and the automated workflow it was possible to create a virtual reality experience not only working on computers but also on tablet and mobile devices with medium-high power graphics chips.</p>
 <ul class="t-list-horizontal stats">
@@ -118,10 +158,7 @@
     <li class="t-list-horizontal--item t-list-horizontal--item--distance-2"><p><strong>Medium frame rate</strong><span>30FPS</span></p></li>
 </ul>
 <figure class="full">
-    <img src="/static/aeon-vr-8.jpg" srcset="/static/aeon-vr-8@1.5x.jpg 1.5x, /static/aeon-vr-8@2x.jpg 2x"  loading="lazy">
-</figure>
-<figure class="full">
-    <img src="/static/aeon-vr-9.jpg" srcset="/static/aeon-vr-9@1.5x.jpg 1.5x, /static/aeon-vr-9@2x.jpg 2x"  loading="lazy">
+    <img src="/static/aeon-vr-7.png" srcset="/static/aeon-vr-7@1.5x.png 1.5x, /static/aeon-vr-7@2x.png 2x"  loading="lazy">
 </figure>
 <p>This concept can be applied to education, entertainment, social media, interactive infographics and more.</p>
 <h2>Gameplay</h2>
@@ -142,8 +179,8 @@
             
                 
                     <li class="work work--reels">
-                        <a class="t-hover--2" href="/cefla-euroshop-2020/" rel="bookmark" target="_parent" title="Euroshop 2020 – Cefla">
-                            <img src="/static/cefla-euroshop-2020.jpg" srcset="/static/cefla-euroshop-2020@1.5x.jpg 1.5x, /static/cefla-euroshop-2020@2x.jpg 2x" alt="Euroshop 2020" loading="lazy">
+                        <a class="t-hover--2" href="/cefla-euroshop-2020/" rel="bookmark" target="_parent">
+                            <div class="image-container"><img src="/static/cefla-euroshop-2020.jpg" srcset="/static/cefla-euroshop-2020@1.5x.jpg 1.5x, /static/cefla-euroshop-2020@2x.jpg 2x" alt="Euroshop 2020" loading="lazy"></div>
                             <div class="content">
                                 <h3>Cefla: Euroshop 2020</h3>
                             </div>
