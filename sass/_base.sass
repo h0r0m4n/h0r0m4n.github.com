@@ -12,6 +12,18 @@ html
     scroll-behavior: smooth
     background-color: var(--color-background)
 
+    &::-webkit-scrollbar
+        @media #{$media-query-medium}
+            width: 8px
+
+    &::-webkit-scrollbar-thumb
+        @media #{$media-query-medium}
+            background: var(--color-secondary)
+
+    &::-webkit-scrollbar-track
+        @media #{$media-query-medium}
+            background: var(--color-neutral-4)
+
 body
     margin: 0
     min-block-size: 100vh
