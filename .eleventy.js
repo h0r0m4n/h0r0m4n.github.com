@@ -39,7 +39,7 @@ module.exports = function (eleventyConfig) {
     });
 
     // Image short-code
-    // Usage: {% image "my-image" "full" "My alt…" "My caption…" %}
+    // Usage: {% image "my-image" "jpg" "full" "My alt…" "My caption…" %}
     eleventyConfig.addShortcode('image', function(src, ext, full, alt, caption) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
@@ -90,9 +90,9 @@ module.exports = function (eleventyConfig) {
 
     // Experience short-code
     eleventyConfig.addShortcode('experience', function() {
-        let currentYear = new Date().getFullYear();
-        let startingYear = global.starting;
-        let experienceYear = currentYear - startingYear;
+        let currentYear = new Date().getFullYear(),
+            startingYear = global.starting,
+            experienceYear = currentYear - startingYear;
 
         return `${experienceYear}`;
     });
