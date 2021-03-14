@@ -38,38 +38,6 @@ module.exports = function (eleventyConfig) {
         return DateTime.fromJSDate(dateObj, {zone: 'utc'}).get('year');
     });
 
-    // Image short-code
-    // Usage: {% image "my-image" "jpg" "full" "My alt…" "My caption…" %}
-    eleventyConfig.addShortcode('image', function(src, ext, full, alt, caption) {
-        return outdent`
-            <figure ${full ? `class="full"` : ``}>
-                <img src="/static/${src}.${ext}" srcset="/static/${src}@1.5x.${ext} 1.5x, /static/${src}@2x.${ext} 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
-                ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
-            </figure>
-        `;
-    });
-
-    // Thumbnail short-code
-    // Usage: {% thumbnail "my-image", "My alt…" %}
-    eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
-        return outdent`
-            <div class="image-container"><img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy"></div>
-        `;
-    });
-
-    // Video short-code
-    // Usage: {% video "my-video" "full" "My caption…" %}
-    eleventyConfig.addShortcode('video', function(src, full, caption) {
-        return outdent`
-            <figure ${full ? `class="full"` : ``}>
-                <video width="960" height="540" autoplay loop muted playsinline disablePictureInPicture>
-                    <source src="/static/${src}.mp4" type="video/mp4">
-                </video>
-                ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
-            </figure>
-        `;
-    });
-
     // Stats short-code
     // Usage: {% stats "Label 1" "Value 1" "Label 2" "Value 2" "Label 3" "Value 3" "Label 4" "Value 4" %}
     eleventyConfig.addShortcode('stats', function(label1, value1, label2, value2, label3, value3, label4, value4) {
@@ -95,5 +63,37 @@ module.exports = function (eleventyConfig) {
             experienceYear = currentYear - startingYear;
 
         return `${experienceYear}`;
+    });
+
+    // Post video
+    // Usage: {% video "my-video" "full" "My caption…" %}
+    eleventyConfig.addShortcode('video', function(src, full, caption) {
+        return outdent`
+            <figure ${full ? `class="full"` : ``}>
+                <video width="960" height="540" autoplay loop muted playsinline disablePictureInPicture>
+                    <source src="/static/${src}.mp4" type="video/mp4">
+                </video>
+                ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
+            </figure>
+        `;
+    });
+
+    // Post image
+    // Usage: {% image "my-image" "jpg" "full" "My alt…" "My caption…" %}
+    eleventyConfig.addShortcode('image', function(src, ext, full, alt, caption) {
+        return outdent`
+            <figure ${full ? `class="full"` : ``}>
+                <img src="/static/${src}.${ext}" srcset="/static/${src}@1.5x.${ext} 1.5x, /static/${src}@2x.${ext} 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+                ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
+            </figure>
+        `;
+    });
+
+    // Image thumbnail
+    // Usage: {% thumbnail "my-image", "My alt…" %}
+    eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
+        return outdent`
+            <div class="image-container"><img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy"></div>
+        `;
     });
 }
