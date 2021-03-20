@@ -37,7 +37,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('year', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc'} ).get('year');
     });
-    });
 
     // Stats short-code
     // Usage: {% stats "Label 1" "Value 1" "Label 2" "Value 2" "Label 3" "Value 3" "Label 4" "Value 4" %}
