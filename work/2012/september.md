@@ -1,6 +1,6 @@
 ---
 title: September
-description: Experimental layout made in 2012 for September Magazine.
+description: I designed an experimental layout made in 2012 for September Magazine.
 client: 
 skills: September Magazine
   - Web Design

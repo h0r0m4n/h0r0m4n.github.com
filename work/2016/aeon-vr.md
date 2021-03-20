@@ -1,6 +1,6 @@
 ---
 title: Aeon Virtual Reality
-description: Aeon is a Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift.
+description: A Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift 2.
 client: 
 css:
   primary: '#fff'
