@@ -22,19 +22,9 @@ layout: work
 
 ## Design process
 
-Working with a research team, we quantified the impact of usability issues that existed in the SIAE portal and prioritized high-impact issues that would interfere with users' desire to use the mobile app.
-
-After conducting the user test sessions, we realized that the biggest impact problems were the reluctance of users to understand the information architecture along with the user interface. In fact, each SIAE web portal offered a different interface and patterns.
+In this project, we used Enterprise Design Thinking and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
 
 {% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
-
-### Goals of the design
-
-Given the user research I outlined the goals for a design of the product as follows:
-
-- **Consistency** – Provide a shared set of principlese and ruoles to components and patterns.
-- **Scalability** – Design never ends, everything must be changeable and scalable for the different use cases and business needs.
-- **Comprehensive IA** – Provide more semantics for the user and their needs.
 
 ## Features
 
