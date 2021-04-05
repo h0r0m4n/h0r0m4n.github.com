@@ -12,7 +12,6 @@ css:
 role: Lead Interface Designer
 skills:
   - Product Design
-  - Design System
   - User Experience
   - User Interface
   - Interaction Design
