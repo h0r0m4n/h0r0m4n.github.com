@@ -1,10 +1,14 @@
-{% if skills %}
-    <div id="work-skills" class="section">
+<div id="work-skills" class="section">
+    {% if role %}
+        <h6>Role</h2>
+        <p>{{ role }}</p>
+    {% endif %}
+    {% if skills %}
         <h6>Contribution</h2>
         <ul class="t-list-horizontal">
             {% for skill in skills %}
                 <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
             {% endfor %}
         </ul>
-    </div>
-{% endif %}
+    {% endif %}
+</div>

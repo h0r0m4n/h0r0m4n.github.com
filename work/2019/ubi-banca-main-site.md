@@ -2,6 +2,7 @@
 title: Main website
 description: Restyling of the main UBI Banca website, which includes all the landing pages, search, services and support.
 client: UBI Banca
+role: Lead Interface Designer
 skills:
   - Product Design
   - Design System
