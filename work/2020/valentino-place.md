@@ -5,6 +5,7 @@ client: Valentino
 skills:
   - Product Design
   - User Interface
+  - User Experience
   - Interaction Design
 date: 2020-11-20
 finished: false

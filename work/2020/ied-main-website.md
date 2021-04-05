@@ -5,6 +5,7 @@ client: IED
 skills:
   - Product Design
   - User Interface
+  - User Experience
   - Interaction Design
 date: 2020-09-11
 finished: false
