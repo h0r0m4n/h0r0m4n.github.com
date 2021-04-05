@@ -90,13 +90,13 @@ Unlike the templates that can be reused there are specific reserved pages such a
 
 ## Using the design system in the wild
 
-The first product I started to work on after we had created the design system was the Interaction Editor.
-
-[image]
-
-Designing this product was a large & complex piece of work that spanned over 6 months. Thankfully, with the design system in place, much of the low complexity ∞ high effort tasks, such as component design, didn't require as much focus.
+Designing products was a large & complex piece of work that spanned over 1 year until today. Thankfully, with the design system in place, much of the low complexity ∞ high effort tasks, such as component design, didn't require as much focus.
 
 This meant more time could be shifted towards higher complexity tasks such as UX thinking, structure and design.
+
+{% image "siae-sass-1" "jpg" "full" "" "" %}
+{% image "siae-sass-2" "jpg" "full" "" "" %}
+{% image "siae-sass-3" "jpg" "full" "" "" %}
 
 ## In conclusion
 
