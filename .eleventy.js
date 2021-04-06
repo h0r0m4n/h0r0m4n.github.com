@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode('video', function(src, full, caption) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
-                <video width="960" height="540" autoplay loop muted playsinline disablePictureInPicture>
+                <video width="960" height="540" controls muted playsinline disablePictureInPicture>
                     <source src="/static/${src}.mp4" type="video/mp4">
                 </video>
                 ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
