@@ -56,7 +56,7 @@ All the product features were added to Jira, which enabled us to keep track of t
 
 {% stats "Prototyping" "Figma" "Workshops" "Mural" "Management" "Jira" "" "" %}
 
-{% video "siae-plus-1" "full" "An overview of final prototype" %}
+{% video "siae-plus-1" "full" "autoplay" "An overview of final prototype" %}
 
 ## Team size
 

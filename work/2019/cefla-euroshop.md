@@ -70,7 +70,7 @@ During research with our engineers and established some extraordinary data that 
 
 Since the project had a small deadline we had to do two major releases. The first release was required to get exclusive invitations and a personal free pass to spend an entire day at Euroshop. So that potential consumers could be part of the project right away.
 
-{% video "cefla-euroshop-1" "full" "Initial prototype of booking the event during the first release" %}
+{% video "cefla-euroshop-1" "full" "autoplay" "Initial prototype of booking the event during the first release" %}
 
 ## Second release
 
@@ -78,7 +78,7 @@ The second release offered a complete shopping experience:
 
 {% image "cefla-euroshop-3" "jpg" "full" "" "" %}
 
-{% video "cefla-euroshop-2" "full" "An overview of final prototype" %}
+{% video "cefla-euroshop-2" "full" "autoplay" "An overview of final prototype" %}
 
 ## Support area
 
@@ -86,7 +86,7 @@ Support area for app provides the “admin-level” to support teams with allows
 
 {% image "cefla-euroshop-4" "jpg" "full" "" "" %}
 
-{% video "cefla-euroshop-3" "full" "Prototype of schedule and appointments" %}
+{% video "cefla-euroshop-3" "full" "autoplay" "Prototype of schedule and appointments" %}
 
 ## Team size
 

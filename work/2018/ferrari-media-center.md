@@ -50,4 +50,4 @@ All the product features were added to Jira, which enabled us to keep track of t
 
 {% stats "Prototyping" "Sketch+InVision" "Management" "Jira" "" "" "" "" %}
 
-{% video "ferrari-media-center-1" "full" "An overview of final prototype" %}
+{% video "ferrari-media-center-1" "full" "autoplay" "An overview of final prototype" %}
