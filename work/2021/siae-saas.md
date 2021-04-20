@@ -35,7 +35,7 @@ Given the user research I outlined the goals for a design of the product as foll
 - **Scalability** – Design never ends, everything must be changeable and scalable for the different use cases and business needs.
 - **Comprehensive IA** – Provide more semantics for the users and their needs.
 
-{% video "siae-sass-1" "full" "Overview of our design principles (in italian language)" %}
+{% video "siae-sass-1" "full" "autoplay" "Overview of our design principles (in italian language)" %}
 
 ## Documentation website
 
@@ -67,26 +67,26 @@ Within the design system, there are subdivisions such as:
 
 The components are designed with the guidelines and our design language.
 
-{% video "siae-sass-2" "full" "Overview of components" %}
+{% video "siae-sass-2" "full" "" "Overview of components" %}
 
 #### 2. Models
 
 Models are groups of components joined together to form a relatively complex and distinct section of an interface.
 
-{% video "siae-sass-3" "full" "Overview of models" %}
+{% video "siae-sass-3" "full" "" "Overview of models" %}
 
 #### 3. Template
 
 The use of templates allows us to keep the patterns consistent with the rest of the SIAE products.
 
-{% video "siae-sass-4" "full" "Overview of templates" %}
+{% video "siae-sass-4" "full" "autoplay" "Overview of templates" %}
 
 #### 4. Specific pages
 
 Unlike the templates that can be reused there are specific reserved pages such as homepage and more:
 
-{% video "siae-sass-5" "full" "" %}
-{% video "siae-sass-6" "full" "Overview of specific pages" %}
+{% video "siae-sass-5" "full" "" "" %}
+{% video "siae-sass-6" "full" "autoplay" "Overview of specific pages" %}
 
 ## Using the design system in the wild
 
