@@ -73,4 +73,4 @@ This concept can be applied to education, entertainment, social media, interacti
 
 Experience is available on <http://aeon.horoman.com>.
 
-{% video "aeon-vr-1" "full" "" %}
+{% video "aeon-vr-1" "full" "autoplay" "" %}
