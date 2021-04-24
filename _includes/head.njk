@@ -14,12 +14,11 @@
     {% include 'head-facebook.njk' %}
 {% endif %}
 
-<title>{% if title%}{{ site.title }} — {{ title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if title%}{{ site.title }} — {% if client %}{{ client }} {% endif %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
 
 {% if layout == 'default' %}
     <link rel="canonical" href="{{ site.url | url }}">
 {% endif %}
-
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url + '/apple-touch-icon.png' | url }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url + '/favicon-32x32.png' | url }}">

@@ -3,7 +3,7 @@ layout: default
 permalink: "/{{ page.fileSlug }}/index.html"
 ---
 <article>
-    <header id="work-heading">
+    <header id="work-heading" class="section">
         <div class="t-container">
             {% if client %}
                 <strong>{{ client }}</strong>
@@ -17,7 +17,7 @@ permalink: "/{{ page.fileSlug }}/index.html"
             <time>{{ date | year }}{% if finished === false %} – Current{% endif %}</time>
         </div>
     </header>
-    <div id="work-content">
+    <div id="work-content" class="section">
         <div class="t-container">
             {{ content | safe }}
         </div>
