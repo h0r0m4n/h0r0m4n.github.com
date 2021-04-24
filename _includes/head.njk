@@ -14,7 +14,7 @@
     {% include 'head-facebook.njk' %}
 {% endif %}
 
-<title>{% if title%}{{ site.title }} — {{ title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if title%}{{ site.title }} — {% if client %}{{ client }} {% endif %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
 
 {% if layout == 'default' %}
     <link rel="canonical" href="{{ site.url | url }}">
