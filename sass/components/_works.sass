@@ -1,7 +1,4 @@
 #works
-    @media #{$media-query-small-only}
-        margin-top: var(--size-l)
-
     h2
         margin-bottom: var(--size-s)
 
@@ -9,7 +6,7 @@
         list-style: none
         margin: 0
         @media #{$media-query-small-only}
-            padding: 1em
+            padding: 1em 1em 0
         @media #{$media-query-medium}
             display: flex
             padding: var(--size-l) 0 1.5em var(--size-m)
@@ -36,6 +33,8 @@
         li
             @media #{$media-query-small-only}
                 margin-bottom: var(--size-l)
+                &:last-child
+                    margin-bottom: 0
             @media #{$media-query-medium}
                 margin-right: var(--size-m)
                 display: inline-block
