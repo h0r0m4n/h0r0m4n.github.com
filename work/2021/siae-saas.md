@@ -17,7 +17,7 @@ skills:
   - User Experience
   - Interaction Design
 date: 2020-03-24
-finished: false
+finished: true
 layout: work
 ---
 

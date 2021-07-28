@@ -16,7 +16,7 @@ skills:
   - User Interface
   - Interaction Design
 date: 2019-03-11
-finished: false
+finished: true
 layout: work
 ---
 
