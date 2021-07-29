@@ -28,3 +28,7 @@
 
 {% include 'css-vars.njk' %}
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v={{ site.version }}">
+
+{% if site.environment == "production" %}
+    <script async data-no-cookie src="https://cdn.splitbee.io/sb.js"></script>
+{% endif %} 
