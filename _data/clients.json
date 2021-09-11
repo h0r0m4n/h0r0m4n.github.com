@@ -8,12 +8,20 @@
     "url": "https://www.cefla.com"
   },
   {
+    "title": "Hertz",
+    "url": "https://hertz.com"
+  },
+  {
     "title": "UBI Banca",
     "url": "https://www.ubibanca.com"
   },
   {
     "title": "SIAE",
     "url": "https://www.siae.it"
+  },
+  {
+    "title": "IED",
+    "url": "https://www.ied.edu"
   },
   {
     "title": "Valentino",
@@ -38,13 +46,5 @@
   {
     "title": "Ferrari",
     "url": "https://www.ferrari.com"
-  },
-  {
-    "title": "IED",
-    "url": "https://www.ied.edu"
-  },
-  {
-    "title": "Hertz",
-    "url": "https://hertz.com"
   }
 ]
