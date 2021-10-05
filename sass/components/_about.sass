@@ -31,11 +31,24 @@
         margin-bottom: 0
 
     li.expertise
+        position: relative
+        text-align: center
         color: var(--color-secondary)
+
+        &::after
+            content: '+'
+            color: var(--color-neutral-1)
+            position: absolute
+            top: 40%
+            right: calc(var(--size-m) * -1)
+            transform: translateY(-40%)
+        &:last-child
+            &:after
+                content: ''
 
         small
             display: block
-            color: var(--color-primary)
+            font-family: var(--type-family-1b)
 
         svg
             height: 4em
