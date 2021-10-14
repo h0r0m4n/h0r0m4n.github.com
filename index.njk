@@ -21,20 +21,12 @@ layout: default
     </div>
     <div id="works" class="section">
         <div class="t-container">
-            <h2>Latest Works</h2>
+            <h2>Case studies</h2>
         </div>
         <ol>
             {% for work in collections.work %}
-                <li class="work{% if work.url != false %} work--reels{% endif %}">
-                    {% if work.url == false %}
-                        {% thumbnail work.fileSlug, work.data.title %}
-                        <div class="content">
-                            <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
-                            {% if work.data.description %}
-                                <p>{{ work.data.description }}</p>
-                            {% endif %}
-                        </div>
-                    {% else %}
+                {% if work.url != false %}
+                    <li class="work work--reels">
                         <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent">
                             {% thumbnail work.fileSlug, work.data.title %}
                             <div class="content">
@@ -44,12 +36,32 @@ layout: default
                                 {% endif %}
                             </div>
                         </a>
-                    {% endif %}
-                </li>
+                    </li>
+                {% endif %}
             {% endfor %}
         </ol>
     </div>
     {% include 'testimonials.njk' %}
+    <div id="bits" class="section">
+        <div class="t-container">
+            <h2>Latest Works</h2>
+        </div>
+        <ol>
+            {% for work in collections.work %}
+                {% if work.url == false %}
+                    <li class="work">
+                        {% thumbnail work.fileSlug, work.data.title %}
+                        <div class="content">
+                            <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
+                            {% if work.data.description %}
+                                <p>{{ work.data.description }}</p>
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
     <div id="contact" class="section">
         <div class="t-container">
             <h2>Experience</h2>
