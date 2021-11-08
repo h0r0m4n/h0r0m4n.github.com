@@ -16,6 +16,7 @@ skills:
 date: 2016-06-30
 finished: true
 layout: work
+thumbnail: static/aeon-vr.jpg
 ---
 
 ## 3D models and rendering

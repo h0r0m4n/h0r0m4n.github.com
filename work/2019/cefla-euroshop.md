@@ -18,6 +18,7 @@ skills:
 date: 2019-11-08
 finished: true
 layout: work
+thumbnail: static/cefla-euroshop.jpg
 ---
 
 ## Overview

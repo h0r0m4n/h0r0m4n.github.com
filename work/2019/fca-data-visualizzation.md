@@ -10,4 +10,5 @@ date: 2019-10-07
 finished: true
 layout: work
 permalink: false
+thumbnail: static/fca-data-visualizzation.jpg
 ---

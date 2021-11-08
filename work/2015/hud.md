@@ -9,4 +9,5 @@ date: 2015-07-02
 finished: true
 layout: work
 permalink: false
+thumbnail: static/hud.jpg
 ---

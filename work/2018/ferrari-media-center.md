@@ -19,6 +19,7 @@ skills:
 date: 2018-11-28
 finished: true
 layout: work
+thumbnail: static/ferrari-media-center.jpg
 ---
 
 ## Design process

@@ -18,6 +18,7 @@ skills:
 date: 2020-03-11
 finished: true
 layout: work
+thumbnail: static/siae-plus.jpg
 ---
 
 ## Design process
