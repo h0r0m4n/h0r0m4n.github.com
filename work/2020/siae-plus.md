@@ -24,17 +24,38 @@ layout: work
 
 In this project, we used Enterprise Design Thinking and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
 
-{% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
-
 {% image "siae-plus-experience-design-workshop-creative-matrix" "jpg" "full" "" "Creative Matrix" %}
-
 {% image "siae-plus-priority-maps" "jpg" "full" "" "Priority Maps" %}
 {% image "siae-plus-social-media-insights" "jpg" "full" "" "Social Media Insights" %}
+{% image "siae-plus-data-visualization-1" "jpg" "full" "" "Data Visualization Workshop" %}
+{% image "siae-plus-data-visualization-2" "jpg" "full" "" "Data Comparisoning Workshop" %}
+{% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
 
-{% image "siae-plus-data-visualization-1" "jpg" "full" "" "Data Visualization" %}
-{% image "siae-plus-data-visualization-2" "jpg" "full" "" "Data Visualization" %}
-{% image "siae-plus-touch-icon" "jpg" "full" "" "Touch Icon Concepts" %}
+## Interface & branding
 
+### Typography
+
+We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding.
+
+{% image "siae-plus-typography" "png" "full" "" "" %}
+
+### Color Palette
+
+An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background.
+
+{% image "siae-plus-colours" "png" "full" "" "" %}
+
+### Components
+
+A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems.
+
+{% image "siae-plus-components" "png" "full" "" "" %}
+
+### Touch icon
+
+Touch Icon Design Process Concepts:
+
+{% image "siae-plus-touch-icon" "jpg" "" "" "" %}
 
 ## Features
 
@@ -48,7 +69,7 @@ The two most complex features of the SIAE+ is the registration and the possibili
 
 ## Custumer reaction
 
-During the first year, we received a lot of positive feedback on the first versions of the app, here’s a medium rating of Apple’s and Google’s stores:
+During the first year, we received a lot of positive feedback on the first versions of the app, here’s a medium rating of [Apple’s](https://apps.apple.com/it/app/siae/id1465450346) and [Google’s](https://play.google.com/store/apps/details?id=it.siae.autorieditori&hl=en_IE&gl=US) stores:
 
 {% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
 
@@ -72,4 +93,4 @@ All the product features were added to Jira, which enabled us to keep track of t
 
 Several professional figures have been involved in this project:
 
-{% stats "Designers" "6" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
+{% stats "Designers" "2" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
