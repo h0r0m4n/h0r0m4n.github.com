@@ -31,8 +31,8 @@ In this project, we used Enterprise Design Thinking and Agile mindset approaches
 {% image "siae-plus-priority-maps" "jpg" "full" "" "Priority Maps" %}
 {% image "siae-plus-social-media-insights" "jpg" "full" "" "Social Media Insights" %}
 
-{% image "siae-plus-data-visualization-1" "jpg" "full" "" "Data Visualization" %}
-{% image "siae-plus-data-visualization-2" "jpg" "full" "" "Data Visualization" %}
+{% image "siae-plus-data-visualization-1" "jpg" "full" "" "Data Visualization Workshop" %}
+{% image "siae-plus-data-visualization-2" "jpg" "full" "" "Data Comparisoning Workshop" %}
 {% image "siae-plus-touch-icon" "jpg" "full" "" "Touch Icon Concepts" %}
 
 
