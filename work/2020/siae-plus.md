@@ -24,14 +24,38 @@ layout: work
 
 In this project, we used Enterprise Design Thinking and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
 
-
 {% image "siae-plus-experience-design-workshop-creative-matrix" "jpg" "full" "" "Creative Matrix" %}
 {% image "siae-plus-priority-maps" "jpg" "full" "" "Priority Maps" %}
 {% image "siae-plus-social-media-insights" "jpg" "full" "" "Social Media Insights" %}
 {% image "siae-plus-data-visualization-1" "jpg" "full" "" "Data Visualization Workshop" %}
 {% image "siae-plus-data-visualization-2" "jpg" "full" "" "Data Comparisoning Workshop" %}
-{% image "siae-plus-touch-icon" "jpg" "full" "" "Touch Icon Concepts" %}
 {% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
+
+## Interface & branding
+
+### Typography
+
+We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding.
+
+{% image "siae-plus-typography" "png" "full" "" "" %}
+
+### Color Palette
+
+An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background.
+
+{% image "siae-plus-colours" "png" "full" "" "" %}
+
+### Components
+
+A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems.
+
+{% image "siae-plus-components" "png" "full" "" "" %}
+
+### Touch icon
+
+Touch Icon Design Process Concepts:
+
+{% image "siae-plus-touch-icon" "jpg" "" "" "" %}
 
 ## Features
 
