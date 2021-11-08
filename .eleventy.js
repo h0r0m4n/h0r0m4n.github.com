@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
 
         let stats = await Image(src, {
             widths: [960, 1280, 1920, 2560],
-            formats: ["jpeg", "webp"],
+            formats: ["jpeg", "webp", "avif"],
             filenameFormat: function (id, src, width, format, options) {
                 const extension = path.extname(src);
                 const name = path.basename(src, extension);
@@ -110,7 +110,8 @@ module.exports = function (eleventyConfig) {
             {}
         );
     
-        const source = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
     
         const img = `<img
             loading="lazy"
@@ -124,7 +125,8 @@ module.exports = function (eleventyConfig) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
                 <picture>
-                    ${source}
+                    ${sourceAVIF}
+                    ${sourceWEBP}
                     ${img}
                 </picture>
                 ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
@@ -138,7 +140,7 @@ module.exports = function (eleventyConfig) {
 
         let stats = await Image(src, {
             widths: [500, 750, 1000],
-            formats: ["jpeg", "webp"],
+            formats: ["jpeg", "webp", "avif"],
             filenameFormat: function (id, src, width, format, options) {
                 const extension = path.extname(src);
                 const name = path.basename(src, extension);
@@ -161,8 +163,9 @@ module.exports = function (eleventyConfig) {
             }),
             {}
         );
-    
-        const source = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
     
         const img = `<img
             loading="lazy"
@@ -176,7 +179,8 @@ module.exports = function (eleventyConfig) {
         return outdent`
             <div class="image-container">
                 <picture>
-                    ${source}
+                    ${sourceAVIF}
+                    ${sourceWEBP}
                     ${img}
                 </picture>
             </div>
