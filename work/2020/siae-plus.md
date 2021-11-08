@@ -72,4 +72,4 @@ All the product features were added to Jira, which enabled us to keep track of t
 
 Several professional figures have been involved in this project:
 
-{% stats "Designers" "6" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
+{% stats "Designers" "2" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
