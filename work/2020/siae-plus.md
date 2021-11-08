@@ -24,17 +24,14 @@ layout: work
 
 In this project, we used Enterprise Design Thinking and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
 
-{% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
 
 {% image "siae-plus-experience-design-workshop-creative-matrix" "jpg" "full" "" "Creative Matrix" %}
-
 {% image "siae-plus-priority-maps" "jpg" "full" "" "Priority Maps" %}
 {% image "siae-plus-social-media-insights" "jpg" "full" "" "Social Media Insights" %}
-
 {% image "siae-plus-data-visualization-1" "jpg" "full" "" "Data Visualization Workshop" %}
 {% image "siae-plus-data-visualization-2" "jpg" "full" "" "Data Comparisoning Workshop" %}
 {% image "siae-plus-touch-icon" "jpg" "full" "" "Touch Icon Concepts" %}
-
+{% image "siae-plus-0" "jpg" "full" "" "An overview of User Flows, User Testing and more" %}
 
 ## Features
 
@@ -48,7 +45,7 @@ The two most complex features of the SIAE+ is the registration and the possibili
 
 ## Custumer reaction
 
-During the first year, we received a lot of positive feedback on the first versions of the app, here’s a medium rating of Apple’s and Google’s stores:
+During the first year, we received a lot of positive feedback on the first versions of the app, here’s a medium rating of [Apple’s](https://apps.apple.com/it/app/siae/id1465450346) and [Google’s](https://play.google.com/store/apps/details?id=it.siae.autorieditori&hl=en_IE&gl=US) stores:
 
 {% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
 
