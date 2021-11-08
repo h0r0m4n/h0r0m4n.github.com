@@ -1,5 +1,7 @@
 const global = require('./_data/site'),
       outdent = require('outdent'),
+      path = require('path'),
+      Image = require('@11ty/eleventy-img'),
       { DateTime } = require('luxon');
 
 module.exports = function (eleventyConfig) {
@@ -79,22 +81,108 @@ module.exports = function (eleventyConfig) {
     });
 
     // Post image
-    // Usage: {% image "my-image" "jpg" "full" "My alt…" "My caption…" %}
-    eleventyConfig.addShortcode('image', function(src, ext, full, alt, caption) {
+    // Usage: {% image "static/file-name.jpg" "full" "My alt…" "My caption…" %}
+    eleventyConfig.addShortcode('image', async (src, full, alt, caption) => {
+
+        let stats = await Image(src, {
+            widths: [960, 1280, 1920, 2560],
+            formats: ["jpeg", "webp", "avif"],
+            filenameFormat: function (id, src, width, format, options) {
+                const extension = path.extname(src);
+                const name = path.basename(src, extension);
+
+                return `${name}-${width}w.${format}`;
+            },
+            urlPath: "/static/",
+            outputDir: "./_site/static/",
+        });
+    
+        let lowestSrc = stats["jpeg"][0];
+    
+        const srcset = Object.keys(stats).reduce(
+            (acc, format) => ({
+                ...acc,
+                [format]: stats[format].reduce(
+                    (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                    ""
+                ),
+            }),
+            {}
+        );
+    
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+    
+        const img = `<img
+            loading="lazy"
+            alt="${alt}"
+            src="${lowestSrc.url}"
+            sizes='(min-width: 1280px) 1280px, 100vw'
+            srcset="${srcset["jpeg"]}"
+            width="${lowestSrc.width}"
+            height="${lowestSrc.height}">`;
+
         return outdent`
             <figure ${full ? `class="full"` : ``}>
-                <img src="/static/${src}.${ext}" srcset="/static/${src}@1.5x.${ext} 1.5x, /static/${src}@2x.${ext} 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+                <picture>
+                    ${sourceAVIF}
+                    ${sourceWEBP}
+                    ${img}
+                </picture>
                 ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
             </figure>
         `;
     });
 
     // Image thumbnail
-    // Usage: {% thumbnail "my-image", "My alt…" %}
-    eleventyConfig.addNunjucksShortcode('thumbnail', function(src, alt) {
+    // Usage: {% thumbnail "static/file-name.jpg" "My alt…" %}
+    eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, full, alt, caption) => {
+
+        let stats = await Image(src, {
+            widths: [500, 750, 1000],
+            formats: ["jpeg", "webp", "avif"],
+            filenameFormat: function (id, src, width, format, options) {
+                const extension = path.extname(src);
+                const name = path.basename(src, extension);
+
+                return `${name}-${width}w.${format}`;
+            },
+            urlPath: "/static/",
+            outputDir: "./_site/static/",
+        });
+    
+        let lowestSrc = stats["jpeg"][0];
+    
+        const srcset = Object.keys(stats).reduce(
+            (acc, format) => ({
+                ...acc,
+                [format]: stats[format].reduce(
+                    (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                    ""
+                ),
+            }),
+            {}
+        );
+
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+    
+        const img = `<img
+            loading="lazy"
+            alt="${alt}"
+            src="${lowestSrc.url}"
+            sizes='(min-width: 1280px) 1280px, 100vw'
+            srcset="${srcset["jpeg"]}"
+            width="${lowestSrc.width}"
+            height="${lowestSrc.height}">`;
+
         return outdent`
             <div class="image-container">
-                <img src="/static/${src}.jpg" srcset="/static/${src}@1.5x.jpg 1.5x, /static/${src}@2x.jpg 2x" ${alt ? `alt="${alt}"` : ``} loading="lazy">
+                <picture>
+                    ${sourceAVIF}
+                    ${sourceWEBP}
+                    ${img}
+                </picture>
             </div>
         `;
     });

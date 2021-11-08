@@ -12,4 +12,5 @@ date: 2017-03-14
 finished: true
 layout: work
 permalink: false
+thumbnail: static/sound-art.jpg
 ---

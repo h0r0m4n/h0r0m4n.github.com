@@ -9,5 +9,6 @@ date: 2014-09-23
 finished: true
 layout: work
 permalink: false
+thumbnail: static/romaeuropa-2014.jpg
 eleventyExcludeFromCollections: true
 ---

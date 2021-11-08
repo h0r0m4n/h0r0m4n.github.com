@@ -11,4 +11,5 @@ date: 2020-09-11
 finished: false
 layout: work
 permalink: false
+thumbnail: static/ied-main-website.jpg
 ---

@@ -9,4 +9,5 @@ date: 2012-08-23
 finished: true
 layout: work
 permalink: false
+thumbnail: static/september.jpg
 ---

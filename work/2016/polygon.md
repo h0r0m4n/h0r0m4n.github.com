@@ -9,4 +9,5 @@ date: 2016-02-03
 finished: true
 layout: work
 permalink: false
+thumbnail: static/polygon.jpg
 ---

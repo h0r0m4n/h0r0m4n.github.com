@@ -11,4 +11,5 @@ date: 2018-12-10
 finished: true
 layout: work
 permalink: false
+thumbnail: static/ubi-banca-digital-workspace.jpg
 ---

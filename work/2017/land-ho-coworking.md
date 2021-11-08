@@ -12,4 +12,5 @@ date: 2017-01-23
 finished: true
 layout: work
 permalink: false
+thumbnail: static/land-ho-coworking.jpg
 ---

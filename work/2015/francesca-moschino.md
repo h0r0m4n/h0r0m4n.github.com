@@ -9,4 +9,5 @@ date: 2015-03-17
 finished: true
 layout: work
 permalink: false
+thumbnail: static/francesca-moschino.jpg
 ---

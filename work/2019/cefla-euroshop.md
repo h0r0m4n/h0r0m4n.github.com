@@ -18,19 +18,20 @@ skills:
 date: 2019-11-08
 finished: true
 layout: work
+thumbnail: static/cefla-euroshop.jpg
 ---
 
 ## Overview
 
 Unlike traditional stores, Cefla can help customers save time in its target market, which includes dense downtown settings, where register lines get long during peak hours. And also reduce the operating cost, human staff.
 
-{% image "cefla-euroshop-1" "jpg" "full" "" "" %}
+{% image "static/cefla-euroshop-1.jpg" "full" "" "" %}
 
 ## Design process
 
 We have begun to collect the needs of the business and that of users. After all the data collected we created a service blueprint. That visualizes the relationships between different service components and processes that are directly tied to touchpoints in the shopping experience.
 
-{% image "cefla-service-blueprint" "jpg" "full" "" "Service Blueprint" %}
+{% image "static/cefla-service-blueprint.jpg" "full" "" "Service Blueprint" %}
 
 After collecting the business requirements, we prioritized the most important features for the final product starting with the first release.
 
@@ -40,11 +41,11 @@ To understand better user's needs and motivations we used user personas that hel
 
 {% stats "Approach" "Design Thinking & Agile" "Duration" "6 months" "" "" "" "" %}
 
-{% image "cefla-euroshop-5" "jpg" "full" "" "External promps/solutions" %}
+{% image "static/cefla-euroshop-5.jpg" "full" "" "External promps/solutions" %}
 
 Based on the business requirements we have designed the three potential personas to simulate design-driven experience:
 
-{% image "cefla-euroshop-2" "jpg" "full" "" "Overview of three personas" %}
+{% image "static/cefla-euroshop-2.jpg" "full" "" "Overview of three personas" %}
 
 ### Data and metrics
 
@@ -60,7 +61,7 @@ During research with our engineers and established some extraordinary data that 
   - Frequency of purchase of a given products
   - Purchase history
 
-{% image "cefla-store-concept" "jpg" "full" "" "Store Concept" %}
+{% image "static/cefla-store-concept.jpg" "full" "" "Store Concept" %}
 
 #### Technical
   - Product out of camera angle
@@ -71,8 +72,8 @@ During research with our engineers and established some extraordinary data that 
   - Out-of-stock products
   - Quantity of products that are expiring
 
-{% image "cefla-tecnical-blueprint-1" "jpg" "full" "" "Tecnical Blueprint 1" %}
-{% image "cefla-tecnical-blueprint-2" "jpg" "full" "" "Tecnical Blueprint 2" %}
+{% image "static/cefla-tecnical-blueprint-1.jpg" "full" "" "Tecnical Blueprint 1" %}
+{% image "static/cefla-tecnical-blueprint-2.jpg" "full" "" "Tecnical Blueprint 2" %}
 
 ## First release
 
@@ -84,7 +85,7 @@ Since the project had a small deadline we had to do two major releases. The firs
 
 The second release offered a complete shopping experience:
 
-{% image "cefla-euroshop-3" "jpg" "full" "" "" %}
+{% image "static/cefla-euroshop-3.jpg" "full" "" "" %}
 
 {% video "cefla-euroshop-2" "full" "" "An overview of final prototype" %}
 
@@ -92,7 +93,7 @@ The second release offered a complete shopping experience:
 
 Support area for app provides the “admin-level” to support teams with allows to view and edit subscribed users to the product. One of the main features in-app was to be able to filter people labeled as "VIP":
 
-{% image "cefla-euroshop-4" "jpg" "full" "" "" %}
+{% image "static/cefla-euroshop-4.jpg" "full" "" "" %}
 
 {% video "cefla-euroshop-3" "full" "" "Prototype of schedule and appointments" %}
 

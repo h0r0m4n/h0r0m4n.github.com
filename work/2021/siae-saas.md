@@ -19,6 +19,7 @@ skills:
 date: 2020-03-24
 finished: true
 layout: work
+thumbnail: static/siae-saas.jpg
 ---
 
 ## Design process
@@ -94,9 +95,9 @@ Designing products was a large & complex piece of work that spanned over 1 year 
 
 This meant more time could be shifted towards higher complexity tasks such as UX thinking, structure and design.
 
-{% image "siae-sass-1" "jpg" "full" "" "" %}
-{% image "siae-sass-2" "jpg" "full" "" "" %}
-{% image "siae-sass-3" "jpg" "full" "" "" %}
+{% image "static/siae-sass-1.jpg" "full" "" "" %}
+{% image "static/siae-sass-2.jpg" "full" "" "" %}
+{% image "static/siae-sass-3.jpg" "full" "" "" %}
 
 ## In conclusion
 

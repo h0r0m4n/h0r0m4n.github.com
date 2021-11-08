@@ -11,4 +11,5 @@ date: 2016-02-08
 finished: true
 layout: work
 permalink: false
+thumbnail: static/filament.jpg
 ---

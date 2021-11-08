@@ -8,4 +8,5 @@ date: 2016-02-28
 finished: true
 layout: work
 permalink: false
+thumbnail: static/3d-sphere.jpg
 ---

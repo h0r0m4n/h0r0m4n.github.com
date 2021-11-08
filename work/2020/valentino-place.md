@@ -11,4 +11,5 @@ date: 2020-11-20
 finished: false
 layout: work
 permalink: false
+thumbnail: static/valentino-place.jpg
 ---
