@@ -13,6 +13,6 @@ date: 2019-01-07
 finished: true
 layout: work
 permalink: false
-thumbnail: static/ubi-banca-main-website.jpg
+thumbnail: static/ubi-banca-main-site.jpg
 eleventyExcludeFromCollections: true
 ---
