@@ -1,45 +1,31 @@
 #works
     h2
-        margin-bottom: var(--size-s)
-
+        margin-bottom: var(--size-l)
     ol
         list-style: none
         margin: 0
         @media #{$media-query-small-only}
-            padding: 1em 1em 0
+            padding: 0 1em
+
         @media #{$media-query-medium}
-            display: flex
-            padding: var(--size-l) 0 1.5em var(--size-m)
-            overflow-x: scroll
-            overflow-y: hidden
-            -webkit-overflow-scrolling: touch
-            white-space: nowrap
-            background: linear-gradient(-90deg, var(--color-neutral-4), transparent)
+            display: grid
+            grid-gap: var(--size-l)
+            padding: 0 var(--size-l)
+            grid-template-columns: repeat(2, 1fr)
+            
         @media #{$media-query-large}
-            padding-left: var(--size-l)
+            grid-template-columns: repeat(3, 1fr)
 
-        &::-webkit-scrollbar
-            @media #{$media-query-medium}
-                height: 8px
+        @media #{$media-query-huge}
+            grid-template-columns: repeat(4, 1fr)
 
-        &::-webkit-scrollbar-thumb
-            @media #{$media-query-medium}
-                background: var(--color-secondary)
+        @media #{$media-query-godzilla}
+            grid-template-columns: repeat(5, 1fr)
 
-        &::-webkit-scrollbar-track
-            @media #{$media-query-medium}
-                background: var(--color-neutral-4)
+    .work
+        @media #{$media-query-small-only}
+            margin-bottom: var(--size-l)
 
-        li
-            @media #{$media-query-small-only}
-                margin-bottom: var(--size-l)
-                &:last-child
-                    margin-bottom: 0
-            @media #{$media-query-medium}
-                margin-right: var(--size-m)
-                display: inline-block
-                list-style: none
-                vertical-align: top
-                white-space: normal
-            @media #{$media-query-large}
-                margin-right: var(--size-l)
+    img
+        @media #{$media-query-medium}
+            width: 100%
