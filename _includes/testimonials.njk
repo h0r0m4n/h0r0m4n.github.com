@@ -11,7 +11,11 @@
                                 <div class="avatar">
                                     <img src="{{ '/static/' + testimonial.name | slug + '.jpg' }}" srcset="{{ '/static/' + testimonial.name | slug + '@1.5x.jpg' }} 1.5x, {{ '/static/' + testimonial.name | slug + '@2x.jpg' }} 2x" alt="{{ testimonial.name }}" loading="lazy">
                                 </div>
-                                <p><strong>{{ testimonial.name }}</strong>, {{ testimonial.role }} at {{ testimonial.company }}</p>
+                                <p>
+                                    <span class="role">{{ testimonial.role }}</span>
+                                    <br>
+                                    <strong>{{ testimonial.name }}</strong> — {{ testimonial.company }}
+                                </p>
                             </div>
                         </blockquote>
                     </li>
