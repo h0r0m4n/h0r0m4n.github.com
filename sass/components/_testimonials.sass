@@ -6,10 +6,12 @@
         padding-left: 0
         grid-gap: var(--size-x)
         grid-template-columns: repeat(1, 1fr)
+
         @media #{$media-query-medium}
             font-size: 0.75em
             grid-gap: var(--size-l)
             grid-template-columns: repeat(2, 1fr)
+
     blockquote
         position: relative
         margin: var(--size-m) 0 0
@@ -22,11 +24,23 @@
             font-size: 4em
             font-weight: bold
             opacity: 0.125
+
+    // .comment
+    //     font-size: 1.125em
+
     .testimonial
         display: flex
         align-items: center
         p
             margin: 0
+            line-height: 1
+
+            .role
+                font-size: 1.5em
+                font-family: var(--type-family-3)
+                color: var(--color-tertiary)
+                margin-bottom: -8px
+
     .avatar
         position: relative
         margin-right: var(--size-s)

@@ -10,4 +10,5 @@ finished: true
 layout: work
 permalink: false
 thumbnail: static/yearth.jpg
+eleventyExcludeFromCollections: true
 ---
