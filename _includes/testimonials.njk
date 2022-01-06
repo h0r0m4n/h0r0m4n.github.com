@@ -4,7 +4,7 @@
         {% if testimonials %}
             <ul>
                 {% for testimonial in testimonials %}
-                    <li>
+                    <li{% if testimonial.featured == true %} class="featured" {% endif %}>
                         <blockquote>
                             <p class="comment">{{ testimonial.comment }}</p>
                             <div class="testimonial">
