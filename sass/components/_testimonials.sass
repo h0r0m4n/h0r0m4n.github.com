@@ -11,6 +11,14 @@
             font-size: 0.75em
             grid-gap: var(--size-l)
             grid-template-columns: repeat(2, 1fr)
+        
+    li
+        &.featured
+            grid-column-start: 1
+            grid-column-end: 3
+            .comment
+                @media #{$media-query-medium}
+                    line-height: var(--type-height-3)
 
     blockquote
         position: relative
@@ -25,8 +33,9 @@
             font-weight: bold
             opacity: 0.125
 
-    // .comment
-    //     font-size: 1.125em
+    .comment
+        @media #{$media-query-medium}
+            font-size: 1.125em
 
     .testimonial
         display: flex
