@@ -14,8 +14,9 @@
         
     li
         &.featured
-            grid-column-start: 1
-            grid-column-end: 3
+            @media #{$media-query-medium}
+                grid-column-start: 1
+                grid-column-end: 3
             .comment
                 @media #{$media-query-medium}
                     line-height: var(--type-height-3)
