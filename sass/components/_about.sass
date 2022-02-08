@@ -1,15 +1,3 @@
-@keyframes hi
-    0%
-        transform: rotate(0deg)
-    25%
-        transform: rotate(-15deg)
-    50%
-        transform: rotate(15deg)
-    75%
-        transform: rotate(-15deg)
-    100%
-        transform: rotate(0deg)
-
 #about
     #avatar
         float: right
@@ -34,6 +22,9 @@
         position: relative
         text-align: center
         color: var(--color-secondary)
+        opacity: 0
+        animation: show 500ms forwards
+        @include delay(3, 1s)
 
         &::after
             content: '+'

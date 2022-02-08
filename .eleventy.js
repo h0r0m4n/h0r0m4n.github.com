@@ -115,6 +115,7 @@ module.exports = function (eleventyConfig) {
     
         const img = `<img
             loading="lazy"
+            decoding="async"
             alt="${alt}"
             src="${lowestSrc.url}"
             sizes='(min-width: 1280px) 1280px, 100vw'
@@ -169,6 +170,7 @@ module.exports = function (eleventyConfig) {
     
         const img = `<img
             loading="lazy"
+            decoding="async"
             alt="${alt}"
             src="${lowestSrc.url}"
             sizes='(min-width: 1280px) 1280px, 100vw'
