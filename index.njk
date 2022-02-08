@@ -30,7 +30,7 @@ layout: default
                         <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent">
                             {% thumbnail work.data.thumbnail, work.data.title %}
                             <div class="content">
-                                <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }} ➞ <span class="link-label">Case study</span></h3>
+                                <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
                                 {% if work.data.description %}
                                     <p>{{ work.data.description }}</p>
                                 {% endif %}
