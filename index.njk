@@ -1,56 +1,38 @@
 ---
 layout: default
 ---
-<article>
-    <div id="about" class="section">
-        <div class="t-container">
-            {% include 'avatar.njk' %}
-            <p>Nice to meet you <span class="emoji" aria-hidden="true">👋</span>. I’m a <mark>multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
-            <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process, transparency, and sharing what I learn.</p>
-            {% if skills %}
-                <ul class="t-list-horizontal">
-                    {% for expertise in skills %}
-                        <li class="expertise t-list-horizontal--item t-list-horizontal--item--distance-2">
-                            {% include expertise | slug + '.svg' %}
-                            <small>{{ expertise }}</small>
-                        </li>
-                    {% endfor %}
-                </ul>
-            {% endif %}
-        </div>
-    </div>
-    <div id="works" class="section">
-        <div class="t-container">
-            <h2>Case studies</h2>
-        </div>
-        <ol>
-            {% for work in collections.work %}
-                {% if work.url != false %}
-                    <li class="work work--reels">
-                        <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent">
-                            {% thumbnail work.data.thumbnail, work.data.title %}
-                            <div class="content">
-                                <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
-                                {% if work.data.description %}
-                                    <p>{{ work.data.description }}</p>
-                                {% endif %}
-                            </div>
-                        </a>
+<header id="about" class="section">
+    <div class="t-container">
+        <h1>
+            <span class="h3">{{ site.author }}</span>
+            <br>
+            {% include 'logo.svg' %}
+        </h1>
+        {% include 'avatar.njk' %}
+        <p>Nice to meet you <span class="emoji" aria-hidden="true">👋</span>. I’m a <mark>multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
+        <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process, transparency, and sharing what I learn.</p>
+        {% if skills %}
+            <ul class="t-list-horizontal">
+                {% for expertise in skills %}
+                    <li class="expertise t-list-horizontal--item t-list-horizontal--item--distance-2">
+                        {% include expertise | slug + '.svg' %}
+                        <small>{{ expertise }}</small>
                     </li>
-                {% endif %}
-            {% endfor %}
-        </ol>
+                {% endfor %}
+            </ul>
+        {% endif %}
     </div>
-    {% include 'testimonials.njk' %}
-    <div id="bits" class="section">
-        <div class="t-container">
-            <h2>Latest Works</h2>
-            <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
-        </div>
-        <ol>
-            {% for work in collections.work %}
-                {% if work.url == false %}
-                    <li class="work">
+</header>
+
+<section id="works" class="section">
+    <div class="t-container">
+        <h2>Case studies</h2>
+    </div>
+    <ol>
+        {% for work in collections.work %}
+            {% if work.url != false %}
+                <li class="work work--reels">
+                    <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent">
                         {% thumbnail work.data.thumbnail, work.data.title %}
                         <div class="content">
                             <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
@@ -58,10 +40,32 @@ layout: default
                                 <p>{{ work.data.description }}</p>
                             {% endif %}
                         </div>
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ol>
+                    </a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</section>
+{% include 'testimonials.njk' %}
+<section id="bits" class="section">
+    <div class="t-container">
+        <h2>Latest Works</h2>
+        <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
     </div>
-    {% include 'contact.njk' %}
-</article>
+    <ol>
+        {% for work in collections.work %}
+            {% if work.url == false %}
+                <li class="work">
+                    {% thumbnail work.data.thumbnail, work.data.title %}
+                    <div class="content">
+                        <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
+                        {% if work.data.description %}
+                            <p>{{ work.data.description }}</p>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</section>
+{% include 'contact.njk' %}
