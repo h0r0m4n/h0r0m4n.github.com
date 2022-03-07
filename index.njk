@@ -9,8 +9,8 @@ layout: default
             {% include 'logo.svg' %}
         </h1>
         {% include 'avatar.njk' %}
-        <p>Nice to meet you <span class="emoji" aria-hidden="true">👋</span>. I’m a <mark>multidisciplinary designer</mark> currently based in {{ site.location }}.</p>
-        <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process, transparency, and sharing what I learn.</p>
+        <p>Nice to meet you <span class="emoji" aria-hidden="true">👋</span>. I’m a Ukrainian multidisciplinary designer based in {{ site.location }}.</p>
+        <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process and transparency.</p>
         {% if skills %}
             <ul class="t-list-horizontal">
                 {% for expertise in skills %}
@@ -27,6 +27,7 @@ layout: default
 <section id="works" class="section">
     <div class="t-container">
         <h2>Case studies</h2>
+        <p>My portfolio includes 50+ projects, here’s the selected one:</p>
     </div>
     <ol>
         {% for work in collections.work %}
