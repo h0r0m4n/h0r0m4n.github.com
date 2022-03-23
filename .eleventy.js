@@ -137,7 +137,7 @@ module.exports = function (eleventyConfig) {
 
     // Image thumbnail
     // Usage: {% thumbnail "static/file-name.jpg" "My alt…" %}
-    eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, full, alt, caption) => {
+    eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, alt) => {
 
         let stats = await Image(src, {
             widths: [500, 750, 1000],
