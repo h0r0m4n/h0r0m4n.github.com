@@ -4,7 +4,7 @@ description: Vector low-polygon characters.
 client: 
 skills:
   - Graphic Design
-date: 2016-01-05
+date: 2016-08-05
 finished: true
 nft: true
 layout: work

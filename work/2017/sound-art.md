@@ -13,4 +13,5 @@ finished: true
 layout: work
 permalink: false
 thumbnail: static/sound-art.jpg
+eleventyExcludeFromCollections: true
 ---

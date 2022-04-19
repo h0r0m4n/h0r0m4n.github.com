@@ -12,5 +12,4 @@ finished: true
 layout: work
 permalink: false
 thumbnail: static/ubi-banca-digital-workspace.jpg
-eleventyExcludeFromCollections: true
 ---

@@ -11,4 +11,5 @@ finished: true
 layout: work
 permalink: false
 thumbnail: static/le-paradox-v1.jpg
+eleventyExcludeFromCollections: true
 ---
