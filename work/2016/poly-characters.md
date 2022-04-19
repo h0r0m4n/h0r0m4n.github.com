@@ -6,6 +6,7 @@ skills:
   - Graphic Design
 date: 2016-01-05
 finished: true
+nft: true
 layout: work
 permalink: false
 thumbnail: static/poly-characters.jpg
