@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Art Direction for the Web",
+    "author": "Andy Clarke",
+    "link": "https://stuffandnonsense.co.uk"
+  },
+  {
+    "title": "Designing for the Web",
+    "author": "Mark Bulton",
+    "link": "https://markboulton.co.uk"
+  },
+  {
+    "title": "Design Systems",
+    "author": "Alla Kholmatova",
+    "link": "https://www.craftui.com"
+  },
+  {
+    "title": "Inclusive Design Patterns",
+    "author": "Heydon Pickering",
+    "link": "https://heydonworks.com"
+  },
+  {
+    "title": "Mobile First",
+    "author": "Luke Wroblewski",
+    "link": "https://www.lukew.com"
+  },
+  {
+    "title": "Making and Breaking the Grid",
+    "author": "Timothy Samara",
+    "link": "http://www.timothysamara.com"
+  },
+  {
+    "title": "The Shape of Design",
+    "author": "Frank Chimero",
+    "link": "http://frankchimero.com"
+  },
+  {
+    "title": "Thinking with Type",
+    "author": "Ellen Lupton",
+    "link": "https://ellenlupton.com"
+  },
+  {
+    "title": "Designing the invisible",
+    "author": "Robert Mills",
+    "link": "https://www.fourthwallcontent.com"
+  },
+  {
+    "title": "Form Design Patterns",
+    "author": "Adam Silver",
+    "link": "https://adamsilver.io"
+  },
+  {
+    "title": "Build Better Products",
+    "author": "Laura Klein",
+    "link": "https://www.usersknow.com"
+  },
+  {
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "link": "https://jnd.org"
+  },
+  {
+    "title": "Sprint",
+    "author": "Jake Knapp",
+    "link": "https://jakeknapp.com"
+  }
+]
