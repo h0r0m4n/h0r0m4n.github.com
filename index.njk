@@ -59,6 +59,9 @@ layout: default
                 <li class="work">
                     {% thumbnail work.data.thumbnail, work.data.title %}
                     <div class="content">
+                        {% if work.data.nft %}
+                            <span class="label">NFT</span>
+                        {% endif %}
                         <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
                         {% if work.data.description %}
                             <p>{{ work.data.description }}</p>
