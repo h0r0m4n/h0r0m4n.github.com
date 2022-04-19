@@ -188,4 +188,58 @@ module.exports = function (eleventyConfig) {
             </div>
         `;
     });
+
+    // Book cover
+    // Usage: {% book "static/file-name.jpg" "My alt…" %}
+    eleventyConfig.addNunjucksAsyncShortcode('book', async (src, alt) => {
+
+        let stats = await Image(src, {
+            widths: [160, 240, 320],
+            formats: ["jpeg", "webp", "avif"],
+            filenameFormat: function (id, src, width, format, options) {
+                const extension = path.extname(src);
+                const name = path.basename(src, extension);
+
+                return `${name}-${width}w.${format}`;
+            },
+            urlPath: "/static/",
+            outputDir: "./_site/static/",
+        });
+    
+        let lowestSrc = stats["jpeg"][0];
+    
+        const srcset = Object.keys(stats).reduce(
+            (acc, format) => ({
+                ...acc,
+                [format]: stats[format].reduce(
+                    (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                    ""
+                ),
+            }),
+            {}
+        );
+
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+    
+        const img = `<img
+            loading="lazy"
+            decoding="async"
+            alt="${alt}"
+            src="${lowestSrc.url}"
+            sizes='(min-width: 1280px) 1280px, 100vw'
+            srcset="${srcset["jpeg"]}"
+            width="${lowestSrc.width}"
+            height="${lowestSrc.height}">`;
+
+        return outdent`
+            <div class="image-container">
+                <picture>
+                    ${sourceAVIF}
+                    ${sourceWEBP}
+                    ${img}
+                </picture>
+            </div>
+        `;
+    });
 }
