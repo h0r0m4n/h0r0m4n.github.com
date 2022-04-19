@@ -1,0 +1,17 @@
+<section id="personal" class="section">
+    <div class="t-container">
+        <h2>Personal</h2>
+        <p>I go in phases with reading… sometimes consuming multiple books a month while other times taking months to read one book. This is a list of books I recommend.</p>
+        {% if reads %}
+            <ol class="t-list-horizontal">
+                {% for book in reads %}
+                    <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
+                        <a href="{{ book.url | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ book.title }}">
+                            {# TODO: #}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+    </div>
+</section>
