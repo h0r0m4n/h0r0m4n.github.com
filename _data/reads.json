@@ -45,6 +45,11 @@
     "link": "https://www.fourthwallcontent.com"
   },
   {
+    "title": "The Design of Everyday Things",
+    "author": "Don Norman",
+    "link": "https://jnd.org"
+  },
+  {
     "title": "Form Design Patterns",
     "author": "Adam Silver",
     "link": "https://adamsilver.io"
@@ -53,11 +58,6 @@
     "title": "Build Better Products",
     "author": "Laura Klein",
     "link": "https://www.usersknow.com"
-  },
-  {
-    "title": "The Design of Everyday Things",
-    "author": "Don Norman",
-    "link": "https://jnd.org"
   },
   {
     "title": "Sprint",
