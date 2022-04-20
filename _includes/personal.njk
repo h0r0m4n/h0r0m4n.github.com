@@ -2,20 +2,18 @@
     <div class="t-container">
         <h2>Personal</h2>
         <p>I go in phases with reading… sometimes consuming multiple books a month while other times taking months to read one book. This is a list of books I recommend.</p>
-        {% if reads %}
-            <ol class="collection">
-                {% for read in reads %}
-                    <li>
-                        <a class="collection-item" href="{{ read.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ read.title }}">
-                            {% book 'static/' + read.title | slug + '.jpg', read.title %}
-                            <div class="content">
-                                <p class="collection-title">{{ read.title }}</p>
-                                <p class="collection-author">{{ read.author }}</p>
-                            </div>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ol>
-        {% endif %}
+        <h5>Readings</h5>
+        <p>I go in phases with reading… sometimes consuming multiple books a month while other times taking months to read one book. This is a list of books I recommend.</p>
     </div>
+    {% if reads %}
+        <ol class="t-list-horizontal">
+            {% for read in reads %}
+                <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
+                    <a class="t-hover--2" href="{{ read.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ read.title }} by {{ read.author}}">
+                        {% book 'static/' + read.title | slug + '.jpg', read.title %}
+                    </a>
+                </li>
+            {% endfor %}
+        </ol>
+    {% endif %}
 </section>
