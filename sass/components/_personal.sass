@@ -1,0 +1,26 @@
+#personal
+    ol
+        white-space: nowrap
+        overflow-x: auto
+        padding: var(--size-s)
+        text-align: center
+        @media #{$media-query-medium}
+            padding: var(--size-m)
+        @media #{$media-query-large}
+            padding: var(--size-l)
+            
+        li
+            margin-bottom: 0
+
+        img
+            border-radius: var(--radius-1)
+            @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                transition: box-shadow 150ms ease-in
+                box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+
+        a
+            display: block
+            &:hover
+                img
+                    @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                        box-shadow: 0 0 1em rgba(0, 0, 0, 0.5)
