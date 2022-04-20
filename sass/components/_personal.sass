@@ -1,26 +1,73 @@
 #personal
-    ol
-        white-space: nowrap
-        overflow-x: auto
-        padding: var(--size-s)
-        text-align: center
-        @media #{$media-query-medium}
-            padding: var(--size-m)
-        @media #{$media-query-large}
-            padding: var(--size-l)
-            
+    background-color: var(--color-neutral-4)
+    padding-top: var(--size-xl)
+    padding-bottom: var(--size-xl)
+    @media #{$media-query-large}
+        padding-top: var(--size-xxl)
+        padding-bottom: var(--size-xxl)
+
+    h4
+        text-transform: none
+    
+    li + li
+        margin-top: var(--size-xs)
+    
+    .about
+        .avatar
+            display: inline-block
+            margin-left: calc(var(--size-l) * -1)
+            img
+                @media #{$media-query-medium}
+                    width: 154px
+                    height: 230px
+        h2
+            margin-top: var(--size-m)
+
+    .reads
+        ol
+            white-space: nowrap
+            overflow-x: auto
+            padding-inline: var(--size-s)
+            text-align: center
+            @media #{$media-query-medium}
+                padding-inline: var(--size-m)
+            @media #{$media-query-large}
+                padding-inline: var(--size-l)
+
+            img
+                border-radius: var(--radius-1)
+                @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                    transition: box-shadow 150ms ease-in
+                    box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+
+            a
+                display: block
+                &:hover
+                    img
+                        @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                            box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.33)
+    .software
+
         li
-            margin-bottom: 0
+            a
+                display: inline-block
+                line-height: 0
 
-        img
-            border-radius: var(--radius-1)
-            @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
-                transition: box-shadow 150ms ease-in
-                box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+                &:hover
+                    svg
+                        fill: var(--color-secondary)
 
-        a
-            display: block
-            &:hover
-                img
-                    @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
-                        box-shadow: 0 0 1em rgba(0, 0, 0, 0.5)
+        svg
+            transition: fill 150ms ease-in
+            fill: var(--color-neutral-1)
+            height: 2rem
+    
+            @media #{$media-query-medium}
+                height: 2.5rem
+
+    .website
+        sup
+            font-size: 40%
+            font-family: var(--type-family-1a)
+            text-transform: uppercase
+            color: var(--color-neutral-1)
