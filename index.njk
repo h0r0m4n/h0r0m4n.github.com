@@ -50,7 +50,7 @@ layout: default
 {% include 'testimonials.njk' %}
 <section id="bits" class="section">
     <div class="t-container">
-        <h2>Latest Works</h2>
+        <h2>Latest Bits</h2>
         <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
     </div>
     <ol>
@@ -59,6 +59,9 @@ layout: default
                 <li class="work">
                     {% thumbnail work.data.thumbnail, work.data.title %}
                     <div class="content">
+                        {% if work.data.nft %}
+                            <span class="label">NFT</span>
+                        {% endif %}
                         <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
                         {% if work.data.description %}
                             <p>{{ work.data.description }}</p>
@@ -70,3 +73,4 @@ layout: default
     </ol>
 </section>
 {% include 'contact.njk' %}
+{% include 'personal.njk' %}

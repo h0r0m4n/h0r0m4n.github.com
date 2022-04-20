@@ -10,4 +10,5 @@ finished: true
 layout: work
 permalink: false
 thumbnail: static/jvc-paradox.jpg
+eleventyExcludeFromCollections: true
 ---
