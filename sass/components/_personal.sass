@@ -15,7 +15,9 @@
     .about
         .avatar
             display: inline-block
-            margin-left: calc(var(--size-l) * -1)
+            margin-left: calc(var(--size-s) * -1)
+            @media #{$media-query-medium}
+                margin-left: calc(var(--size-l) * -1)
             img
                 @media #{$media-query-medium}
                     width: 154px
