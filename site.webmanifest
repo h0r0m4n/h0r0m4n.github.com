@@ -19,10 +19,5 @@
             "type": "image/png",
             "purpose": "any"
         }
-    ],
-    "start_url": "/",
-    "display": "browser",
-    "background_color": "#322abb",
-    "scope": "/",
-    "theme_color": "#322abb"
+    ]
 }
