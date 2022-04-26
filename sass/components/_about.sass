@@ -28,32 +28,53 @@
         display: inline-block
         animation: hi 1s 1200ms
 
-    ul
+    .skills
         margin-bottom: 0
 
-    li.expertise
-        position: relative
-        text-align: center
-        color: var(--color-secondary)
-        opacity: 0
-        animation: show 500ms forwards
-        @include delay(3, 1s)
+        li.expertise
+            position: relative
+            text-align: center
+            color: var(--color-secondary)
+            opacity: 0
+            animation: show 500ms forwards
+            @include delay(3, 1s)
 
-        &::after
-            content: '+'
-            color: var(--color-neutral-1)
-            position: absolute
-            top: 40%
-            right: calc(var(--size-m) * -1)
-            transform: translateY(-40%)
-        &:last-child
-            &:after
-                content: ''
+            &::after
+                content: '+'
+                color: var(--color-neutral-1)
+                position: absolute
+                top: 40%
+                right: calc(var(--size-m) * -1)
+                transform: translateY(-40%)
+            &:last-child
+                &:after
+                    content: ''
 
-        small
-            display: block
-            font-family: var(--type-family-1b)
+            small
+                display: block
+                font-family: var(--type-family-1b)
 
+            svg
+                height: 4em
+                width: 4em
+
+    .clients
         svg
-            height: 4em
-            width: 4em
+            transition: fill 150ms ease-in
+            fill: var(--color-neutral-1)
+            height: 3rem
+            @media #{$media-query-medium}
+                height: 4rem
+            @media #{$media-query-large}
+                height: 5rem
+
+        li
+            margin-bottom: 0
+            a
+                display: inline-block
+                line-height: 0
+
+        a
+            &:hover
+                svg
+                    fill: var(--color-secondary)

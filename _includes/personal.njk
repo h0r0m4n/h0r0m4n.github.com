@@ -6,6 +6,23 @@
             <p>I iterate, prototype, and arrive at comprehensive solutions, deliver precise, conceptual, and visually elegant design specs with the highest fidelity possible, and work closely with engineers to ensure high-quality execution.</p>
         </div>
     </div>
+    {% if reads %}
+        <div class="reads">
+            <div class="t-container">
+                <h4>Readings</h4>
+                <p>I go in phases with reading… sometimes consuming multiple books a month while other times take months to read one book. This is a list of books I recommend.</p>
+            </div>
+            <ol class="t-list-horizontal">
+                {% for read in reads %}
+                    <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
+                        <a class="t-hover--2" href="{{ read.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ read.title }} by {{ read.author}}">
+                            {% book 'static/' + read.title | slug + '.jpg', read.title %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+    {% endif %}
     {% if software %}
         <div class="software">
             <div class="t-container">
@@ -38,23 +55,30 @@
             </div>
         </div>
     {% endif %}
-    {% if reads %}
-        <div class="reads">
-            <div class="t-container">
-                <h4>Readings</h4>
-                <p>I go in phases with reading… sometimes consuming multiple books a month while other times take months to read one book. This is a list of books I recommend.</p>
-            </div>
-            <ol class="t-list-horizontal">
-                {% for read in reads %}
-                    <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
-                        <a class="t-hover--2" href="{{ read.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ read.title }} by {{ read.author}}">
-                            {% book 'static/' + read.title | slug + '.jpg', read.title %}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ol>
+    <div class="bits">
+        <div class="t-container">
+            <h4>Latest Bits</h4>
+            <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
         </div>
-    {% endif %}
+        <ol>
+            {% for work in collections.work %}
+                {% if work.url == false %}
+                    <li class="work">
+                        {% thumbnail work.data.thumbnail, work.data.title %}
+                        <div class="content">
+                            {% if work.data.nft %}
+                                <span class="label">NFT</span>
+                            {% endif %}
+                            <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
+                            {% if work.data.description %}
+                                <p>{{ work.data.description }}</p>
+                            {% endif %}
+                        </div>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ol>
+    </div>
     <div class="website">
         <div class="t-container">
             <h4>About this website <sup>Nerd Zone</sup></h4>

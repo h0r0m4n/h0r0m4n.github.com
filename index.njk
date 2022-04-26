@@ -8,17 +8,22 @@ layout: default
             {% include 'logo.svg' %}
         </h1>
         {% include 'avatar.njk' %}
-        <p>Nice to meet you <span class="emoji" aria-hidden="true">👋</span>. I’m a Ukrainian multidisciplinary designer based in {{ site.location }}.</p>
-        <p>My work focuses on building thoughtful, intuitive, and delightful digital products with a devotion to the quality, design process and transparency.</p>
-        {% if skills %}
-            <ul class="t-list-horizontal">
-                {% for expertise in skills %}
-                    <li class="expertise t-list-horizontal--item t-list-horizontal--item--distance-2">
-                        {% include expertise | slug + '.svg' %}
-                        <small>{{ expertise }}</small>
+        <p><span class="emoji" aria-hidden="true">👋</span> Hi, I’m Roman, a multidisciplinary designer with {% experience %}+ years of experience. Originally from Lviv, Ukraine, I currently reside in {{ site.location }}. I care about form and function and believe in the power of simplicity.</p>
+        <p>I currently spend my days designing at <a href="https://mywallst.com" rel="noopener noreferrer nofollow" target="_blank">MyWallSt</a>. Previously, I have had the privilege to improve products used and loved by many users, and these are some of the clients:</p>
+        {% if clients %}
+            <ol class="clients t-list-horizontal">
+                {% for client in clients %}
+                    <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
+                        {% if client.url %}
+                            <a href="{{ client.url | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ client.title }}">
+                                {% include client.title | slug + '.svg' %}
+                            </a>
+                        {% else %}
+                            {% include client.title | slug + '.svg' %}
+                        {% endif %}
                     </li>
                 {% endfor %}
-            </ul>
+            </ol>
         {% endif %}
     </div>
 </header>
@@ -47,29 +52,5 @@ layout: default
     </ol>
 </section>
 {% include 'testimonials.njk' %}
-<section id="bits" class="section">
-    <div class="t-container">
-        <h2>Latest Bits</h2>
-        <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
-    </div>
-    <ol>
-        {% for work in collections.work %}
-            {% if work.url == false %}
-                <li class="work">
-                    {% thumbnail work.data.thumbnail, work.data.title %}
-                    <div class="content">
-                        {% if work.data.nft %}
-                            <span class="label">NFT</span>
-                        {% endif %}
-                        <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
-                        {% if work.data.description %}
-                            <p>{{ work.data.description }}</p>
-                        {% endif %}
-                    </div>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ol>
-</section>
-{% include 'contact.njk' %}
 {% include 'personal.njk' %}
+{% include 'contact.njk' %}
