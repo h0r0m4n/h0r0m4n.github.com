@@ -13,7 +13,8 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy({"src/static/testimonials": "/static/testimonials"})
         .addPassthroughCopy({"src/static/books": "/static/books"})
         .addPassthroughCopy("src/*.{png,svg,ico}")
-        .addPassthroughCopy("src/site.webmanifest");
+        .addPassthroughCopy("src/site.webmanifest")
+        .addPassthroughCopy("src/CNAME");
 
     // Watch
     eleventyConfig.addWatchTarget('./src/sass/');
