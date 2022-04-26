@@ -1,4 +1,4 @@
-const global = require('./_data/site'),
+const global = require('./src/_data/site'),
       outdent = require('outdent'),
       path = require('path'),
       Image = require('@11ty/eleventy-img'),
@@ -7,17 +7,20 @@ const global = require('./_data/site'),
 module.exports = function (eleventyConfig) {
     // Copy
     eleventyConfig
-        .addPassthroughCopy('static')
-        .addPassthroughCopy('./*.{png,svg,ico}')
-        .addPassthroughCopy('site.webmanifest')
-        .addPassthroughCopy('CNAME');
+        .addPassthroughCopy({"src/static/fonts": "/static/fonts"})
+        .addPassthroughCopy({"src/static/assets": "/static/assets"})
+        .addPassthroughCopy({"src/static/work/*.mp4": "/static/work"})
+        .addPassthroughCopy({"src/static/testimonials": "/static/testimonials"})
+        .addPassthroughCopy({"src/static/books": "/static/books"})
+        .addPassthroughCopy("src/*.{png,svg,ico}")
+        .addPassthroughCopy("src/site.webmanifest");
 
     // Watch
-    eleventyConfig.addWatchTarget('./sass/');
+    eleventyConfig.addWatchTarget('./src/sass/');
 
     // Collections
     eleventyConfig.addCollection('work', function(collectionApi) {
-        return collectionApi.getFilteredByGlob('work/**/*.md').reverse();
+        return collectionApi.getFilteredByGlob('src/work/**/*.md').reverse();
     });
 
     // Get the first `n` elements of a collection
@@ -73,7 +76,7 @@ module.exports = function (eleventyConfig) {
         return outdent`
             <figure ${full ? `class="full"` : ``}>
                 <video width="960" height="540" controls muted ${autoplay ? `autoplay` : ``} playsinline disablePictureInPicture>
-                    <source src="/static/${src}.mp4" type="video/mp4">
+                    <source src="/static/work/${src}.mp4" type="video/mp4">
                 </video>
                 ${caption ? `<figcaption class="t-container">${caption}</figcaption>` : ``}
             </figure>
@@ -81,7 +84,7 @@ module.exports = function (eleventyConfig) {
     });
 
     // Post image
-    // Usage: {% image "static/file-name.jpg" "full" "My alt…" "My caption…" %}
+    // Usage: {% image "src/static/work/file-name.jpg" "full" "My alt…" "My caption…" %}
     eleventyConfig.addShortcode('image', async (src, full, alt, caption) => {
 
         let stats = await Image(src, {
@@ -93,8 +96,8 @@ module.exports = function (eleventyConfig) {
 
                 return `${name}-${width}w.${format}`;
             },
-            urlPath: "/static/",
-            outputDir: "./_site/static/",
+            urlPath: "/static/work",
+            outputDir: "./dist/static/work",
         });
     
         let lowestSrc = stats["jpeg"][0];
@@ -136,7 +139,7 @@ module.exports = function (eleventyConfig) {
     });
 
     // Image thumbnail
-    // Usage: {% thumbnail "static/file-name.jpg" "My alt…" %}
+    // Usage: {% thumbnail "static/work/file-name.jpg" "My alt…" %}
     eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, alt) => {
 
         let stats = await Image(src, {
@@ -148,8 +151,8 @@ module.exports = function (eleventyConfig) {
 
                 return `${name}-${width}w.${format}`;
             },
-            urlPath: "/static/",
-            outputDir: "./_site/static/",
+            urlPath: "/static/work",
+            outputDir: "./dist/static/work",
         });
     
         let lowestSrc = stats["jpeg"][0];
@@ -202,8 +205,8 @@ module.exports = function (eleventyConfig) {
 
                 return `${name}-${width}w.${format}`;
             },
-            urlPath: "/static/",
-            outputDir: "./_site/static/",
+            urlPath: "/static/work",
+            outputDir: "./dist/static/work",
         });
     
         let lowestSrc = stats["jpeg"][0];
@@ -242,4 +245,13 @@ module.exports = function (eleventyConfig) {
             </div>
         `;
     });
+
+    return {
+        dir: {
+            input: 'src',
+            output: 'dist',
+            includes: '_includes',
+            data: '_data'
+        }
+    }
 }

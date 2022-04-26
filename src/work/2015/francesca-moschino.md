@@ -1,0 +1,13 @@
+---
+title: Francesca Moschino
+description: I designed the portfolio site of the photographer Francesca Moscino.
+client: 
+skills:
+  - Web Design
+  - User Interface
+date: 2015-03-17
+finished: true
+permalink: false
+thumbnail: src/static/work/francesca-moschino.jpg
+eleventyExcludeFromCollections: true
+---
