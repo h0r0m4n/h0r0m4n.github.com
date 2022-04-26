@@ -1,0 +1,71 @@
+#testimonials
+    ul
+        display: grid
+        list-style: none
+        margin: 0
+        padding-left: 0
+        grid-gap: var(--size-x)
+        grid-template-columns: repeat(1, 1fr)
+
+        @media #{$media-query-medium}
+            font-size: 0.75em
+            grid-gap: var(--size-l)
+            grid-template-columns: repeat(2, 1fr)
+        
+    li
+        &.featured
+            @media #{$media-query-medium}
+                grid-column-start: 1
+                grid-column-end: 3
+            .comment
+                @media #{$media-query-medium}
+                    line-height: var(--type-height-3)
+
+    blockquote
+        position: relative
+        margin: var(--size-m) 0 0
+        padding-top: 1em
+        &::before
+            content: "“"
+            position: absolute
+            top: -0.375em
+            font-family: Georgia, serif
+            font-size: 4em
+            font-weight: bold
+            opacity: 0.125
+
+    .comment
+        background-color: var(--color-background)
+        border-radius: var(--radius-2)
+        padding: var(--size-s)
+        box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+        @media #{$media-query-medium}
+            font-size: 1.125em
+
+    .testimonial
+        display: flex
+        align-items: center
+        p
+            margin: 0
+
+            .role
+                font-size: 1.25em
+                font-family: var(--type-family-3)
+                color: var(--color-tertiary)
+                margin-bottom: -8px
+
+    .avatar
+        position: relative
+        margin-right: var(--size-s)
+        border-radius: 50%
+        overflow: hidden
+        flex-shrink: 0
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: var(--color-secondary)
+            opacity: 0.25

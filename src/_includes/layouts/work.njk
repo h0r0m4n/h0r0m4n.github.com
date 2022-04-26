@@ -1,0 +1,36 @@
+---
+layout: layouts/base
+permalink: "/{{ page.fileSlug }}/index.html"
+---
+<header id="work-header">
+    <div class="t-container">
+        <a id="back" class="t-hover--1" href="/" rel="home" title="Back to homepage">
+            <span class="t-visually-hidden">Back</span>
+            {% include 'assets/close.svg' %}
+        </a>
+    </div>
+</header>
+
+<article>
+    <header id="work-heading" class="section">
+        <div class="t-container">
+            {% if client %}
+                <strong>{{ client }}</strong>
+            {% endif %}
+            <h1>{{ title }}</h1>
+            {% if description %}
+                <p class="h5">{{ description }}</p>
+            {% endif %}
+            {% include 'components/work-skills.njk' %}
+            <h6>Year</h2>
+            <time>{{ date | year }}{% if finished === false %} – Current{% endif %}</time>
+        </div>
+    </header>
+    <div id="work-content" class="section">
+        <div class="t-container">
+            {{ content | safe }}
+        </div>
+    </div>
+    {% include 'components/pagination.njk' %}
+    {% include 'components/contact.njk' %}
+</article>

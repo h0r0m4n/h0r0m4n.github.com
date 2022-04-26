@@ -1,0 +1,13 @@
+<div id="modal">
+    <div id="modal-container">
+        <button id="modal-close" title="Close modal">
+            <span class="t-visually-hidden">Close</span>
+            {% include 'assets/close.svg' %}
+        </button>
+        <p><strong>This work is protected please insert the password</strong></p>
+        <input id="modal-password" name="password" type="password" placeholder="Password" aria-label="Password" inputmode="numeric" pattern="[0-9]" autocomplete="current-password" minlength="6" maxlength="6" required>
+        <button id="modal-enter" class="t-hover--1">Enter</button>
+        <hr>
+        <p>Doesn't have a password? Contact me at <a href="mailto:{{ site.mail }}" title="Send email to {{ site.mail }}">{{ site.mail }}</a>.</p>
+    </div>
+</div>

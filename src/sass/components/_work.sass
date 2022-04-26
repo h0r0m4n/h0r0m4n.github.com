@@ -1,0 +1,52 @@
+.work
+    cursor: not-allowed
+
+    .image-container
+        position: relative
+
+    img
+        position: relative
+        border-radius: var(--radius-1)
+        @media #{$media-query-small-only}
+            width: 100%
+        @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+            transition: box-shadow 150ms ease-in
+            box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
+
+    .content
+        padding: 1em 1em 0 1em
+
+        h3
+            position: relative
+            z-index: 3
+            font-family: var(--type-family-1b)
+            text-transform: none
+            font-size: 1em
+            margin-top: 0
+            margin-bottom: 0.5em
+            letter-spacing: 0
+
+        p
+            opacity: 60%
+            font-size: 0.75em
+            margin: 0
+
+    .label
+        display: block
+        font-size: 1.25em
+        font-family: var(--type-family-3)
+        color: var(--color-tertiary)
+
+    &--reels
+        a
+            cursor: pointer
+            display: block
+            text-decoration: none
+            border-radius: var(--radius-1)
+            @media #{$media-query-medium}
+                display: inline-block
+
+            &:hover
+                img
+                    @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                        box-shadow: 0 0 1em rgba(0, 0, 0, 0.5)

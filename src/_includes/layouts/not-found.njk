@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'components/head.njk' %}
+    </head>
+    <body>
+        <article>
+            <div id="page404">
+                <div class="t-container">
+                    {% include 'components/avatar.njk' %}
+                    <h2>{{ title }}</h2>
+                    {{ content | safe }}
+                </div>
+            </div>
+        </article>
+        {% include 'components/scripts.njk' %}
+    </body>
+</html>
