@@ -35,7 +35,7 @@ The interviews are about discovering what you don’t know—and often that mean
 
 Since Ferrari’s Media Center offers a wide range of media content such as images, video, audio, and documents. The main goal of the product was to deliver a simple and fast experience during a search for a different type of content.
 
-{% stats "Primary feature" "Search" "Secondary feature" "Download" "Tertiary feature" "Explore" "" "" %}
+{% stats "Primary feature" "Asset Search" "Secondary feature" "Download" "Tertiary feature" "Explore" "" "" %}
 
 The product was designed in responsive design and mobile-first approaches.
 
