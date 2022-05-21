@@ -1,32 +1,4 @@
-#works
-    .t-container
+.works
+    .t__container
         p
-            margin-top: var(--size-xs)
-    ol
-        list-style: none
-        margin: 0
-        @media #{$media-query-small-only}
-            padding: 0 1em
-
-        @media #{$media-query-medium}
-            display: grid
-            grid-gap: var(--size-l)
-            padding: 0 var(--size-l)
-            grid-template-columns: repeat(2, 1fr)
-            
-        @media #{$media-query-large}
-            grid-template-columns: repeat(3, 1fr)
-
-        @media #{$media-query-huge}
-            grid-template-columns: repeat(4, 1fr)
-
-        @media #{$media-query-godzilla}
-            grid-template-columns: repeat(5, 1fr)
-
-    .work
-        @media #{$media-query-small-only}
-            margin-bottom: var(--size-l)
-
-    img
-        @media #{$media-query-medium}
-            width: 100%
+            padding-bottom: var(--size-s)

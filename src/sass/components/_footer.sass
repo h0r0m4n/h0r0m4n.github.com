@@ -1,4 +1,4 @@
-#footer
+.footer
     padding-top: var(--size-l)
     padding-bottom: var(--size-l)
     @media #{$media-query-medium}
@@ -8,20 +8,25 @@
         padding-top: var(--size-xxl)
         padding-bottom: var(--size-xxl)
 
-    h2
+    &__title
         margin-top: 0
 
-    li
-        a
+    &__social
+        //
+        &__item
+            // 
+        &__link
             display: block
             background-color: var(--color-secondary)
             line-height: 0
             border-radius: 50%
             padding: 0.5em
-        svg
-            fill: #fff
-            height: var(--size-s)
-            width: var(--size-s)
-            @media #{$media-query-large}
-                height: var(--size-m)
-                width: var(--size-m)
+            svg
+                fill: #fff
+                height: var(--size-s)
+                width: var(--size-s)
+                @media #{$media-query-large}
+                    height: var(--size-m)
+                    width: var(--size-m)
+    &__copyright
+        //

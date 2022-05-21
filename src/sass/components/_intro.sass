@@ -1,0 +1,48 @@
+.intro
+    margin-top: var(--size-xl)
+    @media #{$media-query-large}
+        margin-top: var(--size-xxl)
+
+    &__logo
+        font-size: 0.825em
+        line-height: 0
+        margin-bottom: var(--size-m)
+        @media #{$media-query-medium}
+            margin-bottom: var(--size-xl)
+            font-size: 1em
+        svg
+            fill: var(--color-secondary)
+            height: 2.25em
+            width: 17.6875em
+
+    .t__avatar
+        position: relative
+        left: calc(var(--size-s) * -1)
+        @media #{$media-query-medium}
+            left: calc(var(--size-l) * -1)
+        img
+            @media #{$media-query-medium}
+                padding: 0.5em
+                width: 154px
+                height: 230px
+
+    &__emoji
+        display: inline-block
+        animation: hi 1s 1200ms
+
+    &__clients
+        &__item
+            margin-bottom: 0
+            svg
+                transition: fill 150ms ease-in
+                fill: var(--color-neutral-1)
+                height: 3rem
+                @media #{$media-query-medium}
+                    height: 4rem
+
+        &__link
+            display: inline-block
+            line-height: 0
+            &:hover
+                svg
+                    fill: var(--color-secondary)

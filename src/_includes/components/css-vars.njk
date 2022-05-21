@@ -14,6 +14,8 @@
         {% if not css.colorBackground %}
             --background: url(../static/assets/bg-light.svg);
         {% endif %}
+        --shadow-1: 0 0 1em rgba(0, 0, 0, 0.12);
+        --shadow-2: 0 0 1em rgba(0, 0, 0, .5);
 
         {# Typography #}
         --type-family-1a: 'ColfaxWebRegular', sans-serif;
@@ -56,6 +58,8 @@
                 --color-overlay: rgba(13, 13, 13, 0.98);
                 --color-background: #0d0d0d;
                 --background: url(../static/bg-dark.svg);
+                --shadow-1: none;
+                --shadow-2: none;
             }
         }
     {% endif %}

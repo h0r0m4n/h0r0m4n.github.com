@@ -1,77 +1,77 @@
-#about
-    margin-top: var(--size-xl)
+.about
+    background-color: var(--color-neutral-4)
+    padding-top: var(--size-xl)
+    padding-bottom: var(--size-xl)
     @media #{$media-query-large}
-        margin-top: var(--size-xxl)
-    h1
-        font-size: 0.825em
-        line-height: 0
-        margin-bottom: var(--size-m)
-        @media #{$media-query-medium}
-            margin-bottom: var(--size-xl)
-            font-size: 1em
-        svg
-            fill: var(--color-secondary)
-            height: 2.25em
-            width: 17.6875em
-    .avatar
-        position: relative
-        left: calc(var(--size-s) * -1)
-        @media #{$media-query-medium}
-            left: calc(var(--size-l) * -1)
-        img
+        padding-top: var(--size-xxl)
+        padding-bottom: var(--size-xxl)
+
+    h4
+        text-transform: none
+    
+    &__more
+        .avatar
+            display: inline-block
+            margin-left: calc(var(--size-s) * -1)
             @media #{$media-query-medium}
-                padding: 0.5em
-                width: 154px
-                height: 230px
-    .emoji
-        display: inline-block
-        animation: hi 1s 1200ms
+                margin-left: calc(var(--size-l) * -1)
+            img
+                @media #{$media-query-medium}
+                    width: 154px
+                    height: 230px
+        h2
+            margin-top: var(--size-m)
 
-    .skills
-        margin-bottom: 0
-
-        li.expertise
-            position: relative
+    &__reads
+        ol
+            white-space: nowrap
+            overflow-x: auto
+            padding: var(--size-s)
             text-align: center
-            color: var(--color-secondary)
-            opacity: 0
-            animation: show 500ms forwards
-            @include delay(3, 1s)
-
-            &::after
-                content: '+'
-                color: var(--color-neutral-1)
-                position: absolute
-                top: 40%
-                right: calc(var(--size-m) * -1)
-                transform: translateY(-40%)
-            &:last-child
-                &:after
-                    content: ''
-
-            small
-                display: block
-                font-family: var(--type-family-1b)
-
-            svg
-                height: 4em
-                width: 4em
-
-    .clients
-        svg
-            transition: fill 150ms ease-in
-            fill: var(--color-neutral-1)
-            height: 3rem
             @media #{$media-query-medium}
-                height: 4rem
+                padding: var(--size-m)
+            @media #{$media-query-large}
+                padding: var(--size-l)
 
+            img
+                border-radius: var(--radius-1)
+                @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                    transition: box-shadow 150ms ease-in
+                    box-shadow: var(--shadow-1)
+
+            a
+                display: block
+                &:hover
+                    img
+                        @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                            box-shadow: var(--shadow-2)
+    &__software
         li
-            margin-bottom: 0
             a
                 display: inline-block
                 line-height: 0
+                &:hover
+                    svg
+                        fill: var(--color-secondary)
 
-        a
-            &:hover
-                svg
-                    fill: var(--color-secondary)
+        svg
+            transition: fill 150ms ease-in
+            fill: var(--color-neutral-1)
+            height: 2rem
+    
+            @media #{$media-query-medium}
+                height: 2.5rem
+
+    &__hardware
+        li + li
+            margin-top: var(--size-xs)
+
+    &__bits
+        // 
+
+    &__website
+        sup
+            font-size: 40%
+            font-family: var(--type-family-1a)
+            text-transform: uppercase
+            color: var(--color-neutral-1)

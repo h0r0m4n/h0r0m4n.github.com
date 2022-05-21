@@ -3,17 +3,17 @@ layout: layouts/base
 permalink: "/{{ page.fileSlug }}/index.html"
 ---
 <header id="work-header">
-    <div class="t-container">
-        <a id="back" class="t-hover--1" href="/" rel="home" title="Back to homepage">
-            <span class="t-visually-hidden">Back</span>
+    <div class="t__container">
+        <a id="back" class="t__hover t__hover--1" href="/" rel="home" title="Back to homepage">
+            <span class="t__vh">Back</span>
             {% include 'assets/close.svg' %}
         </a>
     </div>
 </header>
 
 <article>
-    <header id="work-heading" class="section">
-        <div class="t-container">
+    <header id="work-heading" class="t__section">
+        <div class="t__container">
             {% if client %}
                 <strong>{{ client }}</strong>
             {% endif %}
@@ -26,8 +26,8 @@ permalink: "/{{ page.fileSlug }}/index.html"
             <time>{{ date | year }}{% if finished === false %} – Current{% endif %}</time>
         </div>
     </header>
-    <div id="work-content" class="section">
-        <div class="t-container">
+    <div id="work-content" class="t__section">
+        <div class="t__container">
             {{ content | safe }}
         </div>
     </div>

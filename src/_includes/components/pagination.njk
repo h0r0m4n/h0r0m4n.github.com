@@ -1,12 +1,12 @@
-<nav id="work-pagination" class="section">
-    <div class="t-container">
+<nav id="work-pagination" class="t__section">
+    <div class="t__container">
         <h1>See next</h1>
         <ul>    
             {% set nextWork = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
             {% set previousWork = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
             {% if nextWork %}
                 <li class="work work--reels">
-                    <a class="t-hover--2" href="{{ nextWork.url }}" rel="bookmark" target="_parent">                    
+                    <a class="t__hover t__hover--2" href="{{ nextWork.url }}" rel="bookmark" target="_parent">                    
                         {% thumbnail nextWork.data.thumbnail, nextWork.data.title %}
                         <div class="content">
                             <h3>{% if nextWork.data.client %}{{ nextWork.data.client }}: {% endif %}{{ nextWork.data.title }}</h3>
@@ -16,7 +16,7 @@
             {% elif previousWork %}
                 {% for work in collections.work | reverse | permalinkNotFalse | head(-1) %}
                     <li class="work work--reels">
-                        <a class="t-hover--2" href="{{ work.url }}" rel="bookmark" target="_parent">
+                        <a class="t__hover t__hover--2" href="{{ work.url }}" rel="bookmark" target="_parent">
                             {% thumbnail work.data.thumbnail, work.data.title %}
                             <div class="content">
                                 <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>

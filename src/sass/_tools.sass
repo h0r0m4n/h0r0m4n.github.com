@@ -1,6 +1,6 @@
 .t
 
-    &-visually-hidden
+    &__vh
         block-size: 1px
         border: 0
         clip: rect(0 0 0 0)
@@ -10,12 +10,9 @@
         padding: 0
         position: absolute
 
-    &-uppercase
-        text-transform: uppercase
-
-    &-hover
+    &__hover
+        transition: all 150ms ease-out
         &--1
-            transition: all 150ms ease-out
             backface-visibility: hidden
             -webkit-font-smoothing: subpixel-antialiased
             &:hover
@@ -27,36 +24,111 @@
                 @media (prefers-color-scheme: dark)
                     -webkit-filter: brightness(112%)
                     filter: brightness(112%)
-
         &--2
             transition: transform 150ms ease-out
             &:hover
                 transform: scale(1.05)
 
-    &-container
+    &__container
         max-width: var(--container-size)
-        margin-left: auto
-        margin-right: auto
-        padding-left: var(--size-s)
-        padding-right: var(--size-s)
+        margin-inline: auto
+        padding-inline: var(--size-s)
         box-sizing: border-box
         @media #{$media-query-medium}
-            padding-left: var(--size-m)
-            padding-right: var(--size-m)
+            padding-inline: var(--size-m)
         @media #{$media-query-large}
-            padding-left: var(--size-l)
-            padding-right: var(--size-l)
+            padding-inline: var(--size-l)
 
-    &-list-horizontal
+    &__section + *
+        clear: both
+        margin-top: var(--size-xl)
+        @media #{$media-query-large}
+            margin-top: var(--size-xxl)
+
+    &__grid
+        list-style: none
+        margin: 0
+        &--works
+            @media #{$media-query-small-only}
+                padding-inline: 1em
+            @media #{$media-query-medium}
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: var(--size-l)
+                padding-inline: var(--size-l)
+            @media #{$media-query-large}
+                grid-template-columns: repeat(3, 1fr)
+            @media #{$media-query-huge}
+                grid-template-columns: repeat(4, 1fr)
+            @media #{$media-query-godzilla}
+                grid-template-columns: repeat(5, 1fr)
+        &__item
+            @media #{$media-query-medium}
+                display: flex
+
+    &__card
+        position: relative
+        display: flex
+        flex-direction: column
+        &--interactive
+            &:hover
+                img
+                    box-shadow: var(--shadow-2)
+        &__image
+            order: -1
+            // TODO: Need to fix Safari and test on other devices
+            @media #{$media-query-medium}
+                display: flex
+                flex-direction: column
+                justify-content: end
+                aspect-ratio: 1/1
+            img
+                transition: box-shadow 150ms ease-in
+                box-shadow: var(--shadow-1)
+                border-radius: var(--radius-1)
+                overflow: hidden
+                width: 100%
+                height: auto
+        &__header
+            display: flex
+            flex-direction: column
+            padding: var(--size-s)
+        &__title
+            font-family: var(--type-family-1b)
+            text-transform: none
+            margin-top: 0
+            letter-spacing: 0
+        &__client
+            order: -1
+            font-size: 1.5em
+            font-family: var(--type-family-3)
+            color: var(--color-tertiary)
+            line-height: 1
+            margin: 0
+        &__link
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                z-index: 1
+            &:hover, &:focus
+                img
+                    box-shadow: var(--shadow-2)
+        &__desc
+            font-size: 0.75em
+
+    &__inline
         list-style: none
         padding: 0
-
-        &--item
+        &__item
             display: inline-block
             list-style: none
-            &--distance-1
+            &--1
                 margin: var(--size-s) var(--size-s) var(--size-s) 0
-            &--distance-2
+            &--2
                 margin: var(--size-s) var(--size-m) var(--size-s) 0
                 @media #{$media-query-medium}
                     margin-right: var(--size-l)
