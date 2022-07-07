@@ -1,27 +1,43 @@
 <nav id="work-pagination" class="t__section">
     <div class="t__container">
         <h1>See next</h1>
-        <ul>    
+        <ul class="t__grid t__grid--pagination">    
             {% set nextWork = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
             {% set previousWork = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
             {% if nextWork %}
-                <li class="work work--reels">
-                    <a class="t__hover t__hover--2" href="{{ nextWork.url }}" rel="bookmark" target="_parent">                    
+                <li class="t__grid__item">
+                    <article class="t__card t__card--interactive t__hover t__hover--2">
+                        <header class="t__card__header">
+                            <h3 class="t__card__title h4">
+                                <a class="t__card__link" href="{{ nextWork.url | url }}" rel="bookmark" target="_parent">{{ nextWork.data.title }}</a>
+                            </h3>
+                            {% if nextWork.data.client %}
+                                <p class="t__card__client">{{ nextWork.data.client }}</p>
+                            {% endif %}
+                            {% if nextWork.data.description %}
+                                <p class="t__card__desc">{{ nextWork.data.description }}</p>
+                            {% endif %}
+                        </header>
                         {% thumbnail nextWork.data.thumbnail, nextWork.data.title %}
-                        <div class="content">
-                            <h3>{% if nextWork.data.client %}{{ nextWork.data.client }}: {% endif %}{{ nextWork.data.title }}</h3>
-                        </div>
-                    </a>
+                    </article>
                 </li>
             {% elif previousWork %}
                 {% for work in collections.work | reverse | permalinkNotFalse | head(-1) %}
-                    <li class="work work--reels">
-                        <a class="t__hover t__hover--2" href="{{ work.url }}" rel="bookmark" target="_parent">
+                    <li class="t__grid__item">
+                        <article class="t__card t__card--interactive t__hover t__hover--2">
+                            <header class="t__card__header">
+                                <h3 class="t__card__title h4">
+                                    <a class="t__card__link" href="{{ work.url | url }}" rel="bookmark" target="_parent">{{ work.data.title }}</a>
+                                </h3>
+                                {% if work.data.client %}
+                                    <p class="t__card__client">{{ work.data.client }}</p>
+                                {% endif %}
+                                {% if work.data.description %}
+                                    <p class="t__card__desc">{{ work.data.description }}</p>
+                                {% endif %}
+                            </header>
                             {% thumbnail work.data.thumbnail, work.data.title %}
-                            <div class="content">
-                                <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
-                            </div>
-                        </a>
+                        </article>
                     </li>
                 {% endfor %}
             {% endif %}
