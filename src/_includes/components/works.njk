@@ -1,0 +1,28 @@
+<section id="works" class="works t__section">
+    <div class="t__container">
+        <h2>Case studies</h2>
+        <p>My portfolio includes 50+ projects, here’s the selected one:</p>
+    </div>
+    <ol class="t__grid t__grid--works">
+        {% for work in collections.work %}
+            {% if work.url != false %}
+                <li class="t__grid__item">
+                    <article class="t__card t__card--interactive t__hover t__hover--2">
+                        <header class="t__card__header">
+                            <h3 class="t__card__title h4">
+                                <a class="t__card__link" href="{{ work.url | url }}" rel="bookmark" target="_parent">{{ work.data.title }}</a>
+                            </h3>
+                            {% if work.data.client %}
+                                <p class="t__card__client">{{ work.data.client }}</p>
+                            {% endif %}
+                            {% if work.data.description %}
+                                <p class="t__card__desc">{{ work.data.description }}</p>
+                            {% endif %}
+                        </header>
+                        {% thumbnail work.data.thumbnail, work.data.title %}
+                    </article>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ol>
+</section>

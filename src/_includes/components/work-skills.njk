@@ -1,13 +1,13 @@
-<div id="work-skills" class="section">
+<div id="work-skills" class="t__section">
     {% if role %}
         <h6>Role</h2>
         <p>{{ role }}</p>
     {% endif %}
     {% if skills %}
         <h6>Contribution</h2>
-        <ul class="t-list-horizontal">
+        <ul class="t__inline">
             {% for skill in skills %}
-                <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">{{ skill }}</li>
+                <li class="t__inline__item t__inline__item--1">{{ skill }}</li>
             {% endfor %}
         </ul>
     {% endif %}

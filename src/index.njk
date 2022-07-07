@@ -1,56 +1,8 @@
 ---
 layout: layouts/base
 ---
-<header id="about" class="section">
-    <div class="t-container">
-        {% include 'components/avatar.njk' %}
-        <h1>
-            <span class="t-visually-hidden">{{ site.author }}</span>
-            {% include 'assets/logo.svg' %}
-        </h1>
-        <p><span class="emoji" aria-hidden="true">👋</span> Hi, I’m {{ site.author }}, a multidisciplinary designer with {% experience %}+ years of experience. Originally from Lviv, Ukraine, I currently reside in {{ site.location }}. I care about form and function and believe in the power of simplicity.</p>
-        <p>I currently spend my days designing at <a href="https://mywallst.com" rel="noopener noreferrer nofollow" target="_blank">MyWallSt</a>. Previously, I have had the privilege to improve products used and loved by many users, and these are some of the clients:</p>
-        {% if clients %}
-            <ol class="clients t-list-horizontal">
-                {% for client in clients %}
-                    <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
-                        {% if client.url %}
-                            <a href="{{ client.url | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ client.title }}">
-                                {% include 'clients/' + client.title | slug + '.svg' %}
-                            </a>
-                        {% else %}
-                            {% include 'clients/' + client.title | slug + '.svg' %}
-                        {% endif %}
-                    </li>
-                {% endfor %}
-            </ol>
-        {% endif %}
-    </div>
-</header>
-
-<section id="works" class="section">
-    <div class="t-container">
-        <h2>Case studies</h2>
-        <p>My portfolio includes 50+ projects, here’s the selected one:</p>
-    </div>
-    <ol>
-        {% for work in collections.work %}
-            {% if work.url != false %}
-                <li class="work work--reels">
-                    <a class="work-link t-hover--2" href="{{ work.url | url }}" rel="bookmark" target="_parent">
-                        {% thumbnail work.data.thumbnail, work.data.title %}
-                        <div class="content">
-                            <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
-                            {% if work.data.description %}
-                                <p>{{ work.data.description }}</p>
-                            {% endif %}
-                        </div>
-                    </a>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ol>
-</section>
+{% include 'components/intro.njk' %}
+{% include 'components/works.njk' %}
 {% include 'components/testimonials.njk' %}
-{% include 'components/personal.njk' %}
+{% include 'components/about.njk' %}
 {% include 'components/contact.njk' %}

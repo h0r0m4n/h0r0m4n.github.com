@@ -1,7 +1,7 @@
 ---
-title: Aeon Virtual Reality
+title: Virtual Reality
 description: A Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift 2.
-client: 
+client: Aeon
 css:
   primary: '#fff'
   secondary: '#EB18D6'

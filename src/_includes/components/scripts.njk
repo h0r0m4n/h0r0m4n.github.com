@@ -8,7 +8,7 @@
         });
     }
 
-    var featuredLink = document.querySelectorAll('.work-link');
+    var featuredLink = document.querySelectorAll('.t__card__link');
     var featuredWork = 'FeaturedWork';
     var featuredModal = document.getElementById("modal");
     var featuredClose = document.getElementById("modal-close");
@@ -25,10 +25,10 @@
     };
 
     // Close modal on esc button
-    {% if layout != 'work' %}
+    {% if layout != 'layouts/work' %}
         document.addEventListener("keyup", function(event) {
             if (event.keyCode === 27) {
-                featuredModal.classList.toggle('open');
+                featuredModal.classList.remove('open');
                 featuredPassword.classList.remove('error');
                 featuredPassword.value = '';
             };
@@ -54,7 +54,7 @@
     document.addEventListener('click', function (event) {
         
         // Only for links with featured class
-        if (!event.target.matches('.work-link')) return;
+        if (!event.target.matches('.t__card__link')) return;
 
         // If has no localstorage
         if (localStorage.getItem(featuredWork) !== featuredValue) {
@@ -84,7 +84,7 @@
         };
     }, false);
 
-    {% if layout == 'work' %}
+    {% if layout == 'layouts/work' %}
         if (!localStorage.hasOwnProperty(featuredWork)) {
             location.href = '{{ site.url }}';
         }

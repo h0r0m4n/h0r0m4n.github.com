@@ -1,30 +1,17 @@
-#testimonials
-    ul
-        display: grid
-        list-style: none
-        margin: 0
+.testimonials
+    &__items
         padding-left: 0
-        grid-gap: var(--size-x)
-        grid-template-columns: repeat(1, 1fr)
+        list-style: none
 
-        @media #{$media-query-medium}
-            font-size: 0.75em
-            grid-gap: var(--size-l)
-            grid-template-columns: repeat(2, 1fr)
-        
-    li
-        &.featured
-            @media #{$media-query-medium}
-                grid-column-start: 1
-                grid-column-end: 3
-            .comment
-                @media #{$media-query-medium}
-                    line-height: var(--type-height-3)
+    &__item
+        // 
 
-    blockquote
+    &__blockquote
+        display: inline-block
         position: relative
-        margin: var(--size-m) 0 0
+        margin: var(--size-l) 0 0
         padding-top: 1em
+
         &::before
             content: "“"
             position: absolute
@@ -34,27 +21,30 @@
             font-weight: bold
             opacity: 0.125
 
-    .comment
+    &__comment
         background-color: var(--color-background)
         border-radius: var(--radius-2)
         padding: var(--size-s)
-        box-shadow: 0 0 1em rgba(0, 0, 0, 0.12)
-        @media #{$media-query-medium}
-            font-size: 1.125em
+        margin-bottom: 0
+        box-shadow: var(--shadow-1)
 
-    .testimonial
+    &__author
         display: flex
         align-items: center
-        p
-            margin: 0
 
-            .role
-                font-size: 1.25em
-                font-family: var(--type-family-3)
-                color: var(--color-tertiary)
-                margin-bottom: -8px
+    &__text
+        margin: 0
+        line-height: 1.2
 
-    .avatar
+    &__role
+        font-family: var(--type-family-3)
+        color: var(--color-tertiary)
+        margin-bottom: -8px
+
+    &__name
+        font-family: var(--type-family-1b)
+
+    &__avatar
         position: relative
         margin-right: var(--size-s)
         border-radius: 50%

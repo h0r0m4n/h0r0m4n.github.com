@@ -1,21 +1,21 @@
-<section id="personal" class="section">
-    <div class="about">
-        <div class="t-container">
+<section id="about" class="about t__section">
+    <div class="about__more">
+        <div class="t__container">
             {% include 'components/avatar.njk' %}
             <h2>More about me</h2>
             <p>I iterate, prototype, and arrive at comprehensive solutions, deliver precise, conceptual, and visually elegant design specs with the highest fidelity possible, and work closely with engineers to ensure high-quality execution.</p>
         </div>
     </div>
     {% if reads %}
-        <div class="reads">
-            <div class="t-container">
+        <div class="about__reads">
+            <div class="t__container">
                 <h4>Readings</h4>
                 <p>I go in phases with reading… sometimes consuming multiple books a month while other times take months to read one book. This is a list of books I recommend.</p>
             </div>
-            <ol class="t-list-horizontal">
+            <ol class="t__inline">
                 {% for read in reads %}
-                    <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
-                        <a class="t-hover--2" href="{{ read.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ read.title }} by {{ read.author}}">
+                    <li class="t__inline__item t__inline__item--1">
+                        <a class="t__hover t__hover--2" href="{{ read.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ read.title }} by {{ read.author}}">
                             {% book 'src/static/books/' + read.title | slug + '.jpg', read.title %}
                         </a>
                     </li>
@@ -24,13 +24,13 @@
         </div>
     {% endif %}
     {% if software %}
-        <div class="software">
-            <div class="t-container">
+        <div class="about__software">
+            <div class="t__container">
                 <h4>Software</h4>
                 <p>Apps I use just about every day.</p>
-                <ol class="t-list-horizontal">
+                <ol class="t__inline">
                     {% for app in software %}
-                        <li class="t-list-horizontal--item t-list-horizontal--item--distance-2">
+                        <li class="t__inline__item t__inline__item--2">
                             <a href="{{ app.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ app.title }}">
                                 {% include 'software/' + app.title | slug + '.svg' %}
                             </a>
@@ -41,8 +41,8 @@
         </div>
     {% endif %}
     {% if hardware %}
-        <div class="hardware">
-            <div class="t-container">
+        <div class="about__hardware">
+            <div class="t__container">
                 <h4>Hardware</h4>
                 <p>Here are most of the things I regularly use to make everything!</p>
                 <ul class="link-style">
@@ -55,32 +55,36 @@
             </div>
         </div>
     {% endif %}
-    <div class="bits">
-        <div class="t-container">
+    <div class="about__bits">
+        <div class="t__container">
             <h4>Latest Bits</h4>
             <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
         </div>
-        <ol>
+        <ol class="t__grid t__grid--works">
             {% for work in collections.work %}
                 {% if work.url == false %}
-                    <li class="work">
-                        {% thumbnail work.data.thumbnail, work.data.title %}
-                        <div class="content">
-                            {% if work.data.nft %}
-                                <span class="label">NFT</span>
-                            {% endif %}
-                            <h3>{% if work.data.client %}{{ work.data.client }}: {% endif %}{{ work.data.title }}</h3>
-                            {% if work.data.description %}
-                                <p>{{ work.data.description }}</p>
-                            {% endif %}
-                        </div>
+                    <li class="t__grid__item">
+                        <article class="t__card">
+                            <header class="t__card__header">
+                                <h3 class="t__card__title h4">{{ work.data.title }}</h3>
+                                {% if work.data.client %}
+                                    <p class="t__card__client">{{ work.data.client }}</p>
+                                {% elif work.data.nft %}
+                                    <span class="t__card__client">NFT</span>
+                                {% endif %}
+                                {% if work.data.description %}
+                                    <p class="t__card__desc">{{ work.data.description }}</p>
+                                {% endif %}
+                            </header>
+                            {% thumbnail work.data.thumbnail, work.data.title %}
+                        </article>
                     </li>
                 {% endif %}
             {% endfor %}
         </ol>
     </div>
-    <div class="website">
-        <div class="t-container">
+    <div class="about__website">
+        <div class="t__container">
             <h4>About this website <sup>Nerd Zone</sup></h4>
             <ul class="link-style">
                 <li>Uses a several typefaces:

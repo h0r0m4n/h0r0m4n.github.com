@@ -1,18 +1,18 @@
-<footer id="footer">
-    <div class="t-container">
-        <h2 class="h4">Find me on the internet</h2>
+<footer id="footer" class="footer">
+    <div class="t__container">
+        <h2 class="footer__title h4">Find me on the internet</h2>
         {% if social %}
-        <ul class="t-list-horizontal">
+        <ul class="footer__social t__inline">
             {% for link in social %}
-                <li class="t-list-horizontal--item t-list-horizontal--item--distance-1">
-                    <a class="t-hover--1" href="{{ link.link }}" rel="me noopener noreferrer nofollow" target="_blank" title="{{ link.title }}">
+                <li class="footer__social__item t__inline__item t__inline__item--1">
+                    <a class="footer__social__link t__hover t__hover--1" href="{{ link.link }}" rel="me noopener noreferrer nofollow" target="_blank" title="{{ link.title }}">
                         {% include 'social/' + link.title | slug + '.svg' %}
                     </a>
                 </li>
             {% endfor %}
         </ul>
         {% endif %}
-        <p>
+        <p class="footer__copyright">
             <small>© {{ site.starting }}–{% year %} {{ site.author }}. All rights are reserved and their respective owners.</small>
         </p>
     </div>
