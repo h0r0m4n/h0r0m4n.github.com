@@ -62,6 +62,13 @@
                 grid-template-columns: repeat(4, 1fr)
             @media #{$media-query-godzilla}
                 grid-template-columns: repeat(5, 1fr)
+        &--pagination
+            padding-left: 0
+            @media #{$media-query-medium}
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-gap: var(--size-l)
+
         &__item
             @media #{$media-query-medium}
                 display: flex
@@ -70,6 +77,7 @@
         position: relative
         display: flex
         flex-direction: column
+        width: 100%
         &--interactive
             &:hover
                 img
