@@ -9,7 +9,7 @@ css:
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#565D9F'
-role: Lead Interface Designer
+role: Lead Designer
 skills:
   - Product Design
   - User Experience
