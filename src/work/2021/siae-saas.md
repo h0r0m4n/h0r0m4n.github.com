@@ -16,6 +16,7 @@ skills:
   - User Interface
   - User Experience
   - Interaction Design
+platform: Web
 date: 2020-03-24
 finished: true
 thumbnail: src/static/work/siae-saas.jpg

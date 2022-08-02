@@ -7,6 +7,7 @@ skills:
   - Design System
   - User Experience
   - User Interface
+platform: Web
 date: 2018-12-10
 finished: true
 permalink: false

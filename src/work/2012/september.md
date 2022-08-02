@@ -5,6 +5,7 @@ client:
 skills: September Magazine
   - Web Design
   - User Interface
+platform: Web
 date: 2012-08-23
 finished: true
 permalink: false

@@ -5,6 +5,7 @@ client:
 skills:
   - User Interface
   - Interaction Design
+platform: Interactive Installation
 date: 2016-02-03
 finished: true
 permalink: false

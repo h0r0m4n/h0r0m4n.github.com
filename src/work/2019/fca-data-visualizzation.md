@@ -6,6 +6,7 @@ role: Lead Interface Designer
 skills:
   - User Interface
   - Interaction Design
+platform: Web
 date: 2019-10-07
 finished: true
 permalink: false

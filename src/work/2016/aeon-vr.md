@@ -13,6 +13,7 @@ skills:
   - User Interface
   - Interaction Design
   - Web Development
+platform: Web
 date: 2016-06-30
 finished: true
 thumbnail: src/static/work/aeon-vr.jpg

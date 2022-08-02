@@ -6,6 +6,7 @@ skills:
   - Product Design
   - User Experience
   - User Interface
+platform: Web
 date: 2014-01-23
 finished: true
 permalink: false

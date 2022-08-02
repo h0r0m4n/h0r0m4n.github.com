@@ -15,6 +15,7 @@ skills:
   - User Experience
   - User Interface
   - Interaction Design
+platform: iOS & Android
 date: 2020-03-11
 finished: true
 thumbnail: src/static/work/siae-plus.jpg
