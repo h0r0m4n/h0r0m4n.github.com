@@ -1,14 +1,14 @@
 <div id="work-skills">
-    {% if role %}
-        <h6>Role</h2>
-        <p>{{ role }}</p>
-    {% endif %}
     {% if skills %}
-        <h6>Contribution</h2>
+        <h6>Involvement</h2>
         <ul class="t__inline">
             {% for skill in skills %}
                 <li class="t__inline__item t__inline__item--1">{{ skill }}</li>
             {% endfor %}
         </ul>
+    {% endif %}
+    {% if role %}
+        <h6>Role</h2>
+        <p>{{ role }}</p>
     {% endif %}
 </div>
