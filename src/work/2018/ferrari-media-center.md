@@ -16,6 +16,7 @@ skills:
   - User Experience
   - User Interface
   - Interaction Design
+platform: Web
 date: 2018-11-28
 finished: true
 thumbnail: src/static/work/ferrari-media-center.jpg

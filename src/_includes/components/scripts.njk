@@ -53,7 +53,7 @@
 
     document.addEventListener('click', function (event) {
         
-        // Only for links with featured class
+        // Only for links with specific class
         if (!event.target.matches('.t__card__link')) return;
 
         // If has no localstorage
@@ -84,9 +84,16 @@
         };
     }, false);
 
+    // If the local storage value is different redirect to the homepage.
     {% if layout == 'layouts/work' %}
         if (!localStorage.hasOwnProperty(featuredWork)) {
             location.href = '{{ site.url }}';
         }
     {% endif %}
+
+    // If the user access `?pwd=12345` url don't require password anymore
+    var queryString = window.location.search;
+    if (queryString === '?pwd={{ site.password }}') {
+        localStorage.setItem(featuredWork, featuredValue);
+    }
 </script>

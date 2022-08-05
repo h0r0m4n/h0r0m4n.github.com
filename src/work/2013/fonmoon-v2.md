@@ -4,6 +4,7 @@ description:
 client: 
 skills:
   - User Interface
+platform: Web
 date: 2013-02-02
 finished: true
 permalink: false

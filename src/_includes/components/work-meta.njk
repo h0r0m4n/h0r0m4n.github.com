@@ -1,0 +1,33 @@
+<section id="work-meta" class="t__section">
+    <div class="t__container">
+        {% if platform %}
+            <div id="work-platform">
+                <h6>Platform</h6>
+                <p>{{ platform }}</p>
+            </div>
+        {% endif %}
+
+        {% if skills %}
+            <div id="work-skills">
+                <h6>Involvement</h2>
+                <ul class="t__inline">
+                    {% for skill in skills %}
+                        <li class="t__inline__item t__inline__item--1">{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        {% if role %}
+            <div id="work-role">
+                <h6>Role</h2>
+                <p>{{ role }}</p>
+            </div>
+        {% endif %}
+
+        <div id="work-year">
+            <h6>Year</h6>
+            <p><time>{{ date | year }}{% if finished === false %} – Current{% endif %}</time></p>
+        </div>
+    </div>
+</section>

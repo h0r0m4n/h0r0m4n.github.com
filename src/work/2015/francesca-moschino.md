@@ -5,6 +5,7 @@ client:
 skills:
   - Web Design
   - User Interface
+platform: Web
 date: 2015-03-17
 finished: true
 permalink: false

@@ -5,6 +5,7 @@ client: Romaeuropa
 skills:
   - User Experience
   - User Interface
+platform: Web
 date: 2014-09-23
 finished: true
 permalink: false

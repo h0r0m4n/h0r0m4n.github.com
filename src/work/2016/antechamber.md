@@ -6,6 +6,7 @@ skills:
   - User Interface
   - Motion Design
 date: 2016-01-25
+platform: Video
 finished: true
 permalink: false
 thumbnail: src/static/work/antechamber.jpg

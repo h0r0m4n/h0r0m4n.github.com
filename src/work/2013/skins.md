@@ -5,6 +5,7 @@ client: All3Media
 skills:
   - User Experience
   - User Interface
+platform: Web
 date: 2013-01-02
 finished: true
 permalink: false

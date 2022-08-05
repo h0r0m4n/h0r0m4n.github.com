@@ -5,6 +5,7 @@ client: JVC
 skills:
   - User Interface
   - Interaction Design
+platform: Interactive Installation
 date: 2015-06-30
 finished: true
 permalink: false

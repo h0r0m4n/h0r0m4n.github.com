@@ -1,6 +1,6 @@
 ---
 title: Euroshop
-description: Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping, which will be released in 2022.
+description: Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping.
 client: Cefla
 css:
   primary: '#fff'
@@ -9,12 +9,13 @@ css:
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#565D9F'
-role: Lead Interface Designer
+role: Lead Designer
 skills:
   - Product Design
   - User Experience
   - User Interface
   - Interaction Design
+platform: Web
 date: 2019-11-08
 finished: true
 thumbnail: src/static/work/cefla-euroshop.jpg

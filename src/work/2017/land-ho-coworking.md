@@ -8,6 +8,7 @@ skills:
   - User Experience
   - User Interface
   - Interaction Design
+platform: Web
 date: 2017-01-23
 finished: true
 permalink: false

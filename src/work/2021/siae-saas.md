@@ -9,13 +9,14 @@ css:
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#2D3952'
-role: Lead Interface Designer
+role: Lead Designer
 skills:
   - Product Design
   - Design System
   - User Interface
   - User Experience
   - Interaction Design
+platform: Web
 date: 2020-03-24
 finished: true
 thumbnail: src/static/work/siae-saas.jpg
