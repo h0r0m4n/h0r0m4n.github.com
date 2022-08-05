@@ -100,36 +100,47 @@
             
                 <p class="h5">SIAE is the monopolist intermediary between the authors of musical tracks and consumers, managing the economic aspects and the distribution of money from royalties of Italian-copyrighted music to authors. I collaborated with them in the creation of the first app SIAE+ that supports all the major services of the company.</p>
             
-            <div id="work-skills" class="t__section">
-    
-        <h6>Role</h2>
-        <p>Lead Interface Designer</p>
-    
-    
-        <h6>Contribution</h2>
-        <ul class="t__inline">
-            
-                <li class="t__inline__item t__inline__item--1">UX</li>
-            
-                <li class="t__inline__item t__inline__item--1">IxD</li>
-            
-                <li class="t__inline__item t__inline__item--1">UI</li>
-            
-                <li class="t__inline__item t__inline__item--1">Product Design</li>
-            
-                <li class="t__inline__item t__inline__item--1">User Experience</li>
-            
-                <li class="t__inline__item t__inline__item--1">User Interface</li>
-            
-                <li class="t__inline__item t__inline__item--1">Interaction Design</li>
-            
-        </ul>
-    
-</div>
-            <h6>Year</h2>
-            <time>2020</time>
         </div>
     </header>
+    <section id="work-meta" class="t__section">
+    <div class="t__container">
+        
+            <div id="work-platform">
+                <h6>Platform</h6>
+                <p>iOS &amp; Android</p>
+            </div>
+        
+
+        
+            <div id="work-skills">
+                <h6>Involvement</h2>
+                <ul class="t__inline">
+                    
+                        <li class="t__inline__item t__inline__item--1">Product Design</li>
+                    
+                        <li class="t__inline__item t__inline__item--1">User Experience</li>
+                    
+                        <li class="t__inline__item t__inline__item--1">User Interface</li>
+                    
+                        <li class="t__inline__item t__inline__item--1">Interaction Design</li>
+                    
+                </ul>
+            </div>
+        
+
+        
+            <div id="work-role">
+                <h6>Role</h2>
+                <p>Lead Designer</p>
+            </div>
+        
+
+        <div id="work-year">
+            <h6>Year</h6>
+            <p><time>2020</time></p>
+        </div>
+    </div>
+</section>
     <div id="work-content" class="t__section">
         <div class="t__container">
             <h2>Design process</h2>
@@ -412,7 +423,7 @@
                                 <p class="t__card__client">Cefla</p>
                             
                             
-                                <p class="t__card__desc">Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping, which will be released in 2022.</p>
+                                <p class="t__card__desc">Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping.</p>
                             
                         </header>
                         <picture class="t__card__image">
@@ -551,7 +562,7 @@
 
     document.addEventListener('click', function (event) {
         
-        // Only for links with featured class
+        // Only for links with specific class
         if (!event.target.matches('.t__card__link')) return;
 
         // If has no localstorage
@@ -582,11 +593,18 @@
         };
     }, false);
 
+    // If the local storage value is different redirect to the homepage.
     
         if (!localStorage.hasOwnProperty(featuredWork)) {
             location.href = 'https://horoman.com';
         }
     
+
+    // If the user access `?pwd=12345` url don't require password anymore
+    var queryString = window.location.search;
+    if (queryString === '?pwd=376301') {
+        localStorage.setItem(featuredWork, featuredValue);
+    }
 </script>
     </body>
 </html>

@@ -357,7 +357,7 @@
                                 <p class="t__card__client">Cefla</p>
                             
                             
-                                <p class="t__card__desc">Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping, which will be released in 2022.</p>
+                                <p class="t__card__desc">Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping.</p>
                             
                         </header>
                         <picture class="t__card__image">
@@ -1534,7 +1534,7 @@
 
     document.addEventListener('click', function (event) {
         
-        // Only for links with featured class
+        // Only for links with specific class
         if (!event.target.matches('.t__card__link')) return;
 
         // If has no localstorage
@@ -1565,7 +1565,14 @@
         };
     }, false);
 
+    // If the local storage value is different redirect to the homepage.
     
+
+    // If the user access `?pwd=12345` url don't require password anymore
+    var queryString = window.location.search;
+    if (queryString === '?pwd=376301') {
+        localStorage.setItem(featuredWork, featuredValue);
+    }
 </script>
     </body>
 </html>

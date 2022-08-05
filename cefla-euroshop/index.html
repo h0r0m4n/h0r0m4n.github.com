@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping, which will be released in 2022.">
+<meta name="description" content="Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping.">
 <meta name="keywords" content="Roman, Horokhovatskyy, @horoman, @h0r0m4n, Product Design, Interaction Design, User Interface Design, User Experience Design">
 <meta name="author" content="Roman Horokhovatskyy">
 <meta name="robots" content="nofollow, noarchive, notranslate, noimageindex">
@@ -98,38 +98,49 @@
             
             <h1>Euroshop</h1>
             
-                <p class="h5">Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping, which will be released in 2022.</p>
+                <p class="h5">Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping.</p>
             
-            <div id="work-skills" class="t__section">
-    
-        <h6>Role</h2>
-        <p>Lead Interface Designer</p>
-    
-    
-        <h6>Contribution</h2>
-        <ul class="t__inline">
-            
-                <li class="t__inline__item t__inline__item--1">UX</li>
-            
-                <li class="t__inline__item t__inline__item--1">IxD</li>
-            
-                <li class="t__inline__item t__inline__item--1">UI</li>
-            
-                <li class="t__inline__item t__inline__item--1">Product Design</li>
-            
-                <li class="t__inline__item t__inline__item--1">User Experience</li>
-            
-                <li class="t__inline__item t__inline__item--1">User Interface</li>
-            
-                <li class="t__inline__item t__inline__item--1">Interaction Design</li>
-            
-        </ul>
-    
-</div>
-            <h6>Year</h2>
-            <time>2019</time>
         </div>
     </header>
+    <section id="work-meta" class="t__section">
+    <div class="t__container">
+        
+            <div id="work-platform">
+                <h6>Platform</h6>
+                <p>Web</p>
+            </div>
+        
+
+        
+            <div id="work-skills">
+                <h6>Involvement</h2>
+                <ul class="t__inline">
+                    
+                        <li class="t__inline__item t__inline__item--1">Product Design</li>
+                    
+                        <li class="t__inline__item t__inline__item--1">User Experience</li>
+                    
+                        <li class="t__inline__item t__inline__item--1">User Interface</li>
+                    
+                        <li class="t__inline__item t__inline__item--1">Interaction Design</li>
+                    
+                </ul>
+            </div>
+        
+
+        
+            <div id="work-role">
+                <h6>Role</h2>
+                <p>Lead Designer</p>
+            </div>
+        
+
+        <div id="work-year">
+            <h6>Year</h6>
+            <p><time>2019</time></p>
+        </div>
+    </div>
+</section>
     <div id="work-content" class="t__section">
         <div class="t__container">
             <h2>Overview</h2>
@@ -498,7 +509,7 @@
 
     document.addEventListener('click', function (event) {
         
-        // Only for links with featured class
+        // Only for links with specific class
         if (!event.target.matches('.t__card__link')) return;
 
         // If has no localstorage
@@ -529,11 +540,18 @@
         };
     }, false);
 
+    // If the local storage value is different redirect to the homepage.
     
         if (!localStorage.hasOwnProperty(featuredWork)) {
             location.href = 'https://horoman.com';
         }
     
+
+    // If the user access `?pwd=12345` url don't require password anymore
+    var queryString = window.location.search;
+    if (queryString === '?pwd=376301') {
+        localStorage.setItem(featuredWork, featuredValue);
+    }
 </script>
     </body>
 </html>
