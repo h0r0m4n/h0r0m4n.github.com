@@ -7,20 +7,24 @@
     
     .stats
         line-height: var(--type-height-2)
-        margin-top: var(--size-s)
-        margin-bottom: 0
-
-        li
-            margin-bottom: var(--size-s)
-            @media #{$media-query-medium}
-                margin-bottom: var(--size-l)
+        @media #{$media-query-medium}
+            display: flex
 
         p
-            margin: 0
+            padding: var(--size-s)
+            background-color: var(--color-neutral-4)
+            border-radius: var(--radius-2)
+            
+            @media #{$media-query-medium}
+                flex: auto
+                margin-right: var(--size-s)
+                &:last-of-type
+                    margin-right: 0
 
         .title
             display: block
-            font-weight: 400
+            font-family: var(--type-family-3)
+            font-size: 1.25em
             opacity: 0.5
 
         .value
