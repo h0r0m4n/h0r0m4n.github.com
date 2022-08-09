@@ -48,12 +48,12 @@ module.exports = function (eleventyConfig) {
     // Usage: {% stats "Label 1" "Value 1" "Label 2" "Value 2" "Label 3" "Value 3" "Label 4" "Value 4" %}
     eleventyConfig.addShortcode('stats', function(label1, value1, label2, value2, label3, value3, label4, value4) {
         return outdent`
-            <ul class="t__inline stats">
-                ${label1 ? `<li class="t__inline__item t__inline__item--2"><p><strong>${label1}</strong><span>${value1}</span></p></li>` : ``}
-                ${label2 ? `<li class="t__inline__item t__inline__item--2"><p><strong>${label2}</strong><span>${value2}</span></p></li>` : ``}
-                ${label3 ? `<li class="t__inline__item t__inline__item--2"><p><strong>${label3}</strong><span>${value3}</span></p></li>` : ``}
-                ${label4 ? `<li class="t__inline__item t__inline__item--2"><p><strong>${label4}</strong><span>${value4}</span></p></li>` : ``}
-            </ul>
+            <div class="stats">
+                ${label1 ? `<p><span class="title">${label1}</span><span class="value">${value1}</span></p>` : ``}
+                ${label2 ? `<p><span class="title">${label2}</span><span class="value">${value2}</span></p>` : ``}
+                ${label3 ? `<p><span class="title">${label3}</span><span class="value">${value3}</span></p>` : ``}
+                ${label4 ? `<p><span class="title">${label4}</span><span class="value">${value4}</span></p>` : ``}
+            </div>
         `;
     });
 

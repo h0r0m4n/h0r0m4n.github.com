@@ -155,8 +155,7 @@ video
 // Media
 
 figure
-    margin-left: 0
-    margin-right: 0
+    margin: var(--size-xl) 0
 
     &.full
         margin-left: calc(var(--size-s) * -1)
@@ -171,17 +170,13 @@ figure
             margin-left: -17rem
             margin-right: -17rem
 
-        figcaption
-            line-height: var(--type-height-2)
-
     img, video
         width: 100%
         @media #{$media-query-large}
             border-radius: var(--radius-1)
 
     figcaption
-        font-family: var(--type-family-3)
-        font-size: 1.25em
+        font-size: 0.75em
         margin-top: var(--size-s)
 
 // Forms
