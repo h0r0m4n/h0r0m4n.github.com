@@ -1,15 +1,23 @@
 [
   {
+    "title": "Ferrari",
+    "url": "https://www.ferrari.com"
+  },
+  {
+    "title": "Hertz",
+    "url": "https://hertz.com"
+  },
+  {
+    "title": "Valentino",
+    "url": "https://www.valentino.com"
+  },
+  {
     "title": "TIM",
     "url": "https://www.tim.it"
   },
   {
     "title": "Cefla",
     "url": "https://www.cefla.com/en"
-  },
-  {
-    "title": "Hertz",
-    "url": "https://hertz.com"
   },
   {
     "title": "UBI Banca",
@@ -24,12 +32,16 @@
     "url": "https://www.ied.edu"
   },
   {
-    "title": "Valentino",
-    "url": "https://www.valentino.com"
-  },
-  {
     "title": "Enel",
     "url": "https://www.enel.it/en"
+  },
+  {
+    "title": "Revolut",
+    "url": "https://revolut.com"
+  },
+  {
+    "title": "Kraken",
+    "url": "https://kraken.com"
   },
   {
     "title": "WindTre",
@@ -42,9 +54,5 @@
   {
     "title": "RAI",
     "url": "http://www.rai.it"
-  },
-  {
-    "title": "Ferrari",
-    "url": "https://www.ferrari.com"
   }
 ]
