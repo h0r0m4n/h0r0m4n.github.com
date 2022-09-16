@@ -72,7 +72,7 @@ The two most complex features of the SIAE+ is the registration and the possibili
 
 {% image "src/static/work/siae-plus-4.jpg" "full" "" "New deposit feature that guides the user using a wizard design pattern" %}
 
-{% video "siae-plus-1" "full" "autoplay" "An overview of final prototype" %}
+{% video "siae-plus-1" "full" "" "An overview of final prototype" %}
 
 ## Software and tools
 
