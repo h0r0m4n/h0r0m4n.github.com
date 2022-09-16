@@ -90,7 +90,7 @@ Several professional figures have been involved in this project:
 
 {% stats "Designers" "2" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
 
-## Results & Learnings
+## Results
 
 Over the next few months, we've seen users who previously used the product from the website exclusively use the app, with around 20,000 unique registrations made in the first four months of 2020.
 
@@ -102,3 +102,11 @@ Besides downloads and sign-ups, there were a few other positive results:
 1. Core funnels like the registration flow had a double-digit conversion, with new potential customers now more likely to use SIAE services.
 2. The new deposit feature throughout the app became the defacto way to use the SIAE services, going from 15% to around 75% of total users.
 3. We received a lot of positive feedback on major [Apple](https://apps.apple.com/it/app/siae/id1465450346) and [Google](https://play.google.com/store/apps/details?id=it.siae.autorieditori&hl=en_IE&gl=US) stores.
+
+## Learnings
+
+In working with the team, I was fortunate enough to be given the opportunity to help take a flagship product from 0 to 1. Naturally, I've come away with a few lessons which I've found to be widely applicable:
+
+1. **Live the same restraints** — There was a lot of time spent dealing with legacy systems from an engineering end. I found the most effective approach sometimes really was to embrace those constraints and work together to find counter solutions.
+2. **Product modality matters** — Each stage of the user experience required the product to adapt to a specific context. It starts as the primary touchpoint, becoming a facilitator in complex tasks.
+3. **Core operations influences product decisions** — The underlying process behind a sign-up which involved partly analogue systems was evidence of this, as it introduced different constraints to the product.
