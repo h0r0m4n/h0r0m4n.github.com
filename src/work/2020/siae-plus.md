@@ -1,5 +1,5 @@
 ---
-title: App SIAE+
+title: Mobile App
 description: SIAE is the monopolist intermediary between the authors of musical tracks and consumers, managing the economic aspects and the distribution of money from royalties of Italian-copyrighted music to authors. I collaborated with them in the creation of the first app SIAE+ that supports all the major services of the company.
 client: SIAE
 css:
