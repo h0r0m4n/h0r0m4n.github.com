@@ -127,8 +127,23 @@ Unlike the templates that can be reused, there are specific reserved pages such 
 {% video "siae-design-system-5" "full" "" "" %}
 {% video "siae-design-system-6" "full" "" "Overview of specific pages" %}
 
-### Learnings
+## Results
 
 The design system was a huge step forward for SIAE and our team. It allowed our design team and engineering to create new template pages and quickly prototype without needing custom code. Furthermore, it provided consistency between each service—something that didn’t happen before.
 
 It also provided our engineering team with one source of truth for all components & styles, allowing the code to be more efficient and produce more consistent, accessible components with fewer bugs.
+
+{% stats "Sign-Up’s" "30%" "New Deposits" "70%" "" "" "" "" %}
+
+Besides the adoption of design systen, there were a few other significant results:
+
+1. Registration flow had a 30% better conversion, with new potential customers.
+2. The new deposit feature on the web goes from 55% to around 95% of total users.
+
+## Learnings
+
+There's some valuable lessons I picked up along the way:
+
+1. **Collaboration is the first step towards adoption** — Pairing with engineers and designers through component discussions, reviews, small workshops or even 'build-alongs' (where an engineer literally sits with a designer and quickly prototypes a complex component to get a sense of some of its properties and states ) can't be understated. It isn't just a way to plant a sense of ownership, it makes adoption flow so much better down the line.
+2. **Be flexible, not fixed in approach** – Taking up the role of the enforcer is necessary sometimes, but over-policing might drive people away. Instead, the system should be built to embrace the nuances of a company's culture, acknowledging that there'll be some tradeoffs along the way.
+3. **Focus on people, not patterns** — Politicking, sponsorship, promotion and a host of other interpersonal competencies were far more critical in closing the engineering and design gap and helping people build better products by default.
