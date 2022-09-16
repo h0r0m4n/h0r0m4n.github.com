@@ -90,15 +90,15 @@ Several professional figures have been involved in this project:
 
 {% stats "Designers" "2" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
 
-## Learnings & Results
+## Results & Learnings
 
 Over the next few months, we've seen users who previously used the product from the website exclusively use the app, with around 20,000 unique registrations made in the first four months of 2020.
+
+{% stats "Convenrsion Rate" "200%" "New Deposits" "400%" "" "" "" "" %}
+{% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
 
 Besides downloads and sign-ups, there were a few other positive results:
 
 1. Core funnels like the registration flow had a double-digit conversion, with new potential customers now more likely to use SIAE services.
 2. The new deposit feature throughout the app became the defacto way to use the SIAE services, going from 15% to around 75% of total users.
 3. We received a lot of positive feedback on major [Apple](https://apps.apple.com/it/app/siae/id1465450346) and [Google](https://play.google.com/store/apps/details?id=it.siae.autorieditori&hl=en_IE&gl=US) stores.
-
-{% stats "Convenrsion Rate" "200%" "New Deposits" "400%" "" "" "" "" %}
-{% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
