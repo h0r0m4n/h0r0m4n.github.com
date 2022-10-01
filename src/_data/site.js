@@ -9,7 +9,7 @@ module.exports = {
     starting: 2008,
     password: 376301,
     version: '13.8',
-    insights: 'HugAu_grV5lB5OQI',
+    insights: 'Cmq8UUo4jUZ',
     environment: process.env.ELEVENTY_ENV,
     url: process.env.ELEVENTY_ENV === 'development' ? 'http://localhost:8080' : 'https://horoman.com'
 };
