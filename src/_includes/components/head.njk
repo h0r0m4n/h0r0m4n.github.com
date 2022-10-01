@@ -31,9 +31,9 @@
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v={{ site.version }}">
 
 {% if site.environment == "production" %}
-    <script async src="https://cdn.panelbear.com/analytics.js?site=Cmq8UUo4jUZ"></script>
+    <script async src="https://cdn.panelbear.com/analytics.js?site={{ site.insights }}"></script>
     <script>
         window.panelbear = window.panelbear || function() { (window.panelbear.q = window.panelbear.q || []).push(arguments); };
-        panelbear('config', { site: 'Cmq8UUo4jUZ' });
+        panelbear('config', { site: '{{ site.insights }}' });
     </script>
 {% endif %} 

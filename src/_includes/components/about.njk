@@ -30,8 +30,8 @@
                 <p>Apps I use just about every day.</p>
                 <ol class="t__inline">
                     {% for app in software %}
-                        <li class="t__inline__item t__inline__item--2">
-                            <a href="{{ app.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ app.title }}">
+                        <li class="t__inline__item t__inline__item--1">
+                            <a class="t__hover t__hover--2" href="{{ app.link | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ app.title }}">
                                 {% include 'software/' + app.title | slug + '.svg' %}
                             </a>
                         </li>

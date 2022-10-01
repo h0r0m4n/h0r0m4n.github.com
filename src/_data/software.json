@@ -16,19 +16,11 @@
     "link": "https://zoom.us"
   },
   {
-    "title": "Visual Studio Code",
-    "link": "https://code.visualstudio.com"
-  },
-  {
     "title": "Loom",
     "link": "https://www.loom.com"
   },
   {
-    "title": "Blender",
-    "link": "https://www.blender.org"
-  },
-  {
-    "title": "Framer",
-    "link": "https://www.framer.com"
+    "title": "Visual Studio Code",
+    "link": "https://code.visualstudio.com"
   }
 ]
