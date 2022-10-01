@@ -31,6 +31,12 @@
         animation: hi 1s 1200ms
 
     &__clients
+        @media #{$media-query-small-only}
+            white-space: nowrap
+            overflow-x: auto
+            padding: var(--size-m)
+            margin: calc(var(--size-m) * -1)
+
         &__item
             margin-bottom: 0
             svg
