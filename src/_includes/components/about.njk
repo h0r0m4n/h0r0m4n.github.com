@@ -9,7 +9,7 @@
     {% if reads %}
         <div class="about__reads">
             <div class="t__container">
-                <h4>Readings</h4>
+                <h3>Readings</h3>
                 <p>I go in phases with reading… sometimes consuming multiple books a month while other times take months to read one book. This is a list of books I recommend.</p>
             </div>
             <ol class="t__inline">
@@ -26,7 +26,7 @@
     {% if software %}
         <div class="about__software">
             <div class="t__container">
-                <h4>Software</h4>
+                <h3>Software</h3>
                 <p>Apps I use just about every day.</p>
                 <ol class="t__inline">
                     {% for app in software %}
@@ -43,7 +43,7 @@
     {% if hardware %}
         <div class="about__hardware">
             <div class="t__container">
-                <h4>Hardware</h4>
+                <h3>Hardware</h3>
                 <p>Here are most of the things I regularly use to make everything!</p>
                 <ul class="link-style">
                     {% for gadget in hardware %}
@@ -57,7 +57,7 @@
     {% endif %}
     <div class="about__bits">
         <div class="t__container">
-            <h4>Latest Bits</h4>
+            <h3>Latest Bits</h3>
             <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
         </div>
         <ol class="t__grid t__grid--works">
@@ -66,7 +66,7 @@
                     <li class="t__grid__item">
                         <article class="t__card">
                             <header class="t__card__header">
-                                <h3 class="t__card__title h4">{{ work.data.title }}</h3>
+                                <h4 class="t__card__title">{{ work.data.title }}</h4>
                                 {% if work.data.client %}
                                     <p class="t__card__client">{{ work.data.client }}</p>
                                 {% elif work.data.nft %}
@@ -85,7 +85,7 @@
     </div>
     <div class="about__website">
         <div class="t__container">
-            <h4>About this website <sup>Nerd Zone</sup></h4>
+            <h3>About this website <sup>Nerd Zone</sup></h3>
             <ul class="link-style">
                 <li>Uses a several typefaces:
                     <ul class="link-style">
