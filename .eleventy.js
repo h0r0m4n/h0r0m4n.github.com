@@ -15,8 +15,7 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy("src/*.{png,svg,ico}")
         .addPassthroughCopy("src/site.webmanifest")
         .addPassthroughCopy("src/robots.txt")
-        .addPassthroughCopy("src/CNAME")
-        .addPassthroughCopy("src/BingSiteAuth.xml");
+        .addPassthroughCopy("src/CNAME");
 
     // Watch
     eleventyConfig.addWatchTarget('./src/sass/');
