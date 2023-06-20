@@ -11,7 +11,7 @@
         position: absolute
 
     &__hover
-        transition: all 150ms ease-out
+        transition: all .3s cubic-bezier(0, 0, .5, 1)
         &--1
             backface-visibility: hidden
             -webkit-font-smoothing: subpixel-antialiased
@@ -25,9 +25,9 @@
                     -webkit-filter: brightness(112%)
                     filter: brightness(112%)
         &--2
-            transition: transform 150ms ease-out
+            transition: transform .3s cubic-bezier(0, 0, .5, 1)
             &:hover
-                transform: scale(1.05)
+                transform: scale3d(1.03, 1.03, 1.03)
 
     &__container
         max-width: var(--container-size)
