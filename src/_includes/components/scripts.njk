@@ -97,3 +97,11 @@
         localStorage.setItem(featuredWork, featuredValue);
     }
 </script>
+
+{% if site.environment == "production" %}
+    <script src="https://getinsights.io/static/js/insights.js"></script>
+    <script>
+        insights.init('{{ site.insights }}');
+        insights.trackPages();
+    </script>
+{% endif %}  
