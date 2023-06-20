@@ -1,7 +1,7 @@
 module.exports = {
     title: 'Roman Horokhovatskyy',
     description: 'Personal homepage of Roman Horokhovatskyy a Ukrainian multi-disciplinary designer based in Dublin, Ireland.',
-    keywords: 'Roman, Horokhovatskyy, @horoman, @h0r0m4n, Product Design, Interaction Design, User Interface Design, User Experience Design',
+    keywords: 'Roman, Horokhovatskyy, @horoman, @h0r0m4n, Product Design, Interaction Design, User Interface Design, User Experience Design, Design Systems',
     author: 'Roman Horokhovatskyy',
     location: 'Dublin, Ireland',
     nickname: 'h0r0m4n',
