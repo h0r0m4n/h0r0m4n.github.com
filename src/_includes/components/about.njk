@@ -1,15 +1,25 @@
 <section id="about" class="about t__section">
     <div class="about__more">
         <div class="t__container">
-            {% include 'components/avatar.njk' %}
-            <h2>More about me</h2>
+            <h2>About me</h2>
             <p>I iterate, prototype, and arrive at comprehensive solutions, deliver precise, conceptual, and visually elegant design specs with the highest fidelity possible, and work closely with engineers to ensure high-quality execution.</p>
+            {% if skills %}
+                <h3>My skills</h3>
+                {% for skill in skills %}
+                    <p><strong>{{ skill.title }}:</strong></p>
+                    <ul>
+                        {% for child in skill.body %}
+                            <li>{{ child }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
     {% if reads %}
         <div class="about__reads">
             <div class="t__container">
-                <h3>Readings</h3>
+                <h3>Favorite readings</h3>
                 <p>I go in phases with reading… sometimes consuming multiple books a month while other times take months to read one book. This is a list of books I recommend.</p>
             </div>
             <ol class="t__inline">
@@ -26,7 +36,7 @@
     {% if software %}
         <div class="about__software">
             <div class="t__container">
-                <h3>Software</h3>
+                <h3>Software I use</h3>
                 <p>Apps I use just about every day.</p>
                 <ol class="t__inline">
                     {% for app in software %}
@@ -43,7 +53,7 @@
     {% if hardware %}
         <div class="about__hardware">
             <div class="t__container">
-                <h3>Hardware</h3>
+                <h3>Hardware I use</h3>
                 <p>Here are most of the things I regularly use to make everything!</p>
                 <ul class="link-style">
                     {% for gadget in hardware %}
@@ -57,7 +67,7 @@
     {% endif %}
     <div class="about__bits">
         <div class="t__container">
-            <h3>Latest Bits</h3>
+            <h3>My latest bits</h3>
             <p>Some of projects that I have dealt with during my career, more info is <a href="#contact" title="Go to the Contact section">available uppon request</a>.</p>
         </div>
         <ol class="t__grid t__grid--works">

@@ -1,0 +1,33 @@
+[
+	{
+        "title": "Design",
+        "body": [
+            "User Experience Design",
+            "User Iterface Design",
+            "Design Systems",
+            "Data Visualization",
+            "Visual Design",
+            "Icon Design",
+            "Mobile Design",
+            "Low and High-fi prototyping"
+	    ]
+    },
+    {
+        "title": "Development",
+        "body": [
+            "HTML, Nunjucks, and Pug",
+            "CSS, Sass, and SCSS",
+            "JavaScript and React"
+	    ]
+    },
+    {
+        "title": "Methods",
+        "body": [
+            "Design Thinking",
+            "Responsive Design",
+            "Mobile First Design",
+            "Systems Thinking",
+            "SAFe, Agilem, and Scrum"
+	    ]
+    }
+]

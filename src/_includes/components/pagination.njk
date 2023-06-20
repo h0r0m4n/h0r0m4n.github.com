@@ -1,6 +1,6 @@
 <nav id="work-pagination" class="t__section">
     <div class="t__container">
-        <h1>See next</h1>
+        <h2 class="h1">See next</h2>
         <ul class="t__grid t__grid--pagination">    
             {% set nextWork = collections.work | permalinkNotFalse | getNextCollectionItem(page) %}
             {% set previousWork = collections.work | permalinkNotFalse | getPreviousCollectionItem(page) %}
