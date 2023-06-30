@@ -2,7 +2,7 @@
 title: Fonmoon v1
 description: 
 client: 
-skills:
+roles:
   - User Interface
 platform: Web
 date: 2012-06-10

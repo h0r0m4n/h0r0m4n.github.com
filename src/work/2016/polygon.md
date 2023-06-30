@@ -2,7 +2,7 @@
 title: Polygon
 description: Polygon is an interactive installation that conveys the emotional involvement of a single participant or the entire group. It offers multiple interactions using the sequencer philosophy.
 client:
-skills:
+roles:
   - User Interface
   - Interaction Design
 platform: Interactive Installation

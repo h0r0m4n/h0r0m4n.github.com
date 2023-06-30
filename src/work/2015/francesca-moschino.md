@@ -2,7 +2,7 @@
 title: Francesca Moschino
 description: I designed the portfolio site of the photographer Francesca Moscino.
 client: 
-skills:
+roles:
   - Web Design
   - User Interface
 platform: Web

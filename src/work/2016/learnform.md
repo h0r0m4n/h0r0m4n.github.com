@@ -2,7 +2,7 @@
 title: Learnform
 description: 
 client:
-skills:
+roles:
   - Product Design
   - User Experience
   - User Interface

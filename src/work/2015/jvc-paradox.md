@@ -2,7 +2,7 @@
 title: Paradox
 description: An interactive installation in collaboration with leader JVC Pro of the new line of projectors, and CNC Glass Interlayer, an innovative company for transparent projectable glass.
 client: JVC
-skills:
+roles:
   - User Interface
   - Interaction Design
 platform: Interactive Installation

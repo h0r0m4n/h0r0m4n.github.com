@@ -3,7 +3,7 @@ title: iOS Crypto & Bitcoin app
 description: I led the re-design of the main page of the iOS Kraken app, a leader in Europe's Bitcoin trading platform.
 client: Kraken
 role: Lead Designer
-skills:
+roles:
   - Product Design
   - User Interface
   - Interaction Design
