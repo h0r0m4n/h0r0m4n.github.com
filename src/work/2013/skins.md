@@ -2,7 +2,7 @@
 title: Skins
 description: 
 client: All3Media
-skills:
+roles:
   - User Experience
   - User Interface
 platform: Web

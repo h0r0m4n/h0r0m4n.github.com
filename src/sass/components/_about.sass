@@ -23,12 +23,17 @@
         ol
             white-space: nowrap
             overflow-x: auto
+            flex-wrap: nowrap
+            align-items: baseline
             padding: var(--size-s)
             text-align: center
             @media #{$media-query-medium}
                 padding: var(--size-m)
             @media #{$media-query-large}
                 padding: var(--size-l)
+
+            li 
+                display: inline-block
 
             img
                 border-radius: var(--radius-1)

@@ -2,7 +2,7 @@
 title: Main Website
 description: IED is a design institute located in Italy, Spain, Brazil and China. Up to now, it has had over +100K students. I participated in the restyling of the main site, which will be published in 2021.
 client: IED
-skills:
+roles:
   - Product Design
   - User Interface
   - User Experience

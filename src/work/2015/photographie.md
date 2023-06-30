@@ -2,7 +2,7 @@
 title: Photographie
 description: A free WordPress Theme.
 client: 
-skills:
+roles:
   - User Interface
   - Web Design
 platform: Web

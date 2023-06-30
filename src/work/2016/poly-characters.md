@@ -2,7 +2,7 @@
 title: Poly Characters
 description: Vector low-polygon characters.
 client: 
-skills:
+roles:
   - Graphic Design
 date: 2016-08-05
 finished: true

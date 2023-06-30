@@ -141,19 +141,14 @@
             font-size: 0.75em
 
     &__inline
+        display: flex
+        flex-wrap: wrap
+        gap: var(--size-s)
         list-style: none
         padding: 0
+        margin-block: var(--size-s)
         &__item
-            display: inline-block
             list-style: none
-            &--1
-                margin: var(--size-s) var(--size-s) var(--size-s) 0
-            &--2
-                margin: var(--size-s) var(--size-m) var(--size-s) 0
-                @media #{$media-query-medium}
-                    margin-right: var(--size-l)
-            &:last-child
-                margin-right: 0
 
     &__lead
         font-size: 1.125em

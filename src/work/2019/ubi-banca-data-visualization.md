@@ -3,7 +3,7 @@ title: Data Visualization
 description: I led the design of a visual language for Data Visualization widgets used in UBI Banca’s Data Intelligence internal product.
 client: UBI Banca
 role: Lead Interface Designer
-skills:
+roles:
   - User Interface
   - Interaction Design
 platform: Web

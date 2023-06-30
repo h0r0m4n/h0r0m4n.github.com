@@ -10,7 +10,7 @@ css:
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#222222'
 role: Lead Interface Designer
-skills:
+roles:
   - Product Design
   - Design System
   - User Experience

@@ -2,7 +2,7 @@
 title: SPE WordPress Theme
 description: 
 client: 
-skills:
+roles:
   - User Interface
   - Web Design
 platform: Web

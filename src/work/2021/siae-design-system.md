@@ -10,7 +10,7 @@ css:
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#2D3952'
 role: Lead Designer
-skills:
+roles:
   - User Research
   - User Interface
   - Interaction Design

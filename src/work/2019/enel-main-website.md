@@ -3,7 +3,7 @@ title: Main website
 description: Restyling of the main Enel website, which includes landing pages, search, services and support.
 client: Enel
 role: Lead Designer
-skills:
+roles:
   - Product Design
   - User Experience
   - User Interface

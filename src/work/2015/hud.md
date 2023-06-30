@@ -2,7 +2,7 @@
 title: HUD
 description: Heads-up display for the NUKEX composing
 client:
-skills:
+roles:
   - User Interface
   - Motion Design
 date: 2015-07-02

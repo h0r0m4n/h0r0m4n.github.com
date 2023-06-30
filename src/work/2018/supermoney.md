@@ -3,7 +3,7 @@ title: Supermoney
 description: Restyling of the page blog page of the Italian most used price comparison website.
 client: Supermoney
 role: Lead Interface Designer
-skills:
+roles:
   - Product Design
   - User Experience
   - User Interface
