@@ -5,7 +5,7 @@ module.exports = {
     author: 'Roman Horokhovatskyy',
     location: 'Dublin, Ireland',
     nickname: 'h0r0m4n',
-    mail: 'roman.horokhovatskyy@gmail.com',
+    mail: 'me@horoman.com',
     starting: 2008,
     password: 376301,
     version: '15',
