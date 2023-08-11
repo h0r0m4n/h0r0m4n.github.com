@@ -9,15 +9,7 @@
             "Visual Design",
             "Icon Design",
             "Mobile Design",
-            "Low and High-fi prototyping"
-	    ]
-    },
-    {
-        "title": "Development",
-        "body": [
-            "HTML, Nunjucks, and Pug",
-            "CSS, Sass, and SCSS",
-            "JavaScript and React"
+            "Low & High-fi prototyping"
 	    ]
     },
     {
@@ -27,7 +19,16 @@
             "Responsive Design",
             "Mobile First Design",
             "Systems Thinking",
-            "SAFe, Agilem, and Scrum"
+            "SAFe, Agile, & Scrum"
+	    ]
+    },
+    {
+        "title": "Development",
+        "body": [
+            "HTML, Nunjucks, & Pug",
+            "CSS, Sass, & SCSS",
+            "JavaScript & React",
+            "WCAG"
 	    ]
     }
 ]

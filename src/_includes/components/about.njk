@@ -1,18 +1,25 @@
 <section id="about" class="about t__section">
     <div class="about__more">
         <div class="t__container">
-            <h2>About me</h2>
+            <h2 class="t__typedivider">About me</h2>
             <p class="t__lead">I iterate, prototype, and arrive at comprehensive solutions, deliver precise, conceptual, and visually elegant design specs with the highest fidelity possible, and work closely with engineers to ensure high-quality execution.</p>
             {% if skills %}
                 <h3>My skills</h3>
-                {% for skill in skills %}
-                    <p><strong>{{ skill.title }}:</strong></p>
-                    <ul>
-                        {% for child in skill.body %}
-                            <li>{{ child }}</li>
-                        {% endfor %}
-                    </ul>
-                {% endfor %}
+                <div class="about__skills">    
+                    {% for skill in skills %}
+                        <div class="about__skills__group">
+                            <h4 class="h6">
+                                {% include 'skills/' + skill.title | slug + '.svg' %}
+                                <strong>{{ skill.title }}</strong>
+                            </h4>
+                            <ul>
+                                {% for child in skill.body %}
+                                    <li>{{ child }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
+                </div>
             {% endif %}
         </div>
     </div>

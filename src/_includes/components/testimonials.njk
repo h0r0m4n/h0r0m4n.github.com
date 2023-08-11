@@ -8,9 +8,7 @@
                         <blockquote class="testimonials__blockquote">
                             <p class="testimonials__comment">{{ testimonial.comment }}</p>
                             <div class="testimonials__author">
-                                <figure class="testimonials__avatar">
-                                    <img src="{{ 'static/testimonials/' + testimonial.name | slug + '.jpg' }}" srcset="{{ '/static/testimonials/' + testimonial.name | slug + '@1.5x.jpg' }} 1.5x, {{ '/static/testimonials/' + testimonial.name | slug + '@2x.jpg' }} 2x" alt="{{ testimonial.name }}" loading="lazy" decoding="async">
-                                </figure>
+                                {% testimonial 'src/static/testimonials/' + testimonial.name | slug + '.jpg', testimonial.name %}
                                 <p class="testimonials__text"><span class="testimonials__role">{{ testimonial.role }}</span><br><span class="testimonials__name">{{ testimonial.name }}</span> – {{ testimonial.company }}</p>
                             </div>
                         </blockquote>

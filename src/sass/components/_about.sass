@@ -1,23 +1,30 @@
 .about
-    background-color: var(--color-neutral-4)
-    padding-top: var(--size-xl)
-    padding-bottom: var(--size-xl)
-    @media #{$media-query-large}
-        padding-top: var(--size-xxl)
-        padding-bottom: var(--size-xxl)
-
     &__more
-        .t__avatar
-            display: inline-block
-            margin-left: calc(var(--size-s) * -1)
-            @media #{$media-query-medium}
-                margin-left: calc(var(--size-l) * -1)
-            img
-                @media #{$media-query-medium}
-                    width: 154px
-                    height: 230px
         h2
             margin-top: var(--size-m)
+    &__skills
+        @media #{$media-query-large}
+            display: flex
+            flex-direction: row
+            gap: var(--size-l)
+        &__group
+            @media #{$media-query-large}
+                flex: 1
+            ul
+                padding-inline-start: var(--size-m)
+            li
+                font-size: 0.825em
+                &::marker
+                    color: var(--color-tertiary)
+
+        h4
+            svg
+                width: 44px
+                height: 44px
+                fill: var(--color-tertiary)
+                margin-bottom: var(--size-xs)
+            strong
+                display: block
 
     &__reads
         ol
@@ -56,6 +63,7 @@
                 border-radius: var(--radius-2)
                 padding: var(--size-s)
                 box-shadow: var(--shadow-1)
+                border: 1px solid var(--color-neutral-3)
                 &:hover
                     box-shadow: var(--shadow-2)
                     svg
