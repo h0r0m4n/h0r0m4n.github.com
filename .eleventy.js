@@ -236,13 +236,63 @@ module.exports = function (eleventyConfig) {
             height="${lowestSrc.height}">`;
 
         return outdent`
-            <div class="image__container">
-                <picture>
-                    ${sourceAVIF}
-                    ${sourceWEBP}
-                    ${img}
-                </picture>
-            </div>
+            <picture>
+                ${sourceAVIF}
+                ${sourceWEBP}
+                ${img}
+            </picture>
+        `;
+    });
+
+    // Testimonial avatar
+    // Usage: {% testimonial "static/file-name.jpg" "My alt…" %}
+    eleventyConfig.addNunjucksAsyncShortcode('testimonial', async (src, alt) => {
+
+        let stats = await Image(src, {
+            widths: [64, 96, 128],
+            formats: ["jpeg", "webp", "avif"],
+            filenameFormat: function (id, src, width, format, options) {
+                const extension = path.extname(src);
+                const name = path.basename(src, extension);
+
+                return `${name}-${width}w.${format}`;
+            },
+            urlPath: "/static/testimonials",
+            outputDir: "./dist/static/testimonials",
+        });
+    
+        let lowestSrc = stats["jpeg"][0];
+    
+        const srcset = Object.keys(stats).reduce(
+            (acc, format) => ({
+                ...acc,
+                [format]: stats[format].reduce(
+                    (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                    ""
+                ),
+            }),
+            {}
+        );
+
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+    
+        const img = `<img
+            loading="lazy"
+            decoding="async"
+            alt="${alt}"
+            src="${lowestSrc.url}"
+            sizes='(min-width: 1280px) 1280px, 100vw'
+            srcset="${srcset["jpeg"]}"
+            width="${lowestSrc.width}"
+            height="${lowestSrc.height}">`;
+
+        return outdent`
+            <picture>
+                ${sourceAVIF}
+                ${sourceWEBP}
+                ${img}
+            </picture>
         `;
     });
 
