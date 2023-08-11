@@ -77,17 +77,19 @@ a
     background-color: transparent
     text-decoration: none
 
-:focus
-    outline-style: auto
-    outline-width: 2px
+:focus-visible
+    outline-color: var(--color-secondary)
+    outline-style: solid
+    outline-width: 4px
+    outline-offset: 4px
 
-p, .link-style
+#work-content, p, .link-style
     a
         color: var(--color-secondary)
         text-decoration: underline
         text-decoration-thickness: max(1px, .0625rem)
         text-underline-offset: .1em
-        &:focus, &:hover
+        &:focus-visible, &:hover
             text-decoration-thickness: max(3px, .1875rem, .12em)
             text-decoration-skip-ink: none
             text-decoration-skip: none
