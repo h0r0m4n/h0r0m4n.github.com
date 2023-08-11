@@ -27,7 +27,8 @@
         "body": [
             "HTML, Nunjucks, & Pug",
             "CSS, Sass, & SCSS",
-            "JavaScript & React"
+            "JavaScript & React",
+            "WCAG"
 	    ]
     }
 ]
