@@ -22,15 +22,31 @@
             opacity: 0.125
 
     &__comment
-        background-color: var(--color-background)
+        position: relative
+        background-color: var(--color-tertiary)
+        color: var(--color-background)
         border-radius: var(--radius-2)
         padding: var(--size-m)
-        margin-bottom: 0
         box-shadow: var(--shadow-1)
+        z-index: 3
+        &::after
+            content: ' '
+            position: absolute
+            width: 0
+            height: 0
+            left: 0
+            right: auto
+            top: auto
+            bottom: calc(var(--size-m) * -1)
+            border: var(--size-m) solid
+            border-color: transparent var(--color-tertiary) transparent transparent
 
     &__author
+        position: relative
         display: flex
         align-items: center
+        margin-left: var(--size-m)
+        z-index: 2
 
     &__text
         margin: 0
