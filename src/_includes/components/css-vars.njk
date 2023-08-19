@@ -11,9 +11,6 @@
         --color-thumbnail-hover: {% if css.thumbnailHover %}{{ css.thumbnailHover }}{% else %}rgba(255, 255, 255, 0.25){% endif %};
         --color-overlay: {% if css.overlay %}{{ css.overlay }}{% else %}rgba(255, 255, 255, 0.98){% endif %};
         --color-background: {% if css.colorBackground %}{{ css.colorBackground }}{% else %}#fff{% endif %};
-        {% if not css.colorBackground %}
-            --background: url(../static/assets/bg-light.svg);
-        {% endif %}
         --shadow-1: 2px 4px 12px rgba(0,0,0,.08);
         --shadow-2: 2px 4px 16px rgba(0,0,0,.16);
 
@@ -57,7 +54,6 @@
                 --color-thumbnail-hover: rgba(255, 255, 255, 0.12);
                 --color-overlay: rgba(30, 0, 31, 0.98);
                 --color-background: #110016;
-                --background: url(../static/assets/bg-dark.svg);
                 --shadow-1: 0 0 1em rgba(255, 255, 255, 0.12);
                 --shadow-2: 0 0 1em rgba(255, 255, 255, .5);
             }

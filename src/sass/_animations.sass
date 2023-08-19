@@ -1,3 +1,9 @@
+@keyframes rotate
+    from
+        transform: rotate(360deg)
+    to
+        transform: rotate(0deg)
+
 @keyframes hi
     0%
         transform: rotate(0deg)
@@ -11,7 +17,12 @@
         transform: rotate(0deg)
 
 @keyframes show
-    0%
+    from
         opacity: 0
-    100%
+    to
         opacity: 1
+
+*
+    @media (prefers-reduced-motion)
+        transition: none !important
+        animation: none !important

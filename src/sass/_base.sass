@@ -34,19 +34,6 @@ body
     color: var(--color-primary)
     word-wrap: break-word
     overflow-wrap: break-word
-    &::before
-        content: ' '
-        position: fixed
-        z-index: -1
-        top: 0
-        left: 0
-        width: 100vw
-        height: 100vh // Falback for Firefox: https://caniuse.com/?search=svh
-        height: 100svh
-        background-image: var(--background)
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
     @media #{$media-query-medium}
         font-size: 1.25em
 
@@ -90,6 +77,8 @@ a
         text-decoration: underline
         text-decoration-thickness: max(1px, .0625rem)
         text-underline-offset: .1em
+        @media (prefers-color-scheme: light)
+            text-decoration-color: var(--color-tertiary)
         &:focus-visible, &:hover
             text-decoration-thickness: max(3px, .1875rem, .12em)
             text-decoration-skip-ink: none

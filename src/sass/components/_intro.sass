@@ -3,6 +3,41 @@
     @media #{$media-query-large}
         margin-top: var(--size-xxl)
 
+    &__avatar
+        display: inline-block
+        position: relative
+        margin-block: 0
+        left: calc(var(--size-s) * -1)
+        @media #{$media-query-medium}
+            left: calc(var(--size-l) * -1)
+
+        svg
+            fill: var(--color-tertiary)
+            user-select: none
+            width: 360px
+            height: 360px
+            animation: rotate 240s linear infinite
+            @media #{$media-query-medium}
+                width: 600px
+                height: 600px
+
+        picture
+            img
+                width: 96px
+                height: 143px
+                @media #{$media-query-medium}
+                    padding: 0.5em
+                    width: 154px
+                    height: 230px
+        &__ascii
+            position: absolute
+            top: 50%
+            left: 50%
+            z-index: -1
+            transform: translate(-50%, -50%)
+            @media print
+                display: none
+
     &__logo
         font-size: 0.825em
         line-height: 0
@@ -12,19 +47,8 @@
             font-size: 1em
         svg
             fill: var(--color-secondary)
-            height: 2.25em
-            width: 17.6875em
-
-    .t__avatar
-        position: relative
-        left: calc(var(--size-s) * -1)
-        @media #{$media-query-medium}
-            left: calc(var(--size-l) * -1)
-        img
-            @media #{$media-query-medium}
-                padding: 0.5em
-                width: 154px
-                height: 230px
+            width: 75%
+            filter: drop-shadow(var(--shadow-1))
 
     &__emoji
         display: inline-block
@@ -32,6 +56,7 @@
 
     &__clients
         @media #{$media-query-small-only}
+            gap: var(--size-xs)
             padding: var(--size-s)
             margin: calc(var(--size-s) * -1)
 
@@ -40,7 +65,9 @@
             svg
                 transition: fill 150ms ease-in
                 fill: var(--color-neutral-1)
-                height: 3rem
+                height: 2.2rem
+                @media #{$media-query-medium}
+                    height: 3rem
 
         &__link
             display: inline-block
@@ -54,3 +81,5 @@
                 box-shadow: var(--shadow-2)
                 svg
                     fill: var(--color-secondary)
+            @media print
+                box-shadow: none
