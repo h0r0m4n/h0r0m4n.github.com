@@ -29,6 +29,9 @@
         padding: var(--size-m)
         box-shadow: var(--shadow-1)
         z-index: 3
+        @media print
+            color: var(--color-primary)
+            box-shadow: none
         &::after
             content: ' '
             position: absolute
@@ -40,6 +43,8 @@
             bottom: calc(var(--size-m) * -1)
             border: var(--size-m) solid
             border-color: transparent var(--color-tertiary) transparent transparent
+            @media print
+                display: none
 
     &__author
         position: relative
