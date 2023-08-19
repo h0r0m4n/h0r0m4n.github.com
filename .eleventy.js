@@ -92,6 +92,7 @@ module.exports = function (eleventyConfig) {
         let stats = await Image(src, {
             widths: [960, 1280, 1920, 2560],
             formats: ["jpeg", "webp", "avif"],
+            sharpOptions: { quality: 90 },
             filenameFormat: function (id, src, width, format, options) {
                 const extension = path.extname(src);
                 const name = path.basename(src, extension);
@@ -123,7 +124,7 @@ module.exports = function (eleventyConfig) {
             decoding="async"
             alt="${alt}"
             src="${lowestSrc.url}"
-            sizes='(min-width: 1280px) 1280px, 100vw'
+            sizes='(min-width: 40rem) 100vw, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset="${srcset["jpeg"]}"
             width="${lowestSrc.width}"
             height="${lowestSrc.height}">`;
@@ -147,6 +148,7 @@ module.exports = function (eleventyConfig) {
         let stats = await Image(src, {
             widths: [500, 750, 1000],
             formats: ["jpeg", "webp", "avif"],
+            sharpOptions: { quality: 90 },
             filenameFormat: function (id, src, width, format, options) {
                 const extension = path.extname(src);
                 const name = path.basename(src, extension);
@@ -178,7 +180,7 @@ module.exports = function (eleventyConfig) {
             decoding="async"
             alt="${alt} Portfolio"
             src="${lowestSrc.url}"
-            sizes='(min-width: 1280px) 1280px, 100vw'
+            sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset="${srcset["jpeg"]}"
             width="${lowestSrc.width}"
             height="${lowestSrc.height}">`;
@@ -199,6 +201,7 @@ module.exports = function (eleventyConfig) {
         let stats = await Image(src, {
             widths: [160, 240, 320],
             formats: ["jpeg", "webp", "avif"],
+            sharpOptions: { quality: 90 },
             filenameFormat: function (id, src, width, format, options) {
                 const extension = path.extname(src);
                 const name = path.basename(src, extension);
@@ -230,7 +233,7 @@ module.exports = function (eleventyConfig) {
             decoding="async"
             alt="${alt} Book Cover"
             src="${lowestSrc.url}"
-            sizes='(min-width: 1280px) 1280px, 100vw'
+            sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset="${srcset["jpeg"]}"
             width="${lowestSrc.width}"
             height="${lowestSrc.height}">`;
@@ -251,6 +254,7 @@ module.exports = function (eleventyConfig) {
         let stats = await Image(src, {
             widths: [64, 96, 128],
             formats: ["jpeg", "webp", "avif"],
+            sharpOptions: { quality: 90 },
             filenameFormat: function (id, src, width, format, options) {
                 const extension = path.extname(src);
                 const name = path.basename(src, extension);
@@ -282,7 +286,7 @@ module.exports = function (eleventyConfig) {
             decoding="async"
             alt="${alt}"
             src="${lowestSrc.url}"
-            sizes='(min-width: 1280px) 1280px, 100vw'
+            sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset="${srcset["jpeg"]}"
             width="${lowestSrc.width}"
             height="${lowestSrc.height}">`;
