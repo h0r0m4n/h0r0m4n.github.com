@@ -47,6 +47,8 @@
                 @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
                     transition: box-shadow 150ms ease-in
                     box-shadow: var(--shadow-1)
+                @media print
+                    box-shadow: none
 
             a
                 display: block
@@ -68,6 +70,8 @@
                     box-shadow: var(--shadow-2)
                     svg
                         fill: var(--color-secondary)
+                @media print
+                    box-shadow: none
 
         svg
             transition: fill 150ms ease-in
