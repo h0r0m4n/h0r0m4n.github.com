@@ -34,21 +34,6 @@ body
     color: var(--color-primary)
     word-wrap: break-word
     overflow-wrap: break-word
-    &::before
-        content: ' '
-        position: fixed
-        z-index: -1
-        top: 0
-        left: 0
-        width: 100vw
-        height: 100vh // Falback for Firefox: https://caniuse.com/?search=svh
-        height: 100svh
-        background-image: var(--background)
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
-        @media print
-            display: none
     @media #{$media-query-medium}
         font-size: 1.25em
 
