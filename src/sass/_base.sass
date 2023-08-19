@@ -90,6 +90,8 @@ a
         text-decoration: underline
         text-decoration-thickness: max(1px, .0625rem)
         text-underline-offset: .1em
+        @media (prefers-color-scheme: light)
+            text-decoration-color: var(--color-tertiary)
         &:focus-visible, &:hover
             text-decoration-thickness: max(3px, .1875rem, .12em)
             text-decoration-skip-ink: none
