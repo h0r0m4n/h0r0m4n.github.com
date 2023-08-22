@@ -4,10 +4,6 @@
     "url": "https://www.ferrari.com"
   },
   {
-    "title": "Hertz",
-    "url": "https://hertz.com"
-  },
-  {
     "title": "Valentino",
     "url": "https://www.valentino.com"
   },
@@ -18,6 +14,10 @@
   {
     "title": "Cefla",
     "url": "https://www.cefla.com/en"
+  },
+  {
+    "title": "Hertz",
+    "url": "https://hertz.com"
   },
   {
     "title": "UBI Banca",
