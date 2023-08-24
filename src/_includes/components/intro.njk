@@ -16,13 +16,7 @@
             <ol class="intro__clients t__inline">
                 {% for client in clients %}
                     <li class="intro__clients__item t__inline__item t__inline__item--1">
-                        {% if client.url %}
-                            <a class="intro__clients__link t__hover t__hover--2" href="{{ client.url | url }}" rel="noopener noreferrer nofollow" target="_blank" title="{{ client.title }}">
-                                {% include 'clients/' + client.title | slug + '.svg' %}
-                            </a>
-                        {% else %}
-                            {% include 'clients/' + client.title | slug + '.svg' %}
-                        {% endif %}
+                        {% include 'clients/' + client.title | slug + '.svg' %}
                     </li>
                 {% endfor %}
             </ol>

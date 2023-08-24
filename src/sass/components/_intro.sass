@@ -55,31 +55,18 @@
         animation: hi 1s 1200ms
 
     &__clients
+        gap: 0 var(--size-xl)
+        margin-bottom: 0
         @media #{$media-query-small-only}
-            gap: var(--size-xs)
+            gap: 0 var(--size-l)
             padding: var(--size-s)
             margin: calc(var(--size-s) * -1)
 
         &__item
-            margin-bottom: 0
-            svg
-                transition: fill 150ms ease-in
-                fill: var(--color-neutral-1)
-                height: 2.2rem
-                @media #{$media-query-medium}
-                    height: 3rem
-
-        &__link
-            display: inline-block
             line-height: 0
-            background-color: var(--color-background)
-            border-radius: var(--radius-2)
-            padding: var(--size-xs) var(--size-m)
-            box-shadow: var(--shadow-1)
-            border: 1px solid var(--color-neutral-3)
-            &:hover
-                box-shadow: var(--shadow-2)
-                svg
-                    fill: var(--color-secondary)
-            @media print
-                box-shadow: none
+            svg
+                fill: var(--color-neutral-1)
+                height: 3rem
+                filter: drop-shadow(var(--shadow-1))
+                @media #{$media-query-medium}
+                    height: 4rem
