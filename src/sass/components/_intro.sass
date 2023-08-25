@@ -25,10 +25,13 @@
             img
                 width: 96px
                 height: 143px
+                @media (prefers-color-scheme: light)
+                    filter: drop-shadow(var(--shadow-2))
                 @media #{$media-query-medium}
                     padding: 0.5em
                     width: 154px
                     height: 230px
+
         &__ascii
             position: absolute
             top: 50%
