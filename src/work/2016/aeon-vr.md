@@ -19,7 +19,7 @@ finished: true
 thumbnail: src/static/work/aeon-vr.jpg
 ---
 
-## 3D models and rendering
+## 3D models & rendering
 
 The project is limited to the WYSIWYG-style level editor instead of the programming environment that deals with the need to be simulated and its appearance of the final object, with the ultimate aim of providing direct graphic commands to manipulate. This means that any level of design data has been entered and manipulated manually and procedural forms.
 
@@ -28,14 +28,14 @@ The project is limited to the WYSIWYG-style level editor instead of the programm
 {% image "src/static/work/aeon-vr-perspective-sizes.jpg" "full" "" "Perspective Sizes" %}
 {% image "src/static/work/aeon-vr-3.jpg" "full" "" "The entire VR map created on Blender" %}
 
-## Visual Concept
+## Visual concept
 
 Visual parameters such as colours and lights with low gamut sections are followed by the bright parts and the sections with cold colours are followed by warm colours. This allows you to establish a feeling of rhythm and create visual delineation of scenes:
 
 {% image "src/static/work/aeon-vr-1.png" "full" "" "An overview of color patterns of each area" %}
 {% image "src/static/work/aeon-vr-2.png" "full" "" "3D color applied" %}
 
-### Typography Visuals
+### Typography visuals
 
 Typographic realization of the font that conveys authenticity with a fairly open front, under the simple shapes a design was carried out on the spaces.
 
@@ -59,7 +59,7 @@ Text data had a size saving advantage of over 75%, thanks to HTML compression in
 
 Real-time 3D rendering was possible using WebGL technology along with three. Js which natively allowed the creation of scenes - where all objects, cameras and lights are placed, objects - geometries and materials rooms - single and multiple rooms necessary for virtual reality by simulating stereoscopic vision and lights. The three.js library has permission to have excellent consistency by speeding up the working process in the interactions.
 
-## Summary and finished product
+## Summary & finished product
 
 The goal of this project was to works on every modern browser. Eventually, [Aeon](http://aeon.horoman.com) works on specific types of browsers such as Chromium, Chrome Canary, Firefox Nightly, Safari (iOS), Chrome Dev (Android). Such browsers offer better WebGL support, making the best use of GPU’s.
 

@@ -47,7 +47,7 @@ Based on the business requirements we have designed the three potential personas
 
 {% image "src/static/work/cefla-euroshop-2.jpg" "full" "" "Overview of three personas" %}
 
-### Data and metrics
+### Data & metrics
 
 During research with our engineers and established some extraordinary data that we could collect and split into two separate categories:
 

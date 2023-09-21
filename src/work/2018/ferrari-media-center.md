@@ -45,7 +45,7 @@ The product was designed in responsive design and mobile-first approaches.
 {% image "src/static/work/ferrari-media-center-3.jpg" "full" "" "Overview of download section" %}
 {% image "src/static/work/ferrari-media-center-4.jpg" "full" "" "Two pages on large screens" %}
 
-## Software and tools
+## Software & tools
 
 All the product features were added to Jira, which enabled us to keep track of the entire project and keep design and engineering teams updated on the process.
 
