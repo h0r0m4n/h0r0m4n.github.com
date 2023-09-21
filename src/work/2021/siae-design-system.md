@@ -21,11 +21,11 @@ finished: true
 thumbnail: src/static/work/siae-design-system.jpg
 ---
 
-## Problem Statement
+## Problem statement
 
 SIAE's growth was more rapid than they had expected. Today SIAE offers more than ten different services. As time passed, different product experiences began to sum up to an inconsistent whole with fragmentation at critical touchpoints, leftover experiments and mounting design debt. Other companies corrected the design several times, and the design continued to be poorly understood by the customers.
 
-## Design Process
+## Design process
 
 Working with a research team, we quantified the impact of usability issues on the SIAE products. We prioritised high-impact problems that would interfere with users' goals to use SIAE's services.
 
@@ -39,14 +39,14 @@ After the heuristic evaluation and the user test sessions, we found that each se
 
 {% stats "Pain points" "11" "User types" "5" "" "" %}
 
-### Project Goals
+### Project goals
 
 So my team and I took the initiative to propose to create a standardized, intuitive interface that would support the business and user requirements of each SIAE service. With a close collaboration with business and other leadership, we end up with two main goals:
 
 1. **Create consistency across all SIAE services** – Provide a single source of components, patterns, and styles and unify disjointed experiences so that they are visually cohesive and appear part of the same ecosystem.
 2. **Create a unified language within and between cross-functional teams** – A unified language reduces wasted design or development time around miscommunications.
 
-### Design Library
+### Design library
 
 I needed to reframe the problem into something our design and engineering understand more: collecting all the existing components into a spreadsheet that eventually handed over 200 unique components from all the SIAE services.
 
@@ -85,7 +85,7 @@ This provided several benefits:
 {% image "src/static/work/siae-design-system-2.jpg" "full" "" "" %}
 {% image "src/static/work/siae-design-system-3.jpg" "full" "" "" %}
 
-## Design System
+## Design system
 
 Eventually, the Design Library became more robust, and we decided to opt for the design system. The design system consists of a collection of modular, reusable components out of Figma. This was a huge opportunity to start documenting each component for the rapid development implementation and reduce the need for custom code.
 

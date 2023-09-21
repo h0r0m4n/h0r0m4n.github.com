@@ -40,7 +40,7 @@ We paired the current SIAE’s typography with Roboto Condensed. The typeface is
 
 {% image "src/static/work/siae-plus-typography.png" "full" "" "" %}
 
-### Color Palette
+### Color palette
 
 An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background.
 
@@ -74,7 +74,7 @@ The two most complex features of the SIAE+ is the registration and the possibili
 
 {% video "siae-plus-1" "full" "" "An overview of final prototype" %}
 
-## Software and tools
+## Software & tools
 
 Since the client is located in another city, we decided to collaborate entirely remotely. Mural allowed us to run workshops with stakeholders.
 
