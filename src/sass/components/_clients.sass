@@ -1,0 +1,13 @@
+.clients
+    ol
+        gap: 0 var(--size-xl)
+        margin-bottom: 0
+        @media #{$media-query-small-only}
+            gap: 0 var(--size-l)
+            padding: var(--size-s)
+            margin: calc(var(--size-s) * -1)
+    li
+        line-height: 0
+        svg
+            fill: var(--color-neutral-1)
+            height: 4rem

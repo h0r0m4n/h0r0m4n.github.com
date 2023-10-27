@@ -10,15 +10,15 @@
             <span class="t__vh">{{ site.author }}</span>
             {% include 'assets/logo.svg' %}
         </h1>
-        <p class="t__lead">Hello! I'm {{ site.author }}, a seasoned designer with a journey spanning {% experience %}+ years. Originally from Ukraine, I've now set my creative compass to Dublin, Ireland. I advocate for accessibility, aesthetics and functionality, finding immense potential in simplicity. In my product design career, I've had the privilege of collaborating with esteemed clients such as:</p>
-        {% if clients %}
-            <ol class="intro__clients t__inline">
-                {% for client in clients %}
-                    <li class="intro__clients__item t__inline__item t__inline__item--1">
-                        {% include 'clients/' + client.title | slug + '.svg' %}
-                    </li>
-                {% endfor %}
-            </ol>
-        {% endif %}
+        <nav class="intro__nav">
+            <ul>
+                <li><a href="#works">Case studies</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Get in touch</a></li>
+            </ul>
+        </nav>
+        <p class="t__lead">Hello! I'm Roman {{ site.author }}, a seasoned designer with a journey spanning {% experience %}+ years. Originally from Ukraine, I've now set my creative compass to Dublin, Ireland. I advocate for accessibility, aesthetics and functionality, finding immense potential in simplicity.</p>
     </div>
 </header>

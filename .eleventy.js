@@ -146,7 +146,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, alt) => {
 
         let stats = await Image(src, {
-            widths: [500, 750, 1000],
+            widths: [640, 960, 1280],
             formats: ["jpeg", "webp", "avif"],
             sharpOptions: { quality: 90 },
             filenameFormat: function (id, src, width, format, options) {
