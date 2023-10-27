@@ -70,7 +70,7 @@
     
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=2.9">
+<link rel="stylesheet" href="/css/style.css?v=3.1">
     </head>
     <body>
         <div id="top"></div>
@@ -337,17 +337,17 @@
                                 
                             </header>
                             <picture class="t__card__image">
-    <source type="image/avif" srcset=" /static/work/siae-design-system-500w.avif 500w , /static/work/siae-design-system-750w.avif 750w , /static/work/siae-design-system-1000w.avif 1000w ," >
-    <source type="image/webp" srcset=" /static/work/siae-design-system-500w.webp 500w , /static/work/siae-design-system-750w.webp 750w , /static/work/siae-design-system-1000w.webp 1000w ," >
+    <source type="image/avif" srcset=" /static/work/siae-design-system-640w.avif 640w , /static/work/siae-design-system-960w.avif 960w , /static/work/siae-design-system-1280w.avif 1280w ," >
+    <source type="image/webp" srcset=" /static/work/siae-design-system-640w.webp 640w , /static/work/siae-design-system-960w.webp 960w , /static/work/siae-design-system-1280w.webp 1280w ," >
     <img
             loading="lazy"
             decoding="async"
             alt="Design System"
-            src="/static/work/siae-design-system-500w.jpeg"
+            src="/static/work/siae-design-system-640w.jpeg"
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
-            srcset=" /static/work/siae-design-system-500w.jpeg 500w , /static/work/siae-design-system-750w.jpeg 750w , /static/work/siae-design-system-1000w.jpeg 1000w ,"
-            width="500"
-            height="375">
+            srcset=" /static/work/siae-design-system-640w.jpeg 640w , /static/work/siae-design-system-960w.jpeg 960w , /static/work/siae-design-system-1280w.jpeg 1280w ,"
+            width="640"
+            height="480">
 </picture>
                         </article>
                     </li>
@@ -508,6 +508,22 @@
     if (queryString === '?pwd=376301') {
         localStorage.setItem(featuredWork, featuredValue);
     }
+
+    // Remove hash from URL
+    function removeLocationHash(){
+        var noHashURL = window.location.href.replace(/#.*$/, '');
+        window.history.replaceState('', document.title, noHashURL) 
+    }
+    window.addEventListener("popstate", function(event){
+        removeLocationHash();
+    });
+    window.addEventListener("hashchange", function(event){
+        event.preventDefault();
+        removeLocationHash();
+    });
+    window.addEventListener("load", function(){
+        removeLocationHash();
+    });
 </script>
 
 
@@ -517,5 +533,6 @@
         insights.trackPages();
     </script>
   
+
     </body>
 </html>

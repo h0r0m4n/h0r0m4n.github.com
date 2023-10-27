@@ -86,7 +86,7 @@
         }
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=2.9">
+<link rel="stylesheet" href="/css/style.css?v=3.1">
     </head>
     <body>
         <article>
@@ -199,6 +199,22 @@
     if (queryString === '?pwd=376301') {
         localStorage.setItem(featuredWork, featuredValue);
     }
+
+    // Remove hash from URL
+    function removeLocationHash(){
+        var noHashURL = window.location.href.replace(/#.*$/, '');
+        window.history.replaceState('', document.title, noHashURL) 
+    }
+    window.addEventListener("popstate", function(event){
+        removeLocationHash();
+    });
+    window.addEventListener("hashchange", function(event){
+        event.preventDefault();
+        removeLocationHash();
+    });
+    window.addEventListener("load", function(){
+        removeLocationHash();
+    });
 </script>
 
 
@@ -208,5 +224,6 @@
         insights.trackPages();
     </script>
   
+
     </body>
 </html>
