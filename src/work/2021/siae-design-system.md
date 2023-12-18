@@ -16,7 +16,7 @@ roles:
   - Interaction Design
   - Design System
 platform: Web
-date: 2020-03-24
+date: 2021-06-24
 finished: true
 thumbnail: src/static/work/siae-design-system.jpg
 ---
