@@ -103,7 +103,7 @@
         }
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=3.1">
+<link rel="stylesheet" href="/css/style.css?v=3.2">
     </head>
     <body>
         <div id="top"></div>
@@ -1582,7 +1582,7 @@
                 <li>Hosted using <a href="https://pages.github.com" rel="noopener noreferrer nofollow" target="_blank">GitHub Pages</a> and <a href="https://github.com/features/actions" rel="noopener noreferrer nofollow" target="_blank">GitHub Actions</a>.</li>
                 <li>This website doesn't use any cookies.</li>
                 <li><a href="https://splitbee.io" rel="noopener noreferrer nofollow" target="_blank">Slitbee</a> is used as analytics platform.</li>
-                <li>Current site version is 3.1.</li>
+                <li>Current site version is 3.2.</li>
             </ul>
         </div>
     </div>
@@ -1735,14 +1735,14 @@
         };
     }, false);
 
-    // If the local storage value is different redirect to the homepage.
-    
-
     // If the user access `?pwd=12345` url don't require password anymore
     var queryString = window.location.search;
     if (queryString === '?pwd=376301') {
         localStorage.setItem(featuredWork, featuredValue);
     }
+
+    // If the local storage value is different redirect to the homepage.
+    
 
     // Remove hash from URL
     function removeLocationHash(){

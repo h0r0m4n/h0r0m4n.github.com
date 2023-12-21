@@ -86,7 +86,7 @@
         }
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=3.1">
+<link rel="stylesheet" href="/css/style.css?v=3.2">
     </head>
     <body>
         <article>
@@ -191,14 +191,14 @@
         };
     }, false);
 
-    // If the local storage value is different redirect to the homepage.
-    
-
     // If the user access `?pwd=12345` url don't require password anymore
     var queryString = window.location.search;
     if (queryString === '?pwd=376301') {
         localStorage.setItem(featuredWork, featuredValue);
     }
+
+    // If the local storage value is different redirect to the homepage.
+    
 
     // Remove hash from URL
     function removeLocationHash(){
