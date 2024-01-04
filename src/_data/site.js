@@ -8,7 +8,7 @@ module.exports = {
     mail: 'me@horoman.com',
     starting: 2008,
     password: 376301,
-    version: '3.3',
+    version: '3.4',
     insights: 'HugAu_grV5lB5OQI',
     environment: process.env.ELEVENTY_ENV,
     url: process.env.ELEVENTY_ENV === 'development' ? 'http://localhost:8080' : 'https://horoman.com'
