@@ -9,16 +9,14 @@ css:
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#222222'
-role: Lead Interface Designer
+role: Lead Designer
 roles:
-  - Product Design
-  - Design System
   - User Experience
   - User Interface
-  - Interaction Design
 platform: Web
 date: 2018-11-28
 finished: true
+permalink: false
 thumbnail: src/static/work/ferrari-media-center.jpg
 ---
 

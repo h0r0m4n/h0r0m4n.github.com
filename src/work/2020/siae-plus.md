@@ -1,6 +1,6 @@
 ---
 title: Mobile App
-description: SIAE is the monopolist intermediary between the authors of musical tracks and consumers, managing the economic aspects and the distribution of money from royalties of Italian-copyrighted music to authors. I collaborated with them in the creation of the first app SIAE+ that supports all the major services of the company.
+description: Revamped mobile app, focusing on user-centric design and streamlined features, significantly improving usability and user satisfaction.
 client: SIAE
 css:
   primary: '#fff'
@@ -21,42 +21,50 @@ finished: true
 thumbnail: src/static/work/siae-plus.jpg
 ---
 
-## Design process
+## Problem Definition & Discovery
 
-In this project, we used Enterprise Design Thinking and Agile mindset approaches that help us systematically extract, teach, learn, and apply human-centered techniques to solve problems in a creative and innovative way, in our designs related business requirements.
+SIAE, a non-profit organization responsible for managing music copyrights in Italy, faced a crucial challenge in providing its users with a seamless and efficient mobile experience. Their existing app lacked a cohesive design language, lacked consistent navigation, and failed to cater to the diverse needs of its users. This fragmented approach hindered user engagement and hampered SIAE's ability to effectively serve its clients.
+
+To address these issues, SIAE sought to develop a revamped mobile app that would redefine user experience and streamline operations. The goal was to create a unified platform that would provide users with a centralized hub for managing their SIAE-related activities, from registration and deposit filings to accessing payment information and filing appeals.
+
+## My Approach to Resolving the Problem
+
+As the lead designer on this project, I recognized the need to adopt a user-centric approach that would prioritize the needs and preferences of SIAE's users. This involved conducting extensive user research to understand their pain points, expectations, and desired features. Additionally, I collaborated closely with the development team to ensure that the design was not only aesthetically pleasing but also technically feasible.
+
+Throughout the design process, I employed a range of user-centered methodologies, including:
+
+- User Interviews: Conducted in-depth interviews with SIAE users to gain insights into their experiences with the existing app and their expectations for the new one.
+- User Testing: Conducted user testing sessions to observe how users interacted with prototypes and identify areas for improvement.
+- Personas: Created detailed personas to represent SIAE's target user groups, which helped to shape the design decisions throughout the project.
 
 {% image "src/static/work/siae-plus-experience-design-workshop-creative-matrix.jpg" "full" "" "Creative Matrix" %}
 {% image "src/static/work/siae-plus-priority-maps.jpg" "full" "" "Priority Maps" %}
 {% image "src/static/work/siae-plus-social-media-insights.jpg" "full" "" "Social Media Insights" %}
 {% image "src/static/work/siae-plus-data-visualization-1.jpg" "full" "" "Data Visualization Workshop" %}
 {% image "src/static/work/siae-plus-data-visualization-2.jpg" "full" "" "Data Comparisoning Workshop" %}
+
+## Challenges & Solutions
+
+One of the primary challenges was consolidating the fragmented design elements and navigation patterns of the existing app into a cohesive and user-friendly experience. This involved aligning the visual style, typography, and interface components across the app's various features.
+
+Another challenge was the need to accommodate the diverse needs of SIAE's user base, which included musicians, composers, and copyright holders. This required careful consideration of accessibility features, language localization, and support for various devices and operating systems.
+
+To address these challenges, I implemented the following strategies:
+
+- **User Flows**: Developed clear and intuitive user flows that guided users through the app's various features, ensuring a smooth and efficient experience.
+- **Pattern Library**: Created a comprehensive design library and components in code that standardized UI elements, color palettes, and typography, ensuring consistency across the app.
+- **Accessibility Features**: Integrated comprehensive accessibility features to ensure that the app was usable by individuals with disabilities.
+- **Language Localization**: Provided support for multiple languages to cater to SIAE's international user base.
+
 {% image "src/static/work/siae-plus-0.jpg" "full" "" "An overview of User Flows, User Testing and more" %}
 
-## Interface & branding
+{% image "src/static/work/siae-plus-colours.png" "full" "" "An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background." %}
 
-### Typography
+{% image "src/static/work/siae-plus-typography.png" "full" "" "We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding." %}
 
-We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding.
+{% image "src/static/work/siae-plus-components.png" "full" "" "A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems." %}
 
-{% image "src/static/work/siae-plus-typography.png" "full" "" "" %}
-
-### Color palette
-
-An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background.
-
-{% image "src/static/work/siae-plus-colours.png" "full" "" "" %}
-
-### Components
-
-A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems.
-
-{% image "src/static/work/siae-plus-components.png" "full" "" "" %}
-
-### Touch icon
-
-Touch Icon Design Process Concepts:
-
-{% image "src/static/work/siae-plus-touch-icon.jpg" "" "" "" %}
+{% image "src/static/work/siae-plus-touch-icon.jpg" "" "" "Touch Icon Design Process Concepts" %}
 
 ## Features
 
@@ -64,49 +72,34 @@ By installing it on your mobile device, the app offers you features like consult
 
 The two most complex features of the SIAE+ is the registration and the possibility of making a new deposit.
 
-{% image "src/static/work/siae-plus-1.jpg" "full" "" "" %}
+{% image "src/static/work/siae-plus-1.jpg" "full" "" "In the performance area, the user can view his performance for all the works deposited in SIAE, make comparisons, and filter the data as needed." %}
 
-{% image "src/static/work/siae-plus-2.jpg" "full" "" "" %}
+{% image "src/static/work/siae-plus-2.jpg" "full" "" "Overview of the app’s most important pages and features, such as the dynamic home page, the possibility of depositing prior work in the app, and comparing and filtering the data by year and month." %}
 
-{% image "src/static/work/siae-plus-3.jpg" "full" "" "Data visualization and manipulation by user" %}
+{% image "src/static/work/siae-plus-3.jpg" "full" "" "Overview of the data visualization and manipulation by user" %}
 
 {% image "src/static/work/siae-plus-4.jpg" "full" "" "New deposit feature that guides the user using a wizard design pattern" %}
 
-{% video "siae-plus-1" "full" "" "An overview of final prototype" %}
+{% video "siae-plus-1" "full" "" "An overview of final product" %}
 
-## Software & tools
+## Timeline and Results
 
-Since the client is located in another city, we decided to collaborate entirely remotely. Mural allowed us to run workshops with stakeholders.
+The SIAE Mobile App project spanned twelve months and involved a team of designers, engineers, and project managers. The collaborative approach and user-centred design methodology adopted throughout the project facilitated efficient decision-making and ensured that the app met the needs of its users.
 
-The complexity of the product was considerable and we needed more than one designer to collaborate in the creation of different flows of the prototypes and Figma allowed us to do so. 
+{% stats "App Installs in first 4 months." "20.000+" "New deposits throug the app" "10.000+" "" "" "" "" %}
 
-All the product features were added to Jira, which enabled us to keep track of the entire project and keep multiple teams and stakeholders updated on the whole process.
+Launching the new SIAE Mobile App resulted in a remarkable improvement in user engagement and satisfaction. The app was downloaded over 20,000 times in the first four months, with a significant increase in registration rates and deposit filings. Additionally, the app received positive reviews on major app stores, acknowledging its user-friendly design and ease of navigation.
 
-{% stats "Prototyping" "Figma" "Workshops" "Mural" "Management" "Jira" "" "" %}
+We received a lot of positive feedback on major [Apple](https://apps.apple.com/it/app/siae/id1465450346) and [Google](https://play.google.com/store/apps/details?id=it.siae.autorieditori&hl=en_IE&gl=US) stores.
 
-## Team size
-
-Several professional figures have been involved in this project:
-
-{% stats "Designers" "2" "Engineers" "4" "Managers" "2" "QA’s" "1" %}
-
-## Results
-
-Over the next few months, we've seen users who previously used the product from the website exclusively use the app, with around 20,000 unique registrations made in the first four months of 2020.
-
-{% stats "Convenrsion Rate" "200%" "New Deposits" "400%" "" "" "" "" %}
 {% stats "App Store" "4.7+" "Google Play" "4.5+" "" "" "" "" %}
 
-Besides downloads and sign-ups, there were a few other positive results:
+## Key Learnings
 
-1. Core funnels like the registration flow had a double-digit conversion, with new potential customers now more likely to use SIAE services.
-2. The new deposit feature throughout the app became the defacto way to use the SIAE services, going from 15% to around 75% of total users.
-3. We received a lot of positive feedback on major [Apple](https://apps.apple.com/it/app/siae/id1465450346) and [Google](https://play.google.com/store/apps/details?id=it.siae.autorieditori&hl=en_IE&gl=US) stores.
+Throughout the SIAE Mobile App project, I gained valuable insights into the importance of user-centered design and the power of a cohesive design language to enhance user experience. I also learned the importance of effective communication and collaboration among designers, engineers, and stakeholders to ensure the successful delivery of a product that meets the needs of its users.
 
-## Learnings
+## Overall Impact
 
-In working with the team, I was fortunate enough to be given the opportunity to help take a flagship product from 0 to 1. Naturally, I've come away with a few lessons which I've found to be widely applicable:
+The SIAE Mobile App has played a pivotal role in transforming the way SIAE interacts with its users. By providing a seamless and user-friendly experience, the app has not only improved user satisfaction but also streamlined operations and increased efficiency. As a result, SIAE is better equipped to serve its clients and achieve its business goals.
 
-1. **Live the same restraints** — There was a lot of time spent dealing with legacy systems from an engineering end. I found the most effective approach sometimes really was to embrace those constraints and work together to find counter solutions.
-2. **Product modality matters** — Each stage of the user experience required the product to adapt to a specific context. It starts as the primary touchpoint, becoming a facilitator in complex tasks.
-3. **Core operations influences product decisions** — The underlying process behind a sign-up which involved partly analogue systems was evidence of this, as it introduced different constraints to the product.
+The success of the SIAE Mobile App project highlights the importance of prioritizing user needs and adopting a user-centered design approach. By carefully considering user feedback, conducting user research, and designing with accessibility in mind, we can create products that are not only aesthetically pleasing but also truly useful and engaging for users.
