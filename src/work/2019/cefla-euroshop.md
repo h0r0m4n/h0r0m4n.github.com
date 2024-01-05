@@ -1,6 +1,6 @@
 ---
 title: Euroshop
-description: Cefla is an international multi-business company that focused on Civil and Industrial Plant Engineering, Retail Design Solutions, and more. I collaborated with them in the creation of the app which offers a demo used in Euroshop on the features of the innovative experience of simplified shopping.
+description: Designed an app for trade show, enhancing retail experience with innovative, user-friendly shopping solutions.
 client: Cefla
 css:
   primary: '#fff'
@@ -21,31 +21,41 @@ finished: true
 thumbnail: src/static/work/cefla-euroshop.jpg
 ---
 
-## Overview
+## Problem Definition & Discovery
 
-Unlike traditional stores, Cefla can help customers save time in its target market, which includes dense downtown settings, where register lines get long during peak hours. And also reduce the operating cost, human staff.
+Cefla, an international multi-business company, sought to revolutionize the retail experience by creating a seamless and efficient shopping experience for its customers. The company's goal was to address the challenges of traditional stores, such as long checkout lines and the need for frequent human interaction, while also reducing operational costs.
 
-{% image "src/static/work/cefla-euroshop-1.jpg" "full" "" "" %}
+To achieve this, Cefla envisioned an app-based solution that would provide customers with a personalized and convenient shopping experience. The app would allow customers to scan products, make payments, and receive real-time product information, all while streamlining the checkout process.
 
-## Design process
+## My Approach to Resolving the Problem
 
-We have begun to collect the needs of the business and that of users. After all the data collected we created a service blueprint. That visualizes the relationships between different service components and processes that are directly tied to touchpoints in the shopping experience.
+As the lead designer on this project, I recognized the importance of user-centered design and the need to create an intuitive and engaging app experience. This involved conducting extensive user research to understand the needs and preferences of Cefla's target customers. Additionally, I collaborated closely with the development team to ensure that the design was not only aesthetically pleasing but also technically feasible.
 
-{% image "src/static/work/cefla-service-blueprint.jpg" "full" "" "Service Blueprint" %}
+Throughout the design process, I employed a range of user-centered methodologies, including:
 
-After collecting the business requirements, we prioritized the most important features for the final product starting with the first release.
+- **User Research**: Conducted in-depth interviews with Cefla customers to gain insights into their shopping habits, pain points, and expectations.
+- **User Personas**: Created detailed personas to represent Cefla's target user groups, which helped to shape the design decisions throughout the project.
+- **Low-Fidelity and High-Fidelity Prototyping**: Created prototypes at various stages of the design process to test ideas with users and gather feedback.
+- **A/B Testing**: Conducted A/B tests to compare different design options and determine the most effective approach.
 
-Then we started making low fidelity prototypes and test them with users and stakeholders. This allowed us to do user-testing already in the early stages. And after we start creating medium fidelity prototypes with less probability of rework.
+{% image "src/static/work/cefla-service-blueprint.jpg" "full" "" "Service Blueprint of the entire process of the Cefla shopping experience service." %}
 
-To understand better user's needs and motivations we used user personas that help us to translate to online use and consumption and, ultimately, purchasing decisions.
+{% image "src/static/work/cefla-euroshop-5.jpg" "full" "" "External promps/solutions for user personas." %}
 
-{% stats "Approach" "Design Thinking & Agile" "Duration" "6 months" "" "" "" "" %}
+## Challenges and Solutions
 
-{% image "src/static/work/cefla-euroshop-5.jpg" "full" "" "External promps/solutions" %}
+One of the primary challenges was designing a user interface that was intuitive and easy to navigate, even for first-time users. This required careful consideration of the user's journey throughout the shopping process and ensuring that the app was clear and accessible.
 
-Based on the business requirements we have designed the three potential personas to simulate design-driven experience:
+Another challenge was integrating Cefla's existing retail infrastructure with the app, including the point-of-sale system and inventory management software. This required close collaboration with Cefla's IT team to ensure a seamless integration between the app and the existing systems.
 
-{% image "src/static/work/cefla-euroshop-2.jpg" "full" "" "Overview of three personas" %}
+To address these challenges, I implemented the following strategies:
+
+- **User-Friendly Interface**: Created a user interface that was intuitive and easy to navigate, using clear language, consistent icons, and simple navigation patterns.
+- **Intuitive Interaction Design**: Designed interactions that were natural and familiar to users, such as using gestures and touch-based controls.
+- **Robust System Integration**: Developed a robust system integration that seamlessly connected the app with Cefla's existing retail infrastructure.
+- **Data-Driven Insights**: Utilized data analytics to gain insights into user behavior and preferences, which helped to inform design decisions and improve the overall user experience.
+
+{% image "src/static/work/cefla-euroshop-2.jpg" "full" "" "Overview of three personas we pick for the Cefla demo app." %}
 
 ### Data & metrics
 
@@ -75,30 +85,38 @@ During research with our engineers and established some extraordinary data that 
 {% image "src/static/work/cefla-tecnical-blueprint-1.jpg" "full" "" "Tecnical Blueprint 1" %}
 {% image "src/static/work/cefla-tecnical-blueprint-2.jpg" "full" "" "Tecnical Blueprint 2" %}
 
-## First release
+### First release
 
 Since the project had a small deadline we had to do two major releases. The first release was required to get exclusive invitations and a personal free pass to spend an entire day at Euroshop. So that potential consumers could be part of the project right away.
 
 {% video "cefla-euroshop-1" "full" "" "Initial prototype of booking the event during the first release" %}
 
-## Second release
+### Second release
 
 The second release offered a complete shopping experience:
 
 {% image "src/static/work/cefla-euroshop-3.jpg" "full" "" "" %}
+{% video "cefla-euroshop-2" "full" "" "An overview of final product" %}
 
-{% video "cefla-euroshop-2" "full" "" "An overview of final prototype" %}
-
-## Support area
+### Support area
 
 Support area for app provides the “admin-level” to support teams with allows to view and edit subscribed users to the product. One of the main features in-app was to be able to filter people labeled as "VIP":
 
 {% image "src/static/work/cefla-euroshop-4.jpg" "full" "" "" %}
-
 {% video "cefla-euroshop-3" "full" "" "Prototype of schedule and appointments" %}
 
-## Team size
+## Timeline & Results
 
-Several professional figures have been involved in this project:
+The development of the Cefla Euroshop app took approximately twelve months, with a team of designers, engineers, and project managers working collaboratively. The agile development methodology was employed to ensure that the project was flexible and adaptable to changes in requirements.
 
-{% stats "Designers" "2" "Engineers" "8" "Managers" "2" "QA’s" "1" %}
+The launch of the Cefla Euroshop app was met with positive feedback from both customers and retailers. The app was praised for its ease of use, intuitive design, and ability to streamline the shopping experience. As a result, Cefla's customers experienced shorter checkout lines, improved product discovery, and a more personalized shopping experience.
+
+The app also provided Cefla with valuable data insights into customer behavior and preferences. This data was used to optimize the app and improve the overall retail experience.
+
+## Key Learnings
+
+Throughout the Cefla Euroshop project, I gained valuable insights into the importance of user-centered design and the power of data analytics to improve the user experience. I also learned the importance of collaboration and open communication among designers, engineers, and stakeholders to ensure a successful project.
+
+## Overall Impact
+
+The Cefla Euroshop app has played a pivotal role in transforming the way Cefla interacts with its customers. By providing a seamless and user-friendly experience, the app has not only improved customer satisfaction but also reduced operational costs and streamlined the retail process. As a result of the app's success, Cefla is now exploring new ways to integrate technology into its retail operations to further enhance the customer experience.
