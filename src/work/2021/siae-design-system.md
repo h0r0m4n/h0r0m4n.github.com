@@ -1,6 +1,6 @@
 ---
 title: Design System
-description: I led the end-to-end design process for creating a Design System for the web, which covered a complete redesign of over 10+ Saas products.
+description: Developed a Design System, unifying 10+ SaaS interfaces into a cohesive, efficient user experience, enhancing usability and consistency.
 client: SIAE
 css:
   primary: '#fff'
