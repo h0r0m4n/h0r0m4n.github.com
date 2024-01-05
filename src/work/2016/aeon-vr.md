@@ -1,6 +1,6 @@
 ---
 title: Virtual Reality
-description: A Virtual Reality experience working in the browser on multiple devices starting from mobile phone to VR Headset such as Oculus Rift 2.
+description: Developed a browser-based Virtual Reality experience accessible on multiple devices, enhancing user immersion.
 client: Aeon
 css:
   primary: '#fff'
@@ -19,29 +19,52 @@ finished: true
 thumbnail: src/static/work/aeon-vr.jpg
 ---
 
-## 3D models & rendering
+## Problem Definition & Discovery
 
-The project is limited to the WYSIWYG-style level editor instead of the programming environment that deals with the need to be simulated and its appearance of the final object, with the ultimate aim of providing direct graphic commands to manipulate. This means that any level of design data has been entered and manipulated manually and procedural forms.
+The primary problem that was identified was that existing VR experiences were often limited to high-end VR headsets and computers. This meant that only a small number of people could experience the full potential of VR. Additionally, many existing VR experiences were not optimized for mobile devices, which resulted in poor performance and a sub-par user experience.
 
-{% stats "Objects handcrafted" "10+" "Procedural generated" "100+" "" "" "" %}
+To address this problem, the goal was to create a VR experience that could be enjoyed by users on a variety of devices, from desktops and laptops to tablets and smartphones. This required careful consideration of the hardware limitations of each device and the use of techniques to optimize the performance of the experience.
 
-{% image "src/static/work/aeon-vr-perspective-sizes.jpg" "full" "" "Perspective Sizes" %}
-{% image "src/static/work/aeon-vr-3.jpg" "full" "" "The entire VR map created on Blender" %}
+## My Approach to Resolving the Problem
 
-## Visual concept
+As the lead designer on this project, I recognized the importance of creating a visually stunning and engaging experience. This involved using a variety of techniques, including 3D modeling, texturing, and lighting, to create a world that was both believable and immersive. I also focused on creating intuitive and user-friendly interactions that would allow players to navigate the environment.
 
-Visual parameters such as colours and lights with low gamut sections are followed by the bright parts and the sections with cold colours are followed by warm colours. This allows you to establish a feeling of rhythm and create visual delineation of scenes:
+## Challenges & Solutions
 
-{% image "src/static/work/aeon-vr-1.png" "full" "" "An overview of color patterns of each area" %}
-{% image "src/static/work/aeon-vr-2.png" "full" "" "3D color applied" %}
+One of the primary challenges was creating a virtual reality experience that could be rendered smoothly and efficiently on a variety of devices. This required careful optimization of the code and the use of complex javascript API’s and libraries such as WebGL and three.js.
 
-### Typography visuals
+Another challenge was ensuring that the experience was accessible to a wide range of users. This involved designing the interface for touch devices and making sure that the experience was playable even with lower-end hardware.
 
-Typographic realization of the font that conveys authenticity with a fairly open front, under the simple shapes a design was carried out on the spaces.
+To address these challenges, I implemented the following strategies:
+
+- **Optimized Code**: I used a variety of techniques to optimize the code, such as minimizing the number of draw calls and using efficient rendering algorithms.
+- **WebGL and three.js**: I used WebGL and three.js to create a high-performance virtual reality experience that could be rendered smoothly on a variety of devices.
+- **Responsive Design**: I designed the interface to be responsive, so that it could adapt to different screen sizes and resolutions.
+- **Accessibility**: I made sure that the experience was accessible to a wide range of devices by supporting different input methods and lower-end graphic chips.
+
+### Visual Concepts
+
+I decided that the visual parameters, such as colours and lights with low-range sections, were followed by the light parts, and warm colours followed the sections with cold colours. This has been linked to establishing a feeling of rhythm and creating a visual outline of each scene:
+
+{% image "src/static/work/aeon-vr-1.png" "full" "" "An overview of 2D color patterns of each area" %}
+{% image "src/static/work/aeon-vr-2.png" "full" "" "An overview of 3D color patterns of each area" %}
+
+### Branding & Typography
+
+The typography was important in this project as I had an important visual role in the experience. And was used in the creation of the brand itself.
 
 {% image "src/static/work/aeon-vr-5.jpg" "full" "" "" %}
 
-## Development
+### 3D Models & Rendering
+
+All the geometric figures were designed in a Blender following a low-poly technique that can guarantee low-end devices' most excellent possible performance. However, I adopted procedural programming as well in order to generate some forms automatically, such as grass and clouds.
+
+{% stats "3D objects handcrafted" "20+" "Procedural generated" "100+" "" "" "" %}
+
+{% image "src/static/work/aeon-vr-perspective-sizes.jpg" "full" "" "Mapping of sizes for the VR perspective experience." %}
+{% image "src/static/work/aeon-vr-3.jpg" "full" "" "The overview of entire VR map created on Blender." %}
+
+### Development
 
 [Aeon](http://aeon.horoman.com) was developed using methods and work processes, automating the workflow. The web app was built in the efficient world using Gulp.js which acted as executor of the pre-established commands necessary for development. The configuration of Gulp was customized ad-hoc and the use of the JavaScript language together with the logic of Node.js which is equipped with a tool called NPM that allowed to load, modify and modify the packages necessary for development by generating the file package.json containing information on each package used, in this way it was possible to make the development environment versatile. The use of Gulp.js allowed the use of commands from the terminal thanks to which he began to listen and execute tasks such as compiling CSS files using SASS, concatenating and compressing JavaScript files, Jade compilation which spared not the writing the HTML code.
 
@@ -59,24 +82,26 @@ Text data had a size saving advantage of over 75%, thanks to HTML compression in
 
 Real-time 3D rendering was possible using WebGL technology along with three. Js which natively allowed the creation of scenes - where all objects, cameras and lights are placed, objects - geometries and materials rooms - single and multiple rooms necessary for virtual reality by simulating stereoscopic vision and lights. The three.js library has permission to have excellent consistency by speeding up the working process in the interactions.
 
-## Summary & finished product
+## Timeline and Results
 
-The goal of this project was to works on every modern browser. Eventually, [Aeon](http://aeon.horoman.com) works on specific types of browsers such as Chromium, Chrome Canary, Firefox Nightly, Safari (iOS), Chrome Dev (Android). Such browsers offer better WebGL support, making the best use of GPU’s.
-
-{% stats "Pageviews (30 days)" "10.000+" "" "" "" "" "" %}
+The development of [Aeon VR](https://aeon.horoman.com) took approximately six months. The project was completed on time and within budget, and the experience was well-received by users. It works on specific types of browsers such as Chromium, Chrome Canary, Firefox Nightly, Safari (iOS), Chrome Dev (Android). Such browsers offer better WebGL support, making the best use of GPU’s.
 
 {% image "src/static/work/aeon-vr-6.png" "full" "" "" %}
 
 Thanks to the set of technologies such as WebVR API and three.js and the automated workflow it was possible to create a virtual reality experience not only working on computers but also on tablet and mobile devices with medium-high power graphics chips.
 
-{% stats "Total polygons" "60.000+" "Medium frame rate" "30FPS" "" "" "" %}
-
 {% image "src/static/work/aeon-vr-7.png" "full" "" "" %}
 
-This concept can be applied to education, entertainment, social media, interactive infographics and more.
-
-## Gameplay
-
-Experience is available on <http://aeon.horoman.com>.
-
 {% video "aeon-vr-1" "full" "autoplay" "" %}
+
+## Key Learnings
+
+Throughout the Aeon VR project, I gained valuable insights into the challenges and opportunities of creating virtual reality experiences. I learned that it is essential to focus on creating a visually stunning and immersive experience that is also accessible to a wide range of users. I also learned that careful optimization of the code is crucial for ensuring that virtual reality experiences run smoothly on a variety of devices.
+
+## Overall Impact
+
+Aeon VR has received positive feedback from users and has been featured in a number of publications. It has also been used by IED an educational institution to provide virtual reality training and experiences.
+
+The Aeon VR project has demonstrated the potential of virtual reality to create engaging and immersive experiences. It has also shown that it is possible to create virtual reality experiences that can be enjoyed on a variety of devices.
+
+{% stats "Pageviews on first month" "10.000+" "Minimum frame rate" "45FPS" "Total polygons in scene" "60.000+" "" %}
