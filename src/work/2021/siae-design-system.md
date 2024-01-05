@@ -21,36 +21,25 @@ finished: true
 thumbnail: src/static/work/siae-design-system.jpg
 ---
 
-## Problem statement
+## Problem Statement
 
-SIAE's growth was more rapid than they had expected. Today SIAE offers more than ten different services. As time passed, different product experiences began to sum up to an inconsistent whole with fragmentation at critical touchpoints, leftover experiments and mounting design debt. Other companies corrected the design several times, and the design continued to be poorly understood by the customers.
+SIAE, a leading Italian non-profit organisation, had experienced rapid growth, expanding its service offerings to over ten distinct SaaS products. As the company scaled, it faced a growing challenge: a need for more consistency across its digital experiences. Each service had its unique look and feel, leading to confusion and frustration for users. This fragmentation also hindered the efficiency of the design and development teams, who needed help to maintain and scale the growing product portfolio.
 
-## Design process
+## Discovery & Initial Assessment
 
-Working with a research team, we quantified the impact of usability issues on the SIAE products. We prioritised high-impact problems that would interfere with users' goals to use SIAE's services.
+To address this issue, I conducted a comprehensive user research study to understand the impact of the inconsistent design on user experience.
 
-{% stats "Services" "10+" "Success rate" "-66%" "" "" %}
+{% image "src/static/work/siae-design-system-workshop.jpg" "full" "" "Some workshops and meetings that brought together representatives from different disciplines." %}
 
-To understand how the ecosystem of current products works, I facilitated several workshops with key stakeholders that allowed my team to learn more about each service.
+The findings revealed that the fragmented interfaces made it difficult for users to navigate between services and understand the brand identity. This inconsistency also created challenges for the development team, leading to increased time spent on repetitive tasks and a higher risk of errors.
 
-{% image "src/static/work/siae-design-system-workshop.jpg" "full" "" "I hosted some workshops and meetings that brought together representatives from different disciplines." %}
+## Designing a Solution
 
-After the heuristic evaluation and the user test sessions, we found that each service offered a different interface and patterns, and the design patterns confused users and led to a poor user experience.
+Based on the research findings, I proposed the creation of a Design System, a centralised repository of reusable components, patterns, and guidelines that would ensure consistency across all SIAE products. This approach would improve the user experience and streamline the design and development processes.
 
-{% stats "Pain points" "11" "User types" "5" "" "" %}
-
-### Project goals
-
-So my team and I took the initiative to propose to create a standardized, intuitive interface that would support the business and user requirements of each SIAE service. With a close collaboration with business and other leadership, we end up with two main goals:
-
-1. **Create consistency across all SIAE services** – Provide a single source of components, patterns, and styles and unify disjointed experiences so that they are visually cohesive and appear part of the same ecosystem.
-2. **Create a unified language within and between cross-functional teams** – A unified language reduces wasted design or development time around miscommunications.
-
-### Design library
+### Design Library
 
 I needed to reframe the problem into something our design and engineering understand more: collecting all the existing components into a spreadsheet that eventually handed over 200 unique components from all the SIAE services.
-
-{% stats "Button variants" "25+" "Input variants" "10+" "" "" %}
 
 Each component has been categorized, segmented, and labelled for each template and service.
 
@@ -60,8 +49,8 @@ The most important part of the design was to create a consistent visual language
 
 Based on the existing components and collaboration with the SIAEs brand, I led the redesign of each component. A design library made of reusable components is what I, with my team, built. This helped us maintain and update UI changes as quickly as possible. And it become a great communication tool for the engineering team since each component included its properties and all necessary states such as hover, focus and more.
 
-{% stats "Previous Typography System" "33 styles" "New Typography System" "8 styles" "" "" "" "" %}
-{% stats "Previous Colour System" "15 colours" "New Colour System" "6 colours" "" "" "" "" %}
+{% stats "Previous Typography System" "33 styles" "New Typography System" "14 styles" "" "" "" "" %}
+{% stats "Previous Colour System" "21 colours" "New Colour System" "14 colours" "" "" "" "" %}
 
 {% image "src/static/work/siae-sass-figma-library.jpg" "full" "" "Overview of the new components designed in Figma utilising all the features such as properties, auto layout and much more." %}
 
@@ -71,7 +60,7 @@ Thanks to the Design Library, it was possible to significantly increase the rede
 
 {% stats "Components" "200+" "Prototypes" "25+" "Less time spent on prototypes" "-80%" "" "" %}
 
-We were able to create interactive prototypes that were tested with real users. These prototypes were often used as part of an agile sprint and allowed us to iterate on each service rapidly.
+I was able to create interactive prototypes that were tested with real users. These prototypes were often used as part of an agile sprint and allowed us to iterate on each service rapidly.
 
 {% image "src/static/work/siae-design-system-prototypes.jpg" "full" "" "An overview of the complexity of the prototype." %}
 
@@ -81,13 +70,17 @@ This provided several benefits:
 - Less time was spent on the prototypes thanks to the Atomic Design methodology.
 - Using multiple Figma libraries allowed us to make changes on the fly.
 
-{% image "src/static/work/siae-design-system-1.jpg" "full" "" "" %}
-{% image "src/static/work/siae-design-system-2.jpg" "full" "" "" %}
-{% image "src/static/work/siae-design-system-3.jpg" "full" "" "" %}
+{% image "src/static/work/siae-design-system-1.jpg" "full" "" "Page containing the advance table component design and build specifically for SIAE's customer needs." %}
+{% image "src/static/work/siae-design-system-2.jpg" "full" "" "Homepage showcasing all the available services, support, and company news." %}
+{% image "src/static/work/siae-design-system-3.jpg" "full" "" "The page containing the stepper component with a complex form following design system guidelines." %}
 
-## Design system
+## Challenges & Solutions
 
-Eventually, the Design Library became more robust, and we decided to opt for the design system. The design system consists of a collection of modular, reusable components out of Figma. This was a huge opportunity to start documenting each component for the rapid development implementation and reduce the need for custom code.
+The implementation of the Design System presented several challenges. First, gathering and organising the vast amount of existing components and patterns across the ten different services was essential. This required careful categorisation, standardisation, and documentation of each element.
+
+Second, we had to establish a consistent visual language across all SIAE products. This involved defining a new colour palette, typography system, and iconography while ensuring these elements adhered to SIAE's brand guidelines.
+
+Third, we needed a user-friendly documentation website to make the Design System accessible to designers and developers. This website would explain each component, its usage, and its properties.
 
 ### Documentation website
 
@@ -127,23 +120,28 @@ Unlike the templates that can be reused, there are specific reserved pages such 
 {% video "siae-design-system-5" "full" "" "" %}
 {% video "siae-design-system-6" "full" "" "Overview of specific pages" %}
 
-## Results
+## Implementation & Timeline
 
-The design system was a huge step forward for SIAE and our team. It allowed our design team and engineering to create new template pages and quickly prototype without needing custom code. Furthermore, it provided consistency between each service—something that didn’t happen before.
+The development of the SIAE Design System took approximately twelve months, involving collaboration between the design, development, and marketing teams. I conducted regular workshops and meetings to ensure all stakeholders were aligned on the system's goals and implementation.
 
-It also provided our engineering team with one source of truth for all components & styles, allowing the code to be more efficient and produce more consistent, accessible components with fewer bugs.
+## Results & Impact
 
-{% stats "Sign-Up’s" "30%" "New Deposits" "70%" "" "" "" "" %}
+Implementing the SIAE Design System has had a profound positive impact on the organisation. It has achieved the following key objectives:
+
+1. **Enhanced User Experience**: The consistent design across all products has led to a more intuitive and consistent user experience, improving the overall brand perception and user satisfaction.
+2. **Increased Efficiency**: The Design System has streamlined the design and development processes, reducing the time spent on repetitive tasks and increasing the speed of product development. This has also led to improved code quality and reduced development errors.
+3. **Reduced Costs**: Standardizing components and patterns has reduced the need for custom development, leading to cost savings. The improved efficiency has also freed up resources to focus on more strategic initiatives.
+4. **Enhanced Brand Identity**: The consistent visual language has reinforced SIAE's brand identity across all products, strengthening its brand recognition and reputation.
 
 Besides the adoption of design systen, there were a few other significant results:
 
-1. Registration flow had a 30% better conversion, with new potential customers.
-2. The new deposit feature on the web goes from 55% to around 95% of total users.
+{% stats "Registration flow had a better conversion, with new customers increasing up to" "30%" "Completions of new depots using design system guides and components increased by up to" "73%" "" "" %}
 
-## Learnings
+## Learnings & Recommendations
 
-There's some valuable lessons I picked up along the way:
+Throughout the project, I learned several valuable lessons that I would recommend to other teams embarking on a similar journey:
 
-1. **Collaboration is the first step towards adoption** — Pairing with engineers and designers through component discussions, reviews, small workshops or even 'build-alongs' (where an engineer literally sits with a designer and quickly prototypes a complex component to get a sense of some of its properties and states ) can't be understated. It isn't just a way to plant a sense of ownership, it makes adoption flow so much better down the line.
-2. **Be flexible, not fixed in approach** – Taking up the role of the enforcer is necessary sometimes, but over-policing might drive people away. Instead, the system should be built to embrace the nuances of a company's culture, acknowledging that there'll be some tradeoffs along the way.
-3. **Focus on people, not patterns** — Politicking, sponsorship, promotion and a host of other interpersonal competencies were far more critical in closing the engineering and design gap and helping people build better products by default.
+1. **Prioritize Collaboration**: Collaboration between designers, developers, and marketing teams is crucial for successfully implementing a Design System. This ensures that all stakeholders are aligned on the goals and objectives of the system.
+2. **Embrace Flexibility**: A rigid approach to enforcing the Design System can lead to resistance and hinder adoption. It's essential to be flexible and allow for some customisation to accommodate specific product needs and requirements.
+3. **Document Thoroughly**: A well-documented Design System is essential for its adoption and effective use. Clear and comprehensive documentation should be readily accessible to both designers and developers.
+4. **Continuously Refine**: The Design System should be an evolving entity that adapts to the changing needs of the organisation and the evolving user landscape. Regular reviews and updates are necessary to maintain its relevance and effectiveness.
