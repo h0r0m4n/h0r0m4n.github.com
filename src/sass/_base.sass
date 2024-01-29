@@ -4,6 +4,7 @@ html, body
 html
     block-size: 100vh
     scroll-behavior: smooth
+    scroll-padding-top: var(--size-l)
     -webkit-text-size-adjust: 100%
     box-sizing: border-box
     -webkit-font-smoothing: antialiased
@@ -22,6 +23,8 @@ html
     &::-webkit-scrollbar-track
         @media #{$media-query-medium}
             background: var(--color-neutral-4)
+    @media #{$media-query-medium}
+        scroll-padding-top: var(--size-xl)
 
 body
     margin: 0
