@@ -61,11 +61,11 @@ To address these challenges, I implemented the following strategies:
 
 {% image "src/static/work/siae-plus-0.jpg" "full" "" "An overview of User Flows, User Testing and more" %}
 
-{% image "src/static/work/siae-plus-colours.png" "full" "" "An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background." %}
+{% image "src/static/work/siae-plus-colours.jpg" "full" "" "An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background." %}
 
-{% image "src/static/work/siae-plus-typography.png" "full" "" "We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding." %}
+{% image "src/static/work/siae-plus-typography.jpg" "full" "" "We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding." %}
 
-{% image "src/static/work/siae-plus-components.png" "full" "" "A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems." %}
+{% image "src/static/work/siae-plus-components.jpg" "full" "" "A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems." %}
 
 {% image "src/static/work/siae-plus-touch-icon.jpg" "" "" "Touch Icon Design Process Concepts" %}
 
