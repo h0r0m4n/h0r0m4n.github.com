@@ -85,7 +85,7 @@ module.exports = function (eleventyConfig) {
         `;
     });
 
-    // Post image
+    // Work image
     // Usage: {% image "src/static/work/file-name.jpg" "full" "My alt…" "My caption…" %}
     eleventyConfig.addShortcode('image', async (src, full, alt, caption) => {
 
@@ -141,7 +141,7 @@ module.exports = function (eleventyConfig) {
         `;
     });
 
-    // Image thumbnail
+    // Work thumbnail
     // Usage: {% thumbnail "static/work/file-name.jpg" "My alt…" %}
     eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, alt) => {
 
