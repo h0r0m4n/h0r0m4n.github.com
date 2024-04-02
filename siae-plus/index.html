@@ -70,7 +70,7 @@
     
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=3.6">
+<link rel="stylesheet" href="/css/style.css?v=3.7">
 
     </head>
     <body>
@@ -270,7 +270,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-colours-960w.jpeg 960w , /static/work/siae-plus-colours-1280w.jpeg 1280w , /static/work/siae-plus-colours-1920w.jpeg 1920w , /static/work/siae-plus-colours-2560w.jpeg 2560w ,"
             width="960"
-            height="423">
+            height="411">
     </picture>
     <figcaption class="t__container">An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background.</figcaption>
 </figure>
@@ -286,7 +286,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-typography-960w.jpeg 960w , /static/work/siae-plus-typography-1280w.jpeg 1280w , /static/work/siae-plus-typography-1920w.jpeg 1920w , /static/work/siae-plus-typography-2560w.jpeg 2560w ,"
             width="960"
-            height="578">
+            height="612">
     </picture>
     <figcaption class="t__container">We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding.</figcaption>
 </figure>
@@ -302,7 +302,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-components-960w.jpeg 960w , /static/work/siae-plus-components-1280w.jpeg 1280w , /static/work/siae-plus-components-1920w.jpeg 1920w , /static/work/siae-plus-components-2560w.jpeg 2560w ,"
             width="960"
-            height="787">
+            height="797">
     </picture>
     <figcaption class="t__container">A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems.</figcaption>
 </figure>
@@ -337,7 +337,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-1-960w.jpeg 960w , /static/work/siae-plus-1-1280w.jpeg 1280w , /static/work/siae-plus-1-1920w.jpeg 1920w , /static/work/siae-plus-1-2560w.jpeg 2560w ,"
             width="960"
-            height="540">
+            height="435">
     </picture>
     <figcaption class="t__container">In the performance area, the user can view his performance for all the works deposited in SIAE, make comparisons, and filter the data as needed.</figcaption>
 </figure>
@@ -353,7 +353,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-2-960w.jpeg 960w , /static/work/siae-plus-2-1280w.jpeg 1280w , /static/work/siae-plus-2-1920w.jpeg 1920w , /static/work/siae-plus-2-2560w.jpeg 2560w ,"
             width="960"
-            height="540">
+            height="435">
     </picture>
     <figcaption class="t__container">Overview of the app’s most important pages and features, such as the dynamic home page, the possibility of depositing prior work in the app, and comparing and filtering the data by year and month.</figcaption>
 </figure>
@@ -369,7 +369,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-3-960w.jpeg 960w , /static/work/siae-plus-3-1280w.jpeg 1280w , /static/work/siae-plus-3-1920w.jpeg 1920w , /static/work/siae-plus-3-2560w.jpeg 2560w ,"
             width="960"
-            height="540">
+            height="435">
     </picture>
     <figcaption class="t__container">Overview of the data visualization and manipulation by user</figcaption>
 </figure>
@@ -385,7 +385,7 @@
             sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
             srcset=" /static/work/siae-plus-4-960w.jpeg 960w , /static/work/siae-plus-4-1280w.jpeg 1280w , /static/work/siae-plus-4-1920w.jpeg 1920w , /static/work/siae-plus-4-2560w.jpeg 2560w ,"
             width="960"
-            height="540">
+            height="435">
     </picture>
     <figcaption class="t__container">New deposit feature that guides the user using a wizard design pattern</figcaption>
 </figure>
@@ -532,6 +532,15 @@
             for(let registration of registrations) {
                 registration.unregister();
             }
+        });
+    }
+
+    // Create a function for a link containing id="back" and when clicked, go back to the previous page using browser history
+    var back = document.getElementById('back');
+    if (back) {
+        back.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.history.back();
         });
     }
 
