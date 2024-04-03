@@ -8,15 +8,6 @@
         });
     }
 
-    // Create a function for a link containing id="back" and when clicked, go back to the previous page using browser history
-    var back = document.getElementById('back');
-    if (back) {
-        back.addEventListener('click', function(event) {
-            event.preventDefault();
-            window.history.back();
-        });
-    }
-
     var featuredLink = document.querySelectorAll('.t__card__link');
     var featuredWork = 'FeaturedWork';
     var featuredModal = document.getElementById("modal");
