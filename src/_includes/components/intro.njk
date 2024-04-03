@@ -1,24 +1,30 @@
 <header id="intro" class="t__section intro">
     <div class="t__container">
-        <figure class="intro__avatar">
-            {% include 'components/avatar.njk' %}
-            <div class="intro__avatar__ascii">
-                {% include 'assets/ascii.svg' %}
-            </div>
-        </figure>
+        {% if layout == 'layouts/base' %}
+            <figure class="intro__avatar">
+                {% include 'components/avatar.njk' %}
+                <div class="intro__avatar__ascii">
+                    {% include 'assets/ascii.svg' %}
+                </div>
+            </figure>
+        {% endif %}
         <h1 class="intro__logo">
-            <span class="t__vh">{{ site.author }}</span>
-            {% include 'assets/logo.svg' %}
+            <a href="/">
+                <span class="t__vh">{{ site.author }}</span>
+                {% include 'assets/logo.svg' %}
+            </a>
         </h1>
         <nav class="intro__nav">
             <ul>
-                <li><a href="#works">Case studies</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#contact">Get in touch</a></li>
+                <li><a href="/#works">Case studies</a></li>
+                <li><a href="/#clients">Clients</a></li>
+                <li><a href="/#testimonials">Testimonials</a></li>
+                <li><a href="/#about">About me</a></li>
+                <li><a href="/#contact">Get in touch</a></li>
             </ul>
         </nav>
-        <p class="t__lead">Hello! I'm {{ site.author }}, a seasoned product designer with a journey spanning {% experience %}+ years. I was born in Ukraine, raised in Lviv, and live in Dublin.</p>
+        {% if layout == 'layouts/base' %}
+            <p class="t__lead">Hello! I'm {{ site.author }}, a seasoned <span class="role">product</span> designer with a journey spanning {% experience %}+ years. I was born in Ukraine, raised in Lviv, and live in Dublin.</p>
+        {% endif %}
     </div>
 </header>
