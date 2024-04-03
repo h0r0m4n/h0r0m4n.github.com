@@ -70,7 +70,7 @@
     
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=3.7">
+<link rel="stylesheet" href="/css/style.css?v=3.7.1">
 
     </head>
     <body>
@@ -532,15 +532,6 @@
             for(let registration of registrations) {
                 registration.unregister();
             }
-        });
-    }
-
-    // Create a function for a link containing id="back" and when clicked, go back to the previous page using browser history
-    var back = document.getElementById('back');
-    if (back) {
-        back.addEventListener('click', function(event) {
-            event.preventDefault();
-            window.history.back();
         });
     }
 

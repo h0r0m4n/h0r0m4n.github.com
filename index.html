@@ -103,7 +103,7 @@
         }
     
 </style>
-<link rel="stylesheet" href="/css/style.css?v=3.7">
+<link rel="stylesheet" href="/css/style.css?v=3.7.1">
 
     </head>
     <body>
@@ -1605,7 +1605,7 @@
                 <li>Hosted using <a href="https://pages.github.com" rel="noopener noreferrer nofollow" target="_blank">GitHub Pages</a> and <a href="https://github.com/features/actions" rel="noopener noreferrer nofollow" target="_blank">GitHub Actions</a>.</li>
                 <li>This website doesn't use any cookies.</li>
                 <li><a href="https://splitbee.io" rel="noopener noreferrer nofollow" target="_blank">Slitbee</a> is used as analytics platform.</li>
-                <li>Current site version is 3.7.</li>
+                <li>Current site version is 3.7.1.</li>
             </ul>
         </div>
     </div>
@@ -1689,15 +1689,6 @@
             for(let registration of registrations) {
                 registration.unregister();
             }
-        });
-    }
-
-    // Create a function for a link containing id="back" and when clicked, go back to the previous page using browser history
-    var back = document.getElementById('back');
-    if (back) {
-        back.addEventListener('click', function(event) {
-            event.preventDefault();
-            window.history.back();
         });
     }
 
