@@ -2,15 +2,7 @@
 layout: layouts/base
 permalink: "/{{ page.fileSlug }}/index.html"
 ---
-<header id="work-header">
-    <div class="t__container">
-        <a id="back" class="t__hover t__hover--1" href="/" rel="home" title="Back to homepage">
-            <span class="t__vh">Back</span>
-            {% include 'assets/close.svg' %}
-        </a>
-    </div>
-</header>
-
+{% include 'components/intro.njk' %}
 <article>
     <header id="work-heading" class="t__section">
         <div class="t__container">

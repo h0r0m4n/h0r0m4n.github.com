@@ -1,7 +1,5 @@
 .intro
     margin-top: var(--size-xl)
-    @media #{$media-query-large}
-        margin-top: var(--size-xxl)
 
     &__avatar
         display: inline-block
@@ -67,6 +65,10 @@
                 column-gap: var(--size-m)
                 flex-direction: row
                 flex-wrap: wrap
+            a
+                &:hover,
+                &:focus
+                    color: var(--color-tertiary)
 
     &__emoji
         display: inline-block
