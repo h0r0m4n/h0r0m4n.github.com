@@ -1,5 +1,5 @@
 ---
-title: Mobile App
+title: iOS & Android App’s
 description: Revamped mobile app, focusing on user-centric design and streamlined features, significantly improving usability and user satisfaction.
 client: SIAE
 css:
