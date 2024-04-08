@@ -6,6 +6,7 @@ module.exports = {
     location: 'Dublin, Ireland',
     nickname: 'h0r0m4n',
     mail: 'me@horoman.com',
+    cv: 'https://www.icloud.com/iclouddrive/076rWiNRlp__62vz4hdY4yxbw#_cv_roman-horokhovatskyy-v28',
     starting: 2017,
     password: 376301,
     version: '3.9',
