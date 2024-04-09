@@ -9,7 +9,7 @@ module.exports = {
     cv: 'https://www.icloud.com/iclouddrive/076rWiNRlp__62vz4hdY4yxbw#_cv_roman-horokhovatskyy-v28',
     starting: 2017,
     password: 376301,
-    version: '4.1',
+    version: '4.2',
     environment: process.env.ELEVENTY_ENV,
     url: process.env.ELEVENTY_ENV === 'development' ? 'http://localhost:8080' : 'https://horoman.com'
 };
