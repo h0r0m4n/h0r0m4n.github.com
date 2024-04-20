@@ -6,7 +6,9 @@
             <ol class="t__inline">
                 {% for client in clients %}
                     <li class="t__inline__item t__inline__item--2">
-                        {% include 'clients/' + client.title | slug + '.svg' %}
+                        <a class="t__hover t__hover--2" href="{{ client.url }}" rel="me noopener noreferrer nofollow" target="_blank" title="{{ client.title }}">
+                            {% include 'clients/' + client.title | slug + '.svg' %}
+                        </a>
                     </li>
                 {% endfor %}
             </ol>
