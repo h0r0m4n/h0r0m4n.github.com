@@ -8,7 +8,9 @@
                         <blockquote class="testimonials__blockquote">
                             <p class="testimonials__comment">{{ testimonial.comment }}</p>
                             <div class="testimonials__author">
-                                {% testimonial 'src/static/testimonials/' + testimonial.name | slug + '.jpg', testimonial.name %}
+                                <a class="t__hover t__hover--2" href="{{ testimonial.url }}" rel="me noopener noreferrer nofollow" target="_blank" title="{{ testimonial.name }}">
+                                    {% testimonial 'src/static/testimonials/' + testimonial.name | slug + '.jpg', testimonial.name %}
+                                </a>
                                 <p class="testimonials__text"><span class="testimonials__role">{{ testimonial.role }}</span><br><span class="testimonials__name">{{ testimonial.name }}</span> – {{ testimonial.company }}</p>
                             </div>
                         </blockquote>
