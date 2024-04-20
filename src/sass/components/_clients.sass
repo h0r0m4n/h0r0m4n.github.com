@@ -8,6 +8,13 @@
             margin: calc(var(--size-s) * -1)
     li
         line-height: 0
-        svg
-            fill: var(--color-neutral-1)
-            height: 4rem
+        a
+            display: flex
+
+            svg
+                fill: var(--color-neutral-1)
+                height: 4rem
+
+            &:hover, &:focus
+                svg
+                    fill: var(--color-secondary)
