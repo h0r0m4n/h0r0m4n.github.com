@@ -73,10 +73,10 @@ module.exports = function (eleventyConfig) {
     });
 
     // Post video
-    // Usage: {% video "my-video" "full" "My caption…" %}
-    eleventyConfig.addShortcode('video', function(src, full, autoplay, caption) {
+    // Usage: {% video "my-video" "My caption…" %}
+    eleventyConfig.addShortcode('video', function(src, autoplay, caption) {
         return outdent`
-            <figure ${full ? `class="full"` : ``}>
+            <figure>
                 <video width="960" height="540" controls muted ${autoplay ? `autoplay` : ``} playsinline disablePictureInPicture>
                     <source src="/static/work/${src}.mp4" type="video/mp4">
                 </video>
@@ -86,8 +86,8 @@ module.exports = function (eleventyConfig) {
     });
 
     // Work image
-    // Usage: {% image "src/static/work/file-name.jpg" "full" "My alt…" "My caption…" %}
-    eleventyConfig.addShortcode('image', async (src, full, alt, caption) => {
+    // Usage: {% image "src/static/work/file-name.jpg" "My alt…" "My caption…" %}
+    eleventyConfig.addShortcode('image', async (src, alt, caption) => {
 
         let stats = await Image(src, {
             widths: [960, 1280, 1920, 2560],
@@ -130,7 +130,7 @@ module.exports = function (eleventyConfig) {
             height="${lowestSrc.height}">`;
 
         return outdent`
-            <figure ${full ? `class="full"` : ``}>
+            <figure class="large">
                 <picture>
                     ${sourceAVIF}
                     ${sourceWEBP}
@@ -140,6 +140,62 @@ module.exports = function (eleventyConfig) {
             </figure>
         `;
     });
+
+    // Work image full-width
+    // Usage: {% image-big "src/static/work/file-name.jpg" "My alt…" "My caption…" %}
+    eleventyConfig.addShortcode('image-big', async (src, alt, caption) => {
+
+      let stats = await Image(src, {
+          widths: [1920, 2560, 3840, 5120],
+          formats: ["jpeg", "webp", "avif"],
+          sharpOptions: { quality: 90 },
+          filenameFormat: function (id, src, width, format, options) {
+              const extension = path.extname(src);
+              const name = path.basename(src, extension);
+
+              return `${name}-${width}w.${format}`;
+          },
+          urlPath: "/static/work",
+          outputDir: "./dist/static/work",
+      });
+  
+      let lowestSrc = stats["jpeg"][0];
+  
+      const srcset = Object.keys(stats).reduce(
+          (acc, format) => ({
+              ...acc,
+              [format]: stats[format].reduce(
+                  (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                  ""
+              ),
+          }),
+          {}
+      );
+  
+      const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+      const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+  
+      const img = `<img
+          loading="lazy"
+          decoding="async"
+          alt="${alt}"
+          src="${lowestSrc.url}"
+          sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
+          srcset="${srcset["jpeg"]}"
+          width="${lowestSrc.width}"
+          height="${lowestSrc.height}">`;
+
+      return outdent`
+          <figure class="full">
+              <picture>
+                  ${sourceAVIF}
+                  ${sourceWEBP}
+                  ${img}
+              </picture>
+              ${caption ? `<figcaption class="t__container">${caption}</figcaption>` : ``}
+          </figure>
+      `;
+  });
 
     // Work thumbnail
     // Usage: {% thumbnail "static/work/file-name.jpg" "My alt…" %}

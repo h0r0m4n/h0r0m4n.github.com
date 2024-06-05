@@ -9,4 +9,5 @@ finished: true
 nft: true
 permalink: false
 thumbnail: src/static/work/3d-sphere.jpg
+eleventyExcludeFromCollections: true
 ---

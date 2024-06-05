@@ -1,6 +1,6 @@
 ---
 title: MEU TIM
-description: TIM is the largest Italian telecommunications service provider, with a turnover of over 18 billion a year. I collaborated with them in the restyling of the MyTIM app for Brazil country.
+description: I collaborated with TIM, Italy's largest telecommunications service provider with an annual turnover of over 18 billion euros, to restyle the MyTIM app for Brazil.
 client: TIM
 role: Lead Interface Designer
 roles:

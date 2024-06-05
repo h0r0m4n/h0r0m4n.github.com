@@ -1,6 +1,6 @@
 ---
 title: HUD
-description: Heads-up display for the NUKEX composing
+description: I designed an experimental heads-up display for NUKEX compositing components for motion graphics.
 client:
 roles:
   - User Interface

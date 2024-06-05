@@ -32,7 +32,7 @@ SIAE, a leading Italian non-profit organisation, had experienced rapid growth, e
 
 To address this issue, I conducted a comprehensive user research study to understand the impact of the inconsistent design on user experience.
 
-{% image "src/static/work/siae-design-system-workshop.jpg" "full" "" "Some workshops and meetings that brought together representatives from different disciplines." %}
+{% image "src/static/work/siae-design-system-workshop.jpg" "" "Some workshops and meetings that brought together representatives from different disciplines." %}
 
 The findings revealed that the fragmented interfaces made it difficult for users to navigate between services and understand the brand identity. This inconsistency also created challenges for the development team, leading to increased time spent on repetitive tasks and a higher risk of errors.
 
@@ -46,7 +46,7 @@ I needed to reframe the problem into something our design and engineering unders
 
 Each component has been categorized, segmented, and labelled for each template and service.
 
-{% image "src/static/work/siae-design-system-components-list.jpg" "full" "" "This was the inventory spreadsheet that grouped around 200+ unique components across essential product flows." %}
+{% image "src/static/work/siae-design-system-components-list.jpg" "" "This was the inventory spreadsheet that grouped around 200+ unique components across essential product flows." %}
 
 The most important part of the design was to create a consistent visual language across all SIAE services. This included a new colour palette, typography and iconography. Working closely with SIAE's brand guidelines we start to develop a new identity system.
 
@@ -55,7 +55,7 @@ Based on the existing components and collaboration with the SIAEs brand, I led t
 {% stats "Previous Typography System" "33 styles" "New Typography System" "14 styles" "" "" "" "" %}
 {% stats "Previous Colour System" "21 colours" "New Colour System" "14 colours" "" "" "" "" %}
 
-{% image "src/static/work/siae-sass-figma-library.jpg" "full" "" "Overview of the new components designed in Figma utilising all the features such as properties, auto layout and much more." %}
+{% image "src/static/work/siae-sass-figma-library.jpg" "" "Overview of the new components designed in Figma utilising all the features such as properties, auto layout and much more." %}
 
 ### Prototyping
 
@@ -65,7 +65,7 @@ Thanks to the Design Library, it was possible to significantly increase the rede
 
 I was able to create interactive prototypes that were tested with real users. These prototypes were often used as part of an agile sprint and allowed us to iterate on each service rapidly.
 
-{% image "src/static/work/siae-design-system-prototypes.jpg" "full" "" "An overview of the complexity of the prototype." %}
+{% image "src/static/work/siae-design-system-prototypes.jpg" "" "An overview of the complexity of the prototype." %}
 
 This provided several benefits:
 
@@ -73,11 +73,11 @@ This provided several benefits:
 - Less time was spent on the prototypes thanks to the Atomic Design methodology.
 - Using multiple Figma libraries allowed us to make changes on the fly.
 
-{% image "src/static/work/siae-design-system-1.jpg" "full" "" "The page features an advanced table component design meticulously crafted and tailored to meet the specific needs of SIAE's customers." %}
-{% image "src/static/work/siae-design-system-2.jpg" "full" "" "The news article template emphasizes a long-form approach, incorporating strategically placed image regions to enhance visual engagement." %}
-{% image "src/static/work/siae-design-system-3.jpg" "full" "" "The logged-in homepage displays a comprehensive array of available services." %}
-{% image "src/static/work/siae-design-system-4.jpg" "full" "" "The news page hosts various collections of articles and a dedicated press room section." %}
-{% image "src/static/work/siae-design-system-5.jpg" "full" "" "The homepage, created in collaboration with the marketing team, is tailored for logged-out users." %}
+{% image-big "src/static/work/siae-design-system-1.jpg" "" "The page features an advanced table component design meticulously crafted and tailored to meet the specific needs of SIAE's customers." %}
+{% image-big "src/static/work/siae-design-system-2.jpg" "" "The news article template emphasizes a long-form approach, incorporating strategically placed image regions to enhance visual engagement." %}
+{% image-big "src/static/work/siae-design-system-3.jpg" "" "The logged-in homepage displays a comprehensive array of available services." %}
+{% image-big "src/static/work/siae-design-system-4.jpg" "" "The news page hosts various collections of articles and a dedicated press room section." %}
+{% image-big "src/static/work/siae-design-system-5.jpg" "" "The homepage, created in collaboration with the marketing team, is tailored for logged-out users." %}
 
 ## Challenges & Solutions
 
@@ -98,26 +98,26 @@ Collaborating with several stakeholders and the rest of the team, I led the writ
 
 Contain specific information regarding the visual references and design principles for creating interfaces or other design deliverables. This section focuses on branding (colours, typography, trademarks, logos and more). It also covers guidance on content such as tone of voice and language recommendations.
 
-{% video "siae-design-system-1" "full" "" "Overview of our design principles (in italian language)" %}
+{% video "siae-design-system-1" "" "Overview of our design principles (in italian language)" %}
 
 #### Guidelines
 
 The guidelines section contains valuable information on iconography and essential components such as interactive areas, buttons, lists and much more.
 
-{% video "siae-design-system-2" "full" "" "Overview of components" %}
+{% video "siae-design-system-2" "" "Overview of components" %}
 
 #### Models
 
 The models cover groups of components joined together to form a relatively complex and distinct section of an interface.
 
-{% video "siae-design-system-3" "full" "" "Overview of models" %}
+{% video "siae-design-system-3" "" "Overview of models" %}
 
 #### Templates
 
 Templates explain how to keep the patterns consistent with the rest of the products and demonstrate the critical templates used in SIAE services.
 
-{% video "siae-design-system-4" "full" "" "Overview of SaaS templates" %}
-{% video "siae-design-system-5" "full" "" "Overview of generic page templates" %}
+{% video "siae-design-system-4" "" "Overview of SaaS templates" %}
+{% video "siae-design-system-5" "" "Overview of generic page templates" %}
 
 ## Implementation & Timeline
 

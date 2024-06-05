@@ -1,6 +1,6 @@
 ---
-title: SPE WordPress Theme
-description: 
+title: SPE
+description: A free WordPress Theme.
 client: 
 roles:
   - User Interface

@@ -1,6 +1,6 @@
 ---
 title: Data Visualization
-description: FCA Bank is a bank dedicated to motorists, which mainly operates in the automotive financing sector and cooperates with prestigious automotive brands. I led the design interface and the process of ideation and creation of the mortgages simulation concept.
+description: I took charge of designing the interface and spearheaded the ideation and creation process for the mortgage simulation concept at FCA Bank, a bank specializing in automotive financing and partnerships with prestigious automotive brands.
 client: FCA Bank
 role: Lead Interface Designer
 roles:

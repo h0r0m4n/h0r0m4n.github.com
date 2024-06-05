@@ -1,6 +1,6 @@
 ---
 title: Skins
-description: 
+description: I designed the responsive web portal for Skins TV-Series with a user-centric focus.
 client: All3Media
 roles:
   - User Experience
