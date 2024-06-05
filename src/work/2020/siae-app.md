@@ -40,11 +40,11 @@ Throughout the design process, I employed a range of user-centered methodologies
 - User Testing: Conducted user testing sessions to observe how users interacted with prototypes and identify areas for improvement.
 - Personas: Created detailed personas to represent SIAE's target user groups, which helped to shape the design decisions throughout the project.
 
-{% image "src/static/work/siae-plus-experience-design-workshop-creative-matrix.jpg" "full" "" "Creative Matrix" %}
-{% image "src/static/work/siae-plus-priority-maps.jpg" "full" "" "Priority Maps" %}
-{% image "src/static/work/siae-plus-social-media-insights.jpg" "full" "" "Social Media Insights" %}
-{% image "src/static/work/siae-plus-data-visualization-1.jpg" "full" "" "Data Visualization Workshop" %}
-{% image "src/static/work/siae-plus-data-visualization-2.jpg" "full" "" "Data Comparisoning Workshop" %}
+{% image "src/static/work/siae-plus-experience-design-workshop-creative-matrix.jpg" "" "" "Creative Matrix" %}
+{% image "src/static/work/siae-plus-priority-maps.jpg" "" "" "Priority Maps" %}
+{% image "src/static/work/siae-plus-social-media-insights.jpg" "" "" "Social Media Insights" %}
+{% image "src/static/work/siae-plus-data-visualization-1.jpg" "" "" "Data Visualization Workshop" %}
+{% image "src/static/work/siae-plus-data-visualization-2.jpg" "" "" "Data Comparisoning Workshop" %}
 
 ## Challenges & Solutions
 
@@ -59,13 +59,13 @@ To address these challenges, I implemented the following strategies:
 - **Accessibility Features**: Integrated comprehensive accessibility features to ensure that the app was usable by individuals with disabilities.
 - **Language Localization**: Provided support for multiple languages to cater to SIAE's international user base.
 
-{% image "src/static/work/siae-plus-0.jpg" "full" "" "An overview of User Flows, User Testing and more" %}
+{% image "src/static/work/siae-plus-0.jpg" "" "" "An overview of User Flows, User Testing and more" %}
 
-{% image "src/static/work/siae-plus-colours.jpg" "full" "" "An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background." %}
+{% image "src/static/work/siae-plus-colours.jpg" "" "" "An accessible colour palette was important that meet WCAG 2.1 Level AA or higher for the contrast between text and background." %}
 
-{% image "src/static/work/siae-plus-typography.jpg" "full" "" "We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding." %}
+{% image "src/static/work/siae-plus-typography.jpg" "" "" "We paired the current SIAE’s typography with Roboto Condensed. The typeface is a modern take on classic sans-serif faces such as Neuzeit. Its balance of legibility and condensed sensibilty fit well with the SIAE’s branding." %}
 
-{% image "src/static/work/siae-plus-components.jpg" "full" "" "A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems." %}
+{% image "src/static/work/siae-plus-components.jpg" "" "" "A component library began to emerge. We built out an extensive Figma library and corresponding React Storybook of UI elements that could be used for future customer-facing systems." %}
 
 {% image "src/static/work/siae-plus-touch-icon.jpg" "" "" "Touch Icon Design Process Concepts" %}
 
@@ -75,15 +75,15 @@ By installing it on your mobile device, the app offers you features like consult
 
 The two most complex features of the SIAE+ is the registration and the possibility of making a new deposit.
 
-{% image "src/static/work/siae-plus-1.jpg" "full" "" "In the performance area, the user can view his performance for all the works deposited in SIAE, make comparisons, and filter the data as needed." %}
+{% image-big "src/static/work/siae-plus-1.jpg" "" "In the performance area, the user can view his performance for all the works deposited in SIAE, make comparisons, and filter the data as needed." %}
 
-{% image "src/static/work/siae-plus-2.jpg" "full" "" "Overview of the app’s most important pages and features, such as the dynamic home page, the possibility of depositing prior work in the app, and comparing and filtering the data by year and month." %}
+{% image-big "src/static/work/siae-plus-2.jpg" "" "Overview of the app’s most important pages and features, such as the dynamic home page, the possibility of depositing prior work in the app, and comparing and filtering the data by year and month." %}
 
-{% image "src/static/work/siae-plus-3.jpg" "full" "" "Overview of the data visualization and manipulation by user" %}
+{% image-big "src/static/work/siae-plus-3.jpg" "" "Overview of the data visualization and manipulation by user" %}
 
-{% image "src/static/work/siae-plus-4.jpg" "full" "" "New deposit feature that guides the user using a wizard design pattern" %}
+{% image-big "src/static/work/siae-plus-4.jpg" "" "New deposit feature that guides the user using a wizard design pattern" %}
 
-{% video "siae-plus-1" "full" "" "An overview of final product" %}
+{% video "siae-plus-1" "" "An overview of final product" %}
 
 ## Timeline and Results
 

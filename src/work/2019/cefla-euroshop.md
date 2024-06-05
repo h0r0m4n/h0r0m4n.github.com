@@ -4,14 +4,14 @@ description: Designed an app for trade show, enhancing retail experience with in
 client: Cefla
 css:
   primary: '#fff'
-  secondary: '#EA7D77'
-  tertiary: '#EA7D77'
+  secondary: '#FC7169'
+  tertiary: '#FC7169'
   neutral1: 'rgba(255, 255, 255, 0.5);'
   neutral2: 'rgba(255, 255, 255, 0.25);'
   neutral3: 'rgba(255, 255, 255, 0.12);'
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#565D9F'
+  colorBackground: '#2E335F'
 role: Lead Designer
 roles:
   - Product Design
@@ -41,9 +41,9 @@ Throughout the design process, I employed a range of user-centered methodologies
 - **Low-Fidelity and High-Fidelity Prototyping**: Created prototypes at various stages of the design process to test ideas with users and gather feedback.
 - **A/B Testing**: Conducted A/B tests to compare different design options and determine the most effective approach.
 
-{% image "src/static/work/cefla-service-blueprint.jpg" "full" "" "Service Blueprint of the entire process of the Cefla shopping experience service." %}
+{% image "src/static/work/cefla-service-blueprint.jpg" "" "Service Blueprint of the entire process of the Cefla shopping experience service." %}
 
-{% image "src/static/work/cefla-euroshop-5.jpg" "full" "" "External promps/solutions for user personas." %}
+{% image "src/static/work/cefla-euroshop-5.jpg" "" "External promps/solutions for user personas." %}
 
 ## Challenges and Solutions
 
@@ -58,7 +58,7 @@ To address these challenges, I implemented the following strategies:
 - **Robust System Integration**: Developed a robust system integration that seamlessly connected the app with Cefla's existing retail infrastructure.
 - **Data-Driven Insights**: Utilized data analytics to gain insights into user behavior and preferences, which helped to inform design decisions and improve the overall user experience.
 
-{% image "src/static/work/cefla-euroshop-2.jpg" "full" "" "Overview of three personas we pick for the Cefla demo app." %}
+{% image-big "src/static/work/cefla-euroshop-2.jpg" "" "Overview of three personas we pick for the Cefla demo app." %}
 
 ### Data & metrics
 
@@ -74,7 +74,7 @@ During research with our engineers and established some extraordinary data that 
   - Frequency of purchase of a given products
   - Purchase history
 
-{% image "src/static/work/cefla-store-concept.jpg" "full" "" "Store Concept" %}
+{% image "src/static/work/cefla-store-concept.jpg" "" "Store Concept" %}
 
 #### Technical
   - Product out of camera angle
@@ -85,28 +85,28 @@ During research with our engineers and established some extraordinary data that 
   - Out-of-stock products
   - Quantity of products that are expiring
 
-{% image "src/static/work/cefla-tecnical-blueprint-1.jpg" "full" "" "Tecnical Blueprint 1" %}
-{% image "src/static/work/cefla-tecnical-blueprint-2.jpg" "full" "" "Tecnical Blueprint 2" %}
+{% image "src/static/work/cefla-tecnical-blueprint-1.jpg" "" "Tecnical Blueprint 1" %}
+{% image "src/static/work/cefla-tecnical-blueprint-2.jpg" "" "Tecnical Blueprint 2" %}
 
 ### First release
 
 Since the project had a small deadline we had to do two major releases. The first release was required to get exclusive invitations and a personal free pass to spend an entire day at Euroshop. So that potential consumers could be part of the project right away.
 
-{% video "cefla-euroshop-1" "full" "" "Initial prototype of booking the event during the first release" %}
+{% video "cefla-euroshop-1" "Initial prototype of booking the event during the first release" %}
 
 ### Second release
 
 The second release offered a complete shopping experience:
 
-{% image "src/static/work/cefla-euroshop-3.jpg" "full" "" "" %}
-{% video "cefla-euroshop-2" "full" "" "An overview of final product" %}
+{% image-big "src/static/work/cefla-euroshop-3.jpg" "" "" %}
+{% video "cefla-euroshop-2" "" "An overview of final product" %}
 
 ### Support area
 
 Support area for app provides the “admin-level” to support teams with allows to view and edit subscribed users to the product. One of the main features in-app was to be able to filter people labeled as "VIP":
 
-{% image "src/static/work/cefla-euroshop-4.jpg" "full" "" "" %}
-{% video "cefla-euroshop-3" "full" "" "Prototype of schedule and appointments" %}
+{% image-big "src/static/work/cefla-euroshop-4.jpg" "" "" %}
+{% video "cefla-euroshop-3" "" "Prototype of schedule and appointments" %}
 
 ## Timeline & Results
 

@@ -1,6 +1,6 @@
 ---
 title: Coworking
-description: A coworking service that provides top tier space in two parts in Rome city to accommodate between 50-200 professionals on any given day. I led the entire end-to-end process in the design and implementation, featuring the main website, locations and a booking system.
+description: I led the end-to-end design and implementation of a coworking service in Rome, accommodating 200+ professionals daily across two top-tier locations. This project included the main website, location details, and a booking system.
 client: LAND HO
 role: Senior Product Designer
 roles:

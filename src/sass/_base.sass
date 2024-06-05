@@ -151,8 +151,7 @@ video
 
 figure
     margin: var(--size-xl) 0
-
-    &.full
+    &.large
         margin-left: calc(var(--size-s) * -1)
         margin-right: calc(var(--size-s) * -1)
         @media #{$media-query-medium}
@@ -164,6 +163,16 @@ figure
         @media #{$media-query-huge}
             margin-left: -17rem
             margin-right: -17rem
+    &.full
+        @media #{$media-query-large}
+            position: relative
+            left: 50%
+            right: 50%
+            width: 100vw
+            margin-left: -50vw
+            margin-right: -50vw
+            img
+                border-radius: 0
 
     img, video
         width: 100%
