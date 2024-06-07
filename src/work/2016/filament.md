@@ -12,4 +12,5 @@ date: 2016-02-08
 finished: true
 permalink: false
 thumbnail: src/static/work/filament.jpg
+ratio: 3
 ---

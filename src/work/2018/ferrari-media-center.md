@@ -21,6 +21,13 @@ date: 2018-11-28
 finished: true
 permalink: false
 thumbnail: src/static/work/ferrari-media-center.jpg
+carousel:
+  - src/static/work/ferrari-media-center-sn-1.jpg
+  - src/static/work/ferrari-media-center-sn-2.jpg
+  - src/static/work/ferrari-media-center-sn-3.jpg
+  - src/static/work/ferrari-media-center-sn-4.jpg
+  - src/static/work/ferrari-media-center-sn-5.jpg
+ratio: 2
 ---
 
 ## Design process

@@ -19,11 +19,11 @@
                 <li><a href="/#works">Case studies</a></li>
                 <li><a href="/#clients">Clients</a></li>
                 <li><a href="/#testimonials">Testimonials</a></li>
-                <li><a href="/#about">About me</a></li>
-                <li><a href="/#contact">Get in touch</a></li>
+                <li><a href="/about/">About me</a></li>
+                <li><a href="#contact">Get in touch</a></li>
             </ul>
         </nav>
-        {% if layout == 'layouts/base' %}
+        {% if page.url == '/' %}
             <p class="t__lead">I am a digital product designer with over {% experience %} years of experience in web and mobile products. I have a degree in Visual Arts and a background in Web Development. I was born in Ukraine, and now I live in Dublin.</p>
         {% endif %}
     </div>

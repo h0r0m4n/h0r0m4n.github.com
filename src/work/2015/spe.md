@@ -10,5 +10,6 @@ date: 2015-08-25
 finished: true
 permalink: false
 thumbnail: src/static/work/spe.jpg
+ratio: 2
 eleventyExcludeFromCollections: true
 ---

@@ -1,13 +1,19 @@
+---
+layout: layouts/base
+permalink: "/{{ page.fileSlug }}/index.html"
+---
+{% include 'components/intro.njk' %}
+
 <section id="about" class="about t__section">
     <div class="about__more">
         <div class="t__container">
-            <h2 class="t__typedivider">About me</h2>
+            <h2>About me</h2>
             <p class="t__lead">In the ever-evolving digital design landscape, I found my passion for crafting meaningful experiences that bridge the gap between users and technology. My journey began with a deep-rooted curiosity for design and technology, leading me down a path where creativity meets functionality.</p>
             <p>As a product designer, I wear many hats - from envisioning sleek interfaces to delving into the intricacies of programming. Each project is an opportunity to weave my expertise in web standards with an innate sense of aesthetics, creating immersive experiences that captivate and inspire.</p>
             <p>Collaboration lies at the heart of my process. I thrive in dynamic environments where ideas flow freely, working closely with product teams to decipher business goals while keeping a keen eye on customer needs. Immersed in a world of constant innovation, I find solace in the meticulous nature of research, partnering with researchers to uncover insights that drive design decisions.</p>
             <p>Accessibility is not just a checkbox for me; it's a guiding principle that shapes every aspect of my work. I believe in creating inclusive designs catering to all users, ensuring every interaction is seamless and intuitive.</p>
             {% if skills %}
-                <h3>My skills</h3>
+                <h3 class="t__typedivider">My skills</h3>
                 <div class="about__skills">    
                     {% for skill in skills %}
                         <div class="about__skills__group">
@@ -29,7 +35,7 @@
     {% if reads %}
         <div class="about__reads">
             <div class="t__container">
-                <h3>Favorite readings</h3>
+                <h3 class="t__typedivider">Favorite readings</h3>
                 <p>My reading habits tend to ebb and flow. There are phases where I devour multiple books within a month, and then there are times when a single book captivates me for months. Here's a compilation of recommended reads from my literary journey:</p>
             </div>
             <ol class="t__inline">
@@ -46,7 +52,7 @@
     {% if software %}
         <div class="about__software">
             <div class="t__container">
-                <h3>Software I use</h3>
+                <h3 class="t__typedivider">Software I use</h3>
                 <p>These are the applications that seamlessly integrate into my daily routine, becoming indispensable tools I rely on day in and day out. They facilitate my productivity, creativity, and communication, allowing me to navigate various tasks with efficiency and finesse:</p>
                 <ol class="t__inline">
                     {% for app in software %}
@@ -63,7 +69,7 @@
     {% if hardware %}
         <div class="about__hardware">
             <div class="t__container">
-                <h3>Hardware I use</h3>
+                <h3 class="t__typedivider">Hardware I use</h3>
                 <p>Behold the arsenal of tools that form the backbone of my creative endeavors. These are the instruments that consistently accompany me in the pursuit of crafting excellence:</p>
                 <ul class="link-style">
                     {% for gadget in hardware %}
@@ -77,7 +83,7 @@
     {% endif %}
     <div class="about__bits">
         <div class="t__container">
-            <h3>My latest bits</h3>
+            <h3 class="t__typedivider">My latest bits</h3>
             <p>A glimpse into my career journey reveals a diverse spectrum of projects I've had the privilege to engage with. These undertakings span various industries and creative challenges:</p>
         </div>
         <ol class="t__grid t__grid--works">
@@ -97,7 +103,18 @@
                                     <span class="t__card__platform"># {{ work.data.platform }}</span>
                                 {% endif %}
                             </header>
-                            {% thumbnail work.data.thumbnail, work.data.title %}
+                            {% if work.data.carousel %}
+                                <figure class="t__card__carousel">
+                                    <div class="t__card__carousel__scroll t__at--{{ work.data.ratio }}">
+                                        {% thumbnail work.data.thumbnail, work.data.title %}
+                                        {% for image in work.data.carousel %}
+                                            {% thumbnail image %}
+                                        {% endfor %}
+                                    </div>
+                                </figure>
+                            {% else %}
+                                {% thumbnail work.data.thumbnail, work.data.title %}
+                            {% endif %}
                         </article>
                     </li>
                 {% endif %}
@@ -106,7 +123,7 @@
     </div>
     <div class="about__website">
         <div class="t__container">
-            <h3>About this website <sup>Nerd Zone</sup></h3>
+            <h3 class="t__typedivider">About this website</h3>
             <ul class="link-style">
                 <li>Uses a several typefaces:
                     <ul class="link-style">
@@ -124,3 +141,5 @@
         </div>
     </div>
 </section>
+
+{% include 'components/contact.njk' %}

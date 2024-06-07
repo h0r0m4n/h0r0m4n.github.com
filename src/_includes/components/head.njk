@@ -10,14 +10,14 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="pinterest-rich-pin" content="false">
 
-{% if layout == 'layouts/base' %}
+{% if page.url == '/' %}
     {% include 'components/head-twitter.njk' %}
     {% include 'components/head-facebook.njk' %}
 {% endif %}
 
 <title>{% if title%}{{ site.title }} — {% if client %}{{ client }} {% endif %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
 
-{% if layout == 'layouts/base' %}
+{% if page.url == '/' %}
     <link rel="canonical" href="{{ site.url | url }}">
 {% endif %}
 

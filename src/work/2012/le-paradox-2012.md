@@ -11,4 +11,5 @@ date: 2012-11-28
 finished: true
 permalink: false
 thumbnail: src/static/work/le-paradox-v1.jpg
+ratio: 1
 ---

@@ -10,4 +10,5 @@ date: 2015-07-02
 finished: true
 permalink: false
 thumbnail: src/static/work/hud.jpg
+ratio: 2
 ---

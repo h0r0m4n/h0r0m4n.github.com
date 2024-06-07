@@ -10,5 +10,6 @@ date: 2015-12-15
 finished: true
 permalink: false
 thumbnail: src/static/work/photographie.jpg
+ratio: 2
 eleventyExcludeFromCollections: true
 ---

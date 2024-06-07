@@ -10,4 +10,5 @@ date: 2016-02-03
 finished: true
 permalink: false
 thumbnail: src/static/work/polygon.jpg
+ratio: 3
 ---

@@ -20,6 +20,7 @@ platform: VR
 date: 2016-06-30
 finished: true
 thumbnail: src/static/work/aeon-vr.jpg
+ratio: 1
 ---
 
 ## Problem Definition & Discovery
