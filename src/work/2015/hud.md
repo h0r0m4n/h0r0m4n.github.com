@@ -5,6 +5,7 @@ client:
 roles:
   - User Interface
   - Motion Design
+platform: Motion Design
 date: 2015-07-02
 finished: true
 permalink: false

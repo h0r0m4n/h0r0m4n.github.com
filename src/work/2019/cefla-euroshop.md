@@ -18,7 +18,7 @@ roles:
   - User Experience
   - User Interface
   - Interaction Design
-platform: Web
+platform: Mobile
 date: 2019-11-08
 finished: true
 thumbnail: src/static/work/cefla-euroshop.jpg

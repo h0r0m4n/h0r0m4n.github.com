@@ -5,6 +5,7 @@ client: RAI
 roles:
   - User Interface
   - Interaction Design
+platform: Web
 date: 2015-05-28
 finished: true
 permalink: false

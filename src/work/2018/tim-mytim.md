@@ -6,7 +6,7 @@ role: Lead Interface Designer
 roles:
   - User Interface
   - Interaction Design
-platform: Web
+platform: Mobile
 date: 2018-05-07
 finished: true
 permalink: false

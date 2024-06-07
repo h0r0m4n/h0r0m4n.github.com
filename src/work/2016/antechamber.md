@@ -10,5 +10,4 @@ platform: Video
 finished: true
 permalink: false
 thumbnail: src/static/work/antechamber.jpg
-eleventyExcludeFromCollections: true
 ---

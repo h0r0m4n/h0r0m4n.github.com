@@ -1,7 +1,7 @@
 ---
 title: Coworking
 description: I led the end-to-end design and implementation of a coworking service in Rome, accommodating 200+ professionals daily across two top-tier locations. This project included the main website, location details, and a booking system.
-client: LAND HO
+client: Land Ho
 role: Senior Product Designer
 roles:
   - Product Design
