@@ -1,6 +1,10 @@
-// Media queries
-$media-query-small-only: "only screen and (max-width: 49.9375rem)"
-$media-query-medium: "only screen and (min-width: 50rem)" // 800
-$media-query-large: "only screen and (min-width: 75rem)" // 1200
-$media-query-huge: "only screen and (min-width: 93.75rem)" // 1500
-$media-query-godzilla: "only screen and (min-width: 118.75rem)" // 1900
+// Sizes
+$media-small: 50rem
+$media-medium: 75rem
+$media-large: 93.75rem
+$media-huge: 118.75rem
+
+// Usage:
+// 1. @media (width < $media-small) below 50rem.
+// 2. @media (width >= $media-small) equal or bigger than 50rem.
+// 3. @media ($media-small <= width <= $media-medium) from 50rem to 75rem.

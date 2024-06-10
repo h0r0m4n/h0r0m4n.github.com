@@ -30,7 +30,7 @@
                 -webkit-filter: brightness(120%)
                 filter: brightness(120%)
                 transform: scale(1.05)
-                @media #{$media-query-large}
+                @media (width >= $media-large)
                     transform: scale(1.1)
                 @media (prefers-color-scheme: dark)
                     -webkit-filter: brightness(112%)
@@ -45,39 +45,39 @@
         margin-inline: auto
         padding-inline: var(--size-s)
         box-sizing: border-box
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             padding-inline: var(--size-m)
-        @media #{$media-query-large}
+        @media (width >= $media-large)
             padding-inline: var(--size-l)
 
     &__section + *
         clear: both
         margin-top: var(--size-xl)
-        @media #{$media-query-large}
+        @media (width >= $media-large)
             margin-top: var(--size-xxl)
 
     &__grid
         list-style: none
         margin: 0
         &--works
-            @media #{$media-query-small-only}
+            @media (width < $media-small)
                 padding-inline: 1em
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 display: grid
                 grid-template-columns: repeat(2, 1fr)
                 grid-gap: var(--size-l)
                 padding-inline: var(--size-l)
-            @media #{$media-query-huge}
+            @media (width >= $media-large)
                 grid-template-columns: repeat(4, 1fr)
         &--pagination
             padding-left: 0
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 display: grid
                 grid-template-columns: repeat(2, 1fr)
                 grid-gap: var(--size-l)
 
         &__item
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 display: flex
 
     &__card
@@ -95,7 +95,7 @@
         &__image
             order: -1
             // TODO: Need to fix Safari and test on other devices
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 display: flex
                 flex-direction: column
                 justify-content: end
@@ -114,8 +114,8 @@
             margin-block: 0
             display: flex
             align-items: flex-end
-            @media #{$media-query-medium}
                 aspect-ratio: 1/1
+            @media (width >= $media-medium)
             &__scroll
                 overflow-y: hidden
                 overflow-x: scroll

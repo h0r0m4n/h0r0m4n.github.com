@@ -6,7 +6,7 @@
         position: relative
         margin-block: 0
         left: calc(var(--size-s) * -1)
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             left: calc(var(--size-l) * -1 - 0.125rem)
 
         svg
@@ -15,7 +15,7 @@
             width: 360px
             height: 360px
             animation: rotate 240s linear infinite
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 width: 600px
                 height: 600px
 
@@ -23,7 +23,7 @@
             img
                 width: 96px
                 height: 143px
-                @media #{$media-query-medium}
+                @media (width >= $media-small)
                     padding: 0.5em
                     width: 154px
                     height: 230px
@@ -41,7 +41,7 @@
         font-size: 0.825em
         line-height: 0
         margin-bottom: var(--size-m)
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             font-size: 1em
         svg
             fill: var(--color-secondary)
@@ -52,7 +52,7 @@
         font-family: var(--type-family-2)
         font-family: var(--type-family-1b)
         margin-bottom: var(--size-xl)
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             margin-bottom: var(--size-xxl)
         ul
             display: flex
@@ -61,7 +61,7 @@
             padding-left: 0
             list-style: none
             flex-direction: column
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 column-gap: var(--size-m)
                 flex-direction: row
                 flex-wrap: wrap

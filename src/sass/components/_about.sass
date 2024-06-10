@@ -3,12 +3,12 @@
         h2
             margin-top: var(--size-m)
     &__skills
-        @media #{$media-query-large}
+        @media (width >= $media-large)
             display: flex
             flex-direction: row
             gap: var(--size-l)
         &__group
-            @media #{$media-query-large}
+            @media (width >= $media-large)
                 flex: 1
             ul
                 padding-inline-start: var(--size-m)
@@ -34,9 +34,9 @@
             align-items: baseline
             padding: var(--size-s)
             text-align: center
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 padding: var(--size-m)
-            @media #{$media-query-large}
+            @media (width >= $media-large)
                 padding: var(--size-l)
 
             li
@@ -78,7 +78,7 @@
             fill: var(--color-neutral-1)
             height: 2rem
 
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 height: 2.5rem
 
     &__hardware
