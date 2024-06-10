@@ -26,7 +26,6 @@ carousel:
   - src/static/work/ferrari-media-center-sn-2.jpg
   - src/static/work/ferrari-media-center-sn-3.jpg
   - src/static/work/ferrari-media-center-sn-4.jpg
-  - src/static/work/ferrari-media-center-sn-5.jpg
 ---
 
 ## Design process
