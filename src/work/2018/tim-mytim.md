@@ -11,5 +11,4 @@ date: 2018-05-07
 finished: true
 permalink: false
 thumbnail: src/static/work/tim-mytim.jpg
-ratio: 3
 ---

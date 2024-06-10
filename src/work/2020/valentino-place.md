@@ -17,5 +17,4 @@ carousel:
   - src/static/work/valentino-place-2.jpg
   - src/static/work/valentino-place-3.jpg
   - src/static/work/valentino-place-4.jpg
-ratio: 2
 ---

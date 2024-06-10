@@ -10,6 +10,5 @@ date: 2013-01-02
 finished: true
 permalink: false
 thumbnail: src/static/work/skins.jpg
-ratio: 2
 eleventyExcludeFromCollections: true
 ---

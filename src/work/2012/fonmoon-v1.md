@@ -9,6 +9,5 @@ date: 2012-06-10
 finished: true
 permalink: false
 thumbnail: src/static/work/fonmoon-v1.jpg
-ratio: 2
 eleventyExcludeFromCollections: true
 ---

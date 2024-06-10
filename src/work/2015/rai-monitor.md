@@ -10,5 +10,4 @@ date: 2015-05-28
 finished: true
 permalink: false
 thumbnail: src/static/work/rai-monitor.jpg
-ratio: 3
 ---

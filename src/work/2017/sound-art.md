@@ -13,6 +13,5 @@ date: 2017-03-14
 finished: true
 permalink: false
 thumbnail: src/static/work/sound-art.jpg
-ratio: 2
 eleventyExcludeFromCollections: true
 ---

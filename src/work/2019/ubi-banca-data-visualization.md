@@ -11,5 +11,4 @@ date: 2019-10-11
 finished: true
 permalink: false
 thumbnail: src/static/work/ubi-banca-data-visualization.jpg
-ratio: 1
 ---

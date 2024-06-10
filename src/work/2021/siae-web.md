@@ -22,7 +22,6 @@ platform: Web
 date: 2021-06-24
 finished: true
 thumbnail: src/static/work/siae-design-system.jpg
-ratio: 2
 ---
 
 ## Problem Statement

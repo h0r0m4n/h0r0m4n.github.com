@@ -10,5 +10,4 @@ date: 2015-06-30
 finished: true
 permalink: false
 thumbnail: src/static/work/jvc-paradox.jpg
-ratio: 3
 ---

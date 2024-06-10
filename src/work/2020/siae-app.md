@@ -22,7 +22,6 @@ platform: Mobile
 date: 2020-03-11
 finished: true
 thumbnail: src/static/work/siae-plus.jpg
-ratio: 3
 ---
 
 ## Problem Definition & Discovery

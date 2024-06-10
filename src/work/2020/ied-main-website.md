@@ -18,5 +18,4 @@ carousel:
   - src/static/work/ied-main-website-3.jpg
   - src/static/work/ied-main-website-4.jpg
   - src/static/work/ied-main-website-5.jpg
-ratio: 1
 ---
