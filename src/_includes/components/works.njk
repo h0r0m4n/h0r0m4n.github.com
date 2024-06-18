@@ -17,9 +17,14 @@
                             {% if work.data.description %}
                                 <p class="t__card__desc">{{ work.data.description }}</p>
                             {% endif %}
-                            {% if work.data.platform %}
-                                <span class="t__card__platform">{{ work.data.platform }}</span>
-                            {% endif %}
+                            <ul class="t__card__stats">
+                                {% if work.data.platform %}
+                                    <li>{{ work.data.platform }}</li>
+                                {% endif %}
+                                {% if work.data.date %}
+                                    <li>{{ work.data.date | year }}</li>
+                                {% endif %}
+                            </ul>
                         </header>
                         {% thumbnail work.data.thumbnail, work.data.title %}
                     </article>
