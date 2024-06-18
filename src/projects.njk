@@ -1,0 +1,56 @@
+---
+layout: layouts/base
+permalink: "/{{ page.fileSlug }}/index.html"
+---
+{% include 'components/intro.njk' %}
+
+<section id="about" class="about t__section">
+    <div class="about__bits">
+        <div class="t__container">
+            <h2>Projects</h2>
+            <p class="t__lead">A glimpse into my career journey reveals a diverse spectrum of projects I've had the privilege to engage with.</p>
+            <p>These undertakings span various industries and creative challenges:</p>
+            <ol class="t__grid t__grid--bits">
+                {% for work in collections.work %}
+                    {% if work.url == false %}
+                        <li class="t__grid__item">
+                            <article class="t__card t__card--bits"{% if work.data.css %} style="color: {{ work.data.css.primary }}; background-color: {{ work.data.css.colorBackground }};"{% endif %}>
+                                <header class="t__card__header">
+                                    <h4 class="t__card__title">{{ work.data.title }}</h4>
+                                    {% if work.data.client %}
+                                        <p class="t__card__client"{% if work.data.css %} style="color: {{ work.data.css.secondary }}"{% endif %}>{{ work.data.client }}</p>
+                                    {% endif %}
+                                    {% if work.data.description %}
+                                        <p class="t__card__desc">{{ work.data.description }}</p>
+                                    {% endif %}
+                                    <ul class="t__card__stats">
+                                        {% if work.data.platform %}
+                                            <li{% if work.data.css %} style="color: {{ work.data.css.primary }}; background-color: {{ work.data.css.neutral4 }}; border-color: {{ work.data.css.neutral3 }};"{% endif %}>{{ work.data.platform }}</li>
+                                        {% endif %}
+                                        {% if work.data.date %}
+                                            <li{% if work.data.css %} style="color: {{ work.data.css.primary }}; background-color: {{ work.data.css.neutral4 }}; border-color: {{ work.data.css.neutral3 }};"{% endif %}>{{ work.data.date | year }}</li>
+                                        {% endif %}
+                                    </ul>
+                                </header>
+                                {% if work.data.carousel %}
+                                    <figure class="t__card__carousel">
+                                        <div class="t__card__carousel__scroll">
+                                            {% thumbnail work.data.thumbnail, work.data.title %}
+                                            {% for image in work.data.carousel %}
+                                                {% thumbnail image %}
+                                            {% endfor %}
+                                        </div>
+                                    </figure>
+                                {% else %}
+                                    {% thumbnail work.data.thumbnail, work.data.title %}
+                                {% endif %}
+                            </article>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</section>
+
+{% include 'components/contact.njk' %}
