@@ -75,7 +75,17 @@
                 display: grid
                 grid-template-columns: repeat(2, 1fr)
                 grid-gap: var(--size-l)
-
+        &--bits
+            padding-left: 0
+            display: flex
+            flex-direction: column
+            grid-gap: var(--size-s)
+            @media (width >= $media-small)
+                grid-gap: var(--size-m)
+            @media (width >= $media-medium)
+                grid-gap: var(--size-l)
+            @media (width >= $media-large)
+                grid-gap: var(--size-xl)
         &__item
             @media (width >= $media-small)
                 display: flex
@@ -90,52 +100,60 @@
                 img
                     box-shadow: var(--shadow-2)
                     border-color: var(--color-neutral-3)
-            img
-                box-shadow: var(--shadow-1)
+        &--bits
+            border-radius: var(--radius-1)
+            padding-top: var(--size-s)
+            background-color: var(--color-neutral-4)
+            border: 1px solid var(--color-neutral-4)
         &__image
             order: -1
-            // TODO: Need to fix Safari and test on other devices
             @media (width >= $media-small)
                 display: flex
                 flex-direction: column
                 justify-content: end
                 aspect-ratio: 1/1
+                .t__card--bits &
+                    aspect-ratio: inherit
             img
                 transition: box-shadow 150ms ease-in
                 border-radius: var(--radius-1)
                 overflow: hidden
                 width: 100%
                 height: auto
-                border: 1px solid var(--color-neutral-4)
+                box-shadow: var(--shadow-1)
                 @media print
                     box-shadow: none
         &__carousel
             order: -1
             margin-block: 0
             display: flex
-            align-items: flex-end
-                aspect-ratio: 1/1
             @media (width >= $media-medium)
+                padding-inline: var(--size-s)
+                position: relative
+                left: 50%
+                right: 50%
+                width: 100vw
+                margin-left: -50vw
+                margin-right: -50vw
+                box-sizing: border-box
             &__scroll
-                overflow-y: hidden
-                overflow-x: scroll
-                scroll-snap-type: x mandatory
                 display: flex
-                justify-content: end
-                flex-wrap: wrap
-                flex-direction: column
-                border: 1px solid var(--color-neutral-4)
-                border-radius: var(--radius-1)
+                gap: var(--size-s)
+                @media (width < $media-medium)
+                    padding-inline: var(--size-s)
+                    overflow-y: hidden
+                    overflow-x: scroll
             .t__card__image
-                scroll-snap-align: start
                 aspect-ratio: initial
                 img
-                    border: none
-                    border-radius: initial
+                    @media (width < $media-medium)
+                        min-width: 300px
         &__header
             display: flex
             flex-direction: column
             padding: var(--size-s)
+            @media (width >= $media-small)
+                padding: var(--size-m)
         &__title
             margin-top: 0
         &__client

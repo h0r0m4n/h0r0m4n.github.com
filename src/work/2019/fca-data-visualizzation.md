@@ -11,7 +11,7 @@ css:
   neutral3: 'rgba(255, 255, 255, 0.12);'
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#383D4A'
+  colorBackground: '#2e333f'
 role: Lead Interface Designer
 roles:
   - User Interface
