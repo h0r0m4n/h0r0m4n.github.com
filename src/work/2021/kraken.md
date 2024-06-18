@@ -2,6 +2,16 @@
 title: Crypto & Bitcoin app
 description: I led the re-design of the main page of the iOS Kraken app, a leader in Europe's Bitcoin trading platform.
 client: Kraken
+css:
+  primary: '#fff'
+  secondary: '#BFA0FF'
+  tertiary: '#BFA0FF'
+  neutral1: 'rgba(255, 255, 255, 0.5);'
+  neutral2: 'rgba(255, 255, 255, 0.25);'
+  neutral3: 'rgba(255, 255, 255, 0.12);'
+  neutral4: 'rgba(255, 255, 255, 0.06);'
+  thumbnailHover: 'rgba(255, 255, 255, 0.12)'
+  colorBackground: '#252A36'
 role: Lead Designer
 roles:
   - Product Design
