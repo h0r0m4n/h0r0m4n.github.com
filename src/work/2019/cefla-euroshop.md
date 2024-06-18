@@ -11,7 +11,7 @@ css:
   neutral3: 'rgba(255, 255, 255, 0.12);'
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#2E335F'
+  colorBackground: '#262949'
 role: Lead Designer
 roles:
   - Product Design
