@@ -12,17 +12,17 @@ html
     text-rendering: optimizeLegibility
     background-color: var(--color-background)
     &::-webkit-scrollbar
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             width: 0.5rem
 
     &::-webkit-scrollbar-thumb
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             background: var(--color-secondary)
 
     &::-webkit-scrollbar-track
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             background: var(--color-neutral-4)
-    @media #{$media-query-medium}
+    @media (width >= $media-small)
         scroll-padding-top: var(--size-xl)
 
 body
@@ -36,7 +36,7 @@ body
     color: var(--color-primary)
     word-wrap: break-word
     overflow-wrap: break-word
-    @media #{$media-query-medium}
+    @media (width >= $media-small)
         font-size: 1.25em
 
 main
@@ -154,17 +154,17 @@ figure
     &.large
         margin-left: calc(var(--size-s) * -1)
         margin-right: calc(var(--size-s) * -1)
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             margin-left: calc(var(--size-m) * -1)
             margin-right: calc(var(--size-m) * -1)
-        @media #{$media-query-large}
+        @media (width >= $media-large)
             margin-left: -9rem
             margin-right: -9rem
-        @media #{$media-query-huge}
+        @media (width >= $media-large)
             margin-left: -17rem
             margin-right: -17rem
     &.full
-        @media #{$media-query-large}
+        @media (width >= $media-large)
             position: relative
             left: 50%
             right: 50%
@@ -176,7 +176,7 @@ figure
 
     img, video
         width: 100%
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             border-radius: var(--radius-1)
 
     figcaption

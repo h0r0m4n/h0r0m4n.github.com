@@ -7,7 +7,7 @@
 
     .stats
         line-height: var(--type-height-2)
-        @media #{$media-query-medium}
+        @media (width >= $media-small)
             display: flex
 
         p
@@ -15,7 +15,7 @@
             background-color: var(--color-neutral-4)
             border-radius: var(--radius-2)
 
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 flex: auto
                 margin-right: var(--size-s)
                 &:last-of-type

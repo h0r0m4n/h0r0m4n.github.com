@@ -7,7 +7,7 @@
     img
         position: relative
         border-radius: var(--radius-1)
-        @media #{$media-query-small-only}
+        @media (width < $media-small)
             width: 100%
         @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
             transition: box-shadow 150ms ease-in
@@ -43,7 +43,7 @@
             display: block
             text-decoration: none
             border-radius: var(--radius-1)
-            @media #{$media-query-medium}
+            @media (width >= $media-small)
                 display: inline-block
 
             &:hover
