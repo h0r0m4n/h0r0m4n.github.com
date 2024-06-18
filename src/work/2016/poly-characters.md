@@ -3,15 +3,15 @@ title: Poly Characters
 description: Vector low-polygon characters.
 client: 
 css:
-  primary: '#fff'
-  secondary: '#FF8682'
-  tertiary: '#FF8682'
-  neutral1: 'rgba(255, 255, 255, 0.5);'
-  neutral2: 'rgba(255, 255, 255, 0.25);'
-  neutral3: 'rgba(255, 255, 255, 0.12);'
-  neutral4: 'rgba(255, 255, 255, 0.06);'
+  primary: '#002856'
+  secondary: '#BC0000'
+  tertiary: '#BC0000'
+  neutral1: 'rgba(13, 13, 13, 0.5);'
+  neutral2: 'rgba(13, 13, 13, 0.25);'
+  neutral3: 'rgba(13, 13, 13, 0.12);'
+  neutral4: 'rgba(13, 13, 13, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#570058'
+  colorBackground: '#F7839F'
 roles:
   - Graphic Design
 platform: NFT
