@@ -27,4 +27,5 @@ carousel:
   - src/static/work/kraken-2.jpg
   - src/static/work/kraken-3.jpg
   - src/static/work/kraken-4.jpg
+eleventyExcludeFromCollections: true
 ---
