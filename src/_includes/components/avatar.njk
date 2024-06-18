@@ -2,8 +2,10 @@
     <a class="t__avatar t__hover t__hover--2" href="/" rel="home" title="Homepage">
 {% endif %}
     <picture class="t__avatar">
-        <source srcset="{{ '/static/assets/avatar-dark.png' | url }} 1x, {{ '/static/assets/avatar-dark@1.5x.png' | url }} 1.5x, {{ '/static/assets/avatar-dark@2x.png' | url }} 2x" media="(prefers-color-scheme: dark)">
-        <source srcset="{{ '/static/assets/avatar-light.png' | url }} 1x, {{ '/static/assets/avatar-light@1.5x.png' | url }} 1.5x, {{ '/static/assets/avatar-light@2x.png' | url }} 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <source type="image/webp" srcset="{{ '/static/assets/avatar-dark.webp' | url }} 1x, {{ '/static/assets/avatar-dark@1.5x.webp' | url }} 1.5x, {{ '/static/assets/avatar-dark@2x.webp' | url }} 2x" media="(prefers-color-scheme: dark)">
+        <source type="image/webp" srcset="{{ '/static/assets/avatar-light.webp' | url }} 1x, {{ '/static/assets/avatar-light@1.5x.webp' | url }} 1.5x, {{ '/static/assets/avatar-light@2x.webp' | url }} 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <source type="image/png" srcset="{{ '/static/assets/avatar-dark.png' | url }} 1x, {{ '/static/assets/avatar-dark@1.5x.png' | url }} 1.5x, {{ '/static/assets/avatar-dark@2x.png' | url }} 2x" media="(prefers-color-scheme: dark)">
+        <source type="image/png" srcset="{{ '/static/assets/avatar-light.png' | url }} 1x, {{ '/static/assets/avatar-light@1.5x.png' | url }} 1.5x, {{ '/static/assets/avatar-light@2x.png' | url }} 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
         <img src="{{ '/static/assets/avatar-light.png' | url }}" width="96" height="143" loading="eager" decoding="async" alt="{{ site.author }}">
     </picture>
 {% if layout == 'work' or layout == 'not-found' %}
