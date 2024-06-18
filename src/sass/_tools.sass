@@ -95,6 +95,9 @@
         display: flex
         flex-direction: column
         width: 100%
+        .t__grid--works &
+            @media (width < $media-small)
+                margin-bottom: var(--size-m)
         &--interactive
             &:hover
                 img
