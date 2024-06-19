@@ -21,6 +21,7 @@ date: 2019-10-11
 finished: true
 permalink: false
 thumbnail: src/static/work/ubi-banca-data-visualization.jpg
+thumbnailRatio: 1-1
 carousel:
   - src/static/work/ubi-banca-data-visualization-1.jpg
   - src/static/work/ubi-banca-data-visualization-2.jpg

@@ -9,5 +9,6 @@ date: 2016-02-28
 finished: true
 permalink: false
 thumbnail: src/static/work/3d-sphere.jpg
+thumbnailRatio: 1-1
 eleventyExcludeFromCollections: true
 ---

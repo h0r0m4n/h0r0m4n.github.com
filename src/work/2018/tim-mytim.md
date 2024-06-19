@@ -21,6 +21,7 @@ date: 2018-05-07
 finished: true
 permalink: false
 thumbnail: src/static/work/tim-mytim.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/tim-mytim-1.jpg
   - src/static/work/tim-mytim-2.jpg

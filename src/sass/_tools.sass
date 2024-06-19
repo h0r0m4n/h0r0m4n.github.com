@@ -114,9 +114,8 @@
                 display: flex
                 flex-direction: column
                 justify-content: end
-                aspect-ratio: 1/1
-                .t__card--bits &
-                    aspect-ratio: inherit
+                .t__grid--works &
+                    aspect-ratio: 1 / 1
             img
                 transition: box-shadow 150ms ease-in
                 border-radius: var(--radius-1)
@@ -147,7 +146,6 @@
                     overflow-y: hidden
                     overflow-x: scroll
             .t__card__image
-                aspect-ratio: initial
                 img
                     @media (width < $media-medium)
                         min-width: 300px
@@ -207,3 +205,11 @@
 
     &__lead
         font-size: 1.25em
+
+    &__ratio
+        &--1-1
+            aspect-ratio: 1 / 1
+        &--4-3
+            aspect-ratio: 4 / 3
+        &--16-10
+            aspect-ratio: 16 / 10

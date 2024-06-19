@@ -22,6 +22,7 @@ date: 2020-11-20
 finished: false
 permalink: false
 thumbnail: src/static/work/valentino-place.jpg
+thumbnailRatio: 4-3
 carousel:
   - src/static/work/valentino-place-1.jpg
   - src/static/work/valentino-place-2.jpg

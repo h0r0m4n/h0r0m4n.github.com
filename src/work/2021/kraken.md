@@ -22,6 +22,7 @@ date: 2021-10-11
 finished: true
 permalink: false
 thumbnail: src/static/work/kraken.jpg
+thumbnailRatio: 4-3
 carousel:
   - src/static/work/kraken-1.jpg
   - src/static/work/kraken-2.jpg

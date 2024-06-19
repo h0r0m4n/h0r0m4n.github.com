@@ -19,6 +19,7 @@ date: 2016-08-05
 finished: true
 permalink: false
 thumbnail: src/static/work/poly-characters.jpg
+thumbnailRatio: 1-1
 carousel:
   - src/static/work/poly-characters-1.jpg
   - src/static/work/poly-characters-2.jpg

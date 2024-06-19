@@ -13,5 +13,6 @@ date: 2019-07-15
 finished: true
 permalink: false
 thumbnail: src/static/work/enel-main-website.jpg
+thumbnailRatio: 4-3
 eleventyExcludeFromCollections: true
 ---

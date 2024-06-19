@@ -9,5 +9,6 @@ date: 2016-01-26
 finished: true
 permalink: false
 thumbnail: src/static/work/3d-rainbow.jpg
+thumbnailRatio: 1-1
 eleventyExcludeFromCollections: true
 ---

@@ -35,9 +35,9 @@ permalink: "/{{ page.fileSlug }}/index.html"
                                 {% if work.data.carousel %}
                                     <figure class="t__card__carousel">
                                         <div class="t__card__carousel__scroll">
-                                            {% thumbnail work.data.thumbnail, work.data.title %}
+                                            {% thumbnail work.data.thumbnail, work.data.title, work.data.thumbnailRatio %}
                                             {% for image in work.data.carousel %}
-                                                {% thumbnail image %}
+                                                {% thumbnail image, work.data.title, work.data.thumbnailRatio %}
                                             {% endfor %}
                                         </div>
                                     </figure>

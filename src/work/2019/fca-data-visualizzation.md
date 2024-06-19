@@ -21,6 +21,7 @@ date: 2019-10-07
 finished: true
 permalink: false
 thumbnail: src/static/work/fca-data-visualizzation.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/fca-data-visualizzation-1.jpg
   - src/static/work/fca-data-visualizzation-2.jpg

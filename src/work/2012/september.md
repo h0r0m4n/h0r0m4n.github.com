@@ -10,5 +10,6 @@ date: 2012-08-23
 finished: true
 permalink: false
 thumbnail: src/static/work/september.jpg
+thumbnailRatio: 4-3
 eleventyExcludeFromCollections: true
 ---

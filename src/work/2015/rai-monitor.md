@@ -20,6 +20,7 @@ date: 2015-05-28
 finished: true
 permalink: false
 thumbnail: src/static/work/rai-monitor.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/rai-monitor-1.jpg
   - src/static/work/rai-monitor-2.jpg

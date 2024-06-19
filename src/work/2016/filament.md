@@ -22,6 +22,7 @@ date: 2016-02-08
 finished: true
 permalink: false
 thumbnail: src/static/work/filament.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/filament-1.jpg
   - src/static/work/filament-2.jpg
