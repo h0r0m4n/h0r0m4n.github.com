@@ -20,6 +20,7 @@ date: 2015-06-30
 finished: true
 permalink: false
 thumbnail: src/static/work/jvc-paradox.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/jvc-paradox-1.jpg
   - src/static/work/jvc-paradox-2.jpg

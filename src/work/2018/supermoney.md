@@ -13,5 +13,6 @@ date: 2018-08-01
 finished: true
 permalink: false
 thumbnail: src/static/work/supermoney.jpg
+thumbnailRatio: 4-3
 eleventyExcludeFromCollections: true
 ---

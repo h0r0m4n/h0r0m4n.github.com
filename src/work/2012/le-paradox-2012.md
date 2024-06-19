@@ -21,6 +21,7 @@ date: 2012-11-28
 finished: true
 permalink: false
 thumbnail: src/static/work/le-paradox-v1.jpg
+thumbnailRatio: 1-1
 carousel:
   - src/static/work/le-paradox-v1-1.jpg
   - src/static/work/le-paradox-v1-2.jpg

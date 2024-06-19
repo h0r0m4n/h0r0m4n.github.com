@@ -10,5 +10,6 @@ date: 2015-03-17
 finished: true
 permalink: false
 thumbnail: src/static/work/francesca-moschino.jpg
+thumbnailRatio: 16-10
 eleventyExcludeFromCollections: true
 ---

@@ -20,6 +20,7 @@ date: 2015-07-02
 finished: true
 permalink: false
 thumbnail: src/static/work/hud.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/hud-1.jpg
   - src/static/work/hud-2.jpg

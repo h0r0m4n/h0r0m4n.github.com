@@ -10,5 +10,6 @@ date: 2016-02-03
 finished: true
 permalink: false
 thumbnail: src/static/work/polygon.jpg
+thumbnailRatio: 16-10
 eleventyExcludeFromCollections: true
 ---

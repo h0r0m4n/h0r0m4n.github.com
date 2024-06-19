@@ -198,8 +198,8 @@ module.exports = function (eleventyConfig) {
   });
 
     // Work thumbnail
-    // Usage: {% thumbnail "static/work/file-name.jpg" "My alt…" %}
-    eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, alt) => {
+    // Usage: {% thumbnail "static/work/file-name.jpg" "My alt…" "16:10" %}
+    eleventyConfig.addNunjucksAsyncShortcode('thumbnail', async (src, alt, ratio) => {
 
         let stats = await Image(src, {
             widths: [960, 1280, 2560],
@@ -242,7 +242,7 @@ module.exports = function (eleventyConfig) {
             height="${lowestSrc.height}">`;
 
         return outdent`
-            <picture class="t__card__image">
+            <picture class="t__card__image t__ratio t__ratio--${ratio}">
                 ${sourceAVIF}
                 ${sourceWEBP}
                 ${img}

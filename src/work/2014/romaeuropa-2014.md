@@ -10,5 +10,6 @@ date: 2014-09-23
 finished: true
 permalink: false
 thumbnail: src/static/work/romaeuropa-2014.jpg
+thumbnailRatio: 4-3
 eleventyExcludeFromCollections: true
 ---

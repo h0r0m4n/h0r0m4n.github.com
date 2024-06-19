@@ -22,6 +22,7 @@ date: 2020-09-11
 finished: false
 permalink: false
 thumbnail: src/static/work/ied-main-website.jpg
+thumbnailRatio: 1-1
 carousel:
   - src/static/work/ied-main-website-1.jpg
   - src/static/work/ied-main-website-2.jpg

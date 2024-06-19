@@ -14,5 +14,6 @@ date: 2019-01-07
 finished: true
 permalink: false
 thumbnail: src/static/work/ubi-banca-main-site.jpg
+thumbnailRatio: 4-3
 eleventyExcludeFromCollections: true
 ---

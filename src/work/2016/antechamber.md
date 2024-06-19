@@ -20,6 +20,7 @@ platform: Video
 finished: true
 permalink: false
 thumbnail: src/static/work/antechamber.jpg
+thumbnailRatio: 16-10
 carousel:
   - src/static/work/antechamber-1.jpg
   - src/static/work/antechamber-2.jpg

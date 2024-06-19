@@ -11,5 +11,6 @@ date: 2014-01-23
 finished: true
 permalink: false
 thumbnail: src/static/work/le-paradox-v2.jpg
+thumbnailRatio: 4-3
 eleventyExcludeFromCollections: true
 ---
