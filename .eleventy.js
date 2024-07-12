@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
         .addPassthroughCopy({"src/static/work/*.mp4": "/static/work"})
         .addPassthroughCopy({"src/static/testimonials": "/static/testimonials"})
         .addPassthroughCopy({"src/static/books": "/static/books"})
+        .addPassthroughCopy({"src/js": "/js"})
         .addPassthroughCopy("src/*.{png,svg,ico}")
         .addPassthroughCopy("src/site.webmanifest")
         .addPassthroughCopy("src/robots.txt")
@@ -248,6 +249,60 @@ module.exports = function (eleventyConfig) {
                 ${img}
             </picture>
         `;
+    });
+
+    // Work lightbox
+    // Usage: {% lightbox "static/work/file-name.jpg" "Gallery 1" "Caption 1" "16:10" %}
+    eleventyConfig.addNunjucksAsyncShortcode('lightbox', async (src, galleryName, caption, ratio) => {
+      let stats = await Image(src, {
+          widths: [960, 1280, 2560],
+          formats: ["jpeg", "webp", "avif"],
+          sharpOptions: { quality: 90 },
+          filenameFormat: function (id, src, width, format, options) {
+              const extension = path.extname(src);
+              const name = path.basename(src, extension);
+              return `${name}-${width}w.${format}`;
+          },
+          urlPath: "/static/work",
+          outputDir: "./dist/static/work",
+      });
+  
+      let largestSrc = stats["jpeg"][stats["jpeg"].length - 1];
+      let lowestSrc = stats["jpeg"][0];
+  
+      const srcset = Object.keys(stats).reduce(
+          (acc, format) => ({
+              ...acc,
+              [format]: stats[format].reduce(
+                  (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                  ""
+              ),
+          }),
+          {}
+      );
+  
+      const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+      const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+  
+      const img = `<img
+          loading="lazy"
+          decoding="sync"
+          alt="${caption}"
+          src="${lowestSrc.url}"
+          sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
+          srcset="${srcset["jpeg"]}"
+          width="${lowestSrc.width}"
+          height="${lowestSrc.height}">`;
+  
+      return outdent`
+          <a href="${largestSrc.url}" data-fancybox="${galleryName}" data-caption="${caption}" class="t__hover t__hover--2">
+              <picture class="t__card__image t__ratio t__ratio--${ratio}">
+                  ${sourceAVIF}
+                  ${sourceWEBP}
+                  ${img}
+              </picture>
+          </a>
+      `;
     });
 
     // Book cover
