@@ -1269,13 +1269,17 @@ html.with-fancybox body.hide-scrollbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;
+    margin: 0.5rem 0 0 0;
     padding: 0 1rem;
     color: var(--fancybox-color, currentColor);
     opacity: var(--fancybox-opacity, 1);
     text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.5));
     pointer-events: none;
-    z-index: 20
+    z-index: 20;
+
+    .is-compact & {
+        margin-top: 0;
+    }
 }
 
 .fancybox__toolbar :focus-visible {
