@@ -13,7 +13,7 @@ css:
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
   colorBackground: '#262326'
 roles:
-  - User Interface
+  - 3D Modelling
   - Interaction Design
   - Web Development
 platform: VR

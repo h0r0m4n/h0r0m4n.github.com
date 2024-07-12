@@ -14,10 +14,15 @@ css:
   colorBackground: '#2D3952'
 role: Lead Designer
 roles:
-  - User Research
-  - User Interface
-  - Interaction Design
-  - Design System
+  - User Experience Design
+  - User Iterface Design
+  - Design Systems
+  - Icon Design
+  - Design Thinking
+  - Responsive Design
+  - Mobile First Design
+  - Agile
+  - WCAG
 platform: Web
 date: 2021-06-24
 finished: true
