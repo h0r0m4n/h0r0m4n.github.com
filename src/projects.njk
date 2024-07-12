@@ -32,18 +32,34 @@ permalink: "/{{ page.fileSlug }}/index.html"
                                         {% endif %}
                                     </ul>
                                 </header>
+
                                 {% if work.data.carousel %}
                                     <figure class="t__card__carousel">
                                         <div class="t__card__carousel__scroll">
-                                            {% set lightboxID = work.data.client |slugify + '-' + work.data.title | slugify %}
-                                            {% set combinedTitle = work.data.client + ' – ' + work.data.title %}
+                                            {% if work.data.client %}
+                                                {% set lightboxID = work.data.client | slugify + '-' + work.data.title | slugify %}
+                                                {% set combinedTitle = work.data.client + ' – ' + work.data.title %}
+                                            {% else %}
+                                                {% set lightboxID = work.data.title | slugify %}
+                                                {% set combinedTitle = work.data.title %}
+                                            {% endif %}
+
                                             {% lightbox work.data.thumbnail, lightboxID, combinedTitle, work.data.thumbnailRatio %}
+
                                             {% for image in work.data.carousel %}
                                                 {% lightbox image, lightboxID, combinedTitle, work.data.thumbnailRatio %}
                                             {% endfor %}
                                         </div>
                                     </figure>
                                 {% else %}
+                                    {% if work.data.client %}
+                                        {% set lightboxID = work.data.client | slugify + '-' + work.data.title | slugify %}
+                                        {% set combinedTitle = work.data.client + ' – ' + work.data.title %}
+                                    {% else %}
+                                        {% set lightboxID = work.data.title | slugify %}
+                                        {% set combinedTitle = work.data.title %}
+                                    {% endif %}
+
                                     {% lightbox work.data.thumbnail, lightboxID, combinedTitle %}
                                 {% endif %}
                             </article>
