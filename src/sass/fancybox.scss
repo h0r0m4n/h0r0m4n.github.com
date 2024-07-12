@@ -320,7 +320,7 @@
     --f-button-width: 40px;
     --f-button-height: 40px;
     --f-button-border: 0;
-    --f-button-border-radius: var(--radius-1);
+    --f-button-border-radius: var(--radius-2);
     --f-button-color: #374151;
     --f-button-bg: #f8f8f8;
     --f-button-hover-bg: #e0e0e0;
@@ -631,7 +631,7 @@ html.with-fancybox body.hide-scrollbar {
     color: var(--fancybox-content-color, #374151);
     background: var(--fancybox-content-bg, #fff);
     cursor: default;
-    border-radius: 0;
+    border-radius: var(--radius-1);
     z-index: 20
 }
 
