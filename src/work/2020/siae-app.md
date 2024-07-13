@@ -11,13 +11,16 @@ css:
   neutral3: 'rgba(255, 255, 255, 0.12);'
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#465888'
+  colorBackground: '#3d4c75'
 role: Lead Designer
 roles:
-  - Product Design
-  - User Experience
-  - User Interface
-  - Interaction Design
+  - User Experience Design
+  - User Iterface Design
+  - Data Visualization
+  - Mobile Design
+  - Low & High-fi prototyping
+  - Design Thinking
+  - Agile
 platform: Mobile
 date: 2020-03-11
 finished: true

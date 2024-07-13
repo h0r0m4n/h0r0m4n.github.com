@@ -11,13 +11,18 @@ css:
   neutral3: 'rgba(255, 255, 255, 0.12);'
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#2D3952'
+  colorBackground: '#242e44'
 role: Lead Designer
 roles:
-  - User Research
-  - User Interface
-  - Interaction Design
-  - Design System
+  - User Experience Design
+  - User Iterface Design
+  - Design Systems
+  - Icon Design
+  - Design Thinking
+  - Responsive Design
+  - Mobile First Design
+  - Agile
+  - WCAG
 platform: Web
 date: 2021-06-24
 finished: true

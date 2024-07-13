@@ -161,13 +161,21 @@ figure
         @media (width >= $media-small)
             margin-left: calc(var(--size-m) * -1)
             margin-right: calc(var(--size-m) * -1)
-        @media (width >= $media-large)
+        @media (width >= $media-medium)
             margin-left: -9rem
             margin-right: -9rem
         @media (width >= $media-large)
             margin-left: -17rem
             margin-right: -17rem
     &.full
+        margin-left: calc(var(--size-s) * -1)
+        margin-right: calc(var(--size-s) * -1)
+        @media (width >= $media-small)
+            margin-left: calc(var(--size-m) * -1)
+            margin-right: calc(var(--size-m) * -1)
+        @media (width >= $media-medium)
+            margin-left: -9rem
+            margin-right: -9rem
         @media (width >= $media-large)
             position: relative
             left: 50%

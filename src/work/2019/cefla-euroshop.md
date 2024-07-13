@@ -14,10 +14,12 @@ css:
   colorBackground: '#262949'
 role: Lead Designer
 roles:
-  - Product Design
-  - User Experience
-  - User Interface
-  - Interaction Design
+  - User Experience Design
+  - User Iterface Design
+  - Mobile Design
+  - Low & High-fi prototyping
+  - Design Thinking
+  - Hot Potato Process
 platform: Mobile
 date: 2019-11-08
 finished: true
