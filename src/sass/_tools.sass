@@ -149,6 +149,14 @@
                 img
                     @media (width < $media-medium)
                         min-width: 300px
+            a
+                img
+                    transition: box-shadow 150ms ease-in
+
+                &:hover
+                    img
+                        @media (prefers-color-scheme: light), (prefers-color-scheme: no-preference)
+                            box-shadow: var(--shadow-2)
         &__header
             display: flex
             flex-direction: column
