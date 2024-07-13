@@ -28,16 +28,16 @@
 <style>
     :root {
         
-        --color-primary: #0d0d0d;
-        --color-secondary: #322abb;
-        --color-tertiary: #ad9000;
-        --color-neutral-1: rgba(13, 13, 13, 0.5);
-        --color-neutral-2: rgba(13, 13, 13, 0.25);
-        --color-neutral-3: rgba(13, 13, 13, 0.12);
-        --color-neutral-4: rgba(13, 13, 13, 0.06);
-        --color-thumbnail-hover: rgba(255, 255, 255, 0.25);
+        --color-primary: #fff;
+        --color-secondary: #ffde33;
+        --color-tertiary: #deba01;
+        --color-neutral-1: rgba(255, 255, 255, 0.5);;
+        --color-neutral-2: rgba(255, 255, 255, 0.25);;
+        --color-neutral-3: rgba(255, 255, 255, 0.12);;
+        --color-neutral-4: rgba(255, 255, 255, 0.06);;
+        --color-thumbnail-hover: rgba(255, 255, 255, 0.12);
         --color-overlay: rgba(255, 255, 255, 0.98);
-        --color-background: #fff;
+        --color-background: #322abb;
         --shadow-1: 0 4px 12px rgba(0,0,0,.12);
         --shadow-2: 0 6px 24px rgba(0,0,0,.32);
 
@@ -68,24 +68,10 @@
     }
     
     
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --color-primary: #fff;
-                --color-secondary: #a958ff;
-                --color-tertiary: #51e1c0;
-                --color-neutral-1: rgba(255, 255, 255, 0.5);
-                --color-neutral-2: rgba(255, 255, 255, 0.25);
-                --color-neutral-3: rgba(255, 255, 255, 0.12);
-                --color-neutral-4: rgba(255, 255, 255, 0.06);
-                --color-thumbnail-hover: rgba(255, 255, 255, 0.12);
-                --color-overlay: rgba(30, 0, 31, 0.98);
-                --color-background: #110016;
-            }
-        }
     
 </style>
 
-<link rel="stylesheet" href="/css/style.css?v=5.5">
+<link rel="stylesheet" href="/css/style.css?v=5.6">
 
 
 
@@ -98,10 +84,9 @@
             <figure class="intro__avatar">
                 <a class="t__avatar t__hover t__hover--2" href="/" rel="home" title="Homepage">
     <picture class="t__avatar">
-        <source type="image/webp" srcset="/static/assets/avatar-dark.webp 1x, /static/assets/avatar-dark@1.5x.webp 1.5x, /static/assets/avatar-dark@2x.webp 2x" media="(prefers-color-scheme: dark)">
         <source type="image/webp" srcset="/static/assets/avatar-light.webp 1x, /static/assets/avatar-light@1.5x.webp 1.5x, /static/assets/avatar-light@2x.webp 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
-        <source type="image/png" srcset="/static/assets/avatar-dark.png 1x, /static/assets/avatar-dark@1.5x.png 1.5x, /static/assets/avatar-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
         <source type="image/png" srcset="/static/assets/avatar-light.png 1x, /static/assets/avatar-light@1.5x.png 1.5x, /static/assets/avatar-light@2x.png 2x" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        
         <img src="/static/assets/avatar-light.png" width="96" height="143" loading="eager" decoding="async" alt="Roman Horokhovatskyy">
     </picture>
 </a>
@@ -662,7 +647,7 @@
                 <li>Powered by <a href="https://11ty.dev" rel="noopener noreferrer nofollow" target="_blank">11ty</a> as static site generator, JavaScript, SASS and Nunjucks.</li>
                 <li>Hosted using <a href="https://pages.github.com" rel="noopener noreferrer nofollow" target="_blank">GitHub Pages</a> and <a href="https://github.com/features/actions" rel="noopener noreferrer nofollow" target="_blank">GitHub Actions</a>.</li>
                 <li><a href="https://www.simpleanalytics.com/?referral=vasuc" rel="noopener noreferrer nofollow" target="_blank">Simple Analytics</a> is used as analytics platform.</li>
-                <li>Current site version is 5.5.</li>
+                <li>Current site version is 5.6.</li>
             </ul>
         </div>
     </div>
