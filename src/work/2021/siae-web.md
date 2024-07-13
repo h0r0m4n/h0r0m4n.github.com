@@ -11,7 +11,7 @@ css:
   neutral3: 'rgba(255, 255, 255, 0.12);'
   neutral4: 'rgba(255, 255, 255, 0.06);'
   thumbnailHover: 'rgba(255, 255, 255, 0.12)'
-  colorBackground: '#2D3952'
+  colorBackground: '#242e44'
 role: Lead Designer
 roles:
   - User Experience Design
