@@ -23,7 +23,7 @@ permalink: "/{{ page.fileSlug }}/index.html"
                                     {% if work.data.description %}
                                         <p class="t__card__desc">{{ work.data.description }}</p>
                                     {% endif %}
-                                    <ul class="t__card__stats">
+                                    <ul class="t__stats">
                                         {% if work.data.platform %}
                                             <li{% if work.data.css %} style="color: {{ work.data.css.primary }}; background-color: {{ work.data.css.neutral4 }}; border-color: {{ work.data.css.neutral3 }};"{% endif %}>{{ work.data.platform }}</li>
                                         {% endif %}

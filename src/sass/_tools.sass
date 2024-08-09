@@ -184,20 +184,7 @@
             &:hover, &:focus
                 img
                     box-shadow: var(--shadow-2)
-        &__stats
-            list-style: none
-            padding-left: 0
-            li
-                display: inline-block
-                font-size: 0.625em
-                padding: 0.25em 0.5em 0.125em 0.625em
-                background-color: var(--color-neutral-4)
-                color: var(--color-primary)
-                width: fit-content
-                border-radius: var(--radius-2)
-                border: 1px solid var(--color-neutral-3)
-                text-transform: uppercase
-                letter-spacing: 0.0625em
+
         &__desc
             font-size: 0.75em
 
@@ -221,3 +208,19 @@
             aspect-ratio: 4 / 3
         &--16-10
             aspect-ratio: 16 / 10
+
+    &__stats
+        display: flex
+        flex-wrap: wrap
+        gap: var(--size-xs)
+        list-style: none
+        padding-left: 0
+        li
+            display: inline-block
+            font-size: 0.75em
+            padding: 0.25em 0.5em 0.125em 0.625em
+            background-color: var(--color-neutral-4)
+            color: var(--color-primary)
+            width: fit-content
+            border-radius: var(--radius-2)
+            border: 1px solid var(--color-neutral-3)
