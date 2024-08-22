@@ -48,6 +48,8 @@ Throughout the design process, I employed a range of user-centered methodologies
 
 {% image "src/static/work/cefla-euroshop-5.jpg" "" "External promps/solutions for user personas." %}
 
+{% carousel "src/static/work/cefla-euroshop-ut-1.jpg" "14" "Usability Testing Results" %}
+
 ## Challenges and Solutions
 
 One of the primary challenges was designing a user interface that was intuitive and easy to navigate, even for first-time users. This required careful consideration of the user's journey throughout the shopping process and ensuring that the app was clear and accessible.

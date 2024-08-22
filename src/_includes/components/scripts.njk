@@ -2,6 +2,10 @@
     <script src="{{ '/js/fancybox.js' | url }}?v={{ site.version }}"></script>
 {% endif %}
 
+{% if layout == 'layouts/work' %}
+    <script src="{{ '/js/carousel.js' | url }}?v={{ site.version }}"></script>
+{% endif %}
+
 <script>
     if (window.navigator && navigator.serviceWorker) {
         navigator.serviceWorker.getRegistrations()
@@ -131,6 +135,19 @@
                     right: ["close"],
                 }
             }
+        });
+    {% endif %}
+
+    {% if layout == 'layouts/work' %}
+        // Carousel configs
+        document.querySelectorAll('.f-carousel').forEach((carousel) => {
+            const options = {
+                infinite: false,
+                Dots: {
+                    minCount: 5
+                }
+            };
+            new Carousel(carousel, options);
         });
     {% endif %}
 </script>
