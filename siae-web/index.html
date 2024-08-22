@@ -71,8 +71,12 @@
     
 </style>
 
-<link rel="stylesheet" href="/css/style.css?v=5.7">
+<link rel="stylesheet" href="/css/style.css?v=5.8">
 
+
+
+
+    <link rel="stylesheet" href="/css/carousel.css?v=5.8">
 
 
     </head>
@@ -371,6 +375,89 @@
 <li>GitHub for code repository and versioning</li>
 <li>11ty as file static-generator</li>
 </ul>
+<h4>Design Tokens</h4>
+<p>Design tokens are a key element in ensuring consistency across multiple platforms and products. They allow you to abstract the values for colors, typography, spacing, and other design elements into a centralized system. This approach not only makes updates easier but also ensures that any changes propagate consistently across all products.</p>
+<h5>Colour Tokens</h5>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"color"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"on-light"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"rgb(42, 58, 84)"</span><span class="token punctuation">,</span>
+      <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"rgba(42, 58, 84, 80%)"</span><span class="token punctuation">,</span>
+      <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"rgba(42, 58, 84, 70%)"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"on-dark"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"rgb(255, 255, 255)"</span><span class="token punctuation">,</span>
+      <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"rgba(255, 255, 255, 80%)"</span><span class="token punctuation">,</span>
+      <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"rgba(255, 255, 255, 70%)"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"brand"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"rgb(10, 108, 174)"</span><span class="token punctuation">,</span>
+      <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"rgba(10, 108, 174, 75%)"</span><span class="token punctuation">,</span>
+      <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"rgba(10, 108, 174, 50%)"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"semantics"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"success"</span><span class="token operator">:</span> <span class="token string">"rgb(10, 132, 0)"</span><span class="token punctuation">,</span>
+      <span class="token property">"danger"</span><span class="token operator">:</span> <span class="token string">"rgb(226, 14, 14)"</span><span class="token punctuation">,</span>
+      <span class="token property">"warning"</span><span class="token operator">:</span> <span class="token string">"rgb(233, 110, 0)"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h5>Typography Tokens</h5>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"font"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"family"</span><span class="token operator">:</span> <span class="token string">"'IBM Plex Sans Condensed', sans-serif"</span><span class="token punctuation">,</span>
+    <span class="token property">"line-height"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"1"</span><span class="token punctuation">,</span>
+      <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"1.2"</span><span class="token punctuation">,</span>
+      <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"1.5"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"size"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"56px"</span><span class="token punctuation">,</span>
+      <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"48px"</span><span class="token punctuation">,</span>
+      <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"38px"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h5>Spacing Tokens</h5>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"spacing"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"4px"</span><span class="token punctuation">,</span>
+    <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"8px"</span><span class="token punctuation">,</span>
+    <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"12px"</span><span class="token punctuation">,</span>
+    …
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<h5>Parcing</h5>
+<p>With the engineering team, we decided that our design tokens would be stored in JSON, which can be easily parsed and transformed into various formats, such as CSS, Sass, XML, and more, making them incredibly versatile. This flexibility allowed different teams within an organisation and me to use the same design tokens in the format that best suits their workflow, ensuring consistency and reducing the risk of errors.</p>
+<p>So this JSON:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token property">"color"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"on-light"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"1"</span><span class="token operator">:</span> <span class="token string">"rgb(42, 58, 84)"</span><span class="token punctuation">,</span>
+      <span class="token property">"2"</span><span class="token operator">:</span> <span class="token string">"rgba(42, 58, 84, 80%)"</span><span class="token punctuation">,</span>
+      <span class="token property">"3"</span><span class="token operator">:</span> <span class="token string">"rgba(42, 58, 84, 70%)"</span><span class="token punctuation">,</span>
+      …
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>can be converted easily in this CSS:</p>
+<pre class="language-css"><code class="language-css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--color-on-light-1</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>42<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 84<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--color-on-light-2</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>42<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 84<span class="token punctuation">,</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">--color-on-light-3</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>42<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 84<span class="token punctuation">,</span> 70%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  …
+<span class="token punctuation">}</span></code></pre>
+<p>or Sass:</p>
+<pre class="language-css"><code class="language-css">$<span class="token property">color-on-light-1</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>42<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 84<span class="token punctuation">)</span><span class="token punctuation">;</span>
+$<span class="token property">color-on-light-2</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>42<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 84<span class="token punctuation">,</span> 80%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+$<span class="token property">color-on-light-3</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>42<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 84<span class="token punctuation">,</span> 70%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+…</code></pre>
 <h4>Design principles</h4>
 <p>Contain specific information regarding the visual references and design principles for creating interfaces or other design deliverables. This section focuses on branding (colours, typography, trademarks, logos and more). It also covers guidance on content such as tone of voice and language recommendations.</p>
 <figure>
@@ -549,6 +636,10 @@
 
         
 
+
+    <script src="/js/carousel.js?v=5.8"></script>
+
+
 <script>
     if (window.navigator && navigator.serviceWorker) {
         navigator.serviceWorker.getRegistrations()
@@ -656,6 +747,19 @@
         removeLocationHash();
     });
 
+    
+
+    
+        // Carousel configs
+        document.querySelectorAll('.f-carousel').forEach((carousel) => {
+            const options = {
+                infinite: false,
+                Dots: {
+                    minCount: 5
+                }
+            };
+            new Carousel(carousel, options);
+        });
     
 </script>
 

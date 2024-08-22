@@ -71,8 +71,12 @@
     
 </style>
 
-<link rel="stylesheet" href="/css/style.css?v=5.7">
+<link rel="stylesheet" href="/css/style.css?v=5.8">
 
+
+
+
+    <link rel="stylesheet" href="/css/carousel.css?v=5.8">
 
 
     </head>
@@ -557,6 +561,10 @@
 
         
 
+
+    <script src="/js/carousel.js?v=5.8"></script>
+
+
 <script>
     if (window.navigator && navigator.serviceWorker) {
         navigator.serviceWorker.getRegistrations()
@@ -664,6 +672,19 @@
         removeLocationHash();
     });
 
+    
+
+    
+        // Carousel configs
+        document.querySelectorAll('.f-carousel').forEach((carousel) => {
+            const options = {
+                infinite: false,
+                Dots: {
+                    minCount: 5
+                }
+            };
+            new Carousel(carousel, options);
+        });
     
 </script>
 
