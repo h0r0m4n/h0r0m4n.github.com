@@ -1,3 +1,6 @@
+@import "vars";
+@import "mixins";
+
 :root {
     --f-spinner-width: 36px;
     --f-spinner-height: 36px;
@@ -638,6 +641,12 @@
 
 .f-button[disabled] svg {
     opacity: var(--f-button-svg-disabled-opacity)
+}
+
+.f-carousel__nav {
+    @media (width < $media-small) {
+        display: none;
+    }
 }
 
 .f-carousel__nav .f-button.is-prev,
