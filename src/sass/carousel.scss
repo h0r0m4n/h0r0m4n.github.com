@@ -317,7 +317,7 @@
 }
 
 .f-carousel {
-    --f-carousel-theme-color: #706f6c;
+    --f-carousel-theme-color: var(--color-secondary);
     --f-carousel-spacing: 0px;
     --f-carousel-slide-width: 100%;
     --f-carousel-slide-height: auto;
@@ -331,8 +331,8 @@
     --f-button-active-bg: var(--f-button-bg);
     --f-button-svg-width: 24px;
     --f-button-svg-height: 24px;
-    --f-button-next-pos: 10px;
-    --f-button-prev-pos: 10px;
+    --f-button-next-pos: var(--size-xs);
+    --f-button-prev-pos: var(--size-xs);
     --f-spinner-color-1: rgba(0, 0, 0, 0.1);
     --f-spinner-color-2: rgba(17, 24, 28, 0.8);
     --f-spinner-stroke: 2.75;
@@ -421,7 +421,7 @@
     --f-carousel-dot-width: 8px;
     --f-carousel-dot-height: 8px;
     --f-carousel-dot-radius: 50%;
-    --f-carousel-dot-color: var(--f-carousel-theme-color, currentColor);
+    --f-carousel-dot-color: var(--color-secondary, currentColor);
     --f-carousel-dot-opacity: 0.2;
     --f-carousel-dot-hover-opacity: 0.4
 }
@@ -572,10 +572,10 @@
     --f-button-transform: none;
     --f-button-svg-width: 20px;
     --f-button-svg-height: 20px;
-    --f-button-svg-stroke-width: 1.5;
+    --f-button-svg-stroke-width: 3;
     --f-button-svg-fill: none;
     --f-button-svg-filter: none;
-    --f-button-svg-disabled-opacity: 0.65
+    --f-button-svg-disabled-opacity: 0
 }
 
 .f-button {
