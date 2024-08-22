@@ -100,6 +100,117 @@ Collaborating with several stakeholders and the rest of the team, I led the writ
 - GitHub for code repository and versioning
 - 11ty as file static-generator
 
+#### Design Tokens
+
+Design tokens are a key element in ensuring consistency across multiple platforms and products. They allow you to abstract the values for colors, typography, spacing, and other design elements into a centralized system. This approach not only makes updates easier but also ensures that any changes propagate consistently across all products.
+
+##### Colour Tokens
+
+```json
+{
+  "color": {
+    "on-light": {
+      "1": "rgb(42, 58, 84)",
+      "2": "rgba(42, 58, 84, 80%)",
+      "3": "rgba(42, 58, 84, 70%)",
+      …
+    },
+    "on-dark": {
+      "1": "rgb(255, 255, 255)",
+      "2": "rgba(255, 255, 255, 80%)",
+      "3": "rgba(255, 255, 255, 70%)",
+      …
+    },
+    "brand": {
+      "1": "rgb(10, 108, 174)",
+      "2": "rgba(10, 108, 174, 75%)",
+      "3": "rgba(10, 108, 174, 50%)",
+      …
+    },
+    "semantics": {
+      "success": "rgb(10, 132, 0)",
+      "danger": "rgb(226, 14, 14)",
+      "warning": "rgb(233, 110, 0)",
+      …
+    }
+  }
+}
+```
+
+##### Typography Tokens
+
+```json
+{
+  "font": {
+    "family": "'IBM Plex Sans Condensed', sans-serif",
+    "line-height": {
+      "1": "1",
+      "2": "1.2",
+      "3": "1.5",
+      …
+    },
+    "size": {
+      "1": "56px",
+      "2": "48px",
+      "3": "38px",
+      …
+    }
+  }
+}
+```
+
+##### Spacing Tokens
+
+```json
+{
+  "spacing": {
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    …
+  }
+}
+```
+
+##### Parcing
+
+With the engineering team, we decided that our design tokens would be stored in JSON, which can be easily parsed and transformed into various formats, such as CSS, Sass, XML, and more, making them incredibly versatile. This flexibility allowed different teams within an organisation and me to use the same design tokens in the format that best suits their workflow, ensuring consistency and reducing the risk of errors.
+
+So this JSON:
+
+```json
+{
+  "color": {
+    "on-light": {
+      "1": "rgb(42, 58, 84)",
+      "2": "rgba(42, 58, 84, 80%)",
+      "3": "rgba(42, 58, 84, 70%)",
+      …
+    }
+  }
+}
+```
+
+can be converted easily in this CSS:
+
+```css
+:root {
+  --color-on-light-1: rgb(42, 58, 84);
+  --color-on-light-2: rgba(42, 58, 84, 80%);
+  --color-on-light-3: rgba(42, 58, 84, 70%);
+  …
+}
+```
+
+or Sass:
+
+```css
+$color-on-light-1: rgb(42, 58, 84);
+$color-on-light-2: rgba(42, 58, 84, 80%);
+$color-on-light-3: rgba(42, 58, 84, 70%);
+…
+```
+
 #### Design principles
 
 Contain specific information regarding the visual references and design principles for creating interfaces or other design deliverables. This section focuses on branding (colours, typography, trademarks, logos and more). It also covers guidance on content such as tone of voice and language recommendations.

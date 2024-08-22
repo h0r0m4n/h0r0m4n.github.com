@@ -2,7 +2,8 @@ const global = require('./src/_data/site'),
       outdent = require('outdent'),
       path = require('path'),
       Image = require('@11ty/eleventy-img'),
-      { DateTime } = require('luxon');
+      { DateTime } = require('luxon'),
+      syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
     // Copy
@@ -25,6 +26,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addCollection('work', function(collectionApi) {
         return collectionApi.getFilteredByGlob('src/work/**/*.md').reverse();
     });
+
+    // Enable syntax highlight
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     // Get the first `n` elements of a collection
     eleventyConfig.addFilter('head', (array, n) => {
