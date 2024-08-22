@@ -196,7 +196,72 @@ module.exports = function (eleventyConfig) {
               ${caption ? `<figcaption class="t__container">${caption}</figcaption>` : ``}
           </figure>
       `;
-  });
+    });
+
+    // Work carousel
+    // Usage: {% carousel "src/static/work/file-name-1.jpg" "6" "My caption…" %}
+    eleventyConfig.addAsyncShortcode('carousel', async (src, count, alt) => {
+      const generateUniqueId = () => 'carousel-' + Math.random().toString(36).substr(2, 9);
+      const id = generateUniqueId();
+      let images = [];
+  
+      for (let i = 1; i <= count; i++) {
+        let imageSrc = src.replace(/-1(\.[\w\d_-]+)$/i, `-${i}$1`);
+  
+        let stats = await Image(imageSrc, {
+          widths: [960, 1280, 1920, 2560],
+          formats: ["jpeg", "webp", "avif"],
+          sharpOptions: { quality: 90 },
+          filenameFormat: function (id, src, width, format, options) {
+            const extension = path.extname(src);
+            const name = path.basename(src, extension);
+            return `${name}-${width}w.${format}`;
+          },
+          urlPath: "/static/work",
+          outputDir: "./dist/static/work",
+        });
+  
+        let lowestSrc = stats["jpeg"][0];
+  
+        const srcset = Object.keys(stats).reduce(
+          (acc, format) => ({
+            ...acc,
+            [format]: stats[format].reduce(
+              (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+              ""
+            ),
+          }),
+          {}
+        );
+  
+        const sourceAVIF = `<source type="image/avif" srcset="${srcset["avif"]}" >`;
+        const sourceWEBP = `<source type="image/webp" srcset="${srcset["webp"]}" >`;
+  
+        const img = `<img
+          loading="lazy"
+          decoding="async"
+          alt="${alt ? `${alt} - Slide ${i}` : `Slide ${i}`}"
+          src="${lowestSrc.url}"
+          sizes='(min-width: 40rem) 50rem, (min-width: 75rem) 50rem, (min-width: 92rem) 50rem'
+          srcset="${srcset["jpeg"]}"
+          width="${lowestSrc.width}"
+          height="${lowestSrc.height}">`;
+  
+        images.push(outdent`
+          <picture class="f-carousel__slide">
+            ${sourceAVIF}
+            ${sourceWEBP}
+            ${img}
+          </picture>
+        `);
+      }
+  
+      return outdent`
+        <figure id="${id}" class="f-carousel large">
+          ${images.join('\n')}
+        </figure>
+      `;
+    });
 
     // Work thumbnail
     // Usage: {% thumbnail "static/work/file-name.jpg" "My alt…" "16:10" %}
