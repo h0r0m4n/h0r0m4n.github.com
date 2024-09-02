@@ -85,7 +85,7 @@ module.exports = function (eleventyConfig) {
                 <video width="960" height="540" controls muted ${autoplay ? `autoplay` : ``} playsinline disablePictureInPicture>
                     <source src="/static/work/${src}.mp4" type="video/mp4">
                 </video>
-                ${caption ? `<figcaption class="t__container">${caption}</figcaption>` : ``}
+                ${caption ? `<figcaption class="t__container">${caption}</figcaption>` : ''}
             </figure>
         `;
     });
