@@ -4,10 +4,11 @@
             <span class="t__vh">Close</span>
             {% include 'assets/close.svg' %}
         </button>
-        <p><strong>This work are under NDAs, please enter the password:</strong></p>
+        <h4>This work is protected by <abbr title="Non-disclosure agreement">NDA</abbr>s</h4>
+        <p>Please enter the password to proceed.</p>
         <input id="modal-password" name="password" type="password" placeholder="Password" aria-label="Password" inputmode="numeric" pattern="[0-9]" autocomplete="current-password" minlength="6" maxlength="6" required>
         <button id="modal-enter" class="t__hover t__hover--1">Enter</button>
         <hr>
-        <p>Doesn't have a password? Contact me at <a href="mailto:{{ site.mail }}" title="Send email to {{ site.mail }}">{{ site.mail }}</a>.</p>
+        <p>Don’t have a password? Reach out to me at <a href="mailto:{{ site.mail }}" title="Send email to {{ site.mail }}">{{ site.mail }}</a>.</p>
     </div>
 </div>
