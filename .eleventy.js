@@ -1,9 +1,9 @@
-const global = require('./src/_data/site'),
-      outdent = require('outdent'),
-      path = require('path'),
-      Image = require('@11ty/eleventy-img'),
-      { DateTime } = require('luxon'),
-      syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const global = require('./src/_data/site');
+const outdent = require('outdent');
+const path = require('path');
+const Image = require('@11ty/eleventy-img');
+const { DateTime } = require('luxon');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
     // Copy
