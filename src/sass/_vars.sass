@@ -1,10 +1,73 @@
-// Sizes
-$media-small: 50rem
-$media-medium: 75rem
-$media-large: 93.75rem
-$media-huge: 118.75rem
+:root
+    // Typography
+    --type-family-1a: 'ColfaxWebRegular', sans-serif
+    --type-family-1b: 'ColfaxWebBold', sans-serif
+    --type-family-2: 'KlavikaWebDisplayBlack', sans-serif
+    --type-family-3: 'Caveat', sans-serif
+    --type-height-1: 1.5
+    --type-height-2: 1
+    --type-height-3: 1.75
 
+    // Sizing
+    --size-xs: 0.5rem
+    --size-s: 1rem
+    --size-m: 1.5rem
+    --size-l: 2rem
+    --size-xl: 3rem
+    --size-xxl: 6rem
+    --size-xxxl: 10rem
+
+    // Container
+    --container-size: 50rem
+
+    // Border radius
+    --radius-1: 0.5em
+    --radius-2: 1em
+
+    // ------------------------------------------------------------------------
+    // Light Theme
+    // ------------------------------------------------------------------------
+
+    // Color
+    --color-primary: #0d0d0d
+    --color-secondary: #322abb
+    --color-tertiary: #ad9000
+    --color-neutral-1:rgba(13, 13, 13, 0.5)
+    --color-neutral-2: rgba(13, 13, 13, 0.25)
+    --color-neutral-3: rgba(13, 13, 13, 0.12)
+    --color-neutral-4: rgba(13, 13, 13, 0.06)
+    --color-thumbnail-hover: rgba(255, 255, 255, 0.25)
+    --color-overlay: rgba(255, 255, 255, 0.98)
+    --color-background: #fff
+
+    // Shadow
+    --shadow-1: 0 4px 12px rgba(0, 0, 0, .12)
+    --shadow-2: 0 6px 24px rgba(0, 0, 0, .32)
+
+    // ------------------------------------------------------------------------
+    // Dark Theme
+    // ------------------------------------------------------------------------
+    @media (prefers-color-scheme: dark)
+        --color-primary: #fff
+        --color-secondary: #a958ff
+        --color-tertiary: #51e1c0
+        --color-neutral-1: rgba(255, 255, 255, 0.5)
+        --color-neutral-2: rgba(255, 255, 255, 0.25)
+        --color-neutral-3: rgba(255, 255, 255, 0.12)
+        --color-neutral-4: rgba(255, 255, 255, 0.06)
+        --color-thumbnail-hover: rgba(255, 255, 255, 0.12)
+        --color-overlay: rgba(30, 0, 31, 0.98)
+        --color-background: #110016
+
+// ----------------------------------------------------------------------------
+// Media Queries
+// ----------------------------------------------------------------------------
 // Usage:
 // 1. @media (width < $media-small) below 50rem.
 // 2. @media (width >= $media-small) equal or bigger than 50rem.
 // 3. @media ($media-small <= width <= $media-medium) from 50rem to 75rem.
+
+$media-small: 50rem
+$media-medium: 75rem
+$media-large: 93.75rem
+$media-huge: 118.75rem

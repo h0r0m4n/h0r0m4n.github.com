@@ -1,60 +1,53 @@
-<style>
-    :root {
-        {# Light Theme #}
-        --color-primary: {% if css.primary %}{{ css.primary }}{% else %}#0d0d0d{% endif %};
-        --color-secondary: {% if css.secondary %}{{ css.secondary }}{% else %}#322abb{% endif %};
-        --color-tertiary: {% if css.tertiary %}{{ css.tertiary }}{% else %}#ad9000{% endif %};
-        --color-neutral-1: {% if css.neutral1 %}{{ css.neutral1 }}{% else %}rgba(13, 13, 13, 0.5){% endif %};
-        --color-neutral-2: {% if css.neutral2 %}{{ css.neutral2 }}{% else %}rgba(13, 13, 13, 0.25){% endif %};
-        --color-neutral-3: {% if css.neutral3 %}{{ css.neutral3 }}{% else %}rgba(13, 13, 13, 0.12){% endif %};
-        --color-neutral-4: {% if css.neutral4 %}{{ css.neutral4 }}{% else %}rgba(13, 13, 13, 0.06){% endif %};
-        --color-thumbnail-hover: {% if css.thumbnailHover %}{{ css.thumbnailHover }}{% else %}rgba(255, 255, 255, 0.25){% endif %};
-        --color-overlay: {% if css.overlay %}{{ css.overlay }}{% else %}rgba(255, 255, 255, 0.98){% endif %};
-        --color-background: {% if css.colorBackground %}{{ css.colorBackground }}{% else %}#fff{% endif %};
-        --shadow-1: 0 4px 12px rgba(0,0,0,.12);
-        --shadow-2: 0 6px 24px rgba(0,0,0,.32);
+{% if css.primary or css.secondary or css.tertiary or css.neutral1 or css.neutral2 or css.neutral3 or css.neutral4 or css.thumbnailHover or css.overlay or css.colorBackground or css.shadowOne or css.shadowTwo %}
+    <style>
+        :root {
+            {% if css.primary %}
+                --color-primary: {{ css.primary }};
+            {% endif %}
 
-        {# Typography #}
-        --type-family-1a: 'ColfaxWebRegular', sans-serif;
-        --type-family-1b: 'ColfaxWebBold', sans-serif;
-        --type-family-2: 'KlavikaWebDisplayBlack', sans-serif;
-        --type-height-1: 1.5;
-        --type-height-2: 1;
-        --type-height-3: 1.75;
-        --type-family-3: 'Caveat', sans-serif;
+            {% if css.secondary %}
+                --color-secondary: {{ css.secondary }};
+            {% endif %}
 
-        {# Sizing #}
-        --size-xs: 0.5rem;
-        --size-s: 1rem;
-        --size-m: 1.5rem;
-        --size-l: 2rem;
-        --size-xl: 3rem;
-        --size-xxl: 6rem;
-        --size-xxxl: 10rem;
+            {% if css.tertiary %}
+                --color-tertiary: {{ css.tertiary }};
+            {% endif %}
 
-        {# Container #}
-        --container-size: 50rem;
+            {% if css.neutral1 %}
+                --color-neutral-1: {{ css.neutral1 }};
+            {% endif %}
 
-        {# Border radius #}
-        --radius-1: 0.5em;
-        --radius-2: 1em;
-    }
-    {# Dark Theme #}
-    {% if css.primary or css.secondary or css.tertiary or css.neutral1 or css.neutral2 or css.neutral3 or css.neutral4 or css.overlay or css.colorBackground or css.background %}
-    {% else %}
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --color-primary: #fff;
-                --color-secondary: #a958ff;
-                --color-tertiary: #51e1c0;
-                --color-neutral-1: rgba(255, 255, 255, 0.5);
-                --color-neutral-2: rgba(255, 255, 255, 0.25);
-                --color-neutral-3: rgba(255, 255, 255, 0.12);
-                --color-neutral-4: rgba(255, 255, 255, 0.06);
-                --color-thumbnail-hover: rgba(255, 255, 255, 0.12);
-                --color-overlay: rgba(30, 0, 31, 0.98);
-                --color-background: #110016;
-            }
+            {% if css.neutral2 %}
+                --color-neutral-2: {{ css.neutral2 }};
+            {% endif %}
+
+            {% if css.neutral3 %}
+                --color-neutral-3: {{ css.neutral3 }};
+            {% endif %}
+
+            {% if css.neutral4 %}
+                --color-neutral-4: {{ css.neutral4 }};
+            {% endif %}
+
+            {% if css.thumbnailHover %}
+                --color-thumbnail-hover: {{ css.thumbnailHover }};
+            {% endif %}
+
+            {% if css.overlay %}
+                --color-overlay: {{ css.overlay }};
+            {% endif %}
+
+            {% if css.colorBackground %}
+                --color-background: {{ css.colorBackground }};
+            {% endif %}
+
+            {% if css.shadowOne %}
+                --shadow-1: {{ css.shadowOne }};
+            {% endif %}
+
+            {% if css.shadowTwo %}
+                --shadow-2: {{ css.shadowTwo }};
+            {% endif %}
         }
-    {% endif %}
-</style>
+    </style>
+{% endif %}
