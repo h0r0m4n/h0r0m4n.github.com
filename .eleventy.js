@@ -19,7 +19,6 @@ module.exports = function (eleventyConfig) {
         "src/robots.txt",
         "src/CNAME"
     ];
-
     passthroughCopies.forEach(copy => eleventyConfig.addPassthroughCopy(copy));
 
     // Watch
