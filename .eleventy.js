@@ -27,9 +27,6 @@ module.exports = function (eleventyConfig) {
         return collectionApi.getFilteredByGlob('src/work/**/*.md').reverse();
     });
 
-    // Enable syntax highlight
-    eleventyConfig.addPlugin(syntaxHighlight);
-
     // Get the first `n` elements of a collection
     eleventyConfig.addFilter('head', (array, n) => {
         if (n < 0) {
@@ -479,6 +476,9 @@ module.exports = function (eleventyConfig) {
             </picture>
         `;
     });
+
+    // Enable syntax highlight
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
         dir: {
