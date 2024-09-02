@@ -85,7 +85,7 @@
     
 </style>
 
-<link rel="stylesheet" href="/css/style.css?v=5.8">
+<link rel="stylesheet" href="/css/style.css?v=6.0">
 
 
 
@@ -122,20 +122,20 @@
     if (window.navigator && navigator.serviceWorker) {
         navigator.serviceWorker.getRegistrations()
         .then(function(registrations) {
-            for(let registration of registrations) {
+            registrations.forEach(function(registration) {
                 registration.unregister();
-            }
+            });
         });
     }
 
-    var featuredLink = document.querySelectorAll('.t__card__link');
-    var featuredWork = 'FeaturedWork';
-    var featuredModal = document.getElementById("modal");
-    var featuredClose = document.getElementById("modal-close");
-    var featuredPassword = document.getElementById("modal-password");
-    var featuredEnter = document.getElementById("modal-enter");
-    var featuredValue = '376301';
-    var featuredUrl = '';
+    const featuredLink = document.querySelectorAll('.t__card__link');
+    const featuredWork = 'FeaturedWork';
+    const featuredModal = document.getElementById("modal");
+    const featuredClose = document.getElementById("modal-close");
+    const featuredPassword = document.getElementById("modal-password");
+    const featuredEnter = document.getElementById("modal-enter");
+    const featuredValue = '376301';
+    let featuredUrl = '';
 
     // Close modal
     featuredClose.onclick = function() {
@@ -147,11 +147,11 @@
     // Close modal on esc button
     
         document.addEventListener("keyup", function(event) {
-            if (event.keyCode === 27) {
+            if (event.key === 'Escape') {
                 featuredModal.classList.remove('open');
                 featuredPassword.classList.remove('error');
                 featuredPassword.value = '';
-            };
+            }
         });
     
 
@@ -169,7 +169,7 @@
                 featuredPassword.classList.remove('error--play');
             }, 500);
         }
-    };
+    }
 
     document.addEventListener('click', function (event) {
         
@@ -190,23 +190,23 @@
             featuredUrl = event.target.href;
 
             // Submit on button
-            featuredEnter.addEventListener("click", function (event) {
+            featuredEnter.addEventListener("click", function () {
                 checkPassword(featuredUrl);
             });
 
             // Submit on keyboard enter button
             featuredPassword.addEventListener("keyup", function(event) {
-                if (event.keyCode === 13) {
+                if (event.key === 'Enter') {
                     featuredEnter.click();
                     checkPassword(featuredUrl);
-                };
+                }
             });
-        };
+        }
     }, false);
 
     // If the user access `?pwd=12345` url don't require password anymore
-    var queryString = window.location.search;
-    if (queryString === '?pwd=376301') {
+    const queryString = window.location.search;
+    if (queryString === `?pwd=376301`) {
         localStorage.setItem(featuredWork, featuredValue);
     }
 
@@ -215,22 +215,20 @@
 
     // Remove hash from URL
     function removeLocationHash(){
-        var noHashURL = window.location.href.replace(/#.*$/, '');
-        window.history.replaceState('', document.title, noHashURL) 
+        const noHashURL = window.location.href.replace(/#.*$/, '');
+        window.history.replaceState('', document.title, noHashURL);
     }
-    window.addEventListener("popstate", function(event){
-        removeLocationHash();
-    });
+    window.addEventListener("popstate", removeLocationHash);
     window.addEventListener("hashchange", function(event){
         event.preventDefault();
         removeLocationHash();
     });
-    window.addEventListener("load", function(){
-        removeLocationHash();
-    });
+    window.addEventListener("load", removeLocationHash);
 
+    // Lightbox configs
     
 
+    // Carousel configs
     
 </script>
 

@@ -71,7 +71,7 @@
     
 </style>
 
-<link rel="stylesheet" href="/css/style.css?v=5.8">
+<link rel="stylesheet" href="/css/style.css?v=6.0">
 
 
 
@@ -653,7 +653,7 @@
                 <li>Powered by <a href="https://11ty.dev" rel="noopener noreferrer nofollow" target="_blank">11ty</a> as static site generator, JavaScript, SASS and Nunjucks.</li>
                 <li>Hosted using <a href="https://pages.github.com" rel="noopener noreferrer nofollow" target="_blank">GitHub Pages</a> and <a href="https://github.com/features/actions" rel="noopener noreferrer nofollow" target="_blank">GitHub Actions</a>.</li>
                 <li><a href="https://www.simpleanalytics.com/?referral=vasuc" rel="noopener noreferrer nofollow" target="_blank">Simple Analytics</a> is used as analytics platform.</li>
-                <li>Current site version is 5.8.</li>
+                <li>Current site version is 6.0.</li>
             </ul>
         </div>
     </div>
@@ -723,11 +723,12 @@
     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
 </svg>
         </button>
-        <p><strong>This work are under NDAs, please enter the password:</strong></p>
+        <h4>This work is protected by <abbr title="Non-disclosure agreement">NDA</abbr>s</h4>
+        <p>Please enter the password to proceed.</p>
         <input id="modal-password" name="password" type="password" placeholder="Password" aria-label="Password" inputmode="numeric" pattern="[0-9]" autocomplete="current-password" minlength="6" maxlength="6" required>
         <button id="modal-enter" class="t__hover t__hover--1">Enter</button>
         <hr>
-        <p>Doesn't have a password? Contact me at <a href="mailto:me@horoman.com" title="Send email to me@horoman.com">me@horoman.com</a>.</p>
+        <p>Don’t have a password? Reach out to me at <a href="mailto:me@horoman.com" title="Send email to me@horoman.com">me@horoman.com</a>.</p>
     </div>
 </div>
 
@@ -739,20 +740,20 @@
     if (window.navigator && navigator.serviceWorker) {
         navigator.serviceWorker.getRegistrations()
         .then(function(registrations) {
-            for(let registration of registrations) {
+            registrations.forEach(function(registration) {
                 registration.unregister();
-            }
+            });
         });
     }
 
-    var featuredLink = document.querySelectorAll('.t__card__link');
-    var featuredWork = 'FeaturedWork';
-    var featuredModal = document.getElementById("modal");
-    var featuredClose = document.getElementById("modal-close");
-    var featuredPassword = document.getElementById("modal-password");
-    var featuredEnter = document.getElementById("modal-enter");
-    var featuredValue = '376301';
-    var featuredUrl = '';
+    const featuredLink = document.querySelectorAll('.t__card__link');
+    const featuredWork = 'FeaturedWork';
+    const featuredModal = document.getElementById("modal");
+    const featuredClose = document.getElementById("modal-close");
+    const featuredPassword = document.getElementById("modal-password");
+    const featuredEnter = document.getElementById("modal-enter");
+    const featuredValue = '376301';
+    let featuredUrl = '';
 
     // Close modal
     featuredClose.onclick = function() {
@@ -764,11 +765,11 @@
     // Close modal on esc button
     
         document.addEventListener("keyup", function(event) {
-            if (event.keyCode === 27) {
+            if (event.key === 'Escape') {
                 featuredModal.classList.remove('open');
                 featuredPassword.classList.remove('error');
                 featuredPassword.value = '';
-            };
+            }
         });
     
 
@@ -786,7 +787,7 @@
                 featuredPassword.classList.remove('error--play');
             }, 500);
         }
-    };
+    }
 
     document.addEventListener('click', function (event) {
         
@@ -807,23 +808,23 @@
             featuredUrl = event.target.href;
 
             // Submit on button
-            featuredEnter.addEventListener("click", function (event) {
+            featuredEnter.addEventListener("click", function () {
                 checkPassword(featuredUrl);
             });
 
             // Submit on keyboard enter button
             featuredPassword.addEventListener("keyup", function(event) {
-                if (event.keyCode === 13) {
+                if (event.key === 'Enter') {
                     featuredEnter.click();
                     checkPassword(featuredUrl);
-                };
+                }
             });
-        };
+        }
     }, false);
 
     // If the user access `?pwd=12345` url don't require password anymore
-    var queryString = window.location.search;
-    if (queryString === '?pwd=376301') {
+    const queryString = window.location.search;
+    if (queryString === `?pwd=376301`) {
         localStorage.setItem(featuredWork, featuredValue);
     }
 
@@ -832,22 +833,20 @@
 
     // Remove hash from URL
     function removeLocationHash(){
-        var noHashURL = window.location.href.replace(/#.*$/, '');
-        window.history.replaceState('', document.title, noHashURL) 
+        const noHashURL = window.location.href.replace(/#.*$/, '');
+        window.history.replaceState('', document.title, noHashURL);
     }
-    window.addEventListener("popstate", function(event){
-        removeLocationHash();
-    });
+    window.addEventListener("popstate", removeLocationHash);
     window.addEventListener("hashchange", function(event){
         event.preventDefault();
         removeLocationHash();
     });
-    window.addEventListener("load", function(){
-        removeLocationHash();
-    });
+    window.addEventListener("load", removeLocationHash);
 
+    // Lightbox configs
     
 
+    // Carousel configs
     
 </script>
 

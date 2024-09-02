@@ -71,12 +71,12 @@
     
 </style>
 
-<link rel="stylesheet" href="/css/style.css?v=5.8">
+<link rel="stylesheet" href="/css/style.css?v=6.0">
 
 
 
 
-    <link rel="stylesheet" href="/css/carousel.css?v=5.8">
+    <link rel="stylesheet" href="/css/carousel.css?v=6.0">
 
 
     </head>
@@ -626,38 +626,39 @@ $<span class="token property">color-on-light-3</span><span class="token punctuat
     <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
 </svg>
         </button>
-        <p><strong>This work are under NDAs, please enter the password:</strong></p>
+        <h4>This work is protected by <abbr title="Non-disclosure agreement">NDA</abbr>s</h4>
+        <p>Please enter the password to proceed.</p>
         <input id="modal-password" name="password" type="password" placeholder="Password" aria-label="Password" inputmode="numeric" pattern="[0-9]" autocomplete="current-password" minlength="6" maxlength="6" required>
         <button id="modal-enter" class="t__hover t__hover--1">Enter</button>
         <hr>
-        <p>Doesn't have a password? Contact me at <a href="mailto:me@horoman.com" title="Send email to me@horoman.com">me@horoman.com</a>.</p>
+        <p>Don’t have a password? Reach out to me at <a href="mailto:me@horoman.com" title="Send email to me@horoman.com">me@horoman.com</a>.</p>
     </div>
 </div>
 
         
 
 
-    <script src="/js/carousel.js?v=5.8"></script>
+    <script src="/js/carousel.js?v=6.0"></script>
 
 
 <script>
     if (window.navigator && navigator.serviceWorker) {
         navigator.serviceWorker.getRegistrations()
         .then(function(registrations) {
-            for(let registration of registrations) {
+            registrations.forEach(function(registration) {
                 registration.unregister();
-            }
+            });
         });
     }
 
-    var featuredLink = document.querySelectorAll('.t__card__link');
-    var featuredWork = 'FeaturedWork';
-    var featuredModal = document.getElementById("modal");
-    var featuredClose = document.getElementById("modal-close");
-    var featuredPassword = document.getElementById("modal-password");
-    var featuredEnter = document.getElementById("modal-enter");
-    var featuredValue = '376301';
-    var featuredUrl = '';
+    const featuredLink = document.querySelectorAll('.t__card__link');
+    const featuredWork = 'FeaturedWork';
+    const featuredModal = document.getElementById("modal");
+    const featuredClose = document.getElementById("modal-close");
+    const featuredPassword = document.getElementById("modal-password");
+    const featuredEnter = document.getElementById("modal-enter");
+    const featuredValue = '376301';
+    let featuredUrl = '';
 
     // Close modal
     featuredClose.onclick = function() {
@@ -683,7 +684,7 @@ $<span class="token property">color-on-light-3</span><span class="token punctuat
                 featuredPassword.classList.remove('error--play');
             }, 500);
         }
-    };
+    }
 
     document.addEventListener('click', function (event) {
         
@@ -704,23 +705,23 @@ $<span class="token property">color-on-light-3</span><span class="token punctuat
             featuredUrl = event.target.href;
 
             // Submit on button
-            featuredEnter.addEventListener("click", function (event) {
+            featuredEnter.addEventListener("click", function () {
                 checkPassword(featuredUrl);
             });
 
             // Submit on keyboard enter button
             featuredPassword.addEventListener("keyup", function(event) {
-                if (event.keyCode === 13) {
+                if (event.key === 'Enter') {
                     featuredEnter.click();
                     checkPassword(featuredUrl);
-                };
+                }
             });
-        };
+        }
     }, false);
 
     // If the user access `?pwd=12345` url don't require password anymore
-    var queryString = window.location.search;
-    if (queryString === '?pwd=376301') {
+    const queryString = window.location.search;
+    if (queryString === `?pwd=376301`) {
         localStorage.setItem(featuredWork, featuredValue);
     }
 
@@ -733,24 +734,21 @@ $<span class="token property">color-on-light-3</span><span class="token punctuat
 
     // Remove hash from URL
     function removeLocationHash(){
-        var noHashURL = window.location.href.replace(/#.*$/, '');
-        window.history.replaceState('', document.title, noHashURL) 
+        const noHashURL = window.location.href.replace(/#.*$/, '');
+        window.history.replaceState('', document.title, noHashURL);
     }
-    window.addEventListener("popstate", function(event){
-        removeLocationHash();
-    });
+    window.addEventListener("popstate", removeLocationHash);
     window.addEventListener("hashchange", function(event){
         event.preventDefault();
         removeLocationHash();
     });
-    window.addEventListener("load", function(){
-        removeLocationHash();
-    });
+    window.addEventListener("load", removeLocationHash);
 
+    // Lightbox configs
     
 
+    // Carousel configs
     
-        // Carousel configs
         document.querySelectorAll('.f-carousel').forEach((carousel) => {
             const options = {
                 infinite: false,
