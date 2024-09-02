@@ -7,17 +7,20 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
     // Copy
-    eleventyConfig
-        .addPassthroughCopy({"src/static/fonts": "/static/fonts"})
-        .addPassthroughCopy({"src/static/assets": "/static/assets"})
-        .addPassthroughCopy({"src/static/work/*.mp4": "/static/work"})
-        .addPassthroughCopy({"src/static/testimonials": "/static/testimonials"})
-        .addPassthroughCopy({"src/static/books": "/static/books"})
-        .addPassthroughCopy({"src/js": "/js"})
-        .addPassthroughCopy("src/*.{png,svg,ico}")
-        .addPassthroughCopy("src/site.webmanifest")
-        .addPassthroughCopy("src/robots.txt")
-        .addPassthroughCopy("src/CNAME");
+    const passthroughCopies = [
+        {"src/static/fonts": "/static/fonts"},
+        {"src/static/assets": "/static/assets"},
+        {"src/static/work/*.mp4": "/static/work"},
+        {"src/static/testimonials": "/static/testimonials"},
+        {"src/static/books": "/static/books"},
+        {"src/js": "/js"},
+        "src/*.{png,svg,ico}",
+        "src/site.webmanifest",
+        "src/robots.txt",
+        "src/CNAME"
+    ];
+
+    passthroughCopies.forEach(copy => eleventyConfig.addPassthroughCopy(copy));
 
     // Watch
     eleventyConfig.addWatchTarget('./src/sass/');
