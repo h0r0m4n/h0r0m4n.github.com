@@ -1,53 +1,26 @@
-{% if css.primary or css.secondary or css.tertiary or css.neutral1 or css.neutral2 or css.neutral3 or css.neutral4 or css.thumbnailHover or css.overlay or css.colorBackground or css.shadowOne or css.shadowTwo %}
+{% set cssVars = {
+    '--color-primary': css.primary,
+    '--color-secondary': css.secondary,
+    '--color-tertiary': css.tertiary,
+    '--color-neutral-1': css.neutral1,
+    '--color-neutral-2': css.neutral2,
+    '--color-neutral-3': css.neutral3,
+    '--color-neutral-4': css.neutral4,
+    '--color-thumbnail-hover': css.thumbnailHover,
+    '--color-overlay': css.overlay,
+    '--color-background': css.colorBackground,
+    '--shadow-1': css.shadowOne,
+    '--shadow-2': css.shadowTwo
+} %}
+
+{% if cssVars | length %}
     <style>
         :root {
-            {% if css.primary %}
-                --color-primary: {{ css.primary }};
-            {% endif %}
-
-            {% if css.secondary %}
-                --color-secondary: {{ css.secondary }};
-            {% endif %}
-
-            {% if css.tertiary %}
-                --color-tertiary: {{ css.tertiary }};
-            {% endif %}
-
-            {% if css.neutral1 %}
-                --color-neutral-1: {{ css.neutral1 }};
-            {% endif %}
-
-            {% if css.neutral2 %}
-                --color-neutral-2: {{ css.neutral2 }};
-            {% endif %}
-
-            {% if css.neutral3 %}
-                --color-neutral-3: {{ css.neutral3 }};
-            {% endif %}
-
-            {% if css.neutral4 %}
-                --color-neutral-4: {{ css.neutral4 }};
-            {% endif %}
-
-            {% if css.thumbnailHover %}
-                --color-thumbnail-hover: {{ css.thumbnailHover }};
-            {% endif %}
-
-            {% if css.overlay %}
-                --color-overlay: {{ css.overlay }};
-            {% endif %}
-
-            {% if css.colorBackground %}
-                --color-background: {{ css.colorBackground }};
-            {% endif %}
-
-            {% if css.shadowOne %}
-                --shadow-1: {{ css.shadowOne }};
-            {% endif %}
-
-            {% if css.shadowTwo %}
-                --shadow-2: {{ css.shadowTwo }};
-            {% endif %}
+            {% for var, value in cssVars %}
+                {% if value %}
+                    {{ var }}: {{ value }};
+                {% endif %}
+            {% endfor %}
         }
     </style>
 {% endif %}
