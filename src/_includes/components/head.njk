@@ -27,7 +27,6 @@
 <link rel="manifest" href="{{ site.url + '/site.webmanifest' | url }}">
 <link rel="mask-icon" href="{{ site.url + '/safari-pinned-tab.svg' | url }}" color="#fff">
 
-{% include 'components/css-vars.njk' %}
 <link rel="stylesheet" href="{{ '/css/style.css' | url }}?v={{ site.version }}">
 
 {% if page.url == '/projects/' %}
@@ -37,3 +36,5 @@
 {% if layout == 'layouts/work' %}
     <link rel="stylesheet" href="{{ '/css/carousel.css' | url }}?v={{ site.version }}">
 {% endif %}
+
+{% include 'components/css-vars.njk' %}
