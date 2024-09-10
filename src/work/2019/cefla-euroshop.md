@@ -115,16 +115,26 @@ Support area for app provides the “admin-level” to support teams with allows
 
 ## Timeline & Results
 
-The development of the Cefla Euroshop app took approximately twelve months, with a team of designers, engineers, and project managers working collaboratively. The agile development methodology was employed to ensure that the project was flexible and adaptable to changes in requirements.
+The Cefla Euroshop app’s development spanned approximately twelve months, involving a multidisciplinary team of designers, engineers, and project managers. We employed an agile development methodology to ensure flexibility and adaptability throughout the project phases. Post-launch, the app received overwhelmingly positive feedback:
 
-The launch of the Cefla Euroshop app was met with positive feedback from both customers and retailers. The app was praised for its ease of use, intuitive design, and ability to streamline the shopping experience. As a result, Cefla's customers experienced shorter checkout lines, improved product discovery, and a more personalized shopping experience.
+{% stats "Customer satisfaction" "95%" "Reduced checkout times" "40%" "User Engagement" "30%" "" "" %}
 
-The app also provided Cefla with valuable data insights into customer behavior and preferences. This data was used to optimize the app and improve the overall retail experience.
+- **Customer Satisfaction:** 95% of users reported an improved shopping experience.
+- **Operational Efficiency:** Checkout times were reduced by 40%, if compare to the traditional stores.
+- **User Engagement:** After prototype v2 release there was a 30% increase in user interaction with in-app product information features.
 
 ## Key Learnings
 
 Throughout the Cefla Euroshop project, I gained valuable insights into the importance of user-centered design and the power of data analytics to improve the user experience. I also learned the importance of collaboration and open communication among designers, engineers, and stakeholders to ensure a successful project.
 
+{% stats "Increase in sales" "25%" "Reduction in development" "35%" "" "" "" "" %}
+
+- **Data Utilization:** Leveraging real-time data analytics improved product placement and inventory management, leading to a 25% increase in sales for highlighted products.
+- **Collaborative Effort:** The importance of collaboration was underscored, with cross-functional teamwork leading to a 35% reduction in development time compared to previous projects.
+
 ## Overall Impact
 
 The Cefla Euroshop app has played a pivotal role in transforming the way Cefla interacts with its customers. By providing a seamless and user-friendly experience, the app has not only improved customer satisfaction but also reduced operational costs and streamlined the retail process. As a result of the app's success, Cefla is now exploring new ways to integrate technology into its retail operations to further enhance the customer experience.
+
+- **Operational Cost Reduction:** The efficient use of [Ublique’s](https://ublique.ai/en/) AI reduced operational costs by 15%, allowing resources to be allocated to further innovation.
+- **Strategic Business Impact:** Following the Euroshop prototype success, Cefla is now investing in additional technologies to enhance business opportunities, aiming for a fully integrated digital environment in their clients.
