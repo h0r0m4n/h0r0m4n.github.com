@@ -10,10 +10,6 @@
 
 © Roman Horokhovatskyy. All rights reserved.  
 
-### Documentation
-
-The content of this README file is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).  
-
 ### Code 
 
 All source code in this repository is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0), unless otherwise stated.  
