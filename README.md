@@ -18,4 +18,7 @@ All source code in this repository is licensed under the [Apache License 2.0](ht
 
 The font files in this repository are the property of their respective copyright holders. They are provided solely for use under the terms of their original license. Redistribution, modification, or commercial use may be restricted—please refer to the original license agreement. If you are unsure, contact the font’s creator or distributor before use.  
 
-If you are the copyright holder of any font file and believe its inclusion here violates its license, please contact me immediately for resolution.
+If you are the copyright holder of any font file and believe its inclusion here violates its license, please contact me immediately for resolution.  
+
+### Portfolio & Confidentiality
+Some information in this repository may relate to **portfolio projects covered by a Non-Disclosure Agreement (NDA)**. Any reproduction, redistribution, or public sharing of such content—whether in part or in full—is strictly prohibited. If you have any questions regarding the use of portfolio-related materials, please contact me before proceeding.
